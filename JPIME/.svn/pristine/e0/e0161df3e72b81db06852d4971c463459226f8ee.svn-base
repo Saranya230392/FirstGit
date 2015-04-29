@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <fraction name="key_width_12key">19.75%</fraction>
+    <fraction name="key_width_12key_1st">19.91%</fraction>
+    <fraction name="key_width_12key_2nd">18.09%</fraction>
+    <fraction name="key_width_12key_phone">23.829%</fraction>
+    <fraction name="key_width_12key_numeric">23.829%</fraction>
+    <fraction name="key_width_qwerty_1st">9.532%</fraction>
+    <fraction name="key_width_qwerty_2nd">14.883%</fraction>
+    <fraction name="key_width_qwerty_com_2nd">11.915%</fraction>
+    <fraction name="key_width_qwerty_2nd_3rd_line">12.980%</fraction>
+    <fraction name="key_width_qwerty_2nd_4th_line">14.298%</fraction>
+    <fraction name="key_width_qwerty_2nd">14.883%</fraction>
+    <fraction name="key_width_phone_2nd">9.875%</fraction>
+    <fraction name="key_width_symbol">24.688%</fraction>
+    <fraction name="key_width_voice">36.015%</fraction>
+    <fraction name="key_width_qwerty_space">17.157%</fraction>
+
+    <fraction name="key_width_qwerty_1st_split">7.4%</fraction>
+    <fraction name="key_width_qwerty_2nd_split_3rd_line">9.000%</fraction>
+    <fraction name="key_width_qwerty_2nd_split_4th_line">9.80%</fraction>
+    <fraction name="key_width_split_gap_1st">23.9666%</fraction>
+    <fraction name="key_width_split_gap_line1">21.3177%</fraction>
+    <fraction name="key_width_split_gap_line2">16.300%</fraction>
+    <fraction name="key_width_split_gap_2nd">16.6087%</fraction>
+    <fraction name="key_width_split_gap_space">16.300%</fraction>
+    <fraction name="key_width_qwerty_space_split_left">14.80%</fraction>
+    <fraction name="key_width_qwerty_space_split_right">7.4%</fraction>
+
+    <fraction name="key_width_12key_1st_split">10.800%</fraction>
+    <fraction name="key_width_12key_2nd_split">10.000%</fraction>
+    <fraction name="key_width_split_gap">34.00%</fraction>
+</resources>

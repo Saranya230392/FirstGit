@@ -1,0 +1,52 @@
+**********************************************************************
+                                                        [CONFIDENTIAL]
+Build Manual for LG Z iWnnIME
+
+                                                            2013.08.28
+                                              OMRON SOFTWARE Co., Ltd.
+**********************************************************************
+
+1.directory hierarchy
+    +LGHWIME_libout
+      +assets
+       ...
+    +ime
+      +sources
+        +assets
+        +conf
+        +jni
+        +libs
+        +libs_eng
+        +res
+        +src
+        +AndroidManifest.xml
+        +build.xml
+        +MODULE_LICENSE_APACHE2
+        +NOTICE
+        +proguard-project.txt
+        +project.properties
+
+2.make ime/sources/local.properties
+    setting path to android sdk
+
+    (example)
+        sdk.dir=C:\\android\\adt-bundle-windows-x86_64\\sdk
+
+3.edit ime/sources/project.properties
+    add below line to project.properties
+    android.library.reference.1=../../LGHWIME_libout
+
+4.LGHWIME_libout setting
+	ÅEmove LGHWIME_libout/TO_MAIN_SOURCE/assets to ime/sources/assets
+	ÅEmove LGHWIME_libout/TO_MAIN_SOURCE/src/com to ime/sources/src/com
+	ÅEsetting path to android sdk in LGHWIME_libout/local.properties
+	    (example)
+	        sdk.dir=C:\\android\\adt-bundle-windows-x86_64\\sdk
+
+6.build
+    to type below command, apk file is made in ime/sources/bin
+
+    (command)
+        cd ime/sources
+        ant clean
+        ant debug

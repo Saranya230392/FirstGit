@@ -1,0 +1,61 @@
+<resources>
+    <string-array name="entryValues_working_lang_value">
+        <item>@string/HW_RESOURCE_LANG_JP</item>
+        <item>@string/HW_RESOURCE_LANG_KR</item>
+    </string-array>
+
+    <string-array name="entryValues_pen_type_value">
+        <item>@string/HW_PEN_TYPE_BALLPEN</item>
+        <item>@string/HW_PEN_TYPE_INKPEN</item>
+        <item>@string/HW_PEN_TYPE_BRUSH</item>
+        <item>@string/HW_PEN_TYPE_PENCIL</item>
+    </string-array>
+   
+    <string-array name="entryValues_auto_scroll_area_width">
+        <item>@string/area_width_type_wide</item>
+        <item>@string/area_width_type_normal</item>
+        <item>@string/area_width_type_thin</item>
+<!-- DEL -->
+    </string-array>
+    <string-array name="entryValues_auto_scroll_area_width_value">
+        <item>@string/HW_AREA_WIDTH_WIDE</item>
+        <item>@string/HW_AREA_WIDTH_NORMAL</item>
+        <item>@string/HW_AREA_WIDTH_THIN</item>
+    </string-array>
+    
+    <string-array name="entryValues_language_japan_type_value">
+        <item>@string/HW_LANGUAGE_JAPAN_ALL</item>
+        <item>@string/HW_LANGUAGE_JAPAN_KANJI</item>
+        <item>@string/HW_LANGUAGE_JAPAN_HIRAGANA</item>
+        <item>@string/HW_LANGUAGE_JAPAN_KATAKANA</item>
+        <item>@string/HW_LANGUAGE_JAPAN_ENGLISH</item>
+        <item>@string/HW_LANGUAGE_JAPAN_NUMBER</item>
+        <item>@string/HW_LANGUAGE_JAPAN_SYMBOL</item>
+    </string-array>
+    <string-array name="entryValues_working_active_mode_value">
+        <item>@string/HW_MODE_CHAR</item>
+        <item>@string/HW_MODE_TEXT</item>
+    </string-array>
+    
+    <string-array name="keyboard_guide_popup_list">
+        <item translatable="false">@string/ime_keypad_help_input_language</item>
+        <item translatable="false">@string/ime_keypad_help_numeric_and_symbol</item>
+        <item translatable="false">@string/ime_keypad_help_use_function_key</item>
+        <item translatable="false">@string/ime_keypad_help_split_keypad</item>
+        <item translatable="false">@string/ime_keypad_help_onehand_operation</item>
+    </string-array>
+    <string-array name="keyboard_guide_popup_desc">
+        <item translatable="false">@string/ime_guide_description_input_language</item>
+        <item translatable="false">@string/ime_guide_description_numeric_and_symbol</item>
+        <item translatable="false">@string/ime_guide_description_use_function_key</item>
+        <item translatable="false">@string/ime_guide_description_split_keypad</item>
+        <item translatable="false">@string/ime_guide_description_onehand_operation</item>
+    </string-array>
+    <string-array name="keyboard_guide_popup_title">
+        <item translatable="false">@string/ime_guide_title_input_language</item>
+        <item translatable="false">@string/ime_guide_title_numeric_and_symbol</item>
+        <item translatable="false">@string/ime_guide_title_use_function_key</item>
+        <item translatable="false">@string/ime_guide_title_split_keypad</item>
+        <item translatable="false">@string/ime_guide_title_onehand_operation</item>
+    </string-array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+     >
+  <switch>
+    <!-- SwitchIme On -->
+
+    <!-- SwitchIme Off -->
+    <case iwnn:keyboardCondition="switchImeOff">
+      <Row-Key>
+        <Key iwnn:codes="-219"
+             iwnn:keyIcon="@drawable/key_12key_reverse" iwnn:iconPreview="@drawable/key_12key_reverse_b"
+             iwnn:keyWidth="@fraction/keyboard_12key_function_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+  </switch>
+</Keyboard>

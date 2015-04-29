@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="10%p"
+    iwnn:horizontalGap="0px"
+    iwnn:verticalGap="0px"
+    iwnn:keyHeight="@dimen/key_height"
+    >
+</Keyboard>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="0dp" android:layout_width="fill_parent">
+    <TextView
+        android:id="@+id/key_height_portrait_text"
+        android:text="@string/ti_preference_key_height_portrait_title_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+    />
+    <SeekBar
+        android:id="@+id/key_height_portrait_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+    />
+    <TextView
+        android:id="@+id/key_height_landscape_text"
+        android:text="@string/ti_preference_key_height_landscape_title_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+    />
+    <SeekBar
+        android:id="@+id/key_height_landscape_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+    />
+</LinearLayout>

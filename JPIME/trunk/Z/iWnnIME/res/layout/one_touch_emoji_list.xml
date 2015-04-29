@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!-- one touch emoji list -->
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   >
+
+  <LinearLayout
+     android:id="@+id/one_touch_emoji_list_1st_base"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="horizontal"
+     android:background="@drawable/keyboard_background"
+     android:paddingTop="@dimen/one_touch_emoji_list_padding_keyboard_top"
+     android:paddingBottom="@dimen/one_touch_emoji_list_padding_keyboard_bottom"
+     android:gravity="right"
+     >
+        <ScrollView
+            android:id="@+id/one_touch_emoji_list_scroll_1st_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="0dip"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            >
+              <LinearLayout
+                 android:id="@+id/one_touch_emoji_list_1st_view"
+                 android:layout_width="@dimen/one_touch_emoji_list_width"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 >
+              </LinearLayout>
+        </ScrollView>
+        <ScrollView
+            android:id="@+id/one_touch_emoji_list_scroll_1st_view_split_qwerty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="0dip"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            >
+              <LinearLayout
+                 android:id="@+id/one_touch_emoji_list_1st_view_split_qwerty"
+                 android:layout_width="@dimen/one_touch_emoji_list_width"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 >
+              </LinearLayout>
+        </ScrollView>
+  </LinearLayout>
+  <LinearLayout
+     android:id="@+id/one_touch_emoji_list_2nd_base"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="horizontal"
+     android:background="@drawable/keyboard_background"
+     android:paddingLeft="@dimen/one_touch_emoji_list_padding_keyboard_left"
+     android:paddingRight="@dimen/one_touch_emoji_list_padding_keyboard_right"
+     android:paddingTop="@dimen/one_touch_emoji_list_padding_keyboard_top"
+     android:paddingBottom="@dimen/one_touch_emoji_list_padding_keyboard_bottom"
+     >
+        <ScrollView
+            android:id="@+id/one_touch_emoji_list_scroll_2nd_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="0dip"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            >
+              <LinearLayout
+                 android:id="@+id/one_touch_emoji_list_2nd_view"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 >
+              </LinearLayout>
+        </ScrollView>
+  </LinearLayout>
+  <LinearLayout
+     android:id="@+id/one_touch_emoji_list_read_more"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left"
+     >
+    <ImageView
+       android:id="@+id/one_touch_emoji_list_read_more_button"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:soundEffectsEnabled="false"
+       />
+  </LinearLayout>
+</FrameLayout>

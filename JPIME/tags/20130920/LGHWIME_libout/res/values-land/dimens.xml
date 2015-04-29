@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- total height : 185.68 Button height : 42.0 -->
+    <dimen name="stroke_layout_height">139.68dp</dimen>
+    <dimen name="stroke_layout_padding_top">7dp</dimen>
+    <dimen name="stroke_layout_padding_bottom">8dp</dimen>
+    <dimen name="stroke_layout_padding_left_right">10.66dp</dimen>
+    <!-- size of StrokeViewChar, must be 139.68dp-15dp(margin top&bottom) -->
+    <dimen name="stroke_view_height">124.68dp</dimen>
+    
+    <dimen name="button_layout_height">46dp</dimen>
+    <dimen name="button_layout_padding_bottom">4dp</dimen>
+    <dimen name="button_layout_padding_left_right">1.33dp</dimen>
+    
+    <dimen name="candidate_blank_height">120px</dimen>
+    
+    <dimen name="select_candidate_popup_height">197dp</dimen>
+    <dimen name="popup_btn_width">40dp</dimen>
+    <dimen name="popup_btn_height">40dp</dimen>
+    <dimen name="keyboard_popup_width">20dp</dimen>
+    <dimen name="keyboard_popup_height">40dp</dimen>
+    
+    <dimen name="keyboard_sym_num_left">12dp</dimen>
+    <dimen name="keyboard_sym_smile_left">30dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="ime_guide_page_mark_top">11.00dp</dimen>
+	<dimen name="ime_guide_page_mark_bottom">11.00dp</dimen>
+	<dimen name="ime_guide_text_margin_top">0dp</dimen>
+	<dimen name="ime_guide_title_view_padding_bottom">7.50dp</dimen>
+</resources>

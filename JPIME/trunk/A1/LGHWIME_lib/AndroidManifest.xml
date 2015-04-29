@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lge.handwritingime"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+    <application android:label="@string/hw_name"
+        android:icon="@drawable/hw_ime_keypad_icon_popup_hw_text_normal"
+        android:allowBackup="false" >
+        <meta-data android:name="com.lge.theme" android:value="Theme_LGE_White" />
+        <service android:name="jp.co.omronsoft.iwnnime.ml.InputMethodSwitcher"
+                android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        <activity android:name="com.lge.handwritingime.preference.HandwritingPreferenceActivity" >
+            <meta-data android:name="com.lge.theme" android:value="Theme_LGE_White" />
+            <meta-data android:name="android.preference" android:resource="@xml/settings" />
+        </activity>
+        <activity android:name="com.lge.ime_help.HelpActivity" android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data android:name="com.lge.theme" android:value="Theme_LGE_White" />
+        </activity>
+    </application>
+
+</manifest>

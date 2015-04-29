@@ -1,0 +1,158 @@
+# view res/xml/iwnnime_pref_standard.xml #generated:201
+-keep class android.preference.ListPreference { <init>(...); }
+
+# view res/layout/emoji_list.xml #generated:126
+# view res/layout/ime_help_main.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/handwriting_ime.xml #generated:28
+# view res/layout/handwriting_ime.xml #generated:41
+# view res/layout/handwriting_ime.xml #generated:49
+-keep class com.lge.handwritingime.StrokeView { <init>(...); }
+
+# view res/xml/settings.xml #generated:41
+-keep class com.lge.handwritingime.preference.ColorPickerDialogPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class com.lge.handwritingime.preference.HandwritingPreferenceActivity { <init>(...); }
+
+# view res/xml/settings.xml #generated:26
+-keep class com.lge.handwritingime.preference.PenTypePreference { <init>(...); }
+
+# view res/xml/settings.xml #generated:62
+-keep class com.lge.handwritingime.preference.ScrollDelaySeekBarPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.lge.ime_help.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.nttdocomo.android.voiceeditorif.VoiceEditorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class jp.co.omronsoft.iwnnime.ml.AdditionalDictionaryPreferenceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class jp.co.omronsoft.iwnnime.ml.AutoLearningReceiver { <init>(...); }
+
+# view res/layout/keyboard_default_main.xml #generated:8
+-keep class jp.co.omronsoft.iwnnime.ml.BaseInputView { <init>(...); }
+
+# view res/xml/iwnnime_pref_candidatelines.xml #generated:14
+# view res/xml/iwnnime_pref_candidatelines.xml #generated:7
+-keep class jp.co.omronsoft.iwnnime.ml.CandidateLinesListPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class jp.co.omronsoft.iwnnime.ml.CandidateLinesPreferenceActivity { <init>(...); }
+
+# view res/layout/extra_view_floating_container.xml #generated:26
+-keep class jp.co.omronsoft.iwnnime.ml.ComposingExtraView { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class jp.co.omronsoft.iwnnime.ml.ControlPanelStandard { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class jp.co.omronsoft.iwnnime.ml.DecoEmojiListener { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class jp.co.omronsoft.iwnnime.ml.DownloadDictionaryPreferenceActivity { <init>(...); }
+
+# view res/layout/keyboard_android_default.xml #generated:8
+-keep class jp.co.omronsoft.iwnnime.ml.FlickKeyboardView { <init>(...); }
+
+# view res/xml/iwnnime_pref_standard.xml #generated:189
+-keep class jp.co.omronsoft.iwnnime.ml.FlickSensitivityPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class jp.co.omronsoft.iwnnime.ml.IWnnEngineService { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class jp.co.omronsoft.iwnnime.ml.IWnnMorphemeService { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class jp.co.omronsoft.iwnnime.ml.IWnnVoiceEngineService { <init>(...); }
+
+# view AndroidManifest.xml #generated:159
+-keep class jp.co.omronsoft.iwnnime.ml.InputDeviceReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class jp.co.omronsoft.iwnnime.ml.InputMethodSwitcher { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class jp.co.omronsoft.iwnnime.ml.KeyboardThemeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class jp.co.omronsoft.iwnnime.ml.KeyboardTypePreferenceActivity { <init>(...); }
+
+# view res/layout/keyboard_popup_keyboard.xml #generated:32
+-keep class jp.co.omronsoft.iwnnime.ml.KeyboardView { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class jp.co.omronsoft.iwnnime.ml.LanguageSettingPreferenceActivity { <init>(...); }
+
+# view res/layout/keyboard_android_default_multi.xml #generated:5
+-keep class jp.co.omronsoft.iwnnime.ml.MultiTouchKeyboardView { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class jp.co.omronsoft.iwnnime.ml.Mushroom { <init>(...); }
+
+# view res/xml/iwnnime_pref_standard.xml #generated:246
+-keep class jp.co.omronsoft.iwnnime.ml.MushroomListPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class jp.co.omronsoft.iwnnime.ml.MushroomPlus { <init>(...); }
+
+# view res/xml/iwnnime_pref_standard.xml #generated:132
+-keep class jp.co.omronsoft.iwnnime.ml.OneTouchEmojiListPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class jp.co.omronsoft.iwnnime.ml.StartApps { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class jp.co.omronsoft.iwnnime.ml.UninstallReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class jp.co.omronsoft.iwnnime.ml.WebApiReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class jp.co.omronsoft.iwnnime.ml.hangul.UserDictionaryToolsEditKo { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class jp.co.omronsoft.iwnnime.ml.hangul.UserDictionaryToolsListKo { <init>(...); }
+
+# view res/xml/iwnnime_pref_standard.xml #generated:319
+-keep class jp.co.omronsoft.iwnnime.ml.iwnn.IWnnClearLearningDictionaryDialogPreference { <init>(...); }
+
+# view res/xml/iwnnime_pref_keytype1.xml #generated:15
+# view res/xml/iwnnime_pref_keytype1.xml #generated:23
+# view res/xml/iwnnime_pref_keytype1.xml #generated:31
+# view res/xml/iwnnime_pref_keytype1.xml #generated:39
+# view res/xml/iwnnime_pref_keytype1.xml #generated:47
+# view res/xml/iwnnime_pref_keytype1.xml #generated:55
+# view res/xml/iwnnime_pref_keytype1.xml #generated:7
+# view res/xml/iwnnime_pref_keytype2.xml #generated:15
+# view res/xml/iwnnime_pref_keytype2.xml #generated:23
+# view res/xml/iwnnime_pref_keytype2.xml #generated:31
+# view res/xml/iwnnime_pref_keytype2.xml #generated:39
+# view res/xml/iwnnime_pref_keytype2.xml #generated:47
+# view res/xml/iwnnime_pref_keytype2.xml #generated:55
+# view res/xml/iwnnime_pref_keytype2.xml #generated:7
+-keep class jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsEditEn { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsEditJa { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsListEn { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsListJa { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class jp.co.omronsoft.iwnnime.ml.standardcommon.UserDictionaryToolsEditStandard { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class jp.co.omronsoft.iwnnime.ml.standardcommon.UserDictionaryToolsListStandard { <init>(...); }
+

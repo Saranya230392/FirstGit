@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <declare-styleable name="WnnKeyboardView">
+        <!-- Import from frameworks/base/core/res/res/values/attrs.xml -->
+        <attr name="keyBackground" format="reference" />
+        <attr name="verticalCorrection" format="dimension" />
+        <attr name="keyPreviewLayout" format="reference" />
+        <attr name="keyPreviewOffset" format="dimension" />
+        <attr name="keyPreviewHeight" format="dimension" />
+        <attr name="keyTextSize" format="dimension" />
+        <attr name="keyTextColor" format="color" />
+        <attr name="keyPressedTextColor" format="color" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="popupLayout" format="reference" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="float" />
+        <attr name="codes" format="integer|string" />
+        <attr name="iconPreview" format="reference" />
+        <attr name="isModifier" format="boolean" />
+        <attr name="isRepeatable" format="boolean" />
+        <attr name="isSticky" format="boolean" />
+        <attr name="keyEdgeFlags">
+          <flag name="left" value="1" />
+          <flag name="right" value="2" />
+        </attr>
+        <attr name="keyIcon" format="reference" />
+        <attr name="keyLabel" format="string" />
+        <attr name="keyOutputText" format="string" />
+        <attr name="popupCharacters" format="string" />
+        <attr name="subCharacters" format="string" />
+        <attr name="popupKeyboard" format="reference" />
+        <attr name="keyboardMode" format="reference" />
+        <attr name="rowEdgeFlags">
+          <flag name="top" value="4" />
+          <flag name="bottom" value="8" />
+        </attr>
+        <attr name="horizontalGap" format="dimension|fraction" />
+        <attr name="keyHeight" format="dimension|fraction" />
+        <attr name="keyWidth" format="dimension|fraction" />
+        <attr name="verticalGap" format="dimension|fraction" />
+        <attr name="backgroundDimAmount" format="float" />
+
+        <!-- 2nd Image for the key. This image needs to be a StateListDrawable, with the following
+             possible states: normal, pressed, checkable, checkable+pressed, checkable+checked,
+             checkable+checked+pressed. -->
+        <attr name="keyBackground2nd" format="reference" />
+        <attr name="keyTextColor2nd" format="color" />
+        <attr name="shadowColor2nd" format="color" />
+        <attr name="shadowRadius2nd" format="float" />
+
+        <!-- Whether this is 2nd key -->
+        <attr name="isSecondKey" format="boolean" />
+        <attr name="keyPreviewLabel" format="string" />
+        <!-- Whether this is 3rd key -->
+        <attr name="isThirdey" format="boolean" />
+        <!-- Whether this is PressHold key -->
+        <attr name="isPressHoldKey" format="boolean" />
+        <!-- Whether this is line image -->
+        <attr name="isLineImage" format="boolean" />
+        <!-- Whether this is Phone keyboard -->
+        <attr name="isPhone" format="boolean" />
+        <!-- Whether this key can show preview -->
+        <attr name="showPreview" format="boolean" />
+        <!-- Image of Modekey for voice input -->
+        <attr name="voiceIcon" format="reference" />
+        <!-- Image of Modekey for voice input -->
+        <attr name="voiceIconPreview" format="reference" />
+        <!-- ID of key icon -->
+        <attr name="keyIconId" format="integer" />
+        <attr name="keyIconPreviewId" format="integer" />
+
+        <!-- Number of lines in the keyboard (If undefined, will be treated as 4 lines.) -->
+        <attr name="keyline" format="integer" />
+
+        <!-- Whether this key is split key -->
+        <attr name="isSplitKey" format="boolean" />
+
+        <!-- keyboard xml -->
+        <attr name="keyboardXml" format="reference" />
+        <attr name="keyboardLayout" format="reference" />
+        <attr name="keyboardCondition">
+          <flag name="none"                 value="0x0000" />
+          <flag name="modeHiragana"         value="0x0001" />
+          <flag name="modeFullAlpha"        value="0x0002" />
+          <flag name="modeFullNum"          value="0x0003" />
+          <flag name="modeFullKatakana"     value="0x0004" />
+          <flag name="modeHalfAlpha"        value="0x0005" />
+          <flag name="modeHalfNum"          value="0x0006" />
+          <flag name="modeHalfKatakana"     value="0x0007" />
+          <flag name="modeHangul"           value="0x0008" />
+          <flag name="modePinyin"           value="0x0009" />
+          <flag name="modeBopomofo"         value="0x000A" />
+          <flag name="voiceOff"             value="0x0010" />
+          <flag name="voiceOn"              value="0x0020" />
+          <flag name="switchImeOff"         value="0x0040" />
+          <flag name="switchImeOn"          value="0x0080" />
+          <flag name="cursorLeftRightOff"   value="0x0100" />
+          <flag name="cursorLeftRightOn"    value="0x0200" />
+        </attr>
+
+        <!-- The hint label to display on the key in conjunction with the label. -->
+        <attr name="keyHintLabel" format="string" />
+
+        <!-- Top and right padding of hint letter to the edge of the key.-->
+        <attr name="keyHintLetterPadding" format="dimension" />
+
+        <!-- Key hint letter (= one character hint label) color -->
+        <attr name="keyHintLetterColor" format="color" />
+
+        <!-- Size of the text for hint letter (= one character hint label), in the proportion of
+             key height. -->
+        <attr name="keyHintLetterRatio" format="float" />
+
+        <!-- Tag for Keyboard Image -->
+        <attr name="keyboardImageKeyTop" format="string" />
+        <attr name="keyboardImageKeyPreview" format="string" />
+
+    </declare-styleable>
+</resources>

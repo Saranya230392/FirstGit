@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:layout_margin="@dimen/zero_dip"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    android:padding="@dimen/zero_dip"
+    android:splitMotionEvents="false" >
+
+    <LinearLayout
+        android:id="@+id/func_key_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/func_button_layout_height"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:splitMotionEvents="false" >
+
+        <ImageButton
+            android:id="@+id/func_btn_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_state_normal"
+            android:src="@drawable/ic_list_attachment" />
+
+        <ImageButton
+            android:id="@+id/func_btn_voice_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_state_normal"
+            android:src="@drawable/dummy_icon_microphone" />
+
+        <ImageButton
+            android:id="@+id/func_btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_state_normal"
+            android:src="@drawable/ic_skin_set_select" />
+
+        <ImageButton
+            android:id="@+id/func_btn_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_state_normal"
+            android:src="@drawable/ic_menu_recent_history_normal" />
+
+        <ImageButton
+            android:id="@+id/func_btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_state_normal"
+            android:src="@drawable/ic_skin_set_camera" />
+
+        <ImageButton
+            android:id="@+id/func_btn_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_state_normal"
+            android:src="@drawable/ic_skin_set_gallery" />
+
+        <ImageButton
+            android:id="@+id/func_btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_state_normal"
+            android:src="@drawable/ic_skin_set_setting" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emoji_page_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/emoji_pager_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false" >
+
+        <ImageView
+            android:id="@+id/emoji_page_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/button_state_page_left" />
+
+        <LinearLayout
+            android:id="@+id/emoji_page_mark_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <HorizontalScrollView
+                android:id="@+id/emoji_page_mark_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+            </HorizontalScrollView>
+            <TextView 
+                android:id="@+id/emoji_page_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/emoji_page_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/button_state_page_right" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="192dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_button_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/buttons_base_height"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/enter_button"
+            style="@style/BottomDarkButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:src="@drawable/ime_symbol_icon_text" />
+
+        <LinearLayout
+            android:id="@+id/base_switch_emoji_tab_linear"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.5"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false" >
+
+            <ImageView
+                android:id="@+id/switch_emoji_tab_deco_text"
+                style="@style/SwitchTabStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ime_symbol_icon_dpict" />
+
+            <ImageView
+                android:id="@+id/switch_emoji_tab_carrier_text"
+                style="@style/SwitchTabStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ime_symbol_icon_pict" />
+
+            <ImageView
+                android:id="@+id/switch_emoji_tab_symbol"
+                style="@style/SwitchTabStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ime_symbol_icon_symbol" />
+
+            <ImageView
+                android:id="@+id/switch_emoji_tab_emoticon"
+                style="@style/SwitchTabStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ime_symbol_icon_emotion" />
+
+            <ImageView
+                android:id="@+id/switch_emoji_tab_user_pict"
+                style="@style/SwitchTabStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ime_symbol_icon_upict" />
+
+            <ImageView
+                android:id="@+id/switch_emoji_tab_line_emoji"
+                style="@style/SwitchTabStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ime_symbol_icon_line" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/space_button"
+            style="@style/BottomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"
+            android:src="@drawable/key_12key_space" />
+
+        <ImageView
+            android:id="@+id/back_space_button"
+            style="@style/BottomDarkButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/ime_symbol_icon_del" />
+    </LinearLayout>
+
+</LinearLayout>

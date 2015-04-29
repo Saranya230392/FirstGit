@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2012 OMRON SOFTWARE Co., Ltd. All rights reserved
+-->
+<resources>
+    <string-array name="kaomoji1">
+        <item>@string/ti_kaomoji_category_happy_txt</item>
+        <item>"(*^^*)"</item>
+        <item>"(^^)"</item>
+        <item>"(^-^)"</item>
+        <item>"(^^)v"</item>
+        <item>"(^-^)v"</item>
+        <item>"(^_^)"</item>
+        <item>"(^_^)v"</item>
+        <item>"(^o^)"</item>
+        <item>"(^o^)v"</item>
+        <item>"＼(^^)／"</item>
+        <item>"＼(^-^)／"</item>
+        <item>"＼(^_^)／"</item>
+        <item>"＼(^o^)／"</item>
+        <item>"(^.^)"</item>
+        <item>"(^^)/"</item>
+        <item>"(^-^)/"</item>
+        <item>"(^^)d"</item>
+        <item>":-)"</item>
+        <item>":->"</item>
+        <item>";-)"</item>
+        <item>"(^ー^)"</item>
+        <item>"(^○^)"</item>
+        <item>"(￣ー￣)"</item>
+        <item>"(⌒‐⌒)"</item>
+        <item>"o(^o^)o"</item>
+        <item>"p(^^)q"</item>
+        <item>"p(^-^)q"</item>
+        <item>"q(^-^q)"</item>
+        <item>"d=(^o^)=b"</item>
+        <item>"( ^-^)ノ∠※。.:*:・'°☆"</item>
+        <item>"(^w^)"</item>
+        <item>"(*´ω｀*)"</item>
+        <item>"(*´∀｀)"</item>
+        <item>"(ノ´∀｀*)"</item>
+        <item>"( ´∀｀)"</item>
+        <item>"( ´,_ゝ`)"</item>
+        <item>"(о´∀`о)"</item>
+        <item>"(  ＾∀＾)"</item>
+        <item>"( ￣▽￣)"</item>
+        <item>"( 〃▽〃)"</item>
+        <item>"( ・∇・)"</item>
+        <item>"( ☆∀☆)"</item>
+        <item>"( v^-゜)♪"</item>
+        <item>"(\u0022⌒∇⌒\u0022)"</item>
+        <item>"(#^.^#)"</item>
+        <item>"((o(^∇^)o))"</item>
+        <item>"((o(￣ー￣)o))"</item>
+        <item>"(*^.^*)"</item>
+        <item>"(*^。^*)"</item>
+        <item>"(*^-^*)"</item>
+        <item>"(*^ー^)ノ♪"</item>
+        <item>"(*^_^*)"</item>
+        <item>"(*^▽^)/★*☆♪"</item>
+        <item>"(*^▽^*)"</item>
+        <item>"(*^￢^*)"</item>
+        <item>"(*^O^*)"</item>
+        <item>"(*￣ー￣)"</item>
+        <item>"(*￣∇￣)ノ"</item>
+        <item>"(*￣∇￣*)"</item>
+        <item>"(*´-`)"</item>
+        <item>"(*´ー｀*)"</item>
+        <item>"(*´∀`)♪"</item>
+        <item>"(*´∇｀*)"</item>
+        <item>"(*≧∀≦*)"</item>
+        <item>"(*ノ▽ノ)"</item>
+        <item>"(。^。^。)"</item>
+        <item>"(。-∀-)"</item>
+        <item>"(///∇///)"</item>
+        <item>"(///ω///)♪"</item>
+        <item>"(//∇//)"</item>
+        <item>"(／▽＼)♪"</item>
+        <item>"(^〇^)"</item>
+        <item>"(^^)b"</item>
+        <item>"(^∇^)"</item>
+        <item>"（＾◇＾）"</item>
+        <item>"(^◇^)"</item>
+        <item>"(^O^)"</item>
+        <item>"（~▽~＠）♪♪♪"</item>
+        <item>"(￣∇￣*)ゞ"</item>
+        <item>"(´∇｀)"</item>
+        <item>"(’-’*)♪"</item>
+        <item>"(〝⌒∇⌒〝)"</item>
+        <item>"(〃^ー^〃)"</item>
+        <item>"(〃∇〃)"</item>
+        <item>"(〃⌒ー⌒〃)ゞ"</item>
+        <item>"(〃ω〃)"</item>
+        <item>"(゜∇^d)!!"</item>
+        <item>"(≡^∇^≡)"</item>
+        <item>"(≧∇≦)"</item>
+        <item>"(≧▽≦)"</item>
+        <item>"(゜▽゜*)"</item>
+        <item>"(●^o^●)"</item>
+        <item>"(°▽°)"</item>
+        <item>"(o^－^o)"</item>
+        <item>"(o＾・＾o)"</item>
+        <item>"(o^O^o)"</item>
+        <item>"(o≧▽゜)o"</item>
+        <item>"(o⌒∇⌒o)"</item>
+        <item>"(p^-^)p"</item>
+        <item>"(σ≧▽≦)σ"</item>
+        <item>"＼(^.^)／"</item>
+        <item>"《*≧∀≦》"</item>
+        <item>"♪(/ω＼*)"</item>
+        <item>"♪ヽ(´▽｀)/"</item>
+        <item>"d(^-^)"</item>
+        <item>"d(⌒ー⌒)!"</item>
+        <item>"o(*⌒―⌒*)o"</item>
+        <item>"o(^-^o)(o^-^)o"</item>
+        <item>"Ｏ(≧∇≦)Ｏ"</item>
+        <item>"v(^o^)"</item>
+        <item>"v(・∀・*)"</item>
+        <item>"Ψ(￣∇￣)Ψ"</item>
+        <item>"ヘ(≧▽≦ヘ)♪"</item>
+        <item>"ヽ(*´▽)ノ♪"</item>
+        <item>"ヾ(@゜▽゜@)ノ"</item>
+        <item>"ヽ(^。^)ノ"</item>
+        <item>"ヽ(^○^)ノ"</item>
+        <item>"ヽ(￣▽￣)ノ"</item>
+        <item>"ヽ(・∀・)ノ"</item>
+        <item>@string/ti_kaomoji_category_sad_txt</item>
+        <item>"(;_;)"</item>
+        <item>"(;o;)"</item>
+        <item>"(T_T)"</item>
+        <item>"(ToT)"</item>
+        <item>"(TT)"</item>
+        <item>"(T-T)"</item>
+        <item>"(..)"</item>
+        <item>":-("</item>
+        <item>"X-&lt;"</item>
+        <item>"(/_;)/~~"</item>
+        <item>"(;_;)/~~~"</item>
+        <item>"(´д｀|||)"</item>
+        <item>"(。>д&lt;)"</item>
+        <item>"m(。≧Д≦。)m"</item>
+        <item>"(´・ω・`)"</item>
+        <item>"( ´_ゝ`)"</item>
+        <item>"(´・c_・`)"</item>
+        <item>"(  ；∀；)"</item>
+        <item>"（  ＴДＴ）"</item>
+        <item>"( ´△｀)"</item>
+        <item>"( ノД`)…"</item>
+        <item>"((T_T))"</item>
+        <item>"(*ToT)"</item>
+        <item>"(._.)"</item>
+        <item>"(。´Д⊂)"</item>
+        <item>"(／。＼)"</item>
+        <item>"(/ー￣;)"</item>
+        <item>"(/_;)"</item>
+        <item>"(／_;)/"</item>
+        <item>"(/´△`＼)"</item>
+        <item>"(/o＼)"</item>
+        <item>"(;;)"</item>
+        <item>"(;-;)"</item>
+        <item>"(;_・)"</item>
+        <item>"(;＿q)"</item>
+        <item>"(;O;)"</item>
+        <item>"(;つД｀)"</item>
+        <item>"(´；ω；`)"</item>
+        <item>"゜゜(´O｀)°゜"</item>
+        <item>"(T.T)"</item>
+        <item>"(T^T)"</item>
+        <item>"(T＿T)"</item>
+        <item>"(T△T)"</item>
+        <item>"(T▽T)"</item>
+        <item>"(T0T)"</item>
+        <item>"（つд；*)"</item>
+        <item>"(ノ_＜。)"</item>
+        <item>"(ノ_・,)"</item>
+        <item>"(ノ_・。)"</item>
+        <item>"。・゜゜(ノД`)"</item>
+        <item>"・゜・(つД｀)・゜・"</item>
+        <item>"・・・(；´Д｀)"</item>
+        <item>"o(T□T)o"</item>
+        <item>"orz"</item>
+        <item>"ρ(・・、)"</item>
+        <item>"Σ(ノд&lt;)"</item>
+        <item>@string/ti_kaomoji_category_surprise_txt</item>
+        <item>"(*_*)"</item>
+        <item>":-O"</item>
+        <item>"(゜ロ゜)"</item>
+        <item>"(゜ロ゜;"</item>
+        <item>"(/--)/"</item>
+        <item>"(゜ﾛ゜;ﾉ）ﾉ"</item>
+        <item>"Σ(゜Д゜)"</item>
+        <item>"(；´_ゝ`)"</item>
+        <item>"！！(゜ロ゜ノ)ノ"</item>
+        <item>"！Σ（￣□￣;）"</item>
+        <item>"！Σ(×_×;)!"</item>
+        <item>"( ; ゜Д゜)"</item>
+        <item>"( ゜o゜)"</item>
+        <item>"(((((((・・;)"</item>
+        <item>"(((((゜゜;)"</item>
+        <item>"((((；゜Д゜)))"</item>
+        <item>"(*_*;"</item>
+        <item>"(*゜Q゜*)"</item>
+        <item>"(゜.゜)"</item>
+        <item>"(／ロ゜)／"</item>
+        <item>"(;゜゜)"</item>
+        <item>"(゜゜;)"</item>
+        <item>"(゜〇゜;)"</item>
+        <item>"(゜〇゜;)?????"</item>
+        <item>"(；゜∀゜)"</item>
+        <item>"(;゜∇゜)"</item>
+        <item>"(；・∀・)"</item>
+        <item>"(；・ω・)"</item>
+        <item>"(;゜0゜)"</item>
+        <item>"(@_@)"</item>
+        <item>"(@_@;)"</item>
+        <item>"(@￣□￣@;)！！"</item>
+        <item>"(゜_゜)"</item>
+        <item>"(゜_゜;)"</item>
+        <item>"(|| ゜Д゜)"</item>
+        <item>"(~O~;)"</item>
+        <item>"(￣□||||！！"</item>
+        <item>"(￣□￣;)!!"</item>
+        <item>"(￣０￣;"</item>
+        <item>"(￣O￣)"</item>
+        <item>"（○_○）！！"</item>
+        <item>"(◎-◎;)"</item>
+        <item>"(°Д°)"</item>
+        <item>"(・。・)"</item>
+        <item>"(・。・;"</item>
+        <item>"(・_・)"</item>
+        <item>"(・o・)"</item>
+        <item>"(゜m゜;)"</item>
+        <item>"(゜O゜;"</item>
+        <item>"(゜д゜)"</item>
+        <item>"(ノ゜ο゜)ノ"</item>
+        <item>"(丿￣ο￣)丿"</item>
+        <item>"＼(>_&lt;)／"</item>
+        <item>"＼(◎o◎)／"</item>
+        <item>"＼(゜o゜;)/"</item>
+        <item>"＼(゜ロ＼)(／ロ゜)／"</item>
+        <item>"w(゜o゜)w"</item>
+        <item>"Σ(￣ロ￣lll)"</item>
+        <item>"Σ(´□｀;)"</item>
+        <item>"Σ(-∀-；)"</item>
+        <item>"Σ(Ｔ▽Ｔ;)"</item>
+        <item>"ヘ(゜ο°;)ノ"</item>
+    </string-array>
+</resources>
+

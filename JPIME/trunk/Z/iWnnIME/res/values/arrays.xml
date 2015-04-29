@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <string-array name="set_displayed_one_touch_emoji_list">
+        <item>@string/ti_preference_one_touch_emoji_list_display_left_txt</item>
+        <item>@string/ti_preference_one_touch_emoji_list_display_right_txt</item>
+        <item>@string/ti_preference_one_touch_emoji_list_display_hidden_txt</item>
+    </string-array>
+
+    <string name="set_displayed_one_touch_emoji_list_id_default">hidden</string>
+
+    <string-array name="set_displayed_one_touch_emoji_list_id">
+        <item>"left"</item>
+        <item>"right"</item>
+        <item>"hidden"</item>
+    </string-array>
+
+    <string-array name="keyboard_skinadd">
+        <item>@string/ti_preference_keyboard_add_default_txt</item>
+    </string-array>
+
+    <string name="keyboard_skinadd_id_default"></string>
+
+    <string-array name="keyboard_skinadd_id">
+        <item></item>
+    </string-array>
+
+    <string-array name="mushroom">
+        <item>@string/ti_preference_mushroom_use_txt</item>
+        <item>@string/ti_preference_mushroom_notuse_txt</item>
+    </string-array>
+
+    <string-array name="mushroom_id">
+        <item>@string/mushroom_list_item_use</item>
+        <item>@string/mushroom_list_item_notuse</item>
+    </string-array>
+
+    <string-array name="auto_cursor_movement">
+        <item>@string/ti_preference_auto_cursor_movement_speed_fast_txt</item>
+        <item>@string/ti_preference_auto_cursor_movement_speed_normal_txt</item>
+        <item>@string/ti_preference_auto_cursor_movement_speed_slow_txt</item>
+        <item>@string/ti_preference_auto_cursor_movement_off</item>
+    </string-array>
+
+    <string-array name="auto_cursor_movement_id">
+        <item>@string/auto_cursor_movement_list_item_fast</item>
+        <item>@string/auto_cursor_movement_list_item_normal</item>
+        <item>@string/auto_cursor_movement_list_item_slow</item>
+        <item>@string/auto_cursor_movement_list_item_off</item>
+    </string-array>
+
+    <string-array name="kana_roman_input_mode">
+        <item>@string/ti_preference_roman_letter_txt</item>
+        <item>@string/ti_preference_kana_letter_txt</item>
+    </string-array>
+    <string-array name="kana_roman_input_mode_id">
+        <item>@string/kana_roman_input_mode_list_item_roman</item>
+        <item>@string/kana_roman_input_mode_list_item_kana</item>
+    </string-array>
+
+</resources>

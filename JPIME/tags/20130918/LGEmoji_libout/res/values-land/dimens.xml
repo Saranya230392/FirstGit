@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zero_dip">0dip</dimen>
+    <dimen name="buttons_base_height">50dip</dimen>
+    <dimen name="buttons_height">50dip</dimen>
+    <dimen name="tabs_height">44dip</dimen>
+    <dimen name="category_name_height">40dip</dimen>
+    <dimen name="category_name_left">15dip</dimen>
+    <dimen name="category_name_right">60dip</dimen>
+    <dimen name="listitem_category_height">40dp</dimen>
+    <dimen name="bottom_button_margin">4dp</dimen>
+  
+</resources>

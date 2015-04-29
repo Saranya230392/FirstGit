@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+     >
+  <switch>
+    <!-- Voice On -->
+    <case iwnn:keyboardCondition="modeHiragana|voiceOn">
+    <case iwnn:keyboardCondition="modeFullAlpha|voiceOn">
+    <case iwnn:keyboardCondition="modeFullKatakana|voiceOn">
+    <case iwnn:keyboardCondition="modeHalfAlpha|voiceOn">
+    <case iwnn:keyboardCondition="modeHalfKatakana|voiceOn">
+    <case iwnn:keyboardCondition="modeFullNum|voiceOn">
+    <case iwnn:keyboardCondition="modeHalfNum|voiceOn">
+      <Row-Key>
+        <Key iwnn:codes="-311"
+             iwnn:keyIcon="@drawable/key_qwerty_voice" iwnn:iconPreview="@drawable/key_qwerty_voice_b"
+             iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+    </case>
+    </case>
+    </case>
+    </case>
+    </case>
+    </case>
+
+    <!-- Voice Off -->
+    <!-- display "！" key -->
+    <!-- Hiragana -->
+    <case iwnn:keyboardCondition="modeHiragana|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="65281" iwnn:keyIcon="@drawable/key_qwerty_full_exclamation"
+             iwnn:keyPreviewLabel="!" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Alphabet -->
+    <case iwnn:keyboardCondition="modeFullAlpha|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="65281" iwnn:keyIcon="@drawable/key_qwerty_half_exclamation"
+             iwnn:keyPreviewLabel="!" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Katakana -->
+    <case iwnn:keyboardCondition="modeFullKatakana|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="65281" iwnn:keyIcon="@drawable/key_qwerty_full_exclamation"
+             iwnn:keyPreviewLabel="!" />
+      </Row-Key>
+    </case>
+
+    <!-- Half Alphabet -->
+    <case iwnn:keyboardCondition="modeHalfAlpha|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="33" iwnn:keyIcon="@drawable/key_qwerty_half_exclamation"
+             iwnn:keyPreviewLabel="!" />
+      </Row-Key>
+    </case>
+
+    <!-- Half Katakana  -->
+    <case iwnn:keyboardCondition="modeHalfKatakana|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="33" iwnn:keyIcon="@drawable/key_qwerty_full_exclamation"
+             iwnn:keyPreviewLabel="!" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Number -->
+    <case iwnn:keyboardCondition="modeFullNum|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="65281" iwnn:keyIcon="@drawable/key_qwerty_num_exclamation" 
+             iwnn:keyPreviewLabel="!" />
+      </Row-Key>
+    </case>
+
+    <!-- Half Number -->
+    <case iwnn:keyboardCondition="modeHalfNum|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="33" iwnn:keyIcon="@drawable/key_qwerty_num_exclamation" 
+             iwnn:keyPreviewLabel="!" />
+      </Row-Key>
+    </case>
+
+  </switch>
+</Keyboard>

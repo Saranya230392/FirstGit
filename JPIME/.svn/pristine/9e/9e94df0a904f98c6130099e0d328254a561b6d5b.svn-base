@@ -1,0 +1,924 @@
+/*
+ * Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+ */
+/*
+ * Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+ */
+package jp.co.omronsoft.iwnnime.ml.iwnn;
+
+import android.util.Log;
+import jp.co.omronsoft.iwnnime.ml.OpenWnn;
+
+/**
+ * iWnn IM Class
+ *<br>
+ * This class is defined as a singleton model.
+ *
+ * @author OMRON SOFTWARE Co., Ltd.
+ */
+public class IWnnCore {
+    /* Field parameters */
+    /** for DEBUG */
+    private static final boolean DEBUG = false;
+    /** for DEBUG */
+    private static final String TAG = "iWnn";
+    /** Path of iwnn library for withlibs*/
+    private static final String IWNN_LIBRARY_DATAPATH = "/data/data/jp.co.omronsoft.iwnnime.ml/lib/";
+    static {
+        try {
+            System.load(IWNN_LIBRARY_DATAPATH + "libiwnn.so");
+        } catch (UnsatisfiedLinkError ule) {
+            if (DEBUG) { Log.i(TAG, "trying to load  "+ IWNN_LIBRARY_DATAPATH +"libiwnn.so"); }
+            System.loadLibrary("iwnn");
+        }
+    }
+    ////////////////////////////////////////////////////////// public static final
+
+    /** Bit constant for the mode of select(). (Enable word learning) */
+    public static final int LEARN_ENABLE = 0x01;
+
+    /** Bit constant for the mode of select(). (Connect a word learning to the next word prediction) */
+    public static final int LEARN_CONNECT = 0x80;
+
+    /** Lexical category */
+    public static final class Hinshi {
+        /** Noun(Including verb conjugation) */
+        public static final int MEISI          = 0;
+        /** Person's name */
+        public static final int JINMEI         = 1;
+        /** Noun(Excluding verb conjugation) */
+        public static final int MEISI_NO_CONJ  = 2;
+        /** Place name/Station name */
+        public static final int CHIMEI         = 2;
+        /** Symbols */
+        public static final int KIGOU          = 3;
+        /**
+         * Default constructor
+         */
+        public Hinshi() {
+            super();
+        }
+    }
+
+    /** Type of Dictionary */
+    public static final class DictionaryType {
+        /** LearningDictionary */
+        public static final int DICTIONARY_TYPE_LEARNING = 2;
+        /** UserDictionary */
+        public static final int DICTIONARY_TYPE_USER = 3;
+        /**
+         * Default constructor
+         */
+        public DictionaryType() {
+            super();
+        }
+    }
+
+    /** Disable the relational word learning */
+    public static final int RELATIONAL_LEARNING_OFF = 0;
+
+    /** Enable the relational word learning */
+    public static final int RELATIONAL_LEARNING_ON = 1;
+
+    /** Disable the head conversion */
+    public static final int HEAD_CONVERSION_OFF = 0;
+
+    /** Enable the head conversion */
+    public static final int HEAD_CONVERSION_ON = 1;
+
+    ////////////////////////////////////////////////////////// private
+    /** Information class for the iWnn interface
+     */
+    private int mIwnnInfo;
+
+    /** Situation adjustment forecast, See {@link jp.co.omronsoft.iwnnime.ml.iwnn.IWnnSituationManager} */
+    private IWnnSituationManager mSituationManager = null;
+
+    ////////////////////////////////////////////////////////// methods
+    /** Constructor */
+    public IWnnCore() {
+        try {
+            mIwnnInfo = IWnnNative.getInfo();
+            mSituationManager = new IWnnSituationManager(this);
+        } catch (Exception ex) {
+            Log.e(TAG, "WARNING: " + ex.toString());
+        }
+    }
+
+    //Finalizer is necessary to release the memory area that guaranteed with Jni.
+    /** Finalize. */
+    protected void finalize() throws Throwable {
+        super.finalize();
+        if (mIwnnInfo != 0) {
+            IWnnNative.destroy(mIwnnInfo);
+            mIwnnInfo = 0;
+        }
+    }
+
+    /** release the memory */
+    public void destroyWnnInfo() {
+        if (mIwnnInfo != 0) {
+            IWnnNative.destroy(mIwnnInfo);
+            mIwnnInfo = 0;
+        }
+    }
+
+    /**
+     * Set the dictionary.
+     *
+     * @param language See {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.LanguageType} class.
+     * @param dictionary  See {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType} class
+     * @param confFilePath  See {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine#CONF_TABLE} class
+     * @param change  {@code true}: if new language.
+     * @param dirPath  iWnn user data directory path.
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean setDictionary(int language, int dictionary, String confFilePath, boolean change, String dirPath) {
+        if (change) {
+            if (IWnnNative.setdicByConf(mIwnnInfo, confFilePath, language) == 0) {
+                return false;
+            }
+
+            if (IWnnNative.setActiveLang(mIwnnInfo, language) == 0) {
+                return false;
+            }
+        }
+
+        if (IWnnNative.setBookshelf(mIwnnInfo, dictionary) <= 0) {
+            return false;
+        }
+
+
+        if (change) {
+            /* Break the sequence of words, when switch Language. */
+            init(dirPath);
+        }
+
+        return true;
+    }
+
+    /**
+     * Unmount a dictionary.
+     *
+     * @return success:greater than or equal to 1, failure:0
+     */
+    public int unmountDictionary() {
+        return IWnnNative.unmountDics(mIwnnInfo);
+    }
+
+    /**
+     * Set a language.
+     *
+     * @param lang  type of languages 0:Japanese, 1:English, 10:Eisu-Kana
+     * @return success:greater than or equal to 1, failure:0
+     */
+    public int setLanguage(int lang) {
+        return IWnnNative.setActiveLang(mIwnnInfo, lang);
+    }
+
+    /**
+     * Switch a dictionary.
+     *
+     * @param conf_file  configuration file for dictionary sets,
+     *         See {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType} class
+     * @param lang  type of dictionaries 0:Japanese 1:English 10:Eisu-Kana
+     * @return success:1, failure:0
+     */
+    public int setDictionary(String conf_file, int lang) {
+        return IWnnNative.setdicByConf(mIwnnInfo, conf_file, lang);
+    }
+
+    /**
+     * Initialize.
+     *
+     * @param dirPath  iWnn user data directory path.
+     * @return success:1, failure:0
+     */
+    public int init(String dirPath) {
+        int result = IWnnNative.init(mIwnnInfo, dirPath);
+        mSituationManager.updateState();
+        return result;
+    }
+
+    /**
+     * Pull situation state settings.
+     *
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean pullSituationState() {
+        int result;
+        result = IWnnNative.getState(mIwnnInfo);
+        if (result < 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Push situation state settings.
+     *
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean pushSituationState() {
+        int result;
+        result = IWnnNative.setState(mIwnnInfo);
+        if (result < 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Set situation bias values.
+     *
+     * @param situation  type of the situation
+     * @param bias       value of the bias
+     */
+    public void setSituationBiasValue(int situation, int bias) {
+        IWnnNative.setStateSystem(mIwnnInfo, situation, bias);
+    }
+
+    /**
+     * Forecast word predictions.
+     *
+     * @param input  input string,
+     *         See {@link java.lang.String String}
+     * @return success:1, failure:0
+     */
+    public int forecast(String input) {
+        if (IWnnNative.setInput(mIwnnInfo, input) < 0) {
+            return 0;
+        }
+        return IWnnNative.forecast(mIwnnInfo, 0, -1, HEAD_CONVERSION_ON);
+    }
+
+    /**
+     * Forecast word predictions.
+     *
+     * @param input   input string,
+     *         See {@link java.lang.String String}
+     * @param minLen  minimum length of reading strings
+     * @param maxLen  maximum length of reading strings
+     * @param headConv  head conversion flag(0:don't head conversion 1:do head conversion)
+     * @return success:1, failure:0
+     */
+    public int forecast(String input, int minLen, int maxLen, int headConv) {
+        if (IWnnNative.setInput(mIwnnInfo, input) < 0) {
+            return 0;
+        }
+        return IWnnNative.forecast(mIwnnInfo, minLen, maxLen, headConv);
+    }
+
+    /**
+     * Convert consecutive clauses.
+     *
+     * @param input  input string,
+     *         See {@link java.lang.String String}
+     * @param divide_pos  divide position
+     * @return position of the consecutive clause, failure : 0
+     */
+    public int conv(String input, int divide_pos) {
+        if (IWnnNative.setInput(mIwnnInfo, input) < 0) {
+            return 0;
+        }
+        return IWnnNative.conv(mIwnnInfo, divide_pos);
+    }
+
+    /**
+     * No conversion.
+     *
+     * @param input  input string,
+     *         See {@link java.lang.String String}
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean noConv(String input) {
+        if (DEBUG) { Log.d(TAG, "IWnnCore.noConv(input=" + input + ")"); }
+        if (IWnnNative.setInput(mIwnnInfo, input) < 0) {
+            return false;
+        }
+        return (IWnnNative.noconv(mIwnnInfo) != 0);
+    }
+
+    /**
+     * Learn predictions and consecutive clauses.
+     *
+     * @param segment  position of the clause
+     * @param cand     index of the candidate clause
+     * @param learn    true (as putting the candidate into the learning dictionary)
+     *                 false (only put the previous committing information)
+     * @param connected  {@code true}: if words are sequenced.
+     * @return success:greater than or equal to 0, failure:less than 0
+     */
+    public int select(int segment, int cand, boolean learn, boolean connected) {
+        if (DEBUG) { Log.d(TAG, "IWnnCore.select(segment=" + segment
+                           + ":cand=" + cand + ":learn=" + learn + ")"); }
+        int ret = IWnnNative.select(mIwnnInfo, segment, cand,
+                                   ((learn) ? LEARN_ENABLE : 0) | ((connected) ? 0 : LEARN_CONNECT));
+        return ret;
+    }
+
+    /**
+     * Search words on the dictionary.
+     *
+     * @param method   way of searching the dictionary
+     * @param order    order of searching the dictionary
+     * @param input    input string (reading),
+     *         See {@link java.lang.String}
+     * @return         word exists:1, Not exist:0, failure:less than 0
+     */
+    public int searchWord(int method, int order, String input) {
+        if (IWnnNative.setInput(mIwnnInfo, input) < 0) {
+            return 0;
+        }
+        return IWnnNative.searchWord(mIwnnInfo, method, order);
+    }
+
+    /**
+     * Get a word on the dictionary.
+     *
+     * @param index   index of the word
+     * @param type    type of the character
+     * @return String: result of searching words, null: there's no word,
+     *         See {@link java.lang.String}
+     */
+    public String getWord(int index, int type) {
+        return IWnnNative.getWord(mIwnnInfo, index, type);
+    }
+
+    /**
+     * Add a word to the dictionary.
+     *
+     * @param yomi    String (reading),
+     *         See {@link java.lang.String}
+     * @param repr    String (candidate word),
+     *         See {@link java.lang.String}
+     * @param group   index of the lexical category group
+     * @param dtype   type of dictionaries(0:user dictionary, 1:learning dictionary, 2:pseudo dictionary)
+     * @param con     relation learning flag(learning relations with the previous registered word. 0:don't learn 1:do learn)
+     * @return success:greater than or equal to 0, failure:less than 0
+     */
+    public int addWord(String yomi, String repr, int group, int dtype, int con) {
+        if (DEBUG) { Log.d(TAG, "IWnnCore.addWord(yomi=" + yomi + ":repr=" + repr + ":group=" + group
+                           + ":dtype=" + dtype + ":con=" + con + ")"); }
+        return IWnnNative.addWord(mIwnnInfo, yomi, repr, group, dtype, con);
+    }
+
+    /**
+     * Delete a word on the learning dictionary.
+     * @param  index   index of deleted word
+     * @return success:1, failure:-1
+     */
+    public int deleteSearchWord(int index) {
+        return IWnnNative.deleteSearchWord(mIwnnInfo, index);
+    }
+
+    /**
+     * Delete a word on the user dictionary.
+     * <br>
+     *     Do search dictionaries, when you add or delete words.
+     *
+     * @param  index   index of deleted word
+     * @return success:1, failure:-1
+     */
+    public int deleteWord(int index) {
+        return IWnnNative.deleteWord(mIwnnInfo, index);
+    }
+
+    /**
+     * Get a result string from a prediction or a consecutive clause conversion.
+     *
+     * @param segment  place of the clause
+     * @param cand     index of the candidate clause
+     * @return String: an expected candidate clause.
+     */
+    public String getResultString(int segment, int cand) {
+        // word's string
+        String ret = IWnnNative.getWordString(mIwnnInfo, segment, cand);
+        return ret;
+    }
+
+    /**
+     * Get a reading string from a prediction or a consecutive clause conversion.
+     *
+     * @param segment  place of the clause
+     * @param cand     index of the candidate clause
+     * @return String: a reading of the expected candidate clause.
+     */
+    public String getResultStroke(int segment, int cand) {
+        // word's yomi(stroke)
+        String ret = IWnnNative.getWordStroke(mIwnnInfo, segment, cand);
+        return ret;
+    }
+
+    /**
+     * Get a reading clause string of a consecutive clause conversion.
+     *
+     * @param segment  place of the clause
+     * @return String: a reading of the specified clause.
+     */
+    public String getSegmentStroke(int segment) {
+        String ret = IWnnNative.getSegmentStroke(mIwnnInfo, segment);
+        return ret;
+    }
+
+    /**
+     * Get a candidate string as the result of a consecutive clause conversion.
+     *
+     * @param segment  position of the clause
+     * @return String: an expected candidate word on the specified clause.
+     */
+    public String getSegmentString(int segment) {
+        String ret = IWnnNative.getSegmentString(mIwnnInfo, segment);
+        return ret;
+    }
+
+    /**
+     * Write out the Dictionary.
+     *
+     * @param   type   Dictionary type {@link IWnnCore.DictionaryType}
+     * <br>
+     * {@link jp.co.omronsoft.iwnnime.ml.iwnn.IWnnCore.DictionaryType#DICTIONARY_TYPE_USER}: User Dictionary,
+     * {@link jp.co.omronsoft.iwnnime.ml.iwnn.IWnnCore.DictionaryType#DICTIONARY_TYPE_LEARNING}: Learning Dictionary
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean writeoutDictionary(int type) {
+        int result;
+
+        if ((type != DictionaryType.DICTIONARY_TYPE_LEARNING)
+                && (type != DictionaryType.DICTIONARY_TYPE_USER)) {
+            return false;
+        }
+
+        result = IWnnNative.WriteOutDictionary(mIwnnInfo, type);
+        if (result < 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Sync the Dictionary.
+     *
+     * @param   type   Dictionary type {@link IWnnCore.DictionaryType}
+     * <br>
+     * {@link jp.co.omronsoft.iwnnime.ml.iwnn.IWnnCore.DictionaryType#DICTIONARY_TYPE_USER}: User Dictionary, 
+     * {@link jp.co.omronsoft.iwnnime.ml.iwnn.IWnnCore.DictionaryType#DICTIONARY_TYPE_LEARNING}: Learning Dictionary
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean syncDictionary(int type) {
+        int result;
+
+        if ((type != DictionaryType.DICTIONARY_TYPE_LEARNING) 
+                && (type != DictionaryType.DICTIONARY_TYPE_USER)) {
+            return false;
+        }
+
+        result = IWnnNative.syncDictionary(mIwnnInfo, type);
+        if (result < 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Sync filesystem.
+     */
+    public void sync() {
+        IWnnNative.sync(mIwnnInfo);
+    }
+
+    /**
+     * Learning dictionary or User dictionary initialization.
+     *
+     * @param type  Learning or User dictionary,
+     * <br>
+     * {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine#LEARN_DICTIONARY_DELETE}: Learning Dictionary,
+     * {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine#USER_DICTIONARY_DELETE}: User Dictionary
+     * @param language Kind of Language :See {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.LanguageType} class.
+     * @param dictionary Type of Dictionary :See {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType} class
+     * @return  {@code 0} if Success; {@code -1} if Failure.
+     */
+    public int runInitialize(int type, int language, int dictionary){
+        if(type == iWnnEngine.LEARN_DICTIONARY_DELETE || type == iWnnEngine.USER_DICTIONARY_DELETE) {
+            if (DEBUG) { Log.d(TAG, "Dictionary Delete."); }
+            return IWnnNative.deleteDictionary(mIwnnInfo, type, language, dictionary);
+        }
+        else {
+            return -1;
+        }
+    }
+    /**
+     * Extended Info reset.
+     *
+     * <br>
+     * @param fileName
+     * @return  {@code 0} if Success; {@code -1} if Failure.
+     */
+    public int resetExtendedInfo(String fileName){
+        if (DEBUG) { Log.d(TAG, "reset ExtendedInfo."); }
+        return IWnnNative.resetExtendedInfo(fileName);
+    }
+
+    /**
+     * Flexible Charset.
+     * <br>
+     * Flexible Character Setting.
+     *
+     * @param charset  0:Flexible Search OFF
+     *                  1:Flexible Search ON
+     * @param keytype  0:Keybord type KEYPAD12
+     *                  1:Keybord type QWERTY
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public int setFlexibleCharset(int charset, int keytype) {
+        return IWnnNative.setFlexibleCharset(mIwnnInfo, charset, keytype);
+    }
+
+    /**
+     * Check a candidate word if it's on the learning dictionary.
+     *
+     * @param index   index of the candidate word
+     * @return true : if the word is on the learning dictionary,
+     *          false: if not
+     */
+    public boolean isLearnDictionary(int index) {
+        int result;
+        result = IWnnNative.isLearnDictionary(mIwnnInfo, index);
+        if (result == 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Check a candidate word if it's on the pseudo dictionary.
+     *
+     * @param index   index of the candidate word
+     * @return true : if the word is on the pseudo dictionary,
+     *          false: if not
+     */
+    public boolean isGijiDic(int index) {
+        int result;
+        result = IWnnNative.isGijiResult(mIwnnInfo, index);
+        if (result <= 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Undo learning.
+     * <br>
+     * (Back to the before learning)
+     *
+     * @param count  count of Undo
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean undo(int count) {
+        int result;
+        result = IWnnNative.undo(mIwnnInfo, count);
+        if (result < 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Set a filter to Emoji candidates.
+     *
+     * @param enabled true: Disable filter, false: Enable filter
+     */
+    public void setEmojiFilter(boolean enabled) {
+        int filter;
+
+        if (enabled == true) {
+            filter = 1;
+        } else {
+            filter = 0;
+        }
+        IWnnNative.emojiFilter(mIwnnInfo, filter);
+    }
+
+    /**
+     * Set a filter to exception characters for email-addresses.
+     *
+     * @param enabled true: Enable filter, false: Disable filter
+     */
+    public void setEmailAddressFilter(boolean enabled) {
+        int filter;
+
+        if (enabled == true) {
+            filter = 1;
+        } else {
+            filter = 0;
+        }
+        IWnnNative.emailAddressFilter(mIwnnInfo, filter);
+    }
+
+    /**
+     * Do morphological analysis.
+     *
+     * @param input input string
+     * @param result  Result [segment, process_len]
+     */
+    public void splitWord(String input, int[] result) {
+        if (result.length < 2) {
+            return;
+        }
+        result[0] = 0;
+        result[1] = 0;
+        IWnnNative.splitWord(mIwnnInfo, input, result);
+    }
+
+    /**
+     * Get notation and reading strings
+     *
+     * @param index     Intex of segment.
+     * @param getText   Got notation and reading strings.
+     */
+    public void getMorphemeText(int index, String[][] getText) {
+        if ((index < 0) || (getText.length < 1) || (getText[0].length != 2)) {
+            return;
+        }
+
+        getText[0][0] = null;
+        getText[0][1] = null;
+        IWnnNative.getMorphemeWord(mIwnnInfo, index, getText[0]);
+
+        int yomiIndex = index;
+        for (int i = 1; i < getText.length; i++) {
+            getText[i][0] = null;
+            getText[i][1] = null;
+            IWnnNative.getMorphemeYomi(mIwnnInfo, yomiIndex, getText[i]);
+            yomiIndex = -1;
+        }
+    }
+
+    /**
+     * Get parts of speech.
+     *
+     * @param index Number of morpheme.
+     * @return Number means parts of speech.
+     */
+    public short getMorphemePartOfSpeech(int index) {
+        return IWnnNative.getMorphemeHinsi(mIwnnInfo, index);
+    }
+
+    /**
+     * Delete an additional dictionary.
+     *
+     * @param setType {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType}
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean deleteAdditionalDictionary(int setType) {
+        if (IWnnNative.deleteAdditionalDictionary(mIwnnInfo, setType) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Create an additional dictionary.
+     *
+     * @param setType {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType}
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean createAdditionalDictionary(int setType) {
+        if (IWnnNative.createAdditionalDictionary(mIwnnInfo, setType) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Save an additional dictionary.
+     *
+     * @param setType {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType}
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean saveAdditionalDictionary(int setType) {
+        if (IWnnNative.saveAdditionalDictionary(mIwnnInfo, setType) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Delete an auto learning dictionary.
+     *
+     * @param setType {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType}
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean deleteAutoLearningDictionary(int setType) {
+        if (IWnnNative.deleteAutoLearningDictionary(mIwnnInfo, setType) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Create an auto learning dictionary.
+     *
+     * @param setType {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType}
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean createAutoLearningDictionary(int setType) {
+        if (IWnnNative.createAutoLearningDictionary(mIwnnInfo, setType) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Save an auto learning dictionary.
+     *
+     * @param setType {@link jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine.SetType}
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean saveAutoLearningDictionary(int setType) {
+        if (IWnnNative.saveAutoLearningDictionary(mIwnnInfo, setType) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Set download dictionary config to temporary area in native layer.
+     *
+     * @param index index of download dictionary array
+     * @param name name of download dictionary
+     * @param file file path of download dictionary
+     * @param convertHigh value of convert high
+     * @param convertBase value of convert base
+     * @param predictHigh value of predict high
+     * @param predictBase value of predict base
+     * @param morphoHigh value of morpho high
+     * @param morphoBase value of morpho base
+     * @param cache value of cache
+     * @param limit value of limit
+     */
+    public void setDownloadDictionary(int index, String name, String file, int convertHigh,
+            int convertBase, int predictHigh, int predictBase, int morphoHigh, int morphoBase,
+            boolean cache, int limit) {
+        IWnnNative.setDownloadDictionary(
+                mIwnnInfo, 
+                index,
+                name,
+                file,
+                convertHigh,
+                convertBase,
+                predictHigh,
+                predictBase,
+                morphoHigh,
+                morphoBase,
+                cache,
+                limit
+        );
+    }
+
+    /**
+     * Re-read conf file and refresh dictionary data in native layer.
+     *
+     * @return true if setting dictionary succeed.
+     */
+    public boolean refreshConfFile() {
+        return (IWnnNative.refreshConfFile(mIwnnInfo) == 0);
+    }
+
+    /**
+     * Set the package name of the service client.
+     *
+     * @param packageName  The package name
+     * @param password     The password
+     */
+    public void setServicePackageName(String packageName, String password) {
+        IWnnNative.setServicePackageName(mIwnnInfo, packageName, password);
+    }
+
+    /**
+     * Set a filter to DecoEmoji candidates.
+     *
+     * @param enabled true: Disable filter, false: Enable filter
+     */
+    public void setDecoEmojiFilter(boolean enabled) {
+        int filter;
+
+        if (enabled == true) {
+            filter = 1;
+        } else {
+            filter = 0;
+        }
+        IWnnNative.decoemojiFilter(mIwnnInfo, filter);
+    }
+    
+    /**
+     * Control a decoemoji the dictionary.
+     *
+     * @param id            The id string
+     * @param yomi          The yomi string
+     * @param hinsi         Number of hinsi
+     * @param control_flag  Control Type
+     */
+    public void controlDecoEmojiDictionary(String id, String yomi, int hinsi, int control_flag) {
+        IWnnNative.controlDecoEmojiDictionary(mIwnnInfo, id, yomi, hinsi, control_flag);
+        return;
+    }
+    
+    /**
+     * Check a decoemoji the dictionary.
+     *
+     */
+    public int checkDecoEmojiDictionary() {
+        return IWnnNative.checkDecoEmojiDictionary(mIwnnInfo);
+    }
+
+    /**
+     * Reset a decoemoji the dictionary.
+     *
+     */
+    public int resetDecoEmojiDictionary() {
+        return IWnnNative.resetDecoEmojiDictionary(mIwnnInfo);
+    }
+
+    /**
+     * Check a decoemoji the dicset.
+     *
+     */
+    public int checkDecoemojiDicset() {
+        return IWnnNative.checkDecoemojiDicset(mIwnnInfo);
+    }
+    /**
+     * From pseudo-dictionary, Change Case to get the results you specify.
+     *
+     * @param input  input string,
+     *         See {@link java.lang.String String}
+     * @param divide_pos  divide position
+     * @param type        Casing to be converted
+     * @return position of the consecutive clause, failure : 0
+     */
+    public int getgijistr(String input, int divide_pos, int type) {
+        if (IWnnNative.setInput(mIwnnInfo, input) < 0) {
+            return 0;
+        }
+        return IWnnNative.getgijistr(mIwnnInfo, divide_pos, type);
+    }
+
+    /**
+     * Delete a word on the learning dictionary.
+     *
+     * @param  delword   String of deleted word
+     * @return success:>=0, failure: <0
+     */
+    public int deleteLearnDicDecoEmojiWord(String delword) {
+        if (IWnnNative.setInput(mIwnnInfo, delword) < 0) {
+            return -1;
+        }
+        return IWnnNative.deleteLearnDicDecoEmojiWord(mIwnnInfo);
+    }
+
+    /**
+     * Set a pseudo dictionary filter.
+     *
+     * @param  type  Pseudo dictionary filter
+     * @return true:>=0, false:<0
+     */
+    public boolean setGijiFilter(int[] type) {
+        int result = 0;
+        result = IWnnNative.setGijiFilter(mIwnnInfo, type);
+        if (result < 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Delete dictionary file.
+     *
+     * @param  file   delete file path
+     * @return  {@code true} if Success; {@code false} if Failure.
+     */
+    public boolean deleteDictionaryFile(String file) {
+        if (IWnnNative.deleteDictionaryFile(file) == 1) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Get the NJ_WORD_INFO.stem.attribute.
+     *
+     * @param index   index of the candidate word
+     * @return NJ_WORD_INFO.stem.attr
+     */
+    public int getWordInfoStemAttribute(int index) {
+        return IWnnNative.getWordInfoStemAttribute(mIwnnInfo, index);
+    }
+
+}
+

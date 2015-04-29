@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 	android:paddingLeft="@dimen/color_picker_padding_left" android:paddingTop="@dimen/color_picker_padding_up_down"	android:paddingRight="@dimen/color_picker_padding_right" android:paddingBottom="@dimen/color_picker_padding_up_down" android:layout_width="fill_parent"	android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <LinearLayout android:orientation="horizontal" android:id="@+id/color_picker_row_01" android:layout_width="fill_parent" android:layout_height="@dimen/color_picker_row_max_height" android:layout_marginBottom="@dimen/color_picker_margin_button" android:layout_weight="1.0">
+        <LinearLayout android:background="@color/stroke_color_white" android:padding="@dimen/color_picker_white_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0">
+            <View android:id="@+id/color_picker_01" android:background="@color/pen_color_01" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:id="@+id/color_picker_02" android:background="@color/pen_color_02" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_03" android:background="@color/pen_color_03" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_04" android:background="@color/pen_color_04" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/color_picker_row_max_height" android:layout_marginBottom="@dimen/color_picker_margin_button" android:layout_weight="1.0">
+        <View android:id="@+id/color_picker_05" android:background="@color/pen_color_05" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_06" android:background="@color/pen_color_06" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_07" android:background="@color/pen_color_07" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_08" android:background="@color/pen_color_08" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/color_picker_row_max_height" android:layout_marginBottom="@dimen/color_picker_margin_button" android:layout_weight="1.0">
+        <View android:id="@+id/color_picker_09" android:background="@color/pen_color_09" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_10" android:background="@color/pen_color_10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_11" android:background="@color/pen_color_11" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_12" android:background="@color/pen_color_12" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/color_picker_row_max_height" android:layout_weight="1.0">
+        <View android:id="@+id/color_picker_13" android:background="@color/pen_color_13" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_14" android:background="@color/pen_color_14" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_15" android:background="@color/pen_color_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+        <View android:id="@+id/color_picker_16" android:background="@color/pen_color_16" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/color_picker_margin_button" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

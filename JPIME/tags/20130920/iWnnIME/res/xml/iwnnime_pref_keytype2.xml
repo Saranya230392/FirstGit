@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference
+        android:key="input_mode_type_1#0"
+        android:title="@string/ti_preference_keyboard_type_diff_full_hirakana_title_txt"
+        android:entries="@array/input_mode_type_entry"
+        android:entryValues="@array/input_mode_type_entry_value"
+        android:defaultValue="@string/land_input_mode_type_hiragana_kanji_default_value"
+        android:persistent="true"
+        android:negativeButtonText="@string/ti_dialog_button_cancel_txt" />
+    <jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference
+        android:key="input_mode_type_1#3"
+        android:title="@string/ti_preference_keyboard_type_diff_full_katakana_title_txt"
+        android:entries="@array/input_mode_type_entry"
+        android:entryValues="@array/input_mode_type_entry_value"
+        android:defaultValue="@string/land_input_mode_type_full_katakana_default_value"
+        android:persistent="true"
+        android:negativeButtonText="@string/ti_dialog_button_cancel_txt" />
+    <jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference
+        android:key="input_mode_type_1#6"
+        android:title="@string/ti_preference_keyboard_type_diff_half_katakana_title_txt"
+        android:entries="@array/input_mode_type_entry"
+        android:entryValues="@array/input_mode_type_entry_value"
+        android:defaultValue="@string/land_input_mode_type_half_katakana_default_value"
+        android:persistent="true"
+        android:negativeButtonText="@string/ti_dialog_button_cancel_txt" />
+    <jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference
+        android:key="input_mode_type_1#1"
+        android:title="@string/ti_preference_keyboard_type_diff_full_alphabet_title_txt"
+        android:entries="@array/input_mode_type_entry"
+        android:entryValues="@array/input_mode_type_entry_value"
+        android:defaultValue="@string/land_input_mode_type_full_alphabet_default_value"
+        android:persistent="true"
+        android:negativeButtonText="@string/ti_dialog_button_cancel_txt" />
+    <jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference
+        android:key="input_mode_type_1#4"
+        android:title="@string/ti_preference_keyboard_type_diff_half_alphabet_title_txt"
+        android:entries="@array/input_mode_type_entry"
+        android:entryValues="@array/input_mode_type_entry_value"
+        android:defaultValue="@string/land_input_mode_type_half_alphabet_default_value"
+        android:persistent="true"
+        android:negativeButtonText="@string/ti_dialog_button_cancel_txt" />
+    <jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference
+        android:key="input_mode_type_1#2"
+        android:title="@string/ti_preference_keyboard_type_diff_full_number_title_txt"
+        android:entries="@array/input_mode_type_entry"
+        android:entryValues="@array/input_mode_type_entry_value"
+        android:defaultValue="@string/land_input_mode_type_full_numeric_default_value"
+        android:persistent="true"
+        android:negativeButtonText="@string/ti_dialog_button_cancel_txt" />
+    <jp.co.omronsoft.iwnnime.ml.iwnn.KeyboardTypeListPreference
+        android:key="input_mode_type_1#5"
+        android:title="@string/ti_preference_keyboard_type_diff_half_number_title_txt"
+        android:entries="@array/input_mode_type_entry"
+        android:entryValues="@array/input_mode_type_entry_value"
+        android:defaultValue="@string/land_input_mode_type_half_numeric_default_value"
+        android:persistent="true"
+        android:negativeButtonText="@string/ti_dialog_button_cancel_txt" />
+</PreferenceScreen>

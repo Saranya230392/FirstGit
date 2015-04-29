@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <style name="WnnKeyboardView" parent="@android:style/Widget.KeyboardView">
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="MushroomDialog" parent="android:style/Theme.Holo.Dialog">
+        <item name="android:textSize">18dip</item>
+    </style>
+</resources>

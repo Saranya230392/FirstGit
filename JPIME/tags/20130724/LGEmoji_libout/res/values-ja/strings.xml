@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">デコメ絵文字リスト</string>
+    <string name="input_history_name">入力履歴</string>
+    <string name="switch_emoji_tab_deco">絵文字D</string>
+    <string name="switch_emoji_tab_carrier">絵文字</string>
+    <string name="switch_emoji_tab_emoticon">顔文字</string>
+    <string name="switch_emoji_tab_symbol">記号</string>
+    <string name="switch_emoji_tab_user_pict">利用者-絵文字</string>
+    <string name="ti_emoji_category_nature_txt">[絵文字]</string>
+
+    <string name="emoji_category_name_nature">自然·星座</string>
+    <string name="emoji_category_name_human_living_things">人·生き物</string>
+    <string name="emoji_category_name_faces_and_smilely">顔·表情</string>
+    <string name="emoji_category_name_artifacts">建物·モ丿</string>
+    <string name="emoji_category_name_activities_work_entertainment">スポーツ·乗り物·趣味</string>
+    <string name="emoji_category_name_foods">食べ物</string>
+    <string name="emoji_category_name_symbols">マーク·シンボル</string>
+    <string name="symbol_category_name_half">記号(半角)</string>
+    <string name="symbol_category_name_full">記号(全角)</string>
+    <string name="emoticon_category_name_happy">ハッピー</string>
+    <string name="emoticon_category_name_sad">悲しい</string>
+    <string name="emoticon_category_name_surprise">びっくり</string>
+    <string name="emoticon_category_name_trouble">困る</string>
+    <string name="emoticon_category_name_angry">怒る</string>
+    <string name="emoticon_category_name_greeting">あいさつ</string>
+    <string name="emoticon_category_name_action">アクション</string>
+    <string name="emoticon_category_name_love_friendship">ラブ·友情</string>
+    <string name="emoticon_category_name_animal_character">動物·キャラクタ</string>
+</resources>

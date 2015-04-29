@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <fraction name="key_width_symbol">24.583%</fraction>
+    <fraction name="key_width_voice">44.861%</fraction>
+</resources>

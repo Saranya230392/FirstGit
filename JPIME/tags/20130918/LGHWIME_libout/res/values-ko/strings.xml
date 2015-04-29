@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="hw_name">LG Handwriting Keyboard</string>
+    
+    <!-- Token for preference  -->
+    
+    <string name="auto_scroll_setting_category_title">자동 스크롤 설정</string>
+    <string name="auto_scroll_title">자동 스크롤</string>
+    <string name="auto_scroll_input_delay_title">자동 스크롤 인식 시간</string>
+    <string name="auto_scroll_input_delay_popup_text">인식 시간</string>
+    <string name="auto_scroll_input_delay_popup_text_sec">초</string>
+    <string name="auto_scroll_area_width_title">자동 스크롤 영역</string>
+    <string name="area_width_type_wide">넓게</string>
+    <string name="area_width_type_normal">보통</string>
+    <string name="area_width_type_thin">좁게</string>
+    
+    <string name="language_setting_popup_title_language">입력 모드</string>
+    <string name="language_setting_popup_title_active_mode">필기 입력창</string>    
+    <string name="candidate_popup_button_cancel">취소</string>
+    <string name="candidate_popup_button_clear">삭제</string>
+
+    <string name="handwriting_pref_category_title">펜 설정</string>
+    <string name="handwriting_pref_title_pen_type">펜 종류</string>
+    <string name="handwriting_pref_title_pen_color">펜 색상</string>
+
+    <string name="title_help_activity">도움말</string>
+    <string name="ime_guide_previous_NOMAL">이전</string>
+    <string name="ime_guide_next_NOMAL">다음</string>
+    <string name="sp_done_NORMAL">완료</string>
+
+    <string name="ime_guide_description_input_language">입력 언어를 변경하려면 &lt;img src=help_ime_keypad_help_btn_image_01.png&gt;를 터치하세요. &lt;img src=help_ime_keypad_help_btn_image_01.png&gt;를 길게 누르면 다른 언어도 선택할 수 있습니다.</string>
+    <string name="ime_guide_description_numeric_and_symbol">숫자와 기호를 편리하게 전환하세요. &lt;img src=help_ime_keypad_help_btn_image_02.png&gt;를 터치하면 숫자 키보드로 이동하고 두 번 터치하면 기호 테이블로 이동합니다. &lt;img src=help_ime_keypad_help_btn_image_02.png&gt;를 오른쪽으로 밀면 기호 테이블로 바로 이동합니다.</string>
+	<string name="ime_guide_description_use_function_key">다양한 키보드 기능 모음을 사용하려면 &lt;img src=help_ime_keypad_help_btn_image_03.png&gt;를 길게 누르세요. 아래의 기능을 선택할 수 있습니다.&lt;br&gt;
+		&#160;1. 음성 입력&lt;br&gt;
+		&#160;2. 키보드 레이아웃(QWERTY 또는 10-key)&lt;br&gt;
+		&#160;3. 필기 입력&lt;br&gt;
+		&#160;4. 분할 키보드, 한 손 조작 모드&lt;br&gt;
+		&#160;5. 클립 보드&lt;br&gt;
+		&#160;6. 키보드 설정
+	    </string>    
+    <string name="ime_guide_description_split_keypad">가로 화면에서 분할 키보드를 사용하려면 &lt;img src=help_ime_keypad_help_btn_image_05.png&gt;를 터치하세요. 키보드가 양옆으로 분할되어 가로 화면에서 편리하게 입력할 수 있습니다. 기본 키보드로 돌아가려면 &lt;img src=help_ime_keypad_help_btn_image_04.png&gt;를 터치하세요.</string>
+    <string name="ime_guide_description_onehand_operation">세로 화면에서 한 손 조작 모드를 사용하려면 &lt;img src=help_ime_keypad_help_btn_image_06.png&gt;를 터치하세요. 화살표 버튼을 눌러 왼쪽이나 오른쪽으로 위치를 바꿀 수 있습니다.</string>
+    
+    <string name="ime_guide_title_input_language">입력 언어</string>
+    <string name="ime_guide_title_numeric_and_symbol">숫자와 기호</string>
+    <string name="ime_guide_title_use_function_key">기능 모음 버튼</string>    
+    <string name="ime_guide_title_split_keypad">분할 키보드</string>
+    <string name="ime_guide_title_onehand_operation">한 손 조작 모드</string>
+</resources>

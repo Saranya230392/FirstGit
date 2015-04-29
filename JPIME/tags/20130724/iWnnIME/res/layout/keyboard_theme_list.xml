@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skinText"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/keyboard_theme_list_height"
+    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/keyboard_theme_list_padding_left"
+    android:paddingRight="@dimen/keyboard_theme_list_padding_right"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall" 
+/>

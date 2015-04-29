@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<resources>
+
+<!-- Qwerty -->
+    <!-- Common -->
+    <fraction name="keyboard_qwerty_common_keywidth">9%p</fraction>
+    <fraction name="keyboard_qwerty_common_horizontal_gap">0.84%p</fraction>
+    <dimen name="keyboard_qwerty_common_vertical_gap">8dip</dimen>
+    <dimen name="keyboard_qwerty_common_5line_vertical_gap">5dip</dimen>
+    <dimen name="keyboard_qwerty_common_keyheight">@dimen/key_height</dimen>
+    <!-- Gap -->
+    <fraction name="keyboard_qwerty_row_horizontal_gap">1.2%p</fraction>
+    <fraction name="keyboard_qwerty_row2_horizontal_gap">@fraction/keyboard_qwerty_row_horizontal_gap</fraction>
+    <fraction name="keyboard_qwerty_row4_horizontal_gap">0.18%p</fraction>
+    <!-- Key Width -->
+    <fraction name="keyboard_qwerty_shift_keywidth">14%p</fraction>
+    <fraction name="keyboard_qwerty_del_keywidth">13.9%p</fraction>
+    <fraction name="keyboard_qwerty_mode_change_keywidth">15%p</fraction>
+    <fraction name="keyboard_qwerty_enter_keywidth">15%p</fraction>
+
+    <fraction name="keyboard_qwerty_space_keywidth">21.72%p</fraction>
+    <fraction name="keyboard_qwerty_space_cursordisable_keywidth">40.04%p</fraction>
+    <fraction name="keyboard_qwerty_space_switchime_keywidth">12.52%p</fraction>
+    <fraction name="keyboard_qwerty_space_switchime_cursordisable_keywidth">30.84%p</fraction>
+
+    <!-- Edge Flag [none:0, left:1, right:2]-->
+    <integer name="keyboard_qwerty_p_keyEdgeflags">2</integer>
+    <integer name="keyboard_qwerty_l_keyEdgeflags">0</integer>
+    <integer name="keyboard_qwerty_tyouon_keyEdgeflags">2</integer>
+
+<!-- 4key -->
+    <!-- Gap -->
+    <fraction name="keyboard_4key_horizontal_gap">0%p</fraction>
+    <fraction name="keyboard_4key_keywidth">25%p</fraction>
+
+<!-- 5key -->
+    <fraction name="keyboard_5key_keywidth">20%p</fraction>
+
+<!-- 12key -->
+    <!-- Common -->
+    <fraction name="keyboard_12key_common_keywidth">20%p</fraction>
+    <fraction name="keyboard_12key_common_horizontal_gap">0%p</fraction>
+    <dimen name="keyboard_12key_common_vertical_gap">0dip</dimen>
+    <dimen name="keyboard_12key_common_keyheight">@dimen/key_height</dimen>
+    <!-- Gap -->
+    <fraction name="keyboard_12key_function_horizontal_gap">2%</fraction>
+    <fraction name="keyboard_12key_input_horizontal_gap">@fraction/keyboard_12key_common_horizontal_gap</fraction>
+    <fraction name="keyboard_12key_row4_verticalGap">0%p</fraction>
+    <!-- Key Width -->
+    <fraction name="keyboard_12key_function_keywidth">18%</fraction>
+    <fraction name="keyboard_12key_input_keywidth">@fraction/keyboard_12key_common_keywidth</fraction>
+    <!-- Row Edge Flag [none:0, top:4, bottom:8]-->
+    <integer name="keyboard_12key_row4_rowedgeflags">8</integer>
+
+<!-- 12key-phone -->
+    <!-- Key Width -->
+    <fraction name="keyboard_12key_phone_function_keywidth">9%</fraction>
+
+    <dimen name="keyboard_one_handed_vertical_gap">5dp</dimen>
+
+</resources>

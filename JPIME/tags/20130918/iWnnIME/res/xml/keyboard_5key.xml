@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyHeight="@dimen/key_height"
+    >
+
+  <Row iwnn:verticalGap="@fraction/keyboard_4key_horizontal_gap">
+    <Key iwnn:codes="-231"
+         iwnn:keyLabel="@string/ti_key_symbol_mode"
+         iwnn:keyWidth="@fraction/keyboard_5key_keywidth"
+         iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+    <Key iwnn:codes="-232"
+         iwnn:keyLabel="\u25b2"
+         iwnn:keyWidth="@fraction/keyboard_5key_keywidth"
+         iwnn:isSecondKey="true"/>
+    <Key iwnn:codes="-233"
+         iwnn:keyLabel="\u25bc"
+         iwnn:keyWidth="@fraction/keyboard_5key_keywidth"
+         iwnn:isSecondKey="true"/>
+    <Key iwnn:codes="-234"
+         iwnn:keyIcon="@drawable/key_del" iwnn:iconPreview="@drawable/key_del_b"
+         iwnn:keyWidth="@fraction/keyboard_5key_keywidth"
+         iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+  </Row>
+</Keyboard>
+

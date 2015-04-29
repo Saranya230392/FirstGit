@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Theme.Dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ime_btn_effect_character"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emoji_pref_title_bg_color" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp" >
+
+        <View
+            android:id="@+id/bg_color_white"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/setting_popup_view_margin"
+            android:layout_weight="1"
+            android:background="@color/setting_popup_underline_color_white" />
+
+        <View
+            android:id="@+id/bg_color_light_gray"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/setting_popup_view_margin"
+            android:layout_weight="1"
+            android:background="@color/setting_popup_underline_color_light_gray" />
+
+        <View
+            android:id="@+id/bg_color_gray"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/setting_popup_view_margin"
+            android:layout_weight="1"
+            android:background="@color/setting_popup_underline_color_gray" />
+
+        <View
+            android:id="@+id/bg_color_dark_gray"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/setting_popup_view_margin"
+            android:layout_weight="1"
+            android:background="@color/setting_popup_underline_color_dark_gray" />
+    </LinearLayout>
+
+</LinearLayout>

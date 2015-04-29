@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2012 OMRON SOFTWARE Co., Ltd. All rights reserved
+-->
+<resources>
+    <string-array name="other_kaomoji1">
+        <item>@string/ti_kaomoji_category_happy_txt</item>
+        <item>"(*^^*)"</item>
+        <item>"(^^)"</item>
+        <item>"(^-^)"</item>
+        <item>"(^^)v"</item>
+        <item>"(^-^)v"</item>
+        <item>"(^_^)"</item>
+        <item>"(^_^)v"</item>
+        <item>"(^o^)"</item>
+        <item>"(^o^)v"</item>
+        <item>"(^.^)"</item>
+        <item>"(^^)/"</item>
+        <item>"(^-^)/"</item>
+        <item>"(^^)d"</item>
+        <item>":-)"</item>
+        <item>":->"</item>
+        <item>";-)"</item>
+        <item>"o(^o^)o"</item>
+        <item>"p(^^)q"</item>
+        <item>"p(^-^)q"</item>
+        <item>"q(^-^q)"</item>
+        <item>"d=(^o^)=b"</item>
+        <item>"(^w^)"</item>
+        <item>"(#^.^#)"</item>
+        <item>"(*^.^*)"</item>
+        <item>"(*^-^*)"</item>
+        <item>"(*^_^*)"</item>
+        <item>"(*^O^*)"</item>
+        <item>"(^^)b"</item>
+        <item>"(^O^)"</item>
+        <item>"(o^O^o)"</item>
+        <item>"(p^-^)p"</item>
+        <item>"d(^-^)"</item>
+        <item>"o(^-^o)(o^-^)o"</item>
+        <item>"v(^o^)"</item>
+        <item>@string/ti_kaomoji_category_sad_txt</item>
+        <item>"(;_;)"</item>
+        <item>"(;o;)"</item>
+        <item>"(T_T)"</item>
+        <item>"(ToT)"</item>
+        <item>"(TT)"</item>
+        <item>"(T-T)"</item>
+        <item>"(..)"</item>
+        <item>":-("</item>
+        <item>"X-&lt;"</item>
+        <item>"(/_;)/~~"</item>
+        <item>"(;_;)/~~~"</item>
+        <item>"((T_T))"</item>
+        <item>"(*ToT)"</item>
+        <item>"(._.)"</item>
+        <item>"(/_;)"</item>
+        <item>"(;;)"</item>
+        <item>"(;-;)"</item>
+        <item>"(;O;)"</item>
+        <item>"(T.T)"</item>
+        <item>"(T^T)"</item>
+        <item>"(T0T)"</item>
+        <item>"orz"</item>
+        <item>@string/ti_kaomoji_category_surprise_txt</item>
+        <item>"(*_*)"</item>
+        <item>":-O"</item>
+        <item>"(/--)/"</item>
+        <item>"(*_*;"</item>
+        <item>"(@_@)"</item>
+        <item>"(@_@;)"</item>
+        <item>"(~O~;)"</item>
+    </string-array>
+</resources>
+

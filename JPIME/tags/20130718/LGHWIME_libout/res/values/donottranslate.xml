@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="HW_AREA_WIDTH_WIDE">93</string>
+    <string name="HW_AREA_WIDTH_NORMAL">62</string>
+    <string name="HW_AREA_WIDTH_THIN">46.5</string>
+
+    <string name="HW_PEN_TYPE_BALLPEN">ballpen</string>
+    <string name="HW_PEN_TYPE_INKPEN">inkpen</string>
+    <string name="HW_PEN_TYPE_BRUSH">brush</string>
+    <string name="HW_PEN_TYPE_PENCIL">pencil</string>
+    <string name="HW_PEN_COLOR_DEFAULT">pen_color_13</string>
+
+    <string name="HW_MODE_CHAR">char</string>
+    <string name="HW_MODE_TEXT">text</string>
+    <string name="HW_MODE_CHAR_ACTIVE">Char_Active</string>
+    <string name="HW_MODE_CHAR_ACTIVE_LEFT">Char_Active_Left</string>
+    <string name="HW_MODE_CHAR_ACTIVE_RIGHT">Char_Active_Right</string>
+    
+    <string name="HW_RESOURCE_LANG_JP">ja-JP</string>
+    <string name="HW_RESOURCE_LANG_KR">ko-KR</string>
+    
+    <string name="HW_RESOURCE_MODE_TEXT_ALL">text</string>
+    <string name="HW_RESOURCE_MODE_TEXT_KANJI">text_kanji</string>
+    <string name="HW_RESOURCE_MODE_TEXT_HIRAGANA">text_hiragana</string>
+    <string name="HW_RESOURCE_MODE_TEXT_KATAKANA">text_katakana</string>
+    <string name="HW_RESOURCE_MODE_TEXT_ENGLISH">text_english</string>
+    <string name="HW_RESOURCE_MODE_TEXT_SYMBOL">text_symbol</string>
+    <string name="HW_RESOURCE_MODE_CHAR_ALL">char</string>
+    <string name="HW_RESOURCE_MODE_CHAR_KANJI">char_kanji</string>
+    <string name="HW_RESOURCE_MODE_CHAR_HIRAGANA">char_hiragana</string>
+    <string name="HW_RESOURCE_MODE_CHAR_KATAKANA">char_katakana</string>
+    <string name="HW_RESOURCE_MODE_CHAR_ENGLISH">char_english</string>
+    <string name="HW_RESOURCE_MODE_CHAR_SYMBOL">char_symbol</string>
+    <string name="HW_RESOURCE_MODE_NUMBER">number</string>
+    <string name="HW_RESOURCE_MODE_DIGIT">digit</string>
+
+    <string name="HW_LANGUAGE_JAPAN_ALL">all</string>
+    <string name="HW_LANGUAGE_JAPAN_KANJI">Kanji</string>
+    <string name="HW_LANGUAGE_JAPAN_HIRAGANA">hiragana</string>
+    <string name="HW_LANGUAGE_JAPAN_KATAKANA">katakana</string>
+    <string name="HW_LANGUAGE_JAPAN_ENGLISH">english</string>
+    <string name="HW_LANGUAGE_JAPAN_NUMBER">number</string>
+    <string name="HW_LANGUAGE_JAPAN_SYMBOL">symbol</string>
+    
+    <string name="HW_PREF_KEY_WORKING_LANGUAGE">working_lang</string>
+    <string name="HW_PREF_KEY_LANGUAGE_JAPAN_TYPE">language_japan_type</string>
+    <string name="HW_PREF_KEY_WORKING_ACTIVE_MODE">working_active_mode</string>
+    <string name="HW_PREF_KEY_PEN_TYPE">pen_type</string>
+    <string name="HW_PREF_KEY_PEN_COLOR">pen_color</string>
+    <string name="HW_PREF_KEY_AUTO_SCROLL">auto_scroll_cb</string>
+    <string name="HW_PREF_KEY_AUTO_SCROLL_WIDTH">auto_scroll_area_width</string>
+    <string name="HW_PREF_KEY_AUTO_SCROLL_DELAY">auto_scroll_input_delay</string>
+    
+    <string name="ime_keypad_help_input_language">hw_ime_keypad_help_input_language</string>
+    <string name="ime_keypad_help_numeric_and_symbol">hw_ime_keypad_help_numeric_and_symbol</string>
+    <string name="ime_keypad_help_use_function_key">hw_ime_keypad_help_use_function_key</string>
+    <string name="ime_keypad_help_split_keypad">hw_ime_keypad_help_split_keypad</string>
+    <string name="ime_keypad_help_onehand_operation">hw_ime_keypad_help_onehand_operation</string>
+</resources>

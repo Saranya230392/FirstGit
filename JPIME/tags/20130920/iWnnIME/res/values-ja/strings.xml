@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+  <!-- common part -->
+    <!-- Preferences -->
+    <string name="ti_ime_name_standard_txt">LG 日本語キーボード</string>
+
+    <string name="ti_ime_name_setting_title_standard_txt">LG キーボード</string>
+
+    <string name="ti_preference_lang_setting_menu_txt">言語設定</string>
+    <string name="ti_preference_language_summary_txt">言語を選択する</string>
+
+    <string name="ti_preference_key_setting_menu_txt">キーボード設定(共通)</string>
+
+    <string name="ti_preference_advanced_setting_menu_txt">詳細設定</string>
+
+    <string name="ti_preference_external_application_menu_txt">外部アプリケーション</string>
+
+    <string name="ti_preference_key_sound_title_txt">音設定</string>
+    <string name="ti_preference_key_sound_summary_txt">キーを押した時に音を鳴らす</string>
+
+    <string name="ti_preference_key_vibration_title_txt">バイブレート設定</string>
+    <string name="ti_preference_key_vibration_summary_txt">キーを押した時に振動で知らせる</string>
+
+    <string name="ti_preference_preview_title_txt">キーポップアップ</string>
+    <string name="ti_preference_preview_summary_txt">入力時に選択したキーを拡大表示する</string>
+
+    <string name="ti_preference_auto_caps_title_txt">自動大文字変換</string>
+    <string name="ti_preference_auto_caps_summary_txt">文頭文字を大文字にする</string>
+
+    <string name="ti_preference_auto_space_title_txt">自動スペース入力</string>
+    <string name="ti_preference_auto_space_summary_txt">英字入力で候補選択時にスペースを自動入力する</string>
+
+    <string name="ti_preference_auto_punctuation_title_txt">ピリオド自動挿入</string>
+    <string name="ti_preference_auto_punctuation_summary_txt">スペースキー2回タップでピリオド”.”を挿入</string>
+
+    <string name="ti_preference_voice_input_title_txt">音声入力</string>
+    <string name="ti_preference_voice_input_summary_txt">音声入力を使用する</string>
+
+    <string name="ti_preference_touch_feedback_type_title_txt">タッチフィードバック</string>
+    <string name="ti_preference_touch_feedback_type_summary_txt">キーポップアップ、音、バイブレート設定</string>
+
+    <string name="ti_preference_fullscreen_mode_title_txt">フルスクリーンモード</string>
+    <string name="ti_preference_fullscreen_mode_summary_txt">横向きの場合に専用の入力画面を表示します。\n一部アプリケーションの制限により、動作しない場合があります。</string>
+
+    <string name="ti_preference_split_mode_title_txt">スプリットキーボード</string>
+    <string name="ti_preference_split_mode_summary_txt">横向きの場合、キーボードを画面の両側に分割表示する</string>
+
+    <string name="ti_preference_one_handed_title_txt">片手操作キーボード</string>
+    <string name="ti_preference_one_handed_summary_txt">LG日本語キーボードの位置を左右に移動します。\n片手操作キーボードを使用するには、絵文字クイックを非表示にしてください。</string>
+    <string name="ti_preference_one_handed_summary_kddi_txt">LG日本語キーボードの位置を左右に移動します。</string>
+
+    <string name="ti_preference_phone_keyboard_type_title_txt">10キーキーボード</string>
+    <string name="ti_preference_phone_keyboard_type_summary_txt">フリック入力、自動カーソル移動を設定する</string>
+
+    <string name="ti_preference_candidate_type_title_txt">候補</string>
+    <string name="ti_preference_candidate_type_summary_txt">入力した語句を学習、入力ミス補正、ワイルドカード予測</string>
+
+    <string name="ti_preference_help_title_txt">ヘルプ</string>
+
+    <!-- Key Size -->
+    <string name="ti_preference_key_height_title_txt">キーサイズ</string>
+    <string name="ti_preference_key_height_summary_txt">画面の向きごとにキーボードの高さを設定する</string>
+
+    <string name="ti_preference_key_height_portrait_title_txt">縦画面</string>
+    <string name="ti_preference_key_height_landscape_title_txt">横画面</string>
+
+    <string name="ti_preference_key_height_clear_txt">リセット</string>
+
+    <string name="ti_preference_kana_roman_input_mode_title_txt"> ローマ字入力／かな入力 </string>
+    <string name="ti_preference_kana_roman_input_mode_summary_txt"> 日本語の入力モードを\"ローマ字入力\"と\"かな入力\"で切り替える（ハードウェアキーボードのみ） </string>
+    <string name="ti_preference_roman_letter_txt"> ローマ字入力 </string>
+    <string name="ti_preference_kana_letter_txt"> かな入力 </string>
+
+    <!-- Input Keyboard Type -->
+    <string name="ti_preference_keyboard_type_title_txt">入力言語及びキーボードレイアウト</string>
+    <string name="ti_preference_keyboard_type_summary_txt">入力言語を選択するか画面の方向によるキーボードレイアウトを設定します。</string>
+
+    <string name="ti_preference_input_language_title_txt">入力言語</string>
+
+    <string name="ti_preference_keyboard_type_portrait_title_txt">縦画面時のキーボードタイプ</string>
+    <string name="ti_preference_keyboard_type_landscape_title_txt">横画面時のキーボードタイプ</string>
+
+    <string name="ti_preference_keyboard_type_ja_txt">日本語</string>
+    <string name="ti_preference_keyboard_type_en_txt">英語</string>
+    <string name="ti_preference_keyboard_type_num_txt">数字</string>
+
+    <string name="ti_keyboard_type_10key_txt">10キーキーボード</string>
+    <string name="ti_keyboard_type_qwerty_txt">QWERTYキーボード</string>
+
+    <string name="ti_preference_keyboard_type_common_12_title_txt">テンキーボード</string>
+    <string name="ti_preference_keyboard_type_common_12_summary_txt">全入力モード共通でテンキーキーボードを利用する</string>
+    <string name="ti_preference_keyboard_type_common_12_message_txt">全入力モードでテンキーキーボードを使うように設定します。\nよろしいですか？</string>
+    <string name="ti_preference_keyboard_type_common_qwerty_title_txt">フルキーボード</string>
+    <string name="ti_preference_keyboard_type_common_qwerty_summary_txt">全入力モード共通でフルキーボードを利用する</string>
+    <string name="ti_preference_keyboard_type_common_qwerty_message_txt">全入力モードでフルキーボードを使うように設定します。\nよろしいですか？</string>
+    <string name="ti_preference_keyboard_type_common_last_title_txt">前回利用時のキーボード</string>
+    <string name="ti_preference_keyboard_type_common_last_summary_txt">全入力モード共通で前回利用時のキーボードタイプを利用する</string>
+    <string name="ti_preference_keyboard_type_common_last_message_txt">全入力モードで前回利用時のキーボードを使うように設定します。\nよろしいですか？</string>
+    <string name="ti_preference_keyboard_type_diff_title_txt">入力モード別設定</string>
+    <string name="ti_preference_keyboard_type_diff_summary_txt">入力モード別にキーボードタイプを設定する</string>
+
+    <string name="ti_preference_keyboard_type_diff_full_hirakana_title_txt">ひらがな漢字</string>
+    <string name="ti_preference_keyboard_type_diff_full_katakana_title_txt">全角カタカナ</string>
+    <string name="ti_preference_keyboard_type_diff_half_katakana_title_txt">半角カタカナ</string>
+    <string name="ti_preference_keyboard_type_diff_full_alphabet_title_txt">全角英字</string>
+    <string name="ti_preference_keyboard_type_diff_half_alphabet_title_txt">半角英字</string>
+    <string name="ti_preference_keyboard_type_diff_full_number_title_txt">全角数字</string>
+    <string name="ti_preference_keyboard_type_diff_half_number_title_txt">半角数字</string>
+
+      <string name="ti_input_mode_type_entry_54_txt">10キーキーボード</string>
+      <string name="ti_input_mode_type_entry_qwerty_txt">QWERTYキーボード</string>
+    <string name="ti_input_mode_type_entry_previous_txt">前回利用時のキーボード</string>
+
+    <!-- One touch emoji list -->
+    <string name="ti_preference_one_touch_emoji_list_menu_txt">絵文字クイック</string>
+    <string name="ti_preference_one_touch_emoji_list_summary_txt">絵文字クイックの表示位置を設定する</string>
+    <string name="ti_preference_one_touch_emoji_list_display_left_txt">左側に表示</string>
+    <string name="ti_preference_one_touch_emoji_list_display_right_txt">右側に表示</string>
+    <string name="ti_preference_one_touch_emoji_list_display_hidden_txt">非表示</string>
+    <string name="ti_preference_one_touch_emoji_list_display_message_txt">絵文字とデコメ絵文字が入力できないフィールドでは絵文字クイックは表示されません</string>
+    <string name="ti_preference_one_touch_emoji_list_common_summary_txt">絵文字クイックを設定する</string>
+
+    <string name="ti_preference_keyboard_skinadd_title_txt">キーボードテーマ</string>
+    <string name="ti_preference_keyboard_skinadd_summary_txt">キーボードのイメージを切り替える</string>
+    <string name="ti_keyboardskinlauncher_activity_title_txt">キーボードテーマ</string>
+
+    <string name="ti_preference_auto_cursor_movement_summary_on_txt">トグル入力時に、文字入力してから%.1f秒後にカーソルを自動で右に移動する</string>
+    <string name="ti_preference_auto_cursor_movement_summary_off_txt">トグル入力時に、カーソルは自動で移動しない</string>
+
+    <string name="ti_preference_auto_cursor_movement_menu_txt">自動カーソル移動</string>
+    <string name="ti_preference_auto_cursor_movement_summary_txt">自動カーソル移動の速度を指定する</string>
+    <string name="ti_preference_auto_cursor_movement_speed_fast_txt">速い</string>
+    <string name="ti_preference_auto_cursor_movement_speed_normal_txt">普通</string>
+    <string name="ti_preference_auto_cursor_movement_speed_slow_txt">遅い</string>
+    <string name="ti_preference_auto_cursor_movement_off">Off</string>
+
+    <string name="ti_preference_conversion_menu_txt">変換設定</string>
+    <string name="ti_preference_conversion_menu_ja_txt">日本語変換設定</string>
+    <string name="ti_preference_conversion_menu_en_txt">英語変換設定</string>
+
+    <string name="ti_preference_webapi_title_txt">外部変換エンジン</string>
+    <string name="ti_preference_webapi_summary_txt">外部の変換エンジンを利用して変換候補を表示する</string>
+
+    <string name="ti_preference_webapi_none_txt">なし</string>
+
+    <string name="ti_preference_webapi_dialog_message_txt">この機能を有効にすると、インターネット上にあるWeb辞書サーバーなど、外部の変換エンジンを利用したかな漢字変換が可能になります。予測/変換候補表示エリアで[外部変換]ボタンを押したときに、変換対象の入力文字列が、インターネットを通じて外部変換サーバーに送信される可能性があります。これにはパスワードやクレジットカード番号等の個人情報も含まれます。この機能を使用しますか?</string>
+    <string name="ti_preference_webapi_list_max_error_txt">外部変換エンジンの最大数を超えています。</string>
+
+    <string name="ti_preference_prediction_title_txt">予測変換</string>
+    <string name="ti_preference_prediction_title_ja_txt">日本語予測変換</string>
+    <string name="ti_preference_prediction_title_en_txt">英語予測変換</string>
+    <string name="ti_preference_prediction_summary_txt">文字を入力すると変換候補を表示する</string>
+
+    <string name="ti_preference_correct_spell_title_txt">入力ミス補正</string>
+    <string name="ti_preference_correct_spell_summary_txt">英字入力時、入力間違いの修正候補を表示する</string>
+
+    <string name="ti_preference_candidate_lines_title_txt">候補表示行数</string>
+    <string name="ti_preference_candidate_lines_summary_txt">縦画面時の行数を設定する</string>
+    <string name="ti_preference_candidate_lines_portrait_title_txt">縦画面</string>
+    <string name="ti_preference_candidate_lines_portrait_summary_txt">縦画面時の行数を変更する</string>
+    <string name="ti_preference_candidate_lines_landscape_title_txt">横画面</string>
+    <string name="ti_preference_candidate_lines_landscape_summary_txt">横画面時の行数を変更する</string>
+
+    <string name="ti_preference_funfun_title_txt">ワイルドカード予測</string>
+    <string name="ti_preference_funfun_title_ja_txt">日本語ワイルドカード予測</string>
+    <string name="ti_preference_funfun_summary_ja_txt">読みの文字数から変換候補を推測する</string>
+    <string name="ti_preference_funfun_summary_txt">文字数から予測候補を推測する</string>
+
+    <string name="ti_preference_input_learning_title_txt">候補学習</string>
+    <string name="ti_preference_input_learning_title_ja_txt">日本語候補学習</string>
+    <string name="ti_preference_input_learning_summary_txt">変換で確定した語句を学習する</string>
+
+    <string name="ti_preference_external_apl_txt">外部アプリ連携</string>
+    <string name="ti_preference_japanese_apl_txt">日本語キーボード</string>
+    <string name="ti_preference_korean_apl_txt">韓国語キーボード</string>
+    <string name="ti_preference_input_menu_ja_txt">入力 （日本語）</string>
+    <string name="ti_preference_input_menu_txt">入力 （その他）</string>
+
+
+    <string name="ti_preference_attention_dialog_title_txt">注意</string>
+
+    <string name="ti_preference_mushroom_use_txt">使用する</string>
+    <string name="ti_preference_mushroom_notuse_txt">使用しない</string>
+
+    <string name="ti_preference_mushroom_dialog_message_txt">マッシュルームとは、Simejiのマッシュアップ機能と、それを利用したアプリケーションの総称です。この機能を使用すると、マッシュルームアプリを呼び出せるようになり、別途インストールしたマッシュルームアプリを利用した文字入力が可能になります。この機能を使用しますか?</string>
+
+    <string name="ti_preference_additional_symbol_list_title_txt">追加記号リスト</string>
+    <string name="ti_preference_additional_symbol_list_summary_txt">追加記号リストを登録する</string>
+
+    <string name="ti_preference_additional_symbol_list_max_error_txt">追加記号リストの最大数を超えています。</string>
+
+    <string name="ti_preference_aboutime_menu_txt">IMEについて</string>
+
+    <string name="ti_preference_dictionary_menu_txt">辞書</string>
+    <string name="ti_preference_dictionary_type_summary_txt"> 日本語/英語辞書、学習辞書 </string>
+    <string name="ti_preference_dictionary_menu_ja_txt">日本語ユーザー辞書</string>
+    <string name="ti_preference_dictionary_menu_en_txt">英語ユーザー辞書</string>
+    <string name="ti_preference_dictionary_menu_zhcn_txt">中国語ユーザー辞書</string>
+
+    <string name="ti_preference_dictionary_menu_standard_txt">ユーザー辞書</string>
+
+    <string name="ti_preference_user_dictionary_edit_words_summary_txt">ユーザー辞書の単語を編集する</string>
+    <string name="ti_preference_user_dictionary_edit_words_summary_ja_txt">日本語ユーザー辞書の単語を編集する</string>
+    <string name="ti_preference_user_dictionary_edit_words_summary_en_txt">英語ユーザー辞書の単語を編集する</string>
+    <string name="ti_preference_user_dictionary_edit_words_summary_zhcn_txt">中国語ユーザー辞書の単語を編集する</string>
+
+    <string name="ti_preference_user_dictionary_clear_learning_title_txt">学習辞書リセット</string>
+    <string name="ti_preference_user_dictionary_clear_learning_summary_txt">学習辞書の内容をすべて消去する</string>
+
+    <string name="ti_preference_user_dictionary_words_by_learning_title_txt">学習辞書</string>
+
+    <string name="ti_preference_additional_dic_title_txt">追加辞書</string>
+    <string name="ti_preference_additional_dic_summary_txt">追加辞書を登録する</string>
+    <string name="ti_preference_additional_dic_list_title_txt">追加辞書</string>
+    <string name="ti_preference_additional_dic_list_none_txt">なし</string>
+    <string name="ti_preference_additional_dic_clear_txt">(初期化する)</string>
+    <string name="ti_preference_additional_dic_select_list_title_txt">辞書選択</string>
+    <string name="ti_preference_additional_dic_load_comp_message_txt">件 取り込みました。</string>
+    <string name="ti_preference_additional_dic_load_fail_message_txt">取り込みに失敗しました。</string>
+    <string name="ti_preference_additional_dic_intialize_message_txt">取り込んだ追加辞書の内容を消去しました。</string>
+
+    <string name="ti_preference_download_dic_title_txt">ダウンロードユーザ辞書</string>
+    <string name="ti_preference_download_dic_enable_txt">有効</string>
+    <string name="ti_preference_download_dic_disable_txt">無効</string>
+    <string name="ti_preference_download_dic_delete_txt">削除</string>
+    <string name="ti_preference_download_dic_select_list_title_txt">辞書設定</string>
+    <string name="ti_preference_download_dic_enable_message_txt">を有効化しました。 </string>
+    <string name="ti_preference_download_dic_disable_message_txt">を無効化しました。 </string>
+    <string name="ti_preference_download_dic_delete_message_txt">を削除しました。 </string>
+    <string name="ti_preference_download_dic_comfirm_delete_txt">削除してよろしいですか？ </string>
+    <string name="ti_preference_download_dic_not_exist_txt">ダウンロードユーザ辞書がありません。 </string>
+    <string name="ti_preference_download_dic_fail_enable_txt">辞書の有効化に失敗しました。 </string>
+    <string name="ti_preference_download_dic_fail_disable_txt">辞書の無効化に失敗しました。 </string>
+    <string name="ti_preference_download_dic_fail_delete_txt">辞書の削除に失敗しました。 </string>
+    <string name="ti_preference_download_dic_max_error_txt">ダウンロードユーザ辞書の最大数を超えています。 </string>
+    <string name="ti_preference_download_dic_button_txt">辞書を取得</string>
+    <string name="ti_preference_download_dic_load_process_message_txt">ダウンロードユーザ辞書登録中...... %1$d/%2$d</string>
+    <string name="ti_preference_load_comp_message_txt">%1$d/%2$d件を登録しました。</string>
+
+    <string name="ti_preference_korean_keyboard_title_txt">韓国語入力</string>
+    <string name="ti_preference_korean_keyboard_summary_txt">韓国語入力を有効にする</string>
+
+    <!-- Handwriting -->
+    <string name="ti_preference_handwriting_title_txt">手書き入力</string>
+    <string name="ti_preference_handwriting_txt">手書き入力の設定</string>
+
+    <!-- Dialog Messages -->
+    <string name="ti_dialog_button_ok_txt">OK</string>
+    <string name="ti_dialog_button_cancel_txt">キャンセル</string>
+    <string name="ti_dialog_button_yes_txt">はい</string>
+    <string name="ti_dialog_button_no_txt">いいえ</string>
+
+    <!-- Long Press Dialog -->
+    <string name="ti_long_press_dialog_setting_menu_txt">キーボード設定</string>
+    <string name="ti_long_press_dialog_input_method_txt">入力方法</string>
+    <string name="ti_long_press_dialog_keyboard_type_txt">キーボードタイプ</string>
+    <string name="ti_long_press_dialog_input_mode_txt">入力モード切替</string>
+    <string name="ti_long_press_dialog_user_dictionary_txt">ユーザー辞書</string>
+    <string name="ti_long_press_dialog_keyboard_theme_txt">キーボードテーマ</string>
+
+    <string name="ti_long_press_dialog_title_txt">LG 日本語キーボード</string>
+
+    <string name="ti_input_mode_full_hirakana_title_txt">ひらがな漢字</string>
+    <string name="ti_input_mode_full_katakana_title_txt">全角カタカナ</string>
+    <string name="ti_input_mode_half_katakana_title_txt">半角カタカナ</string>
+    <string name="ti_input_mode_full_alphabet_title_txt">全角英字</string>
+    <string name="ti_input_mode_half_alphabet_title_txt">半角英字</string>
+    <string name="ti_input_mode_full_number_title_txt">全角数字</string>
+    <string name="ti_input_mode_half_number_title_txt">半角数字</string>
+    <string name="ti_input_mode_voice_input_title_txt">音声入力</string>
+
+    <string name="ti_keyboard_type_10key_title_txt">10キーキーボード</string>
+    <string name="ti_keyboard_type_qwerty_title_txt">QWERTYキーボード</string>
+    <string name="ti_keyboard_type_Hand_Writing_title_txt">手書き入力</string>
+    <string name="ti_keyboard_type_voice_input_title_txt">音声入力</string>
+
+    <!-- Foo -->
+    <string name="ti_dialog_flick_sensitivity_title_txt">フリック感度(低\u21D4高)</string>
+    <string name="ti_dialog_delete_user_dictionary_message_txt">リスト内の語句をすべて削除します。</string>
+
+    <string name="ti_dialog_clear_learning_dictionary_message_txt">学習辞書のすべての内容を消去します。よろしいですか？</string>
+    <string name="ti_dialog_clear_user_dictionary_done_txt">ユーザー辞書の内容をすべて消去しました。</string>
+    <string name="ti_dialog_clear_learning_dictionary_done_txt">学習辞書の内容をすべて消去しました。</string>
+
+    <string name="ti_dialog_option_menu_item_settings_txt">各種設定</string>
+
+    <string name="ti_dialog_option_menu_item_input_method_txt">入力方法</string>
+
+    <string name="ti_dialog_option_menu_item_mushroom_txt">入力拡張プラグイン</string>
+
+    <string name="ti_dialog_user_dictionary_unavailable_txt">ユーザー辞書を編集中です。</string>
+    <string name="ti_dialog_user_dictionary_ja">日本語ユーザー辞書</string>
+    <string name="ti_dialog_user_dictionary_en">英語ユーザー辞書</string>
+
+    <!-- user dictionary -->
+    <string name="ti_user_dictionary_edit_words_txt">単語編集</string>
+    <string name="ti_user_dictionary_title_read_txt">読み</string>
+    <string name="ti_user_dictionary_title_candidate_txt">表記</string>
+    <string name="ti_user_dictionary_add_txt">登録</string>
+    <string name="ti_user_dictionary_edit_txt">編集</string>
+
+    <string name="ti_user_dictionary_save_txt">保存</string>
+
+    <string name="ti_user_dictionary_delete_txt">削除</string>
+    <string name="ti_user_dictionary_delete_confirm_txt">選択した単語を削除しますか？</string>
+    <string name="ti_user_dictionary_delete_complete_txt">削除しました。</string>
+    <string name="ti_user_dictionary_all_delete_complete_txt">すべて削除しました。</string>
+    <string name="ti_user_dictionary_delete_fail_txt">削除に失敗しました。</string>
+    <string name="ti_user_dictionary_words_duplication_message_txt">すでに登録されています。</string>
+    <string name="ti_user_dictionary_over_max_text_size_message_txt">登録できる最大文字数を超えています。</string>
+    <string name="ti_user_dictionary_init_txt">ユーザー辞書全消去</string>
+
+    <string name="ti_user_dictionary_list_words_standard_txt">ユーザー辞書単語リスト</string>
+
+    <string name="ti_preference_choose_language_of_keyboard_title_txt">言語選択</string>
+
+    <string name="ti_preference_lang_setting_keyboard_title_txt">入力言語</string>
+    <string name="ti_preference_lang_setting_keyboard_setting_txt">設定項目（言語別）</string>
+
+
+    <string name="ti_choose_language_entry_ja_txt">日本語</string>
+    <string name="ti_choose_language_entry_ko_txt">韓国語</string>
+
+    <!-- SymKey -->
+    <string name="label_symkey_txt">記号</string>
+    <string name="label_phone_symkey_txt">.-(</string>
+
+<!--
+============================
+EF  : Emoji Factory
+EPD : EmojiPkg (dcm)
+EPK : EmojiPkg (kddi)
+EPS : EmojiPkg (sbm)
+============================
+-->
+  <!-- IME dependency -->
+    <!-- iWnn IME -->
+    <string name="ti_iwnnime_setting_title_txt">iWnn IME 設定</string>
+    <string name="ti_iwnnime_copyright_txt">Ver.2.3.2.jp-Z\nオムロン ソフトウェア(株)</string>
+    <string name="ti_iwnnime_copyright_EF_txt">Ver.2.2.4.jp-EF-01\nオムロン ソフトウェア(株)</string>
+    <string name="ti_iwnnime_copyright_EPD_txt">Ver.2.2.6.jp-EPD-04\nオムロン ソフトウェア(株)</string>
+    <string name="ti_iwnnime_copyright_EPK_txt">Ver.2.2.4.jp-EPK-01\nオムロン ソフトウェア(株)</string>
+    <string name="ti_iwnnime_copyright_EPS_txt">Ver.2.2.4.jp-EPS-01\nオムロン ソフトウェア(株)</string>
+    <string name="ti_iwnnime_copyright_L1_txt">Ver.2.3.2.jp-EPD-A1\nオムロン ソフトウェア(株)</string>
+
+    <!-- emoji category Unicode6 -->
+    <string name="ti_emoji_category_nature_txt">[自然・星座]</string>
+    <string name="ti_emoji_category_human_txt">[人・生き物]</string>
+    <string name="ti_emoji_category_faces_txt">[顔・表情]</string>
+    <string name="ti_emoji_category_artifacts_txt">[建物・モノ]</string>
+    <string name="ti_emoji_category_activities_txt">[スポーツ・乗り物・趣味]</string>
+    <string name="ti_emoji_category_foods_txt">[食べ物]</string>
+    <string name="ti_emoji_category_symbols_txt">[マーク・シンボル]</string>
+
+    <!-- emoji category docomo -->
+    <string name="ti_emoji_docomo_category_nature_txt">[自然・星座]</string>
+    <string name="ti_emoji_docomo_category_human_txt">[人・生き物]</string>
+    <string name="ti_emoji_docomo_category_faces_txt">[顔・表情]</string>
+    <string name="ti_emoji_docomo_category_artifacts_txt">[建物・モノ]</string>
+    <string name="ti_emoji_docomo_category_activities_txt">[スポーツ・乗り物・趣味]</string>
+    <string name="ti_emoji_docomo_category_foods_docomo_txt">[食べ物]</string>
+    <string name="ti_emoji_docomo_category_symbols_txt">[マーク・シンボル]</string>
+
+    <!-- emoji category kddi -->
+    <string name="ti_emoji_kddi_category_nature_txt">[自然・季節]</string>
+    <string name="ti_emoji_kddi_category_human_txt">[気持ち・からだ]</string>
+    <string name="ti_emoji_kddi_category_faces_txt">[顔・表情]</string>
+    <string name="ti_emoji_kddi_category_artifacts_txt">[乗物・建物・地図]</string>
+    <string name="ti_emoji_kddi_category_activities_txt">[ファッション・遊び]</string>
+    <string name="ti_emoji_kddi_category_foods_txt">[食べ物・飲み物]</string>
+    <string name="ti_emoji_kddi_category_symbols_txt">[記号]</string>
+    <string name="ti_emoji_kddi_category_tools_txt">[道具]</string>
+    <string name="ti_emoji_kddi_category_critter_txt">[生き物・星座]</string>
+
+    <!-- emoji category sbm -->
+    <string name="ti_emoji_sbm_category_facial_expression_txt">[顔]</string>
+    <string name="ti_emoji_sbm_category_emotion_txt">[気持ち・装飾]</string>
+    <string name="ti_emoji_sbm_category_season_event_txt">[天気・季節]</string>
+    <string name="ti_emoji_sbm_category_character_txt">[キャラクター]</string>
+    <string name="ti_emoji_sbm_category_food_txt">[食べ物]</string>
+    <string name="ti_emoji_sbm_category_daily_life_txt">[日常]</string>
+    <string name="ti_emoji_sbm_category_tools_txt">[ツール]</string>
+    <string name="ti_emoji_sbm_category_hobbies_txt">[趣味]</string>
+    <string name="ti_emoji_sbm_category_symbol_txt">[文字・記号]</string>
+
+    <!-- kaomoji category -->
+    <string name="ti_kaomoji_category_happy_txt">[ハッピー]</string>
+    <string name="ti_kaomoji_category_sad_txt">[悲しい]</string>
+    <string name="ti_kaomoji_category_surprise_txt">[びっくり]</string>
+    <string name="ti_kaomoji_category_trouble_txt">[困る]</string>
+    <string name="ti_kaomoji_category_angry_txt">[怒る]</string>
+    <string name="ti_kaomoji_category_salutation_txt">[あいさつ]</string>
+    <string name="ti_kaomoji_category_action_txt">[アクション]</string>
+    <string name="ti_kaomoji_category_friendships_txt">[ラブ・友情]</string>
+    <string name="ti_kaomoji_category_character_txt">[動物・キャラクタ]</string>
+
+    <!-- Candidate Delete -->
+    <string name="ti_button_candidate_select_txt">選　択</string>
+    <string name="ti_button_candidate_delete_txt">学習削除</string>
+    <string name="ti_button_candidate_extend_txt">拡　張</string>
+
+    <!-- Tutorial -->
+    <string name="ti_touch_to_continue_txt">次へ &gt;&gt;</string>
+    <string name="ti_touch_to_try_txt">下のボタンで試してみてください。</string>
+    <string name="ti_touch_to_finish_txt">実際に色々入力を試してみてください。</string>
+    <string name="ti_tip_to_step1_txt"><b>普通の携帯のキーボードのように、○キーを３回押すと「う」\nが入力できます。</b></string>
+    <string name="ti_tip_to_step2_a_txt"><b>例えば「寿司」と入力する場合…\n・○キーを３回押して「す」を入力し、</b></string>
+    <string name="ti_tip_to_step2_b_txt"><b>\n・→キーで右に進み、</b></string>
+    <string name="ti_tip_to_step2_c_txt"><b>\n・○キーを２回押して「し」を入力し、</b></string>
+    <string name="ti_tip_to_step2_d_txt"><b>\n・自動的に表示される候補の中から\n　「寿司」を選ぶか、■キーで変換して\n　表示される「寿司」を↓キーで確定\n　します。</b></string>
+    <string name="ti_tip_to_step3_a_txt"><b>■キーで日本語、英語、数字モードに\n切り替わります。</b></string>
+    <string name="ti_tip_to_step3_b_txt"><b>日本語から英語にかわりました。\n次は数字です。</b></string>
+    <string name="ti_tip_to_step3_c_txt"><b>数字からまた日本語に戻りましょう。</b></string>
+    <string name="ti_tip_to_step4_txt"><b>ほかのモード（カタカナ・全角など)\nやＰＣ風のキーボードが使いたい場合、\n■キーを３秒押すと入力メニューが\n表示されます。</b></string>
+    <string name="ti_tip_to_step5_txt"><b>入力が完了したら、携帯の\n「戻る」キー（←）を押して\nキーボードを閉じます。</b></string>
+    <string name="ti_tip_to_step6_txt"><b>これでチュートリアルは終わりです。</b></string>
+
+    <!-- Preferences main item name: Setting of flick. -->
+    <string name="ti_preference_flick_title_txt">フリック入力</string>
+
+    <!-- Preferences sub description: Description of flick. -->
+    <string name="ti_preference_flick_summary_txt">フリック方式の入力を有効にする</string>
+
+    <!-- Preferences main item name: Setting of flick sensitivity. -->
+    <string name="ti_preference_flick_sensitivity_title_txt">フリック感度</string>
+
+    <!-- Preferences sub description: Description of flick sensitivity. -->
+    <string name="ti_preference_flick_sensitivity_summary_txt">フリック入力時のスライド感度を指定する</string>
+
+    <!-- Preferences main item name: Setting of flick toggle. -->
+    <string name="ti_preference_flick_toggle_title_txt">トグル入力</string>
+
+    <!-- Preferences sub description: Description of flick toggle. -->
+    <string name="ti_preference_flick_toggle_summary_txt">フリック入力有効時もトグル入力を有効にする</string>
+
+    <!-- Preferences category name: Setting of 12key keyboard. -->
+    <string name="ti_preference_12key_setting_menu_txt">キーボード設定(テンキーボード)</string>
+
+    <!-- Preferences category name: About IME -->
+    <string name="ti_iwnnime_version_title_txt">LG キーボード</string>
+
+    <!-- WebAPI -->
+    <string name="ti_webapi_button_txt">外部変換</string>
+    <string name="ti_webapi_no_candidate_txt">候補無し</string>
+    <string name="ti_webapi_get_again_txt">再取得</string>
+    <string name="ti_webapi_connect_txt">通信中</string>
+    <string name="ti_webapi_timeout_error_txt">外部変換エンジンとの通信がタイムアウトしました。</string>
+    <string name="ti_webapi_timeout_error_received_display_txt">外部変換エンジンとの通信がタイムアウトしました。取得できた候補のみ表示します。</string>
+
+    <!-- Mushroom -->
+    <string name="ti_mushroom_launcher_title_txt">入力拡張プラグイン</string>
+    <string name="ti_mushroom_launcher_activity_list_empty_txt">一致するアクティビティが見つかりません。</string>
+    <string name="ti_mushroom_commonphrase_title_txt">定型文入力</string>
+    <!-- category setting menu -->
+    <string name="ti_preference_category_setting_menu_txt">定型文</string>
+    <!-- category names -->
+    <string name="ti_category_item1_name">あいさつ</string>
+    <string name="ti_category_item2_name">ビジネス</string>
+    <string name="ti_category_item3_name">インターネット</string>
+    <string name="ti_category_item4_name">プライベート</string>
+    <string name="ti_category_item5_name">返事</string>
+    <string name="ti_category_item6_name">ユーザーオリジナル</string>
+    <!-- category summaries -->
+    <string name="ti_category_item1_summary"></string>
+    <string name="ti_category_item2_summary"></string>
+    <string name="ti_category_item3_summary"></string>
+    <string name="ti_category_item4_summary"></string>
+    <string name="ti_category_item5_summary"></string>
+    <string name="ti_category_item6_summary">登録・編集・削除が行えます</string>
+    <!-- phrase option menu item name -->
+    <string name="ti_category_option_menu_add_name">新規登録</string>
+    <string name="ti_category_option_menu_del_name">削除</string>
+    <string name="ti_category_option_menu_edit_name">編集</string>
+    <string name="ti_category_option_menu_clear_name">全削除</string>
+    <!-- user edit dialog string -->
+    <string name="ti_user_phrase_save_txt">保存</string>
+    <!-- dialog messages -->
+    <string name="ti_delete_all_user_data_txt">ユーザー登録の内容をすべて消去しますか？</string>
+    <string name="ti_delete_user_data_txt">選択した定型文を削除しますか？</string>
+    <!-- TextView Text -->
+    <string name="ti_textview_textview01_txt">TextView01</string>
+    <string name="ti_textview_textview02_txt">TextView02</string>
+    <string name="ti_textview_commonphrase_txt">定型文一覧</string>
+
+    <!-- Candidate -->
+    <string name="ti_cand_tab_pictgram_txt">絵文字</string>
+    <string name="ti_cand_tab_pictgram_docomo_txt">絵文字</string>
+    <string name="ti_cand_tab_symbol_txt">記号</string>
+    <string name="ti_cand_tab_emoticon_txt">顔文字</string>
+
+    <string name="ti_cand_tab_decoemojilist_txt">デコ</string>
+    <string name="ti_cand_tab_decoemojilist_docomo_txt">絵文字D</string>
+
+    <string name="ti_candidates_are_nothing_txt">リストの作成に失敗しました</string>
+    <string name="ti_symbol_prev_button_txt">前を表示</string>
+    <string name="ti_symbol_next_button_txt">次を表示</string>
+
+    <!-- Symbol -->
+    <string name="ti_half_symbol_txt">[記号(半角)]</string>
+    <string name="ti_full_symbol_txt">[記号(全角)]</string>
+    <string name="ti_all_symbol_txt">[記号]</string>
+
+    <!-- Symbol keyboard -->
+    <string name="ti_key_symbol_mode">戻る</string>
+
+    <!-- Enter key -->
+    <string name="ti_enterkey_return">改行</string>
+    <string name="ti_enterkey_done">完了</string>
+    <string name="ti_enterkey_go">実行</string>
+    <string name="ti_enterkey_next">次へ</string>
+    <string name="ti_enterkey_ok">確定</string>
+    <string name="ti_enterkey_send">送信</string>
+    <string name="ti_enterkey_previous">前へ</string>
+
+    <!-- One touch emoji list -->
+    <string name="ti_one_touch_emoji_list_other_txt">その他</string>
+
+    <!-- One touch emoji list Dialog-->
+    <string name="ti_one_touch_emoji_list_dialog_title_txt">ガイド</string>
+    <string name="ti_one_touch_emoji_list_dialog_subtitle_txt">絵文字クイック</string>
+    <string name="ti_one_touch_emoji_list_dialog_summary_txt">ドラッグすると絵文字クイックが表示されます</string>
+    <string name="ti_one_touch_emoji_list_dialog_not_show_txt">今後表示しない</string>
+
+    <!-- #voice -->
+    <string name="ti_voice_warning_title_txt">音声入力キー</string>
+    <string name="ti_voice_warning_may_not_understand_docomo_txt">この機能はドコモ音声入力を利用した機能です。認識対象言語はその音声認識エンジンの設定に従います。</string>
+    <string name="ti_voice_warning_may_not_understand_txt">この機能は「音声検索」設定の「言語」で利用可能となっている音声認識エンジンを利用した機能です。認識対象言語はその音声認識エンジンの設定に従います。</string>
+    <string name="ti_voice_warning_how_to_turn_off_txt">音声入力をOFFにするには、「LG キーボード設定」を開きます。</string>
+    <string name="ti_voice_hint_dialog_message_docomo_txt">音声入力するには、音声入力キーをタップしてドコモ音声入力を利用してください。</string>
+    <string name="ti_voice_hint_dialog_message_txt">音声入力するには、音声入力キーをタップして音声入力キーボードを表示し[音声入力開始]ボタンを押してください。</string>
+    <string name="ti_voice_listening_txt">お話しください</string>
+    <string name="ti_voice_working_txt">処理中</string>
+    <string name="ti_voice_error_txt">エラーです。もう一度お試しください。</string>
+    <string name="ti_voice_network_error_txt">接続できませんでした</string>
+    <string name="ti_voice_too_much_speech_txt">音声が長すぎてエラーになりました。</string>
+    <string name="ti_voice_audio_error_txt">オーディオエラー</string>
+    <string name="ti_voice_server_error_txt">サーバーエラー</string>
+    <string name="ti_voice_speech_timeout_txt">音声が聞き取れません</string>
+    <string name="ti_voice_no_match_txt">該当なし</string>
+    <string name="ti_voice_not_installed_txt">Voice Searchはインストールされていません</string>
+    <string name="ti_dcm_voiceeditor_Invalid_txt">ドコモ文字編集アプリが無効のため起動できません</string>
+
+    <!-- Navigation keypad -->
+    <string name="label_keypad_select">選択</string>
+    <string name="label_keypad_deselect">選択解除</string>
+    <string name="label_keypad_copy">コピー</string>
+    <string name="label_keypad_cut">切取り</string>
+    <string name="label_keypad_paste">貼付け</string>
+    <string name="label_keypad_close">閉じる</string>
+    <string name="label_keypad_all">全選択</string>
+
+    <!-- Switch input mode -->
+    <string name="ti_switch_kana_input_mode_txt">日本語の入力モードを\"かな入力\"に変更しようとしています。\n変更しますか？</string>
+    <string name="ti_switch_roman_input_mode_txt">日本語の入力モードを\"ローマ字入力\"に変更しようとしています。\n変更しますか？</string>
+
+    <!-- Reset settings -->
+    <string name="ti_preference_reset_setting_menu_txt">リセット</string>
+    <string name="ti_preference_reset_setting_title_txt">設定リセット</string>
+    <string name="ti_preference_reset_setting_summary_txt">キーボード設定をリセットします</string>
+    <string name="ti_preference_reset_setting_message_txt">LGキーボード設定をリセットしますか?</string>
+    <string name="ti_dialog_reset_setting_done_txt">リセット完了</string>
+
+    <string name="ti_preference_multiple_selection_summary_txt">%1$d/%2$d件 有効</string>
+
+    <!-- Keyboard Theme -->
+    <string name="ti_download_theme_button_txt">ダウンロードテーマ</string>
+
+    <!-- Mushroom Control -->
+    <string name="ti_mushroom_control_has_unicode_txt">選択したUnicode 6.0 絵文字は入力できません</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_undo_txt">戻す</string>
+</resources>

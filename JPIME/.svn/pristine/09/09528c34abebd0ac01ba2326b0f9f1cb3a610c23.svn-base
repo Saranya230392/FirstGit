@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/labelRead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/ti_user_dictionary_title_read_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText android:id="@+id/editRead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="50"
+        android:inputType="textPhonetic"/>
+
+    <TextView android:id="@+id/labelCandidate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/ti_user_dictionary_title_candidate_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText android:id="@+id/editCandidate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="50"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_marginTop="1dip">
+        <Button android:id="@+id/cancelButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ti_dialog_button_cancel_txt"
+            android:layout_weight="1"
+            android:background="@drawable/btn_user_dictionary_tools_edit_key_cancel"
+            android:minHeight="?android:attr/listPreferredItemHeight"/>
+
+        <Button android:id="@+id/addButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ti_user_dictionary_save_txt"
+            android:layout_weight="1"
+            android:background="@drawable/btn_user_dictionary_tools_edit_key_save"
+            android:minHeight="?android:attr/listPreferredItemHeight"/>
+    </LinearLayout>
+</LinearLayout>

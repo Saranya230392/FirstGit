@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@fraction/key_width_12key_numeric"
+    iwnn:horizontalGap="@dimen/keyboard_12key_numeric_horizontal_gap"
+    iwnn:verticalGap="@dimen/keyboard_12key_numeric_vertical_gap"
+    iwnn:keyHeight="@dimen/keyboard_12key_numeric_keyheight"
+    iwnn:isPhone="true"
+    >
+
+    <Row>
+        <Key iwnn:codes="40" iwnn:keyLabel="(" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left"/>
+        <Key iwnn:codes="47" iwnn:keyLabel="/" />
+        <Key iwnn:codes="41" iwnn:keyLabel=")"/>
+        <Key iwnn:codes="-214"
+         iwnn:keyIcon="@drawable/ime_keypad_icon_jp_delete" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_delete_popup"
+             iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="45" iwnn:keyLabel="-" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left"/>
+        <Key iwnn:codes="44" iwnn:keyLabel="," />
+        <Key iwnn:codes="46" iwnn:keyLabel="." />
+        <Key iwnn:codes="-3" iwnn:keyIconId="103"
+             iwnn:keyIconPreviewId="503" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true" />
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="78" iwnn:keyLabel="N" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left"/>
+        <Key iwnn:codes="44" iwnn:keyLabel="P" />
+        <Key iwnn:codes="59" iwnn:keyLabel="W" />
+        <Key iwnn:codes="-413" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_setting" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_setting_popup" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row iwnn:rowEdgeFlags="bottom">
+        <Key iwnn:codes="-310" iwnn:keyLabel=" " iwnn:horizontalGap="@dimen/padding_keyboard_left"  iwnn:keyEdgeFlags="left" iwnn:showPreview="false"/>
+        <Key iwnn:codes="43" iwnn:keyLabel="+"/>
+        <Key iwnn:codes="32" iwnn:isRepeatable="true" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_space_blk" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_space_blk" />
+        <Key iwnn:codes="-216" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_enter"
+             iwnn:iconPreview="@drawable/ime_keypad_icon_jp_enter_popup"
+             iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+    </Row>
+</Keyboard>

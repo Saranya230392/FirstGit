@@ -1,0 +1,310 @@
+/*
+ * Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+ */
+package jp.co.omronsoft.iwnnime.ml;
+
+import android.app.Dialog;
+import android.content.res.Resources;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
+import android.view.inputmethod.EditorInfo;
+import android.widget.HorizontalScrollView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.util.TypedValue;
+
+import java.util.ArrayList;
+
+import jp.co.omronsoft.android.emoji.EmojiAssist;
+import jp.co.omronsoft.android.text.EmojiDrawable;
+import jp.co.omronsoft.iwnnime.ml.CandidateTextView;
+import jp.co.omronsoft.iwnnime.ml.decoemoji.DecoEmojiUtil;
+import jp.co.omronsoft.iwnnime.ml.iwnn.iWnnEngine;
+
+/**
+ * The interface of candidates view manager used by {@link OpenWnn}.
+ *
+ * @author OMRON SOFTWARE Co., Ltd.
+ */
+public abstract class CandidatesViewManager {
+    /** Size of candidates view (normal) */
+    public static final int VIEW_TYPE_NORMAL = 0;
+    /** Size of candidates view (full) */
+    public static final int VIEW_TYPE_FULL   = 1;
+    /** Size of candidates view (close/non-display) */
+    public static final int VIEW_TYPE_CLOSE  = 2;
+
+    /**
+     * Attribute of a word (no attribute)
+     * @see jp.co.omronsoft.iwnnime.ml.WnnWord
+     */
+    public static final int ATTRIBUTE_NONE    = 0;
+    /**
+     * Attribute of a word (a candidate in the history list)
+     * @see jp.co.omronsoft.iwnnime.ml.WnnWord
+     */
+    public static final int ATTRIBUTE_HISTORY = 1;
+    /**
+     * Attribute of a word (the best candidate)
+     * @see jp.co.omronsoft.iwnnime.ml.WnnWord
+     */
+    public static final int ATTRIBUTE_BEST    = 2;
+    /**
+     * Attribute of a word (auto generated/not in the dictionary)
+     * @see jp.co.omronsoft.iwnnime.ml.WnnWord
+     */
+    public static final int ATTRIBUTE_AUTO_GENERATED  = 4;
+
+    /** The view of the LongPressDialog */
+    protected View mViewLongPressDialog = null;
+
+    /** Whether candidates long click enable */
+    protected Dialog mDialog = null;
+
+    /** The view of the LongPressDialog candidate word view */
+    protected CandidateTextView mViewCandidateWord = null;
+
+    /** The word pressed */
+    protected WnnWord mWord;
+
+    /** Use Mushroom  */
+    protected boolean mEnableMushroom = false;
+
+    /** {@link InputMethodBase} instance using this manager */
+    protected InputMethodBase mWnn;
+
+    /**
+     * Initialize the candidates view.
+     *
+     * @param parent    The InputMethodBase object
+     * @param width     The width of the display
+     * @param height    The height of the display
+     * @return The candidates view created in the initialize process; {@code null} if cannot create a candidates view.
+     */
+    public abstract View initView(InputMethodBase parent, int width, int height);
+
+    /**
+     * Get the candidates view being used currently.
+     *
+     * @return The candidates view; {@code null} if no candidates view is used currently.
+     */
+    public abstract View getCurrentView();
+
+    /**
+     * Set the candidates view type.
+     *
+     * @param type  The candidate view type, 
+     * from {@link CandidatesViewManager#VIEW_TYPE_NORMAL} to  
+     * {@link CandidatesViewManager#VIEW_TYPE_CLOSE}
+     */
+    public abstract void setViewType(int type);
+
+    /**
+     * Get the candidates view type.
+     *
+     * @return      The view type, 
+     * from {@link CandidatesViewManager#VIEW_TYPE_NORMAL} to  
+     * {@link CandidatesViewManager#VIEW_TYPE_CLOSE}
+     */
+    public abstract int getViewType();
+
+    /**
+     * Display candidates.
+     *
+     * @param converter  The {@link WnnEngine} from which {@link CandidatesViewManager} gets the candidates
+     */
+    public abstract void displayCandidates(WnnEngine converter);
+
+    /**
+     * Clear and hide the candidates view.
+     */
+    public abstract void clearCandidates();
+
+    /**
+     * Replace the preferences in the candidates view.
+     *
+     * @param pref    The preferences
+     */
+    public abstract void setPreferences(SharedPreferences pref);
+
+    /**
+     * KeyEvent action for soft key board.
+     * 
+     * @param key    Key event
+     */
+    public abstract void processMoveKeyEvent(int key);
+    
+    /**
+     * Get candidate is focused now.
+     * 
+     * @return the Candidate is focused of a flag.
+     */
+    public abstract boolean isFocusCandidate();
+
+    /**
+     * Get candidate word of focused now.
+     * 
+     * @return the Candidate word of focused now.
+     */
+    public abstract WnnWord getFocusedWnnWord();
+
+    /**
+     * Select candidate that has focus.
+     */
+    public abstract void selectFocusCandidate();
+
+    /**
+     * Set the candidate long click enable.
+     * 
+     * @param enable    candidate long click enable.
+     */
+    public abstract void setEnableCandidateLongClick(boolean enable);
+
+    /**
+     * Scroll the candidate list and Set the focus
+     * 
+     * @param scrollDown     {@code true} if scroll direction is down.
+     */
+    public abstract void scrollPageAndUpdateFocus(boolean scrollDown);
+
+    /**
+     * MSG_SET_CANDIDATES removeMessages.
+     */
+    public abstract void setCandidateMsgRemove();
+
+    /**
+     * Get list of TextView for displaying candidate
+     * @return list of TextView
+     */
+    public abstract ArrayList<TextView> getTextViewArray1st();
+
+    /**
+     * Display word dialog.
+     *
+     * @param view  the View
+     * @param word  the word to be displayed on the dialog.
+     */
+    protected void displayDialog(View view, final WnnWord word) {
+        if ((view instanceof CandidateTextView) && (null != mViewLongPressDialog)) {
+            closeDialog();
+            mDialog = new Dialog(view.getContext(), R.style.Dialog);
+
+            // make main layout
+            LinearLayout mainlayout = new LinearLayout(view.getContext());
+            mainlayout.setOrientation(LinearLayout.VERTICAL);
+            mainlayout.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+            Resources res = mWnn.getResources();
+            mainlayout.setBackground(res.getDrawable(R.drawable.ime_popup_jp_full_holo));
+            mainlayout.setPadding(0, 0, 0, 0);
+
+            // make candidate word view
+            EmojiAssist emojiIns = EmojiAssist.getInstance();
+            if (null != mViewCandidateWord) {
+                emojiIns.removeView(mViewCandidateWord);
+                mViewCandidateWord = null;
+            }
+
+            mViewCandidateWord = new CandidateTextView(view.getContext());
+            word.candidate = " " + word.candidate + " ";
+            CharSequence candidate = DecoEmojiUtil.getSpannedCandidate(word);
+            mViewCandidateWord.setText(candidate);
+            mViewCandidateWord.setTextColor(KeyboardSkinData.getInstance().getColor(OpenWnn.getContext(), R.color.candidate_dialog_text_color));
+            mViewCandidateWord.setGravity(Gravity.CENTER);
+
+            mDialog.getWindow().getAttributes().y 
+                    = res.getDimensionPixelSize(R.dimen.candidate_longpress_dialog_button_layout_y);
+
+            if (EmojiDrawable.isEmoji(word.candidate) || DecoEmojiUtil.isDecoEmoji(word.candidate)) {
+                // including emoji or decoemoij
+                mViewCandidateWord.setTextSize(TypedValue.COMPLEX_UNIT_DIP, ((float)res.getInteger(R.integer.candidate_longpress_dialog_candidate_emoji_word_size)));
+                LinearLayout sublayout = new LinearLayout(view.getContext());
+                sublayout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+                sublayout.setGravity(Gravity.CENTER);
+
+                HorizontalScrollView horizonalView = new HorizontalScrollView(view.getContext());
+                horizonalView.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+                horizonalView.addView(mViewCandidateWord);
+
+                sublayout.addView(horizonalView);
+                mainlayout.addView(sublayout);
+            } else {
+                // only normal character
+                mViewCandidateWord.setTextSize(TypedValue.COMPLEX_UNIT_DIP, ((float)res.getInteger(R.integer.candidate_longpress_dialog_candidate_word_size)));
+                mViewCandidateWord.setTypeface(Typeface.DEFAULT_BOLD);
+                mainlayout.addView(mViewCandidateWord, 
+                        res.getDimensionPixelSize(R.dimen.candidate_longpress_dialog_button_layout_width), 
+                        res.getDimensionPixelSize(R.dimen.candidate_longpress_dialog_word_height));
+            }
+            EditorInfo editorInfo = mWnn.getEditorInfo();
+            Bundle bundle = editorInfo.extras;
+            if (bundle != null) {
+                boolean allowEmoji = bundle.getBoolean("allowEmoji");
+                boolean allowDecoEmoji = bundle.getBoolean("allowDecoEmoji");
+                if (allowEmoji || allowDecoEmoji) {
+                    Bundle extraBundle = mViewCandidateWord.getInputExtras(true);
+                    extraBundle.putBoolean("allowEmoji", allowEmoji);
+                    extraBundle.putBoolean("allowDecoEmoji", allowDecoEmoji);
+                    emojiIns.addView(mViewCandidateWord);
+                }
+            }
+            word.candidate = word.candidate.substring(1, word.candidate.length() - 1);
+
+            // set button view
+            View mashup = (View)mViewLongPressDialog.findViewById(R.id.candidate_longpress_dialog_mashup);
+            if (mEnableMushroom) {
+                mashup.setVisibility(View.VISIBLE);
+            } else {
+                mashup.setVisibility(View.GONE);
+            }
+
+            View delete = (View)mViewLongPressDialog.findViewById(R.id.candidate_longpress_dialog_delete);
+            if (((word.attribute & iWnnEngine.WNNWORD_ATTRIBUTE_DELETABLE) != 0)) {
+                delete.setVisibility(View.VISIBLE);
+            } else {
+                delete.setVisibility(View.GONE);
+            }
+
+            mainlayout.addView(mViewLongPressDialog, 
+                    res.getDimensionPixelSize(R.dimen.candidate_longpress_dialog_button_layout_width), 
+                    res.getDimensionPixelSize(R.dimen.candidate_longpress_dialog_button_layout_height));
+
+            // show dialog
+            mDialog.setContentView(mainlayout);
+            if (mWnn.isNotExpandedFloatingMode()) {
+                mDialog.getWindow().getAttributes().token =
+                        mWnn.getFloatingPopupParent().getWindowToken();
+            } else {
+                mDialog.getWindow().getAttributes().token = view.getWindowToken();
+            }
+            ((CandidateTextView) view).displayCandidateDialog(mDialog);
+        }
+    }
+
+    /**
+     * Close word dialog.
+     *
+     */
+    public void closeDialog() {
+        if (null != mDialog) {
+            mDialog.dismiss();
+            mDialog = null;
+            if (null != mViewLongPressDialog) {
+                ViewGroup parent = (ViewGroup)mViewLongPressDialog.getParent(); 
+                if (null != parent) {
+                    parent.removeView(mViewLongPressDialog);
+                }
+            }
+        }
+    }
+
+    /**
+     * Get stroke length.
+     * @return int stroke length.
+     */
+    public abstract int getStrokeLength();
+}

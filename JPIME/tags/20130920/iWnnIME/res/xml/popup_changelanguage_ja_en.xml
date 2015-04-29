@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@dimen/popup_change_language_width"
+    iwnn:keyHeight="@dimen/popup_change_language_key_height"
+    iwnn:verticalGap="@dimen/popup_change_language_vertical_gap"
+    iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap"
+>
+  <Row>
+    <Key iwnn:codes="-611"
+         iwnn:keyIconId="148"
+         iwnn:keyHeight="@dimen/popup_change_language_key_height_title"
+         iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_title"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title" />
+  </Row>
+  <Row>
+    <Key iwnn:codes="-612"
+         iwnn:keyIconId="149"
+         iwnn:keyWidth="@dimen/popup_change_language_key_width" />
+  </Row>
+  <Row>
+    <Key iwnn:codes="-614"
+         iwnn:keyIconId="151"
+         iwnn:keyWidth="@dimen/popup_change_language_key_width" />
+  </Row>
+</Keyboard>

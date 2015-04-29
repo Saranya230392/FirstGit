@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+     >
+  <switch>
+    <!-- Voice On -->
+    <case iwnn:keyboardCondition="voiceOn">
+      <Row-Key>
+        <Key iwnn:codes="-311"
+             iwnn:keyIcon="@drawable/key_12key_voice" iwnn:iconPreview="@drawable/key_12key_voice_b"
+             iwnn:horizontalGap="@fraction/keyboard_12key_function_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_12key_input_keywidth"/>
+      </Row-Key>
+    </case>
+
+    <!-- Voice Off -->
+    <case iwnn:keyboardCondition="voiceOff|modeHiragana">
+    <case iwnn:keyboardCondition="voiceOff|modeFullKatakana">
+    <case iwnn:keyboardCondition="voiceOff|modeHalfKatakana">
+      <Row-Key>
+        <Key iwnn:codes="-213"
+             iwnn:keyIcon="@drawable/key_12key_dakuten" iwnn:iconPreview="@drawable/key_12key_dakuten_b" 
+             iwnn:horizontalGap="@fraction/keyboard_12key_function_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_12key_input_keywidth"/>
+      </Row-Key>
+    </case>
+    </case>
+    </case>
+
+    <case iwnn:keyboardCondition="voiceOff|modeFullAlpha">
+    <case iwnn:keyboardCondition="voiceOff|modeHalfAlpha">
+      <Row-Key>
+        <Key iwnn:codes="-213"
+             iwnn:keyIcon="@drawable/key_12key_caps" iwnn:iconPreview="@drawable/key_12key_caps_b"
+             iwnn:horizontalGap="@fraction/keyboard_12key_function_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_12key_input_keywidth"/>
+      </Row-Key>
+    </case>
+    </case>
+  </switch>
+</Keyboard>

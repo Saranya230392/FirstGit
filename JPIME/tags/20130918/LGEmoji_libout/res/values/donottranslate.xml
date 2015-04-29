@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="EMOJI_BG_COLOR_WHITE">#FFFFFFFF</string>
+    <string name="EMOJI_BG_COLOR_LIGHT_GRAY">#FFA1B2C5</string>
+    <string name="EMOJI_BG_COLOR_GRAY">#FF7B8795</string>
+    <string name="EMOJI_BG_COLOR_DARK_GRAY">#FF565E68</string>
+
+    <string name="EMOJI_PREF_KEY_BG_COLOR">emoji_pref_bg_color</string>
+
+    <string name="EMOJI_CONVERT_LEVEL_COMMON_NOUN">0</string>
+    <string name="EMOJI_CONVERT_LEVEL_NOUN">1</string>
+    <string name="EMOJI_CONVERT_LEVEL_NOUN_AND_VERB">2</string>
+    <string name="EMOJI_CONVERT_LEVEL_ALL">3</string>
+
+    <string name="EMOJI_PREF_KEY_CONVERT_LEVEL">emoji_pref_convert_level</string>
+
+    <string name="EMOJI_PREF_KEY_AUTO_CONNECT_DDL">emoji_pref_auto_connect_ddl</string>
+    <string name="EMOJI_PREF_KEY_USE_FUNC">emoji_pref_use_func</string>
+    <string name="EMOJI_PREF_CATEGORY_KEY_USE_FUNC">emoji_pref_categoory_use_func</string>
+    <string name="EMOJI_PREF_KEY_USER_EMOJI_SIZE">emoji_pref_user_emoji_size</string>
+    <string name="EMOJI_PREF_USER_EMOJI_SIZE_SMALL">20 * 20</string>
+    <string name="EMOJI_PREF_USER_EMOJI_SIZE_MEDIUM">40 * 40</string>
+    <string name="EMOJI_PREF_USER_EMOJI_SIZE_LARGE">60 * 60</string>
+    
+    <string name="EMOJI_PREF_USER_EMOJI_SIZE_VALUE_SMALL">20</string>
+    <string name="EMOJI_PREF_USER_EMOJI_SIZE_VALUE_MEDIUM">40</string>
+    <string name="EMOJI_PREF_USER_EMOJI_SIZE_VALUE_LARGE">60</string>
+</resources>

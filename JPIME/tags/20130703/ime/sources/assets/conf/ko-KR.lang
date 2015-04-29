@@ -1,0 +1,49 @@
+Language-Version: 1.0
+Language-Name: ko-KR
+Configuration-Script:
+ AddResDir ../resources
+
+Name: text
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ SetSpeedQualityCompromise 50
+ AddResource ko_KR/ko_KR_wansung-ak-cur.lite.res
+ AddResource ko_KR/wansung_jamo_digit_symbol.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ko_KR/ko_KR_wansung-ak-cur.lite.res
+ AddResource mul/mul-lk-number.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ko_KR/ko_KR_wansung-ak-iso.lite.res
+ AddResource ko_KR/wansung_jamo_digit_symbol.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: digit
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ko_KR/ko_KR_wansung-ak-iso.lite.res
+ SetCharacters 0123456789
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1

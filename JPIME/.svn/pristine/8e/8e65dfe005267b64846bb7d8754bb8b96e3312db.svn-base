@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <string-array name="onetouchemoji_symbol_item">
+        <item>"\u0020"</item><!-- "スペース" -->
+        <item>"\uFF5E"</item><!-- "～" -->
+        <item>"\uFFE5"</item><!-- "￥" -->
+        <item>"\u203B"</item><!-- "※" -->
+        <item>"\u2605"</item><!-- "★" -->
+        <item>"\u30FB"</item><!-- "・" -->
+        <item>"\u0028"</item><!-- "(" -->
+        <item>"\u0029"</item><!-- ")" -->
+        <item>"\u266A"</item><!-- "♪" -->
+        <item>"\u0025"</item><!-- "%" -->
+        <item>"\u005B"</item><!-- "[" -->
+        <item>"\u005D"</item><!-- "]" -->
+        <item>"\u002D"</item><!-- "-" -->
+        <item>"\u005F"</item><!-- "_" -->
+        <item>"\u0026"</item><!-- "&" -->
+        <item>"\u300E"</item><!-- "『" -->
+        <item>"\u300F"</item><!-- "』" -->
+        <item>"\uFF0B"</item><!-- "+" -->
+        <item>"\uFF0D"</item><!-- "-" -->
+        <item>"\u2026"</item><!-- "…" -->
+        <item>"\u3010"</item><!-- "【" -->
+        <item>"\u3011"</item><!-- "】" -->
+        <item>"\uFF20"</item><!-- "＠" -->
+        <item>"\u21D4"</item><!-- "⇔" -->
+        <item>"\u25CB"</item><!-- "○" -->
+        <item>"\u2192"</item><!-- "→" -->
+        <item>"\u2190"</item><!-- "←" -->
+        <item>"\u2191"</item><!-- "↑" -->
+        <item>"\u2193"</item><!-- "↓" -->
+        <item>"\u00D7"</item><!-- "×" -->
+        <item>"\uFF06"</item><!-- "&" -->
+        <item>"\u2606"</item><!-- "☆" -->
+        <item>"\u0040"</item><!-- "@" -->
+        <item>"\u21D2"</item><!-- "⇒" -->
+        <item>"\u2103"</item><!-- "℃" -->
+        <item>"\uFF08"</item><!-- "（" -->
+        <item>"\uFF09"</item><!-- "）" -->
+        <item>"\u003B"</item><!-- ";" -->
+        <item>"\uFF01"</item><!-- "！" -->
+        <item>"\uFF1F"</item><!-- "?" -->
+        <item>"\uFF62"</item><!-- "「" -->
+        <item>"\uFF63"</item><!-- "」" -->
+        <item>"\uFF05"</item><!-- "％" -->
+        <item>"\u003A"</item><!-- ":" -->
+        <item>"\u3000"</item><!-- "スペース" -->
+        <item>"\u002C"</item><!-- "," -->
+        <item>"\u002E"</item><!-- "." -->
+        <item>"\u003F"</item><!-- "?" -->
+        <item>"\u0021"</item><!-- "!" -->
+        <item>"\u002F"</item><!-- "/" -->
+        <item>"\u005E"</item><!-- "^" -->
+        <item>"\u003D"</item><!-- "=" -->
+        <item>"\u25CF"</item><!-- "●" -->
+        <item>"\u2662"</item><!-- "◇" -->
+        <item>"\u2666"</item><!-- "◆" -->
+
+<!-- TBD start(QA NO.16) -->
+        <item>"\u0022"</item>
+        <item>"\u0023"</item>
+        <item>"\u0024"</item>
+        <item>"\u0027"</item>
+        <item>"\u0030"</item>
+        <item>"\u0031"</item>
+        <item>"\u0032"</item>
+        <item>"\u0033"</item>
+        <item>"\u0034"</item>
+        <item>"\u0035"</item>
+<!-- TBD end -->
+    </string-array>
+</resources>
+

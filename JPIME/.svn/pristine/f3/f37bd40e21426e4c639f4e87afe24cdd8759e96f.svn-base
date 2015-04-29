@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@fraction/key_width_12key_1st"
+    iwnn:horizontalGap="@dimen/keyboard_12key_common_horizontal_gap"
+    iwnn:verticalGap="@dimen/keyboard_12key_common_vertical_gap"
+    iwnn:keyHeight="@dimen/key_height"
+    >
+
+    <Row>
+        <Key iwnn:codes="-426" iwnn:keyIconId="144" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_kbd" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_kbd_popup" iwnn:voiceIcon="@drawable/ime_keypad_icon_jp_mic" iwnn:voiceIconPreview="@drawable/ime_keypad_input_icon_mic_normal"
+             iwnn:popupKeyboard="@xml/keyboard_functionkey_preview" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+        <Key iwnn:codes="-201" iwnn:keyIconId="11" iwnn:keyIconPreviewId="411" />
+        <Key iwnn:codes="-202" iwnn:keyIconId="12" iwnn:keyIconPreviewId="412"/>
+        <Key iwnn:codes="-203" iwnn:keyIconId="13" iwnn:keyIconPreviewId="413"/>
+        <Key iwnn:codes="-214" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_delete" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_delete_popup"
+             iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-218" iwnn:keyIconId="145" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_arrow_l" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_arrow_l_popup" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+        <Key iwnn:codes="-204" iwnn:keyIconId="14" iwnn:keyIconPreviewId="414" />
+        <Key iwnn:codes="-205" iwnn:keyIconId="15" iwnn:keyIconPreviewId="415"/>
+        <Key iwnn:codes="-206" iwnn:keyIconId="16" iwnn:keyIconPreviewId="416"/>
+        <Key iwnn:codes="-217" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_arrow_r" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_arrow_r_popup" iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-222" iwnn:keyIconId="65" iwnn:keyIconPreviewId="465" iwnn:isPressHoldKey="true"
+         iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+        <Key iwnn:codes="-207" iwnn:keyIconId="17" iwnn:keyIconPreviewId="417" />
+        <Key iwnn:codes="-208" iwnn:keyIconId="18" iwnn:keyIconPreviewId="418"/>
+        <Key iwnn:codes="-209" iwnn:keyIconId="19" iwnn:keyIconPreviewId="419"/>
+        <Key iwnn:codes="-215" iwnn:isRepeatable="true"  iwnn:keyIcon="@drawable/ime_keypad_icon_jp_space" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_space_popup" iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+    </Row>
+
+    <Row iwnn:rowEdgeFlags="bottom">
+        <Key iwnn:codes="-230" iwnn:keyIconId="67" iwnn:keyIconPreviewId="466"
+         iwnn:popupKeyboard="@xml/popup_changelanguage" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"  iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+        <Key iwnn:codes="-4" iwnn:keyIconId="74" iwnn:keyIconPreviewId="474" />
+        <Key iwnn:codes="-210" iwnn:keyIconId="20" iwnn:keyIconPreviewId="420"/>
+        <Key iwnn:codes="-211" iwnn:keyIconId="89" iwnn:keyIconPreviewId="489" iwnn:iconPreview="@drawable/key_12key_period_comma_b" />
+        <Key iwnn:codes="-216" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_enter" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_enter_popup"
+             iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd"/>
+    </Row>
+</Keyboard>

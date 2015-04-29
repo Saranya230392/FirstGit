@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<resources>
+	<color name="pen_color_01">#ffffffff</color>
+    <color name="pen_color_02">#ffe001</color>
+    <color name="pen_color_03">#ffa12e</color>
+    <color name="pen_color_04">#fd4238</color>
+    <color name="pen_color_05">#c90044</color>
+    <color name="pen_color_06">#712785</color>
+    <color name="pen_color_07">#625bc4</color>
+    <color name="pen_color_08">#1c29a8</color>
+    <color name="pen_color_09">#b5bf00</color>
+    <color name="pen_color_10">#8ed400</color>
+    <color name="pen_color_11">#00ac68</color>
+    <color name="pen_color_12">#0078ca</color>
+    <color name="pen_color_13">#000000</color>
+    <color name="pen_color_14">#413232</color>
+    <color name="pen_color_15">#5b2c34</color>
+    <color name="pen_color_16">#955e3a</color>
+    <color name="stroke_color_white">#ffb2b2b2</color>
+    <color name="ime_lge_guide_text_color">#dcdcdc</color>
+    <color name="ime_lge_guide_title_color">#dcdcdc</color>
+    <!-- colors for StrokeView -->
+    <color name="stroke_view_bg_color">#CCCCCC</color>
+    <color name="stroke_view_rect_color">#A7A7A7</color>
+    <!-- color for button text -->
+    <color name="hw_ime_keypad_wht_btn_func_text_normal">#FFFFFFFF</color>
+	<color name="hw_ime_keypad_wht_btn_func_text_normal_shadow">#FF000000</color>
+</resources>

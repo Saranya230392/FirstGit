@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/selectLangtitleTop"
+        android:layout_width="fill_parent"
+        android:layout_height="36.66dp"
+        android:background="@drawable/hw_editor_btn_effect_character_title_top"
+        android:gravity="center"
+        android:padding="7dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/language_setting_popup_title_language"
+            android:textColor="@android:color/black"
+            android:textSize="14.67sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectLangBodyTop"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/hw_editor_btn_effect_character_body_mid"
+        android:gravity="center"
+        android:padding="7dp" >
+
+        <ImageButton
+            android:id="@+id/btnAllChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_none"
+            android:tag="@string/HW_LANGUAGE_JAPAN_ALL" />
+
+        <ImageButton
+            android:id="@+id/btnKanjiChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_kanji"
+            android:tag="@string/HW_LANGUAGE_JAPAN_KANJI" />
+
+        <ImageButton
+            android:id="@+id/btnHiraChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_hiragana"
+            android:tag="@string/HW_LANGUAGE_JAPAN_HIRAGANA" />
+
+        <ImageButton
+            android:id="@+id/btnKataChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_katakana"
+            android:tag="@string/HW_LANGUAGE_JAPAN_KATAKANA" />
+
+        <ImageButton
+            android:id="@+id/btnEngChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_alphabet"
+            android:tag="@string/HW_LANGUAGE_JAPAN_ENGLISH" />
+
+        <ImageButton
+            android:id="@+id/btnNumChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_number"
+            android:tag="@string/HW_LANGUAGE_JAPAN_NUMBER" />
+
+        <ImageButton
+            android:id="@+id/btnSymbolChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_symbol_ja"
+            android:tag="@string/HW_LANGUAGE_JAPAN_SYMBOL" />
+
+        <ImageButton
+            android:id="@+id/btnKorChar"
+            style="@style/BtnLangNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.33dp"
+            android:layout_weight="1"
+            android:src="@drawable/hw_ime_hw_popup_word_han"
+            android:tag="@string/HW_RESOURCE_LANG_KR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectLangtitleBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="35.33dp"
+        android:background="@drawable/hw_editor_btn_effect_character_title_mid"
+        android:gravity="center"
+        android:padding="7dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/language_setting_popup_title_active_mode"
+            android:textColor="@android:color/black"
+            android:textSize="14.67sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activeType"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/hw_editor_btn_effect_character_body_bottom"
+        android:gravity="center"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" >
+
+        <RelativeLayout
+            android:id="@+id/btnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/btnTextImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/button_state_lang_mode_text" />
+            <ImageView
+                android:id="@+id/btnTextCheck"
+                style="@style/BtnLangModeStyle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/btnTextImage"
+                android:src="@drawable/button_state_lang_mode_check" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/hw_ime_btn_effect_line_ver" />
+
+        <RelativeLayout
+            android:id="@+id/btnChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/btnCharImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/button_state_lang_mode_char" />
+            <ImageView
+                android:id="@+id/btnCharCheck"
+                style="@style/BtnLangModeStyle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/btnCharImage"
+                android:src="@drawable/button_state_lang_mode_check" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

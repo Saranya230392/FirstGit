@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_background">#ff7b8795</color>
+    <color name="switch_emoji_tab_base">#ff000000</color>
+    <color name="emoji_list_divider">#ffd3d2d3</color>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="setting_popup_underline_color_white">#FFFFFFFF</color>
+    <color name="setting_popup_underline_color_light_gray">#FFA1B2C5</color>
+    <color name="setting_popup_underline_color_gray">#FF7B8795</color>
+    <color name="setting_popup_underline_color_dark_gray">#FF565E68</color>
+    
+    <!-- Decome down loader -->
+    <color name="hig_list">#4baac8</color>
+    <color name="deco_pink">#DE4C92</color>
+
+</resources>

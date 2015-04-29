@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+     >
+  <switch>
+    <!-- Voice ON -->
+    <!-- Hiragana -->
+    <case iwnn:keyboardCondition="modeHiragana|voiceOn">
+      <Row-Key>
+        <Key iwnn:codes="-413"
+             iwnn:keyIcon="@drawable/key_qwerty_full_kuten_toggle" iwnn:iconPreview="@drawable/key_qwerty_full_kuten_toggle_b"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_ja_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Alphabet -->
+    <case iwnn:keyboardCondition="modeFullAlpha|voiceOn">
+      <Row-Key>
+        <Key iwnn:codes="-415"
+             iwnn:keyIcon="@drawable/key_qwerty_half_period_toggle" iwnn:iconPreview="@drawable/key_qwerty_half_period_toggle_b"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_en_full_alphabet_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Katakana -->
+    <case iwnn:keyboardCondition="modeFullKatakana|voiceOn">
+      <Row-Key>
+        <Key iwnn:codes="-413"
+             iwnn:keyIcon="@drawable/key_qwerty_full_kuten_toggle" iwnn:iconPreview="@drawable/key_qwerty_full_kuten_toggle_b"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_ja_full_katakana_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Half Alphabet -->
+    <case iwnn:keyboardCondition="modeHalfAlpha|voiceOn">
+      <Row-Key>
+        <Key iwnn:codes="-416"
+             iwnn:keyIcon="@drawable/key_qwerty_half_period_toggle" iwnn:iconPreview="@drawable/key_qwerty_half_period_toggle_b"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_en_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Half Katakana  -->
+    <case iwnn:keyboardCondition="modeHalfKatakana|voiceOn">
+      <Row-Key>
+        <Key iwnn:codes="-414"
+             iwnn:keyIcon="@drawable/key_qwerty_full_kuten_toggle" iwnn:iconPreview="@drawable/key_qwerty_full_kuten_toggle_b"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_ja_half_katakana_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Voice OFF -->
+    <!-- Hiragana -->
+    <case iwnn:keyboardCondition="modeHiragana|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="12290"
+             iwnn:keyIcon="@drawable/key_qwerty_full_kuten" iwnn:keyPreviewLabel="。"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_ja_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Alphabet -->
+    <case iwnn:keyboardCondition="modeFullAlpha|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="65294"
+             iwnn:keyIcon="@drawable/key_qwerty_half_period" iwnn:keyPreviewLabel="."
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_en_full_alphabet_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Katakana -->
+    <case iwnn:keyboardCondition="modeFullKatakana|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="12290"
+             iwnn:keyIcon="@drawable/key_qwerty_full_kuten" iwnn:keyPreviewLabel="。"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_ja_full_katakana_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Half Alphabet -->
+    <case iwnn:keyboardCondition="modeHalfAlpha|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="46"
+             iwnn:keyIcon="@drawable/key_qwerty_half_period" iwnn:keyPreviewLabel="."
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_en_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Half Katakana  -->
+    <case iwnn:keyboardCondition="modeHalfKatakana|voiceOff">
+      <Row-Key>
+        <Key iwnn:codes="65377"
+             iwnn:keyIcon="@drawable/key_qwerty_full_kuten" iwnn:keyPreviewLabel="。"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_maru_jajp_qwerty_ja_half_katakana_shift_off_txt" />
+      </Row-Key>
+    </case>
+
+    <!-- Number -->
+    <!-- Full Number -->
+    <case iwnn:keyboardCondition="modeFullNum">
+      <Row-Key>
+        <Key iwnn:codes="65294"
+             iwnn:keyIcon="@drawable/key_qwerty_num_period" iwnn:keyPreviewLabel="." />
+      </Row-Key>
+    </case>
+
+    <!-- Half Number -->
+    <case iwnn:keyboardCondition="modeHalfNum">
+      <Row-Key>
+        <Key iwnn:codes="46"
+             iwnn:keyIcon="@drawable/key_qwerty_num_period" iwnn:keyPreviewLabel="." />
+      </Row-Key>
+    </case>
+
+  </switch>
+</Keyboard>

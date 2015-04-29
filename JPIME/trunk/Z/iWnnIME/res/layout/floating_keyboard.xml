@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!-- floating keyboard layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_base"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/floating_keyboard_width"
+    android:background="@drawable/ime_floating_keypad_line"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/floating_title_background_ime_down"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/action_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/floating_keyboard_actionbar_height"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/floating_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/floating_keyboard_actionbar_height"
+            android:paddingTop="@dimen/floating_close_button_padding_top"
+            android:paddingRight="@dimen/floating_close_button_padding_right"
+            android:src="@drawable/floating_close"
+            android:scaleType="center"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ime_keypad_candidate_bg_w_btn4"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/floating_candidate_padding_left"
+        android:paddingRight="@dimen/floating_candidate_padding_right"
+        android:paddingTop="0dip"
+        android:paddingBottom="0dip" >
+        <LinearLayout
+            android:id="@+id/candidate_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dip" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/floating_keyboard_candidate_area_height"
+            android:orientation="vertical"
+            android:padding="0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard_area"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ime_floating_keypad_bg"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="5dip" />
+
+ </LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<jp.co.omronsoft.iwnnime.ml.BaseInputView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="5dip">
+   <LinearLayout
+       android:id="@+id/base_inputview_layout"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       />
+   <FrameLayout
+       android:id="@+id/base_inputview_layout_split"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       />
+</jp.co.omronsoft.iwnnime.ml.BaseInputView>

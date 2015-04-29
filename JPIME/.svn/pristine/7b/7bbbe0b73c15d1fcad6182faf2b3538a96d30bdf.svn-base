@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preference_root" >
+
+    <PreferenceCategory android:title="@string/emoji_pref_category_title" >
+        <ListPreference
+            android:defaultValue="@string/EMOJI_BG_COLOR_LIGHT_GRAY"
+            android:entries="@array/entryValues_bg_color"
+            android:entryValues="@array/entryValues_bg_color_value"
+            android:key="@string/EMOJI_PREF_KEY_BG_COLOR"
+            android:persistent="true"
+            android:title="@string/emoji_pref_title_bg_color" />
+        <ListPreference
+            android:defaultValue="@string/EMOJI_CONVERT_LEVEL_COMMON_NOUN"
+            android:entries="@array/entryValues_convert_level"
+            android:entryValues="@array/entryValues_convert_level_value"
+            android:key="@string/EMOJI_PREF_KEY_CONVERT_LEVEL"
+            android:persistent="true"
+            android:title="@string/emoji_pref_title_covert_level" />
+        <ListPreference
+            android:defaultValue="@string/EMOJI_PREF_USER_EMOJI_SIZE_VALUE_MEDIUM"
+            android:entries="@array/entries_user_emoji_size"
+            android:entryValues="@array/entryValues_user_emoji_size_value"
+            android:key="@string/EMOJI_PREF_KEY_USER_EMOJI_SIZE"
+            android:persistent="true"
+            android:title="@string/emoji_pref_title_user_emoji_size" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/EMOJI_PREF_KEY_AUTO_CONNECT_DDL"
+            android:title="@string/emoji_pref_title_auto_connect_ddl" 
+            android:summary="@string/emoji_pref_summary_auto_connect_ddl" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="@string/EMOJI_PREF_CATEGORY_KEY_USE_FUNC" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/EMOJI_PREF_KEY_USE_FUNC" />
+    </PreferenceCategory>
+</PreferenceScreen>

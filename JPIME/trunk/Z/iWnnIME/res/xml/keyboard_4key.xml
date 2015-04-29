@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@fraction/key_width_symbol"
+    iwnn:keyHeight="@dimen/key_height_4key"
+    >
+
+    <Row iwnn:verticalGap="@dimen/key_vgap_4key">
+        <Key iwnn:codes="-231" iwnn:keyIcon="@drawable/ime_symbol_icon_text" iwnn:iconPreview="@drawable/ime_symbol_icon_text" iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true" iwnn:horizontalGap="@dimen/padding_symbol_left"/>
+        <Key iwnn:codes="-237" iwnn:keyIconId="165" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_text_popup" iwnn:isSecondKey="true" />
+        <Key iwnn:codes="-232" iwnn:keyIcon="@drawable/ime_symbol_icon_up" iwnn:iconPreview="@drawable/ime_symbol_icon_up" iwnn:isSecondKey="true" />
+        <Key iwnn:codes="-233" iwnn:keyIcon="@drawable/ime_symbol_icon_down" iwnn:iconPreview="@drawable/ime_symbol_icon_down" iwnn:isSecondKey="true" />
+        <Key iwnn:codes="-234" iwnn:keyIcon="@drawable/ime_symbol_icon_del" iwnn:iconPreview="@drawable/ime_symbol_icon_del" iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true" />
+        <Key iwnn:codes="-310" iwnn:keyIcon="@drawable/key_blank" iwnn:horizontalGap="@dimen/padding_symbol_left" iwnn:keyWidth="0%"/>
+    </Row>
+</Keyboard>
+

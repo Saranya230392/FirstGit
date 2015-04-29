@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/ime_guide_layout_padding_left"
+        android:paddingRight="@dimen/ime_guide_layout_padding_right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_View"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/ime_guide_title_view_padding_top"
+            android:paddingBottom="@dimen/ime_guide_title_view_padding_bottom"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="left|center_vertical"
+            android:textStyle="bold"
+            android:textSize="@dimen/ime_guide_title_text"
+            android:textColor="@color/ime_lge_guide_title_color" />
+<!--         
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_blue_light" />
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+<!--             
+            android:paddingTop="@dimen/ime_guide_layout_padding_top" >
+
+            android:paddingLeft="@dimen/ime_guide_layout_padding_left"
+        	android:paddingRight="@dimen/ime_guide_layout_padding_right" >
+-->            
+            <ImageView
+                android:id="@+id/img_View"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="@dimen/ime_guide_layout_padding_right" />
+
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+		        <TextView
+		            android:id="@+id/txt_View"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/ime_guide_text_margin_top"
+		            android:gravity="left|center_vertical"
+		            android:textColor="@color/ime_lge_guide_text_color"
+		            android:textSize="@dimen/ime_guide_list_text" />
+	        </LinearLayout>
+		</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

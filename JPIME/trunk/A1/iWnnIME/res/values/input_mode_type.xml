@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Show input keyboard type choosing dialogue.
+-->
+<resources>
+    <string-array name="input_mode_type_entry">
+      <item>@string/ti_input_mode_type_entry_54_txt</item>
+      <item>@string/ti_input_mode_type_entry_qwerty_txt</item>
+    </string-array>
+    <string-array name="input_mode_type_entry_value">
+      <item>@string/input_mode_type_list_item_10key_keyboard</item>
+      <item>@string/input_mode_type_list_item_qwerty_keyboard</item>
+    </string-array>
+    <string name="input_mode_type_entry_default_value">1</string>
+    <string name="input_mode_type_entry_default_value_qwerty">0</string>
+</resources>

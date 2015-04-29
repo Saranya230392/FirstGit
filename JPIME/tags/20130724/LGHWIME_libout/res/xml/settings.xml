@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preference_root" >
+
+    <PreferenceCategory
+        android:key="handwriting_pref_category"
+        android:title="@string/handwriting_pref_category_title" >
+
+        <!-- Invisible preference START -->
+        <ListPreference
+            android:defaultValue="@string/HW_RESOURCE_LANG_JP"
+            android:entryValues="@array/entryValues_working_lang_value"
+            android:key="working_lang"
+            android:persistent="true" />
+        <ListPreference
+            android:defaultValue="@string/HW_LANGUAGE_JAPAN_ALL"
+            android:entryValues="@array/entryValues_language_japan_type_value"
+            android:key="language_japan_type"
+            android:persistent="true" />
+        <ListPreference
+            android:defaultValue="@string/HW_MODE_TEXT"
+            android:entryValues="@array/entryValues_working_active_mode_value"
+            android:key="working_active_mode"
+            android:persistent="true" />
+        <!-- Invisible preference END -->
+        <com.lge.handwritingime.preference.PenTypePreference
+            android:defaultValue="@string/HW_PEN_TYPE_BALLPEN"
+            android:key="pen_type"
+            android:entryValues="@array/entryValues_pen_type_value"
+            android:persistent="true"
+            android:title="@string/handwriting_pref_title_pen_type" />
+        <!-- 
+        <ListPreference
+            android:defaultValue="@integer/default_ink_thinkness_value"
+            android:entries="@array/entryValues_ink_thinkness"
+            android:entryValues="@array/entryValues_ink_thinkness_value"
+            android:key="ink_thickness"
+            android:persistent="true"
+            android:title="@string/handwriting_pref_title_pen_type" />
+        -->
+        <com.lge.handwritingime.preference.ColorPickerDialogPreference                   
+            android:defaultValue="@string/HW_PEN_COLOR_DEFAULT"
+            android:title="@string/handwriting_pref_title_pen_color"
+            negativeButtonText = "@android:string/cancel"
+            android:key="pen_color"
+            android:persistent="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/auto_scroll_setting_category_title" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auto_scroll_cb"
+            android:title="@string/auto_scroll_title" />
+
+        <ListPreference
+            android:defaultValue="@string/HW_AREA_WIDTH_NORMAL"
+            android:entries="@array/entryValues_auto_scroll_area_width"
+            android:entryValues="@array/entryValues_auto_scroll_area_width_value"
+            android:key="auto_scroll_area_width"
+            android:dependency="@string/HW_PREF_KEY_AUTO_SCROLL"
+            android:title="@string/auto_scroll_area_width_title" />
+			
+        <com.lge.handwritingime.preference.ScrollDelaySeekBarPreference
+            android:defaultValue="5"
+            android:key="auto_scroll_input_delay"
+            android:dependency="@string/HW_PREF_KEY_AUTO_SCROLL"
+            android:persistent="true"
+            android:title="@string/auto_scroll_input_delay_title" />
+    </PreferenceCategory>
+    <!-- theme test -->
+    <!--  
+    <PreferenceCategory android:title="THEME TEST" >
+        <com.lge.handwritingime.preference.ThemePreference
+            android:defaultValue="@string/HW_PEN_COLOR_BLACK"
+            android:title="Change theme"
+            android:key="theme"
+            android:persistent="true" />
+    </PreferenceCategory>
+    -->
+        
+</PreferenceScreen>

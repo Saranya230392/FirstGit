@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+  <integer name="candidate_longpress_dialog_candidate_word_size">24</integer>
+  <integer name="candidate_longpress_dialog_candidate_emoji_word_size">56</integer>
+  <integer name="key_height_default_value">75</integer>
+  <integer name="key_preview_backdrawable_jugde_correction_percent">10</integer>
+  <integer name="span_color_toggle_character_bg_hl">0xFFA9A9A9</integer>
+  <integer name="span_color_toggle_character_text">0xFF000000</integer>
+
+  <!-- Composing extra view side margin size -->
+  <integer name="composing_extra_view_side_margin_size">5</integer>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+     >
+  <switch>
+    <!-- Cursor On -->
+    <case iwnn:keyboardCondition="cursorLeftRightOn">
+      <Row-Key>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_mode"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_symbol"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_voice_touten"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_space"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_kuten"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_cursor"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_enter"/>
+      </Row-Key>
+    </case>
+
+    <!-- Cursor Off -->
+    <case iwnn:keyboardCondition="cursorLeftRightOff">
+      <Row-Key>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_mode"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_symbol"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_voice_touten"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_space"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_kuten"/>
+        <include iwnn:keyboardLayout="@xml/key_qwerty_jp_enter"/>
+      </Row-Key>
+    </case>
+  </switch>
+</Keyboard>

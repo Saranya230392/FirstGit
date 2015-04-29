@@ -1,0 +1,75 @@
+**********************************************************************
+                                                        [CONFIDENTIAL]
+Build Manual for LG A1 iWnnIME
+
+                                                            2013.07.02
+                                              OMRON SOFTWARE Co., Ltd.
+**********************************************************************
+
+1.directory hierarchy
+    +LGHWIME_libout
+      +assets
+       ...
+    +LGEmoji_libout_omron
+      +assets
+       ...
+    +ime
+      +sources
+        +assets
+        +jni
+        +libs
+        +libs_eng
+        +res
+        +src
+        +AndroidManifest.xml
+        +build.xml
+        +MODULE_LICENSE_APACHE2
+        +NOTICE
+        +proguard-project.txt
+        +project.properties
+
+2.make ime/sources/local.properties
+    setting path to android sdk
+
+    (example)
+        sdk.dir=C:\\android\\adt-bundle-windows-x86_64\\sdk
+
+3.edit ime/sources/project.properties
+    add below line to project.properties
+    android.library.reference.1=../../LGHWIME_libout
+    android.library.reference.2=../../LGEmoji_libout_omron
+
+4.LGHWIME_libout setting
+	・move LGHWIME_libout/TO_MAIN_SOURCE/assets to ime/sources/assets
+	・move LGHWIME_libout/TO_MAIN_SOURCE/src/com to ime/sources/src/com
+	・setting path to android sdk in LGHWIME_libout/local.properties
+	    (example)
+	        sdk.dir=C:\\android\\adt-bundle-windows-x86_64\\sdk
+
+5.LGEmoji_libout_omron setting
+	・move LGEmoji_libout_omron/TO_MAIN_SOURCE/src/com to ime/sources/src/com
+	・add below line to LGEmoji_libout_omron/project.properties
+			target=android-16
+			android.library=true
+	・delete LGEmoji_libout_omron/res/drawable-xxhdpi/ime_keypad_bg.9.png
+	・copy LGHWIME_libout/build.xml to LGEmoji_libout_omron/build.xml
+	・copy LGHWIME_libout/local.properties to LGEmoji_libout_omron/local.properties
+	・copy ime/sources/libs/DecoEmojiInterface.jar to LGEmoji_libout_omron/jar/DecoEmojiInterface.jar
+	・copy ime/sources/libs/emojisl_type2.jar to LGEmoji_libout_omron/libs/emojisl_type2.jar
+
+6. How to build LGKeyboard
+  Please type below command, apk file is made in ime/sources/bin.
+
+    (command)
+        cd ime/sources
+        ant clean
+        ant debug
+
+
+
+
+****************************
++ 2013/07/02 
+  - Initial release
+
+**********************************************************************

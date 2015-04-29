@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+
+<!-- one handed layout right -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onehand_right"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:padding="0dip"
+    android:orientation="horizontal"
+    android:background="@drawable/ime_one_hand_bg_height">
+    <ImageView
+        android:id="@+id/onehand_right_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ime_one_hand_btn_right_normal"
+        android:scaleType="center"
+        android:clickable="true"/>
+</LinearLayout>
+

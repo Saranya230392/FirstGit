@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LG Emoji Keyboard</string>
+    <string name="ddl_name">DecomeDownLoader</string>
+    <string name="switch_emoji_tab_deco">Pict-D</string>
+    <string name="switch_emoji_tab_carrier">Pictogram</string>
+    <string name="switch_emoji_tab_emoticon">Emoticon</string>
+    <string name="switch_emoji_tab_symbol">Symbol</string>
+    <string name="switch_emoji_tab_user_pict">User-Pict</string>
+    <string name="ti_emoji_category_nature_txt">[Pictogram]</string>
+    <string name="provider_label">UserEmoji</string>
+    <string name="history">History</string>
+    
+    <string name="emoji_category_name_nature">Nature</string>
+    <string name="emoji_category_name_human_living_things">Human/Living things</string>
+    <string name="emoji_category_name_faces_and_smilely">Faces and Smiley\'s</string>
+    <string name="emoji_category_name_artifacts">Artifacts</string>
+    <string name="emoji_category_name_activities_work_entertainment">Activities/Work/Entertainment</string>
+    <string name="emoji_category_name_foods">Foods</string>
+    <string name="emoji_category_name_symbols">Symbols</string>
+    <string name="symbol_category_name_half">Symbol(Half)</string>
+    <string name="symbol_category_name_full">Symbol(Full)</string>
+    <string name="emoticon_category_name_happy">Happy</string>
+    <string name="emoticon_category_name_sad">Sad</string>
+    <string name="emoticon_category_name_surprise">Surprise</string>
+    <string name="emoticon_category_name_trouble">Trouble</string>
+    <string name="emoticon_category_name_angry">Angry</string>
+    <string name="emoticon_category_name_greeting">Greeting</string>
+    <string name="emoticon_category_name_action">Action</string>
+    <string name="emoticon_category_name_love_friendship">Love Friendship</string>
+    <string name="emoticon_category_name_animal_character">Animal Character</string>
+
+    <string name="emoji_pref_category_title">Emoji settings</string>
+    <string name="emoji_pref_title_bg_color">Select background color</string>
+    <string name="emoji_pref_bg_color_white">White</string>
+    <string name="emoji_pref_bg_color_light_gray">Light gray</string>
+    <string name="emoji_pref_bg_color_gray">Gray</string>
+    <string name="emoji_pref_bg_color_dark_gray">Dark gray</string>
+    <string name="emoji_pref_title_covert_level">Select convert level</string>
+    <string name="emoji_pref_convert_level_common_noun">Common noun</string>
+    <string name="emoji_pref_convert_level_noun">Noun</string>
+    <string name="emoji_pref_convert_level_noun_and_verb">Noun + Verb</string>
+    <string name="emoji_pref_convert_level_all">All</string>
+    <string name="emoji_pref_title_auto_connect_ddl">Connect LG DDL</string>
+    <string name="emoji_pref_summary_auto_connect_ddl">Automatically Connect to the LG DDL.</string>
+    <string name="emoji_pref_title_user_emoji_size">Select user emoji size</string>
+
+    <!-- Decome Down Loader -->
+    <string name="btn_marketupdate">Make account/Check update</string>
+    <string name="app_introTitle1">Welcome to DecomeDownloader</string>
+    <string name="app_introTitle2">The application delivers lovely &lt;font color=\"#DE4C92\"&gt;Deco-mail Pictograms&lt;/font&gt; on your device for free.</string>
+    <string name="app_Topic_title">Value point!</string>
+    <string name="app_Topic1">You get free of charge.</string>
+    <string name="app_Topic2">Automatic transmission!</string>
+    <string name="app_Topic3">Deliver until May 2014</string>
+    <string name="app_attention">※If you can not see delivered Deco-mail Pictograms on sp-mode mail, you should kill sp-mode mail from the Application manager.\n\n※Delivery schedule is undecided.</string>
+    <string name="error_message_cannot_connect_lgsw">Can not connect to the "LG SmartWorld". Because, the package name mismatch.</string>
+
+</resources>

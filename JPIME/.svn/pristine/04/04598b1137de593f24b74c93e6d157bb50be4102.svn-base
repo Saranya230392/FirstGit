@@ -1,0 +1,18 @@
+# view res/layout/emoji_list.xml #generated:126
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.lge.emoji.DecomeDownLoaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.lge.emoji.EmojiPreferenceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.lge.emoji.FunctionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.lge.emoji.provider.UserEmojiProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class jp.co.omronsoft.iwnnime.ml.InputMethodSwitcher { <init>(...); }
+

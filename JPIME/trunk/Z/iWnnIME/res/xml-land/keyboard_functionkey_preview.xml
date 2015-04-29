@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@dimen/popup_function_key_width"
+    iwnn:horizontalGap="@dimen/popup_function_horizontal_gap"
+    iwnn:verticalGap="@dimen/popup_function_vertical_gap"
+    iwnn:keyHeight="@dimen/popup_function_key_height"
+>
+    <Row
+        iwnn:rowEdgeFlags="top"
+        iwnn:verticalGap="0dp">
+        <Key
+            iwnn:codes="-601"
+            iwnn:keyIcon="@drawable/ime_keypad_input_icon_mic_normal" />
+        <Key
+            iwnn:codes="-602"
+            iwnn:keyIcon="@drawable/ime_keypad_input_icon_kbd_normal" />
+        <Key
+            iwnn:codes="-603"
+            iwnn:keyIcon="@drawable/ime_keypad_input_icon_handwriting_normal" />
+        <Key
+            iwnn:codes="-606"
+            iwnn:keyIcon="@drawable/ime_keypad_input_icon_split_normal" />
+        <Key
+            iwnn:codes="-608"
+            iwnn:keyIcon="@drawable/ime_keypad_input_icon_cliptray_normal" />
+        <Key
+            iwnn:codes="-604"
+            iwnn:keyIcon="@drawable/ime_keypad_input_icon_setting_normal" />
+    </Row>
+</Keyboard>

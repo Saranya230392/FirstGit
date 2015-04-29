@@ -1,0 +1,619 @@
+com.lge.handwritingime.CandidateView -> com.lge.handwritingime.a:
+    com.lge.handwritingime.HandwritingKeyboard mService -> a
+    java.util.List mSuggestions -> b
+    int mSelectedIndex -> c
+    int mTouchX -> d
+    int mTouchY -> e
+    android.graphics.drawable.Drawable mSelectionHighlight -> f
+    int mLine -> g
+    boolean mbCharMode -> h
+    android.graphics.Rect mBgPadding -> i
+    int[] mWordWidth -> j
+    int[] mWordX -> k
+    java.util.List EMPTY_LIST -> l
+    int mColorNormal -> m
+    int mColorOther -> n
+    int mColorRecommended -> o
+    android.graphics.Paint mPaint -> p
+    android.graphics.Paint mSeparateLinePaint -> q
+    int mTotalWidth -> r
+    void setService(com.lge.handwritingime.HandwritingKeyboard) -> setService
+    int computeHorizontalScrollRange() -> computeHorizontalScrollRange
+    void onMeasure(int,int) -> onMeasure
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void setSuggestions(java.util.List) -> setSuggestions
+    void clear() -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void removeHighlight() -> b
+    void setSelectedIndex(int) -> setSelectedIndex
+    void setCharMode(boolean) -> setCharMode
+com.lge.handwritingime.HandwritingKeyboard -> com.lge.handwritingime.HandwritingKeyboard:
+    com.lge.handwritingime.manager.StrokeManager mStrokeManager -> l
+    com.lge.handwritingime.manager.IModeManager mModeManager -> a
+    com.lge.handwritingime.manager.ButtonLayoutManager mButtonLayoutManager -> m
+    com.lge.voassist.Core mCore -> n
+    android.widget.LinearLayout mInputView -> o
+    android.widget.FrameLayout mStrokeLayout -> b
+    android.widget.FrameLayout mStrokeViewGroupLayout -> c
+    android.widget.ScrollView mCandidateScrollView -> p
+    android.widget.FrameLayout mCandidateLayout -> q
+    com.lge.handwritingime.CandidateView mCandidateView -> d
+    android.content.SharedPreferences mSharedPref -> r
+    java.lang.String mModeName -> e
+    java.lang.String mWorkingLang -> s
+    java.lang.String mWorkingLangJapanType -> t
+    boolean mIsAutoScrollMode -> f
+    int mAutoDelay -> g
+    float mNextScreenWidth -> h
+    java.lang.String mPenColor -> i
+    java.lang.String mPenWidth -> j
+    boolean mbFoldCandidateView -> u
+    com.lge.handwritingime.HandwritingKeyboard$HandwritingHandler mHandler -> k
+    com.visionobjects.im.EventListener mRecognizerListener -> v
+    android.view.View$OnClickListener mClickListener -> w
+    void onCreate() -> onCreate
+    android.view.View onCreateInputView() -> onCreateInputView
+    void onStartInputView(android.view.inputmethod.EditorInfo,boolean) -> onStartInputView
+    void onFinishInputView(boolean) -> onFinishInputView
+    void onWindowShown() -> onWindowShown
+    android.view.View onCreateCandidatesView() -> onCreateCandidatesView
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onUpdateSelection(int,int,int,int,int,int) -> onUpdateSelection
+    void onDestroy() -> onDestroy
+    void goHWSetting() -> a
+    void goIwnnIme() -> b
+    void deleteStroke() -> c
+    void deleteOne() -> d
+    void deleteText() -> e
+    boolean dismissAllPopups() -> f
+    void setModeManager() -> g
+    void submitStrokes() -> h
+    java.lang.String getResourceMode(java.lang.String) -> a
+    void submitStrokes(java.lang.String) -> b
+    void updateCandidateView() -> i
+    void foldCandidateView() -> j
+    void unfoldCandidateView() -> k
+    boolean isFoldedCandidateView() -> l
+    void showFolderBtn(boolean) -> a
+    void updateFolderBtn() -> m
+    void pickSuggestionManually(int) -> a
+    void clearAll() -> n
+    void getPrefSettings() -> o
+    void getPrefLangSettings() -> p
+    void deleteBtnIconCheck() -> q
+    boolean access$1(com.lge.handwritingime.HandwritingKeyboard) -> a
+com.lge.handwritingime.HandwritingKeyboard$1 -> com.lge.handwritingime.b:
+    com.lge.handwritingime.HandwritingKeyboard this$0 -> a
+com.lge.handwritingime.HandwritingKeyboard$2 -> com.lge.handwritingime.c:
+    com.lge.handwritingime.HandwritingKeyboard this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.lge.handwritingime.HandwritingKeyboard$HandwritingHandler -> com.lge.handwritingime.d:
+    java.lang.ref.WeakReference mRef -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.lge.handwritingime.StrokeView -> com.lge.handwritingime.StrokeView:
+    android.graphics.Paint mPaint -> a
+    android.graphics.Paint mRectPaint -> b
+    android.graphics.MaskFilter mEmboss -> c
+    com.lge.handwritingime.StrokeView$OnStrokeListener mOnStrokeListener -> d
+    android.graphics.Path mPath -> e
+    android.graphics.Paint mDebugPaint -> f
+    boolean mLastScreen -> g
+    boolean mAutoScroll -> h
+    float mStrokeWidth -> i
+    android.graphics.RectF mNextScreenRectF -> j
+    float mX -> k
+    float mY -> l
+    float mRatio -> m
+    int mActiveId -> n
+    void init(android.content.Context) -> a
+    void setStrokeWidth(int) -> setStrokeWidth
+    void setPaintColor(java.lang.String) -> setPaintColor
+    void setNextScreenRectF(android.graphics.RectF) -> setNextScreenRectF
+    void setAutoScroll(boolean) -> setAutoScroll
+    void setLastScreen(boolean) -> setLastScreen
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void onDraw(android.graphics.Canvas) -> onDraw
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void touchStart(float,float) -> a
+    void touchMove(float,float) -> b
+    void touchUp() -> b
+    void remakePath(java.util.ArrayList) -> a
+    void redraw(java.util.ArrayList) -> b
+    boolean isEmpty() -> a
+    void setOnStrokeListener(com.lge.handwritingime.StrokeView$OnStrokeListener) -> setOnStrokeListener
+com.lge.handwritingime.StrokeView$OnStrokeListener -> com.lge.handwritingime.e:
+    void onPreStartStrokeEvent(com.lge.handwritingime.StrokeView) -> a
+    void onStartStrokeEvent(float,float) -> a
+    void onStrokeEvent(float,float) -> b
+    void onEndStrokeEvent(float,float) -> c
+com.lge.handwritingime.data.Stroke -> com.lge.handwritingime.data.a:
+    boolean add(float,float) -> a
+    float getMinX() -> a
+    float getMaxX() -> b
+    int getPointCount() -> c
+    float getX(int) -> a
+    float getY(int) -> b
+com.lge.handwritingime.data.StrokeChar -> com.lge.handwritingime.data.b:
+    java.util.ArrayList mStrokes -> a
+    java.util.ArrayList mResults -> b
+    float mMinX -> c
+    float mMaxX -> d
+    int mSelectedIndex -> e
+    float getMinX() -> a
+    float getMaxX() -> b
+    boolean setSelectedLabel(java.lang.String) -> a
+    java.util.ArrayList getStrokes() -> c
+    java.util.ArrayList getLabels() -> d
+    java.lang.String getSelectedLabel() -> e
+    java.lang.String getLabel(int) -> a
+    int getSelectedIndex() -> f
+    void setSelectedIndex(int) -> b
+    java.lang.String toString() -> toString
+com.lge.handwritingime.data.StrokeChar$StrokeResult -> com.lge.handwritingime.data.c:
+    float score -> a
+    java.lang.String label -> b
+    int compareTo(com.lge.handwritingime.data.StrokeChar$StrokeResult) -> a
+    int compareTo(java.lang.Object) -> compareTo
+com.lge.handwritingime.data.StrokePoint -> com.lge.handwritingime.data.StrokePoint:
+    java.lang.String toString() -> toString
+com.lge.handwritingime.manager.ButtonLayoutManager -> com.lge.handwritingime.a.a:
+    com.lge.handwritingime.HandwritingKeyboard mKeyboard -> b
+    com.lge.handwritingime.manager.StrokeManager mStrokeDataManager -> c
+    android.widget.LinearLayout mButtonViewLayout -> d
+    com.lge.handwritingime.popup.SelectKeyboardPopup mSelectKeyboardPopup -> e
+    com.lge.handwritingime.popup.SelectLanguageSettingPopup mSelectLanguageSettingPopup -> f
+    com.lge.handwritingime.popup.SelectDeleteButtonPopup mSelectDeleteButtonPopup -> g
+    int mButtonViewHeight -> a
+    android.content.SharedPreferences mSharedPref -> h
+    void setPrefSettingIcon() -> a
+    void onCreateButtonLayout(android.widget.LinearLayout) -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+    void onClick(android.view.View) -> onClick
+    void deleteBtnIconCheck() -> b
+    boolean dismissAllPopups() -> c
+    com.lge.handwritingime.HandwritingKeyboard access$0(com.lge.handwritingime.manager.ButtonLayoutManager) -> a
+com.lge.handwritingime.manager.ButtonLayoutManager$1 -> com.lge.handwritingime.a.b:
+    com.lge.handwritingime.manager.ButtonLayoutManager this$0 -> a
+    void onClick(int) -> a
+com.lge.handwritingime.manager.ButtonLayoutManager$2 -> com.lge.handwritingime.a.c:
+    com.lge.handwritingime.manager.ButtonLayoutManager this$0 -> a
+    void onClick(int) -> a
+com.lge.handwritingime.manager.ButtonLayoutManager$3 -> com.lge.handwritingime.a.d:
+    com.lge.handwritingime.manager.ButtonLayoutManager this$0 -> a
+    android.widget.ImageButton val$btnDelete -> b
+    void run() -> run
+com.lge.handwritingime.manager.ButtonLayoutManager$4 -> com.lge.handwritingime.a.e:
+    com.lge.handwritingime.manager.ButtonLayoutManager this$0 -> a
+    void onClick(int) -> a
+com.lge.handwritingime.manager.CharModeManager -> com.lge.handwritingime.a.f:
+    com.lge.handwritingime.HandwritingKeyboard mKeyboard -> a
+    com.lge.handwritingime.manager.StrokeManager mStrokeManager -> b
+    com.lge.handwritingime.manager.StrokeCharManager mStrokeCharManager -> c
+    android.widget.FrameLayout mStrokeLayout -> d
+    android.widget.FrameLayout mStrokeViewGroupLayout -> e
+    com.lge.handwritingime.StrokeView mStrokeViewLeft -> f
+    com.lge.handwritingime.StrokeView mStrokeViewRight -> g
+    com.lge.handwritingime.StrokeView mCurrentStrokeView -> h
+    int mComposingCharIndex -> i
+    int mCandidatesStart -> j
+    int mCandidatesSize -> k
+    android.os.Handler mHandler -> l
+    com.lge.handwritingime.StrokeView$OnStrokeListener mCharOnStrokeListener -> m
+    void composingText(java.lang.String) -> a
+    void clearComposingChars() -> j
+    void finishComposingText() -> a
+    void onCreateStrokeLayout(android.widget.FrameLayout) -> a
+    void deleteComposingChar() -> k
+    void deleteStroke() -> b
+    void deleteOne() -> c
+    void deleteText() -> d
+    java.util.ArrayList getSuggestions() -> e
+    void updateCharButton() -> f
+    void setAutoScrollWidth(float) -> a
+    void pickSuggestionManually(int) -> a
+    void onUpdateSelection(int,int,int,int,int,int) -> a
+    boolean dismissCharButtonPopups() -> g
+    void setPenType(java.lang.String,java.lang.String) -> a
+    void clear() -> h
+    void destroy() -> i
+    void access$0(com.lge.handwritingime.manager.CharModeManager,com.lge.handwritingime.StrokeView) -> a
+    com.lge.handwritingime.StrokeView access$1(com.lge.handwritingime.manager.CharModeManager) -> a
+    com.lge.handwritingime.StrokeView access$2(com.lge.handwritingime.manager.CharModeManager) -> b
+    android.os.Handler access$3(com.lge.handwritingime.manager.CharModeManager) -> c
+    com.lge.handwritingime.manager.StrokeManager access$4(com.lge.handwritingime.manager.CharModeManager) -> d
+    com.lge.handwritingime.HandwritingKeyboard access$5(com.lge.handwritingime.manager.CharModeManager) -> e
+    int access$6(com.lge.handwritingime.manager.CharModeManager) -> f
+    void access$7(com.lge.handwritingime.manager.CharModeManager,int) -> a
+    com.lge.handwritingime.manager.StrokeCharManager access$8(com.lge.handwritingime.manager.CharModeManager) -> g
+    com.lge.handwritingime.StrokeView access$9(com.lge.handwritingime.manager.CharModeManager) -> h
+com.lge.handwritingime.manager.CharModeManager$1 -> com.lge.handwritingime.a.g:
+    com.lge.handwritingime.data.Stroke strokes -> a
+    com.lge.handwritingime.manager.CharModeManager this$0 -> b
+    void onStrokeEvent(float,float) -> b
+    void onPreStartStrokeEvent(com.lge.handwritingime.StrokeView) -> a
+    void onStartStrokeEvent(float,float) -> a
+    void onEndStrokeEvent(float,float) -> c
+com.lge.handwritingime.manager.CharModeManager$CharModeHandler -> com.lge.handwritingime.a.h:
+    java.lang.ref.WeakReference mRef -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.lge.handwritingime.manager.IModeManager -> com.lge.handwritingime.a.i:
+    void onCreateStrokeLayout(android.widget.FrameLayout) -> a
+    void deleteStroke() -> b
+    void deleteOne() -> c
+    void deleteText() -> d
+    void destroy() -> i
+    void clear() -> h
+    void setPenType(java.lang.String,java.lang.String) -> a
+    java.util.ArrayList getSuggestions() -> e
+    void pickSuggestionManually(int) -> a
+    void setAutoScrollWidth(float) -> a
+    void updateCharButton() -> f
+    boolean dismissCharButtonPopups() -> g
+    void onUpdateSelection(int,int,int,int,int,int) -> a
+com.lge.handwritingime.manager.ScreenManager -> com.lge.handwritingime.a.j:
+    float mNextScreenWidth -> a
+    com.lge.handwritingime.HandwritingKeyboard mContext -> b
+    int mNumScreens -> c
+    int mIndexScreen -> d
+    android.graphics.RectF mNextScreenRectF -> e
+    int mOrientation -> f
+    int[] mWidthScreens -> g
+    int[] mHeightScreens -> h
+    android.graphics.RectF getNextScreenRectF() -> a
+    int getWidthScreen() -> b
+    int getHeightScreen() -> c
+    void scrollScreen(boolean) -> a
+    void setAnimation(android.view.View) -> a
+    void goCurrentScreen(boolean) -> b
+    void updateScreenArrow() -> d
+    void clear() -> e
+    void init() -> f
+    void recalcScreen(float,float) -> a
+    int getWidthTotScreen() -> j
+    void recalcScroll(boolean) -> c
+    void autoScrollRight(android.view.View) -> b
+    void changeScreenSize() -> g
+    void recaleNextScreenRectF(float,float) -> b
+    float getNextScreenWidth() -> h
+    void setNextScreenWidth(float) -> a
+    int findScreenIndex(float,boolean) -> a
+    int getScrollSize() -> i
+    float unnormalizePoint(float) -> b
+    boolean isLastScreen() -> k
+    com.lge.handwritingime.HandwritingKeyboard access$0(com.lge.handwritingime.manager.ScreenManager) -> a
+com.lge.handwritingime.manager.ScreenManager$1 -> com.lge.handwritingime.a.k:
+    com.lge.handwritingime.manager.ScreenManager this$0 -> a
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+com.lge.handwritingime.manager.StrokeCharManager -> com.lge.handwritingime.a.l:
+    java.util.ArrayList mStrokeChars -> a
+    com.lge.handwritingime.manager.StrokeCharManager mInstance -> b
+    com.lge.handwritingime.manager.StrokeCharManager getInstance() -> a
+    void clear() -> b
+    void add(com.lge.handwritingime.data.StrokeChar) -> a
+    void add(int,com.lge.handwritingime.data.StrokeChar) -> a
+    int indexOf(com.lge.handwritingime.data.StrokeChar) -> b
+    boolean removeChar(com.lge.handwritingime.data.StrokeChar) -> c
+    com.lge.handwritingime.data.StrokeChar remove(int) -> a
+    com.lge.handwritingime.data.StrokeChar get(int) -> b
+    int size() -> c
+    boolean isEmpty() -> d
+    java.lang.String getText() -> e
+    boolean contains(com.lge.handwritingime.data.StrokeChar) -> d
+com.lge.handwritingime.manager.StrokeManager -> com.lge.handwritingime.a.m:
+    java.util.ArrayList mStrokes -> a
+    com.lge.handwritingime.manager.StrokeManager mInstance -> b
+    com.lge.handwritingime.manager.StrokeManager getInstance() -> a
+    boolean add(com.lge.handwritingime.data.Stroke) -> a
+    com.lge.handwritingime.data.Stroke remove(int) -> a
+    boolean removeAll(java.util.ArrayList) -> a
+    boolean isEmpty() -> b
+    int size() -> c
+    com.lge.handwritingime.data.Stroke get(int) -> b
+    java.util.ArrayList getAll() -> d
+    float getMaxX() -> e
+    void clear() -> f
+com.lge.handwritingime.manager.TextModeManager -> com.lge.handwritingime.a.n:
+    com.lge.handwritingime.HandwritingKeyboard mKeyboard -> b
+    com.lge.handwritingime.manager.StrokeManager mStrokeManager -> c
+    com.lge.handwritingime.manager.StrokeCharManager mStrokeCharManager -> d
+    com.lge.handwritingime.manager.ScreenManager mScreenManager -> e
+    android.widget.FrameLayout mStrokeLayout -> f
+    android.widget.FrameLayout mStrokeViewGroupLayout -> g
+    com.lge.handwritingime.StrokeView mStrokeView -> h
+    java.util.concurrent.ConcurrentHashMap mCharButtons -> i
+    com.lge.handwritingime.popup.SelectCandidatePopup mSelectCandidatePopup -> a
+    android.os.Handler mHandler -> j
+    com.lge.handwritingime.StrokeView$OnStrokeListener mTextOnStrokeListener -> k
+    void onCreateStrokeLayout(android.widget.FrameLayout) -> a
+    void setAutoScrollWidth(float) -> a
+    void removeCharButtonAll() -> a
+    void postDeleteInner() -> j
+    void deleteStroke() -> b
+    void deleteOne() -> c
+    void deleteOne(int) -> b
+    void deleteText() -> d
+    android.widget.ImageButton createCharButton() -> k
+    java.util.ArrayList getSuggestions() -> e
+    void removeCharButton(android.view.View) -> a
+    void onClick(android.view.View) -> onClick
+    void updateCharButton() -> f
+    void pickSuggestionManually(int) -> a
+    void onUpdateSelection(int,int,int,int,int,int) -> a
+    boolean dismissCharButtonPopups() -> g
+    void setPenType(java.lang.String,java.lang.String) -> a
+    void clear() -> h
+    void destroy() -> i
+    void recalcWindowSize() -> l
+    android.os.Handler access$0(com.lge.handwritingime.manager.TextModeManager) -> a
+    com.lge.handwritingime.manager.StrokeManager access$1(com.lge.handwritingime.manager.TextModeManager) -> b
+    com.lge.handwritingime.HandwritingKeyboard access$2(com.lge.handwritingime.manager.TextModeManager) -> c
+    com.lge.handwritingime.manager.ScreenManager access$3(com.lge.handwritingime.manager.TextModeManager) -> d
+    com.lge.handwritingime.StrokeView access$4(com.lge.handwritingime.manager.TextModeManager) -> e
+    java.util.concurrent.ConcurrentHashMap access$5(com.lge.handwritingime.manager.TextModeManager) -> f
+    com.lge.handwritingime.manager.StrokeCharManager access$6(com.lge.handwritingime.manager.TextModeManager) -> g
+    void access$7(com.lge.handwritingime.manager.TextModeManager,int) -> a
+com.lge.handwritingime.manager.TextModeManager$1 -> com.lge.handwritingime.a.o:
+    com.lge.handwritingime.data.Stroke stroke -> a
+    com.lge.handwritingime.manager.TextModeManager this$0 -> b
+    void onStrokeEvent(float,float) -> b
+    void onPreStartStrokeEvent(com.lge.handwritingime.StrokeView) -> a
+    void onStartStrokeEvent(float,float) -> a
+    void onEndStrokeEvent(float,float) -> c
+com.lge.handwritingime.manager.TextModeManager$2 -> com.lge.handwritingime.a.p:
+    com.lge.handwritingime.manager.TextModeManager this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.lge.handwritingime.manager.TextModeManager access$0(com.lge.handwritingime.manager.TextModeManager$2) -> a
+com.lge.handwritingime.manager.TextModeManager$2$1 -> com.lge.handwritingime.a.q:
+    com.lge.handwritingime.manager.TextModeManager$2 this$1 -> a
+    android.view.View val$v -> b
+    void onClickCandidte(java.lang.String) -> a
+    void onClick(int) -> a
+com.lge.handwritingime.manager.TextModeManager$TextModeHandler -> com.lge.handwritingime.a.r:
+    java.lang.ref.WeakReference mRef -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.lge.handwritingime.popup.BasePopup -> com.lge.handwritingime.b.a:
+    android.view.View mAnchor -> a
+    android.widget.PopupWindow mWindow -> b
+    android.content.Context mContext -> c
+    android.view.LayoutInflater mInflater -> d
+    android.view.WindowManager mWindowManager -> e
+    android.os.Handler mHandler -> f
+    android.view.View$OnTouchListener OTL -> g
+    boolean isShowingPopup() -> a
+    void dismiss() -> b
+com.lge.handwritingime.popup.BasePopup$1 -> com.lge.handwritingime.b.b:
+    com.lge.handwritingime.popup.BasePopup this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.lge.handwritingime.popup.BasePopup$2 -> com.lge.handwritingime.b.c:
+    com.lge.handwritingime.popup.BasePopup this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.lge.handwritingime.popup.SelectCandidatePopup -> com.lge.handwritingime.b.d:
+    android.view.View mRoot -> l
+    java.lang.String mSelectChar -> h
+    java.util.ArrayList mCharCandidate -> m
+    android.widget.Button mBtnCancel -> n
+    android.widget.Button mBtnClear -> o
+    int mViewHeight -> p
+    int mViewWidth -> q
+    int mSelectedIndex -> r
+    android.content.SharedPreferences mSharedPref -> s
+    java.lang.String mPrefKeyWorkingLanguageMode -> i
+    java.lang.String mLanguageJapanType -> t
+    com.lge.handwritingime.popup.SelectCandidatePopup$OnClickCandidateListener mListener -> j
+    android.view.View$OnClickListener OCL -> k
+    int[] $SWITCH_TABLE$com$lge$voassist$Utils$CHAR_TYPE -> u
+    void setOnClickCandidateListener(com.lge.handwritingime.popup.SelectCandidatePopup$OnClickCandidateListener) -> a
+    void show(int,int) -> a
+    void generateCandidateList(java.util.ArrayList) -> a
+    java.util.ArrayList access$0(com.lge.handwritingime.popup.SelectCandidatePopup) -> a
+    int[] $SWITCH_TABLE$com$lge$voassist$Utils$CHAR_TYPE() -> c
+com.lge.handwritingime.popup.SelectCandidatePopup$1 -> com.lge.handwritingime.b.e:
+    com.lge.handwritingime.popup.SelectCandidatePopup this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.lge.handwritingime.popup.SelectCandidatePopup$OnClickCandidateListener -> com.lge.handwritingime.b.f:
+    void onClickCandidte(java.lang.String) -> a
+    void onClick(int) -> a
+com.lge.handwritingime.popup.SelectDeleteButtonPopup -> com.lge.handwritingime.b.g:
+    android.view.View mRoot -> m
+    android.widget.ImageButton mBtnDeleteAll -> h
+    android.widget.ImageButton mBtnDeleteOne -> i
+    android.widget.ImageButton mBtnDeleteStroke -> j
+    com.lge.handwritingime.popup.SelectDeleteButtonPopup$OnClickDeletePopupListener mClickListener -> k
+    android.view.View$OnClickListener OCL -> l
+    void setOnClickDeletePopupListener(com.lge.handwritingime.popup.SelectDeleteButtonPopup$OnClickDeletePopupListener) -> a
+    void show(int,int) -> a
+com.lge.handwritingime.popup.SelectDeleteButtonPopup$1 -> com.lge.handwritingime.b.h:
+    com.lge.handwritingime.popup.SelectDeleteButtonPopup this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.lge.handwritingime.popup.SelectDeleteButtonPopup$OnClickDeletePopupListener -> com.lge.handwritingime.b.i:
+    void onClick(int) -> a
+com.lge.handwritingime.popup.SelectKeyboardPopup -> com.lge.handwritingime.b.j:
+    android.view.View mRoot -> m
+    android.widget.ImageButton mBtnVoiceInput -> h
+    android.widget.ImageButton mBtnKeyboardInput -> i
+    android.widget.ImageButton mBtnSetting -> j
+    com.lge.handwritingime.popup.SelectKeyboardPopup$OnClickKeyboardPopupListener mClickListener -> k
+    android.view.View$OnClickListener OCL -> l
+    void setOnClickKeyboardPopupListener(com.lge.handwritingime.popup.SelectKeyboardPopup$OnClickKeyboardPopupListener) -> a
+    void show(int,int) -> a
+com.lge.handwritingime.popup.SelectKeyboardPopup$1 -> com.lge.handwritingime.b.k:
+    com.lge.handwritingime.popup.SelectKeyboardPopup this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.lge.handwritingime.popup.SelectKeyboardPopup$OnClickKeyboardPopupListener -> com.lge.handwritingime.b.l:
+    void onClick(int) -> a
+com.lge.handwritingime.popup.SelectLanguageSettingPopup -> com.lge.handwritingime.b.m:
+    android.view.View mRoot -> r
+    android.content.SharedPreferences mSharedPref -> s
+    android.widget.Button mActiveModeBtnChar -> h
+    android.widget.Button mActiveModeBtnText -> i
+    android.widget.ImageButton btn -> j
+    java.lang.String mLanguageSetting -> t
+    java.lang.String mActiveModeSetting -> u
+    java.lang.String mActiveModeText -> k
+    java.lang.String mActiveModeChar -> l
+    java.lang.String mPrefKeyActiveMode -> m
+    java.lang.String mPrefKeyWorkingLanguageMode -> n
+    int[] imageButtonResources -> o
+    com.lge.handwritingime.popup.SelectLanguageSettingPopup$OnClickLanguagePopupListener mClickListener -> p
+    android.view.View$OnClickListener OCL -> q
+    void setOnClickLanguagePopupListener(com.lge.handwritingime.popup.SelectLanguageSettingPopup$OnClickLanguagePopupListener) -> a
+    void show(int,int) -> a
+    java.lang.String access$0(com.lge.handwritingime.popup.SelectLanguageSettingPopup) -> a
+    android.content.SharedPreferences access$1(com.lge.handwritingime.popup.SelectLanguageSettingPopup) -> b
+com.lge.handwritingime.popup.SelectLanguageSettingPopup$1 -> com.lge.handwritingime.b.n:
+    com.lge.handwritingime.popup.SelectLanguageSettingPopup this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.lge.handwritingime.popup.SelectLanguageSettingPopup$OnClickLanguagePopupListener -> com.lge.handwritingime.b.o:
+    void onClick(int) -> a
+com.lge.handwritingime.preference.HandwritingPreferenceActivity -> com.lge.handwritingime.preference.HandwritingPreferenceActivity:
+    android.preference.ListPreference mListPrefLanguageSetting -> a
+    android.preference.ListPreference mWorkingActiveMode -> b
+    android.preference.PreferenceCategory mHandwritingCategory -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+com.lge.handwritingime.preference.ScrollDelaySeekBarPreference -> com.lge.handwritingime.preference.ScrollDelaySeekBarPreference:
+    int mDefaultValue -> a
+    int mMaxValue -> b
+    int mMinValue -> c
+    int mCurrentValue -> d
+    android.widget.SeekBar mSeekBar -> e
+    android.widget.TextView mValueText -> f
+    android.view.View onCreateDialogView() -> onCreateDialogView
+    void onDialogClosed(boolean) -> onDialogClosed
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+com.lge.voassist.Core -> com.lge.a.a:
+    com.visionobjects.im.Engine mEngine -> a
+    com.visionobjects.im.LanguageManager mLanguageManager -> b
+    com.visionobjects.im.Recognizer mRecognizer -> c
+    com.lge.voassist.Core$RECOGNITION_STATE mRecognitionState -> d
+    void initialize(android.content.Context) -> a
+    void setRecognitionState(com.lge.voassist.Core$RECOGNITION_STATE) -> a
+    com.lge.voassist.Core$RECOGNITION_STATE getRecognitionState() -> a
+    void setRecognizerListener(com.visionobjects.im.EventListener) -> a
+    void setMode(java.lang.String,java.lang.String) -> a
+    void addStroke(com.visionobjects.im.IStroke) -> a
+    void setPositionAndScaleIndicator(float,float,float) -> a
+    void commit() -> b
+    void cancel() -> c
+    void destroy() -> d
+com.lge.voassist.Core$RECOGNITION_STATE -> com.lge.a.b:
+    com.lge.voassist.Core$RECOGNITION_STATE IDLE -> a
+    com.lge.voassist.Core$RECOGNITION_STATE SUBMIT -> b
+    com.lge.voassist.Core$RECOGNITION_STATE CANCEL -> c
+    com.lge.voassist.Core$RECOGNITION_STATE CANCEL_AND_SUBMIT -> d
+    com.lge.voassist.Core$RECOGNITION_STATE[] ENUM$VALUES -> e
+    com.lge.voassist.Core$RECOGNITION_STATE[] values() -> values
+    com.lge.voassist.Core$RECOGNITION_STATE valueOf(java.lang.String) -> valueOf
+com.lge.voassist.MyCertificate -> com.lge.a.c:
+    byte[] BYTES -> a
+    byte[] getBytes() -> a
+com.lge.voassist.Utils -> com.lge.a.d:
+    java.lang.Integer[] mSymbolSingle -> a
+    java.lang.Integer[][] mCharTypeRange -> b
+    java.lang.Integer[][] mCharSymbolRange -> c
+    void unsplitResources(android.content.Context) -> a
+    void simulateUnsplitResource(android.content.res.AssetManager,java.io.File,java.io.File) -> a
+    boolean isBetween(int,int,int) -> a
+    int getCharTypeNum(int) -> a
+    com.lge.voassist.Utils$CHAR_TYPE getCharType(java.lang.String,int) -> a
+    com.lge.voassist.Utils$CHAR_TYPE getCharType(char) -> a
+com.lge.voassist.Utils$CHAR_TYPE -> com.lge.a.e:
+    com.lge.voassist.Utils$CHAR_TYPE KANJI -> a
+    com.lge.voassist.Utils$CHAR_TYPE HIRAGANA -> b
+    com.lge.voassist.Utils$CHAR_TYPE KATAKANA -> c
+    com.lge.voassist.Utils$CHAR_TYPE ENGLISH -> d
+    com.lge.voassist.Utils$CHAR_TYPE NUMBER -> e
+    com.lge.voassist.Utils$CHAR_TYPE KOREAN -> f
+    com.lge.voassist.Utils$CHAR_TYPE SYMBOL -> g
+    com.lge.voassist.Utils$CHAR_TYPE OTHER -> h
+    com.lge.voassist.Utils$CHAR_TYPE[] ENUM$VALUES -> i
+    com.lge.voassist.Utils$CHAR_TYPE[] values() -> values
+    com.lge.voassist.Utils$CHAR_TYPE valueOf(java.lang.String) -> valueOf
+com.visionobjects.im.Engine -> com.visionobjects.im.a:
+    boolean libraryLoaded -> b
+    long handle -> a
+    void finalize() -> finalize
+    com.visionobjects.im.Engine create(byte[],java.io.File,java.util.Properties) -> a
+    void destroy() -> a
+    void checkNotDestroyed() -> b
+    com.visionobjects.im.LanguageManager createLanguageManager(java.io.File,java.util.Properties) -> a
+    com.visionobjects.im.LanguageManager createLanguageManager(java.io.File) -> a
+    com.visionobjects.im.Recognizer createRecognizer(com.visionobjects.im.LanguageManager,java.io.File,java.util.Properties) -> a
+    com.visionobjects.im.Recognizer createRecognizer(com.visionobjects.im.LanguageManager,java.io.File) -> a
+com.visionobjects.im.EventListener -> com.visionobjects.im.b:
+com.visionobjects.im.IOFailureException -> com.visionobjects.im.c:
+com.visionobjects.im.IStroke -> com.visionobjects.im.d:
+    int getPointCount() -> c
+    float getX(int) -> a
+    float getY(int) -> b
+com.visionobjects.im.InternalErrorException -> com.visionobjects.im.e:
+com.visionobjects.im.LanguageManager -> com.visionobjects.im.f:
+    com.visionobjects.im.Engine engine -> b
+    long handle -> a
+    java.util.List languageNames -> c
+    void finalize() -> finalize
+    void destroy() -> a
+    void checkNotDestroyed() -> b
+    com.visionobjects.im.Engine access$000(com.visionobjects.im.LanguageManager) -> a
+com.visionobjects.im.LanguageManager$1 -> com.visionobjects.im.g:
+    com.visionobjects.im.LanguageManager this$0 -> a
+    int size() -> size
+    java.lang.String get(int) -> a
+    java.lang.Object get(int) -> get
+com.visionobjects.im.NativeEventListenerStub -> com.visionobjects.im.h:
+    com.visionobjects.im.Recognizer recognizer -> c
+    com.visionobjects.im.EventListener eventListener -> d
+    long callback -> a
+    long callbackUserParameter -> b
+    void finalize() -> finalize
+    void init() -> a
+    void destroy() -> b
+    void setEventListener(com.visionobjects.im.EventListener) -> a
+com.visionobjects.im.NativeException -> com.visionobjects.im.i:
+com.visionobjects.im.NativeLibrary -> com.visionobjects.im.NativeLibrary:
+    long createEngine(byte[],java.lang.String,java.lang.String) -> createEngine
+    void destroyEngine(long) -> destroyEngine
+    int getError(long) -> getError
+    java.lang.RuntimeException getErrorException(long) -> a
+    long createLanguageManager(long,java.lang.String,java.lang.String) -> createLanguageManager
+    boolean destroyLanguageManager(long,long) -> destroyLanguageManager
+    int getLanguageCount(long,long) -> getLanguageCount
+    java.lang.String getLanguageNameAt(long,long,int) -> getLanguageNameAt
+    boolean initEventListenerStub(com.visionobjects.im.NativeEventListenerStub) -> initEventListenerStub
+    boolean destroyEventListenerStub(com.visionobjects.im.NativeEventListenerStub) -> destroyEventListenerStub
+    long createRecognizer(long,long,java.lang.String,java.lang.String) -> createRecognizer
+    boolean destroyRecognizer(long,long) -> destroyRecognizer
+    boolean setNotificationCallback(long,long,long,long) -> setNotificationCallback
+    boolean setMode(long,long,java.lang.String,java.lang.String) -> setMode
+    boolean setPositionAndScaleIndicator(long,long,float,float,float) -> setPositionAndScaleIndicator
+    boolean addStroke(long,long,float[]) -> addStroke
+    boolean commit(long,long) -> commit
+    boolean cancel(long,long) -> cancel
+com.visionobjects.im.OutOfMemoryException -> com.visionobjects.im.j:
+com.visionobjects.im.PropertyUtils -> com.visionobjects.im.k:
+    java.lang.String OS -> a
+    java.lang.String ARCH -> b
+    java.lang.String PLATFORM_DIR -> c
+    java.lang.String LIB_PREFIX -> d
+    java.lang.String LIB_SUFFIX -> e
+    java.lang.String getSystemProperty(java.lang.String,java.lang.String) -> a
+    java.lang.String getNativeLibrary(java.io.File,java.util.Properties) -> a
+    java.lang.String toString(java.util.Properties) -> a
+com.visionobjects.im.Recognizer -> com.visionobjects.im.l:
+    com.visionobjects.im.Engine engine -> a
+    long handle -> b
+    com.visionobjects.im.NativeEventListenerStub eventListenerStub -> c
+    void finalize() -> finalize
+    void destroy() -> a
+    void checkNotDestroyed() -> b
+    void setEventListener(com.visionobjects.im.EventListener) -> a
+    void setMode(java.lang.String,java.lang.String) -> a
+    void setPositionAndScaleIndicator(float,float,float) -> a
+    void addStroke(com.visionobjects.im.IStroke) -> a
+    void commit() -> c
+    void cancel() -> d

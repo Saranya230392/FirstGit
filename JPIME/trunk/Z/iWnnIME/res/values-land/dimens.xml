@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<resources>
+    <!-- key_height x 4 = keyboard_height -->
+    <!-- key_height x 2 = key_height_voice-->
+    <!-- key_height = symbol_keyboard_height -->
+    <dimen name="key_height_voice">96dip</dimen>
+    <dimen name="key_height_4">40dip</dimen>
+    <dimen name="key_height_5">32dip</dimen>
+    <dimen name="key_height_5_bottom">68dip</dimen>
+    <dimen name="key_height_adjustment">0dip</dimen>
+    <dimen name="key_height_4key">42dip</dimen>
+    <dimen name="key_width_voice">239.42dp</dimen>
+    <dimen name="key_hgap_voice">16px</dimen>
+    <dimen name="key_hgap_right_voice">96px</dimen>
+    <dimen name="key_vgap_voice">3px</dimen>
+    <dimen name="key_hgap_right_edge_voice">30px</dimen>
+    <dimen name="voice_icon_padding_bottom">6dp</dimen>
+    <dimen name="voice_dialog_cancel_text_size">14dip</dimen>
+    <dimen name="key_width_12key_default">126dp</dimen>
+    <dimen name="key_width_12key_edge">99dp</dimen>
+    <dimen name="key_width_qwerty_default">79px</dimen>
+    <dimen name="key_width_4key">142dp</dimen>
+    <dimen name="key_width_4key_edge">142dp</dimen>
+    <dimen name="key_vgap_4key">0dp</dimen>
+    <dimen name="left_padding_12key">1px</dimen>
+    <dimen name="left_padding_qwerty">0px</dimen>
+    <dimen name="candidate_delete_word_size">18dip</dimen>
+    <dimen name="key_text_size">25.71dp</dimen>
+    <dimen name="cand_minimum_width">64dip</dimen>
+    <dimen name="cand_minimum_height">32.00dip</dimen>
+    <dimen name="cand_symbol_minimum_height">40.50dip</dimen>
+    <dimen name="cand_space_width_emoji_symbol">0dip</dimen>
+    <dimen name="cand_category_minimum_height">32.00dip</dimen>
+    <dimen name="cand_tab_height">40dip</dimen>
+    <dimen name="cand_tab_margin_left">0px</dimen>
+    <dimen name="cand_tab_margin_right">0px</dimen>
+    <dimen name="keyboard_height">428.04px</dimen>
+    <dimen name="symbol_keyboard_height">35.66dip</dimen>
+    <dimen name="preview_text_padding_top_2word">16dip</dimen>
+    <dimen name="preview_ime_btn_offset_12key_side">4dp</dimen>
+    <dimen name="preview_ime_btn_offset_qwerty_side">2.29dp</dimen>
+    <dimen name="preview_key_mode_change_offset_12key_side">1.5dp</dimen>
+    <dimen name="preview_key_mode_change_offset_qwerty_side">1.5dp</dimen>
+    <dimen name="preview_key_mode_change_offset_12key_top">6.66dip</dimen>
+    <dimen name="preview_key_mode_change_offset_qwerty_top">-5dp</dimen>
+    <dimen name="preview_icon_padding_bottom">9.5dp</dimen>
+    <dimen name="preview_icon_padding_bottom_adjust">8.5dp</dimen>
+    <dimen name="key_label_text_size">20dp</dimen>
+    <dimen name="key_label_phone_text_size">17.50dp</dimen>
+    <dimen name="voice_main_height">190px</dimen>
+    <dimen name="voice_button_height">50.875dp</dimen>
+    <dimen name="voice_keyboard_top_padding">10px</dimen>
+    <dimen name="voice_keyboard_bottom_padding">5px</dimen>
+    <dimen name="voice_icon_padding_top">0dip</dimen>
+    <dimen name="voice_button_margin_top">16dip</dimen>
+    <dimen name="voice_button_padding_top">51dip</dimen>
+    <dimen name="voice_button_padding_horizontal">74.5dip</dimen>
+    <dimen name="tab_text_size">16.5dp</dimen>
+    <dimen name="preview_ime_btn_offset_bottom">15dp</dimen>
+    <dimen name="padding_qwerty_keyboard_top">9.00dp</dimen>
+    <dimen name="padding_qwerty_keyboard_bottom">6.00dp</dimen>
+    <dimen name="padding_symbol_top">3.50dp</dimen>
+    <dimen name="padding_symbol_bottom">6.00dp</dimen>
+    <dimen name="padding_symbol_left">4dp</dimen>
+    <dimen name="read_more_padding_top">0.5px</dimen>
+    <dimen name="symbol_category_padding">28px</dimen>
+    <dimen name="popup_padding_top">0dp</dimen>
+    <dimen name="popup_padding_left">0dp</dimen>
+    <dimen name="popup_offset_x">4dp</dimen>
+    <dimen name="popup_url_width">427dp</dimen>
+    <dimen name="popup_url_height">190.5dp</dimen>
+    <dimen name="popup_url_horizontal_gap">2.33dp</dimen>
+    <dimen name="popup_mail_width">427dp</dimen>
+    <dimen name="popup_mail_height">190.5dp</dimen>
+    <dimen name="popup_mail_horizontal_gap">2.33dp</dimen>
+    <dimen name="popup_offset_y">-3.5dp</dimen>
+    <dimen name="popup_floating_offset_y">102.5dp</dimen>
+    <dimen name="popup_function_offset_y">126.34dp</dimen>
+    <dimen name="one_touch_emoji_list_width">47.33dip</dimen>
+    <dimen name="one_touch_emoji_list_width_full">58.67dip</dimen>
+    <dimen name="one_touch_emoji_list_width_split_1stview">49.33dip</dimen>
+    <dimen name="one_touch_emoji_list_height">30.33dip</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_left_12key_default">0.67dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_left_12key_floating_default">-0.33dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_left_qwerty_default">0.67dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_top">10.66dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_bottom">5dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_left_12key">1.0dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_left_qwerty">0dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_right_12key">1dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_right_qwerty">1.33dp</dimen>
+    <dimen name="one_touch_emoji_list_padding_horizontal">4dip</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_left">14dip</dimen>
+    <dimen name="one_touch_emoji_list_padding_keyboard_right">13.33dip</dimen>
+    <dimen name="one_touch_emoji_list_padding_left_split">0.34dip</dimen>
+    <dimen name="one_touch_emoji_list_read_more_padding_top">11.67dip</dimen>
+    <dimen name="one_touch_emoji_list_read_more_padding_left">18dip</dimen>
+    <dimen name="one_touch_emoji_list_read_more_padding_right">17.67dip</dimen>
+    <dimen name="one_touch_emoji_list_read_more_padding_left_full">20.33dip</dimen>
+    <dimen name="one_touch_emoji_list_read_more_padding_right_full">20dip</dimen>
+    <dimen name="one_touch_emoji_list_read_more_padding_left_split_1st">4.67dip</dimen>
+    <dimen name="one_touch_emoji_list_read_more_padding_left_split_2nd">228dip</dimen>
+    <dimen name="candidate_blank_area_height">40dip</dimen>
+
+    <dimen name="key_10key_text_size_small_top">16.00dip</dimen>
+    <dimen name="key_10key_text_size_middle_top">16.00dip</dimen>
+    <dimen name="key_10key_text_size_large_top">16.00dip</dimen>
+    <dimen name="key_10key_text_size_left_right">8.00dip</dimen>
+    <dimen name="key_10key_text_size_phone_large_top">17.50dip</dimen>
+    <dimen name="key_10key_text_size_phone_left_right">8.00dip</dimen>
+    <dimen name="key_10key_text_size_phone_star">25.0dip</dimen>
+    <dimen name="key_mode_on_text_size">14.00dip</dimen>
+    <dimen name="key_mode_qwert_on_text_size">17.00dip</dimen>
+
+    <dimen name="key_mode_jp_on_text_small_size">11.00dip</dimen>
+    <dimen name="key_mode_on_text_small_size">11.00dip</dimen>
+
+    <dimen name="key_mode_12key_jp_top">5.00dip</dimen>
+    <dimen name="key_mode_12key_jp_left">-7.00dip</dimen>
+    <dimen name="key_mode_12key_alphabet_top">16.00dip</dimen>
+    <dimen name="key_mode_12key_alphabet_left">-7.50dip</dimen>
+    <dimen name="key_mode_qwerty_jp_top">5.00dip</dimen>
+    <dimen name="key_mode_qwerty_jp_left">-7.00dip</dimen>
+    <dimen name="key_mode_qwerty_alphabet_top">16.0dip</dimen>
+    <dimen name="key_mode_qwerty_alphabet_left">-7.50dip</dimen>
+
+    <dimen name="key_phone_keyboard_func_text_size">15.00dip</dimen>
+
+    <dimen name="key_dakuten_left_top_text_size">11.00dip</dimen>
+    <dimen name="key_dakuten_left_bottom_text_size">11.00dip</dimen>
+    <dimen name="key_dakuten_right_top_text_size">11.00dip</dimen>
+    <dimen name="key_dakuten_right_bottom_text_size">11.00dip</dimen>
+
+    <dimen name="key_mode_12key_moji_text_top">9.50dip</dimen>
+    <dimen name="key_mode_qwert_moji_text_top">10.00dip</dimen>
+    <dimen name="key_mode_moji_text_vgap">3.67dip</dimen>
+    <dimen name="key_mode_moji_text_padding">1.00dip</dimen>
+    <dimen name="key_preview_12key_en_alphabet_text_padding_vgap">34.50dp</dimen>
+    <dimen name="padding_qwerty_keyboard_split_gap">0.66dp</dimen>
+
+    <dimen name="key_qwerty_num_symbol_preview_top_gap">20.00dip</dimen>
+    <dimen name="key_sub_icon_gap_y_adjustment">1.33dip</dimen>
+    <dimen name="key_sub_icon_qwerty_gap_y_adjustment">3dip</dimen>
+    <dimen name="key_sub_icon_keyleft_gap_x_adjustment">1dip</dimen>
+    <dimen name="key_sub_icon_keyleft_gap_y_adjustment">1.67dip</dimen>
+
+    <dimen name="paint_preview_top_vertical_gap">30.67dip</dimen>
+    <dimen name="paint_preview_top_en_vertical_gap">28.67dip</dimen>
+    <dimen name="paint_10key_center_bottom_horizontal_gap">0.00dip</dimen>
+    <dimen name="paint_10key_phone_center_bottom_gap">0.50dip</dimen>
+    <dimen name="paint_dakutenkey_top_gap">5.00dip</dimen>
+
+    <dimen name="floating_keyboard_default_pos_x">320.5dip</dimen>
+    <dimen name="floating_keyboard_default_pos_y">104.5dip</dimen>
+
+  <!-- Default key text size -->
+    <dimen name="key_text_size_default">25.71dip</dimen>
+  <!-- Values for key hint letters -->
+    <fraction name="key_hint_letter_ratio">28%</fraction>
+
+    <!-- 12key size -->
+    <dimen name="key_eisukana_text_size">10.50dip</dimen>
+    <fraction name="key_width_12key_1st">19.83%</fraction> <!-- 127.00dp -->
+    <fraction name="key_width_12key_2nd">19.83%</fraction> <!-- 127.00dp -->
+    <fraction name="key_width_12key_numeric">24.915%</fraction><!-- 149.50dp -->
+    <dimen name="key_height">35.5dp</dimen>
+    <dimen name="keyboard_12key_numeric_keyheight">35.5dp</dimen>
+    <fraction name="key_width_12key_1st_split">11.50%</fraction><!-- 69.00dp -->
+    <fraction name="key_width_12key_2nd_split">11.50%</fraction><!-- 69.00dp -->
+    <dimen name="key_height_12key_split">35.5dp</dimen>
+    <dimen name="key_height_navigation">35.5dp</dimen>
+    <fraction name="key_width_12key_navigation_1st">19.83%</fraction> <!-- 127.00dp -->
+    <fraction name="key_width_12key_navigation_2nd">19.83%</fraction> <!-- 127.00dp -->
+
+    <!-- 12key gap -->
+    <!-- use values/dimens.xml -->
+    <dimen name="keyboard_12key_common_vertical_gap">3.50dp</dimen>
+    <dimen name="keyboard_12key_common_horizontal_gap">1.00dp</dimen>
+    <dimen name="keyboard_12key_numeric_vertical_gap">3.50dp</dimen>
+    <dimen name="keyboard_12key_numeric_horizontal_gap">1.00dp</dimen>
+    <dimen name="keyboard_12key_horizontal_split_gap">1.00dp</dimen>
+    <dimen name="keyboard_12key_vertical_split_gap">3.50dp</dimen>
+    <fraction name="key_width_split_gap">30.25%</fraction> <!-- 183.00dp -->
+    <dimen name="keyboard_12key_navigation_horizontal_gap">1.00dp</dimen>
+    <dimen name="keyboard_12key_navigation_vertical_gap">3.50dp</dimen>
+
+    <!-- qwerty key size -->
+    <dimen name="key_enter_text_size_qwerty">17.00dp</dimen>
+    <fraction name="key_width_qwerty_1st">9.83%</fraction> <!-- 59.00dp -->
+    <dimen name="key_height_qwerty">35.50dp</dimen>
+    <fraction name="key_width_qwerty_2nd_3rd_line">13.66%</fraction> <!-- 82.00dp -->
+    <fraction name="key_width_qwerty_2nd_4th_line">14.69%</fraction> <!-- 88.02dp -->
+    <fraction name="key_width_qwerty_space">20.00%</fraction> <!-- 120.30dp -->
+    <fraction name="key_width_qwerty_ko_space">29.95%</fraction> <!-- 179.3dp -->
+    <fraction name="key_width_qwerty_2nd_4th_line_url">12.33%</fraction> <!-- 73.99dp -->
+    <fraction name="key_width_qwerty_1st_split">7.85%</fraction> <!-- 47.1dp -->
+    <fraction name="key_width_qwerty_2nd_split_3rd_line">10.44%</fraction> <!-- 62.63dp -->
+    <fraction name="key_width_qwerty_2nd_split_4th_line">11.69%</fraction> <!-- 70.63dp -->
+    <fraction name="key_width_qwerty_space_split_left">15.76%</fraction> <!-- 95.20dp -->
+    <dimen name="key_height_qwerty_split">35.50dp</dimen>
+    <fraction name="key_width_qwerty_ko_2line_left_gap">5.00%</fraction><!--30.00dp-->
+    <dimen name="floating_key_height_qwerty">33.75dp</dimen>
+
+    <!--qwerty key gap -->
+    <!-- use values/dimens.xml -->
+    <dimen name="keyboard_qwerty_vertical_gap">3.50dp</dimen>
+    <dimen name="keyboard_qwerty_1st_2nd_gap">8.00dp</dimen>
+    <dimen name="keyboard_qwerty_space_gap">1.00dp</dimen>
+    <dimen name="key_width_split_gap_line1">120.50dp</dimen>
+    <dimen name="key_width_split_gap_line2">74.90dp</dimen>
+    <dimen name="keyboard_qwerty_horizontal_gap">1.00dp</dimen>
+    <dimen name="keyboard_qwerty_horizontal_split_gap">1.00dp</dimen>
+    <dimen name="keyboard_qwerty_vertical_split_gap">3.50dp</dimen>
+    <dimen name="keyboard_qwerty_split_1st_2nd_gap">8.50dp</dimen>
+
+    <!-- keyboard padding -->
+    <dimen name="padding_keyboard_top">9.00dp</dimen>
+    <dimen name="padding_keyboard_bottom">6.00dp</dimen>
+    <dimen name="padding_keyboard_left">0.50dp</dimen> <!-- by unknown reason, padding is 3.33dp larger than this value. -->
+    <dimen name="padding_keyboard_right">0.50dp</dimen>
+    <dimen name="padding_qwerty_keyboard_left">0.50dp</dimen>
+    <dimen name="padding_qwerty_keyboard_right">0.50dp</dimen>
+    <dimen name="padding_qwerty_keyboard_split_2nd_line">23.55dp</dimen>
+    <dimen name="padding_keyboard_split_left">0.50dp</dimen>
+
+    <!-- Candidate longpress dialog size -->
+    <dimen name="candidate_longpress_dialog_button_layout_width">307.00dp</dimen>
+    <dimen name="candidate_longpress_dialog_button_layout_y">-86.50dp</dimen>
+
+</resources>

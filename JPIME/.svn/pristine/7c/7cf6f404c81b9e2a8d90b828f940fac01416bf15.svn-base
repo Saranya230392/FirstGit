@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SwitchTabStyle">
+        <item name="android:layout_marginTop"> 4dp </item>
+        <item name="android:layout_marginBottom"> 4dp </item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="BottomButtonStyle">
+        <item name="android:background">@drawable/button_state_keypad_normal</item>
+        <item name="android:layout_margin">@dimen/bottom_button_margin</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="BottomDarkButtonStyle">
+        <item name="android:background">@drawable/button_state_normal</item>
+        <item name="android:layout_margin"> @dimen/bottom_button_margin </item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!-- Decome down loader -->
+    <style name="hig_title_bar_1line">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="hig_command_bar_normal">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

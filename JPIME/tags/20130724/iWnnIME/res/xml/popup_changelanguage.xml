@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@dimen/popup_change_language_key_width"
+    iwnn:horizontalGap="0px"
+    iwnn:verticalGap="@dimen/popup_change_language_vertical_gap"
+    iwnn:keyHeight="@dimen/popup_change_language_key_height"
+>
+  <Row iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_title">
+    <Key iwnn:codes="-611"
+         iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_icon"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_icon"
+         iwnn:keyWidth="@dimen/popup_change_language_key_width_icon"
+         iwnn:keyIcon="@drawable/ime_btn_effect_globe_icon_normal"
+         />
+    <Key iwnn:codes="-611"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title"
+         iwnn:keyWidth="@dimen/popup_change_language_key_width_title"
+         iwnn:keyLabel="@string/ti_preference_lang_setting_keyboard_title_txt"
+         />
+  </Row>
+  <Row iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_line">
+     <Key
+         iwnn:codes="-610" iwnn:keyHeight="@dimen/popup_change_language_key_height_line"
+         iwnn:isLineImage="true"/>
+  </Row>
+  <Row>
+     <Key
+         iwnn:codes="-612" iwnn:keyLabel="@string/ti_choose_language_entry_ja_txt"/>
+  </Row>
+  <Row>
+     <Key
+         iwnn:codes="-613" iwnn:keyLabel="@string/ti_choose_language_entry_ko_txt"/>
+  </Row>
+</Keyboard>

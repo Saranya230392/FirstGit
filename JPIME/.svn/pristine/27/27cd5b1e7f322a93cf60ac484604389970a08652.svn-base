@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <fraction name="key_width_12key">19.75%</fraction>
+    <fraction name="key_width_12key_phone">24.687%</fraction>
+    <fraction name="key_width_12key_numeric">24.687%</fraction>
+    <fraction name="key_width_qwerty_1st">9.922%</fraction>
+    <fraction name="key_width_qwerty_2nd">14.883%</fraction>
+    <fraction name="key_width_qwerty_com_2nd">12.402%</fraction>
+    <fraction name="key_width_phone_2nd">9.875%</fraction>
+    <fraction name="key_width_symbol">24.688%</fraction>
+    <fraction name="key_width_voice">36.015%</fraction>
+    <fraction name="key_width_qwerty_space">19.844%</fraction>
+
+    <fraction name="key_width_qwerty_1st_split">7.5475%</fraction>
+    <fraction name="key_width_qwerty_2nd_split">11.2264%</fraction>
+    <fraction name="key_width_split_gap_1st">23.9666%</fraction>
+    <fraction name="key_width_split_gap_2nd">16.6087%</fraction>
+    <fraction name="key_width_split_gap_space">16.6087%</fraction>
+    <fraction name="key_width_qwerty_space_split_left">15.095%</fraction>
+    <fraction name="key_width_qwerty_space_split_right">7.5475%</fraction>
+
+    <fraction name="key_width_12key_1st_split">11.344%</fraction>
+    <fraction name="key_width_12key_2nd_split">10.702%</fraction>
+    <fraction name="key_width_split_gap">32.997%</fraction>
+
+</resources>

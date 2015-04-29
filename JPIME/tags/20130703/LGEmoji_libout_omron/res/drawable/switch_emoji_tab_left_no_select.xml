@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2011-2012 OMRON SOFTWARE Co., Ltd.  All Rights Reserved. -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ime_keypad_btn_symbol_emoticon_category_left_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ime_keypad_btn_symbol_emoticon_category_left_normal" android:state_pressed="false"/>
+
+</selector>

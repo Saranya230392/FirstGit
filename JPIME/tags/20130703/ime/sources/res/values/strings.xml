@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+  <!-- common part -->
+    <string name="ti_ime_name_standard_txt">LG Keyboard</string>
+
+    <!-- Preferences -->
+    <string name="ti_preference_touch_feedback_type_title_txt"> Touch feedback </string>
+    <string name="ti_preference_touch_feedback_type_summary_txt"> Set key preview, sound feedback, and vibration feedback </string>
+
+    <string name="ti_ime_name_setting_title_standard_txt">LG Keyboard</string>
+
+    <string name="ti_preference_lang_setting_menu_txt">Language</string>
+    <string name="ti_preference_language_summary_txt">Select language</string>
+    <string name="ti_preference_user_dictionary_menu_txt">@string/ti_preference_dictionary_menu_standard_txt</string>
+
+    <string name="ti_preference_key_setting_menu_txt">COMMON SETTINGS</string>
+
+    <string name="ti_preference_advanced_setting_menu_txt">ADVANCED SETTINGS</string>
+
+    <string name="ti_preference_external_application_menu_txt">EXTERNAL APPLICATION</string>
+
+    <string name="ti_preference_key_sound_title_txt"> Sound feedback </string>
+    <string name="ti_preference_key_sound_summary_txt"> Provide sound feedback when keys are pressed </string>
+
+    <string name="ti_preference_key_vibration_title_txt"> Vibration feedback </string>
+    <string name="ti_preference_key_vibration_summary_txt"> Give vibration feedback when keys are pressed </string>
+
+    <string name="ti_preference_preview_title_txt"> Key preview </string>
+    <string name="ti_preference_preview_summary_txt"> Enable key preview </string>
+
+    <string name="ti_preference_auto_caps_title_txt"> Auto capitalization </string>
+    <string name="ti_preference_auto_caps_summary_txt"> Capitalize the first word of each sentence automatically </string>
+
+    <string name="ti_preference_auto_space_title_txt"> Auto space input </string>
+    <string name="ti_preference_auto_space_summary_txt"> In English mode, input space automatically after selecting a candidate </string>
+
+    <string name="ti_preference_auto_punctuation_title_txt"> Auto punctuation </string>
+    <string name="ti_preference_auto_punctuation_summary_txt"> Insert a period when double tapping space key </string>
+
+    <string name="ti_preference_voice_input_title_txt"> Voice typing key </string>
+    <string name="ti_preference_voice_input_summary_txt"> Display voice key on keyboard and use voice input </string>
+
+    <string name="ti_preference_fullscreen_mode_title_txt"> Fullscreen mode </string>
+    <string name="ti_preference_fullscreen_mode_summary_txt"> Use full input screen in landscape view </string>
+
+    <string name="ti_preference_split_mode_title_txt">Split keyboard</string>
+    <string name="ti_preference_split_mode_summary_txt"> Splitting the keyboard to the sides of the screen on landscape mode </string>
+
+    <string name="ti_preference_one_handed_title_txt">One-handed keyboard</string>
+    <string name="ti_preference_one_handed_summary_txt">Adjust the position of LG keyboard by arrow button</string>
+
+    <string name="ti_preference_help_title_txt">Help</string>
+
+    <!-- Key Size -->
+    <string name="ti_preference_key_height_title_txt"> Key Size </string>
+    <string name="ti_preference_key_height_summary_txt">Set keyboard size for each orientation</string>
+
+    <string name="ti_preference_key_height_portrait_title_txt">Portrait</string>
+    <string name="ti_preference_key_height_landscape_title_txt">Landscape</string>
+
+    <string name="ti_preference_key_height_clear_txt">Reset</string>
+
+    <string name="ti_preference_kana_roman_input_mode_title_txt"> Roman letter/Kana letter </string>
+    <string name="ti_preference_kana_roman_input_mode_summary_txt"> Choose input mode between \"Roman letter\" and \"Kana letter\" (Hardware keyboard only) </string>
+    <string name="ti_preference_roman_letter_txt"> Roman letter </string>
+    <string name="ti_preference_kana_letter_txt"> Kana letter </string>
+
+    <!-- Input Keyboard Type -->
+    <string name="ti_preference_keyboard_type_title_txt"> Keyboard type </string>
+    <string name="ti_preference_keyboard_type_summary_txt"> Set keyboard type for each orientation and input mode </string>
+
+    <string name="ti_preference_keyboard_type_portrait_title_txt">PORTRAIT KEYBOARD TYPE</string>
+    <string name="ti_preference_keyboard_type_landscape_title_txt">LANDSCAPE KEYBOARD TYPE</string>
+
+    <string name="ti_preference_keyboard_type_ja_txt">Japanese</string>
+    <string name="ti_preference_keyboard_type_en_txt">English</string>
+    <string name="ti_preference_keyboard_type_num_txt">Numeric</string>
+
+    <string name="ti_keyboard_type_10key_txt">10key keyboard</string>
+    <string name="ti_keyboard_type_qwerty_txt">QWERTY Keyboard</string>
+
+    <string name="ti_preference_keyboard_type_common_12_title_txt">10key keyboard</string>
+    <string name="ti_preference_keyboard_type_common_12_summary_txt">Set 10key keyboard as common keyboard type for all input modes</string>
+    <string name="ti_preference_keyboard_type_common_12_message_txt">This function sets to display 10key keyboard in all input modes.\nAre you sure?</string>
+    <string name="ti_preference_keyboard_type_common_qwerty_title_txt">QWERTY Keyboard</string>
+    <string name="ti_preference_keyboard_type_common_qwerty_summary_txt">Set QWERTY keyboard as common keyboard type for all input modes</string>
+    <string name="ti_preference_keyboard_type_common_qwerty_message_txt">This function sets to display QWERTY keyboard in all input modes.\nAre you sure?</string>
+    <string name="ti_preference_keyboard_type_common_last_title_txt">Last Used Keyboard</string>
+    <string name="ti_preference_keyboard_type_common_last_summary_txt">Set last used keyboard as common keyboard type for all input modes</string>
+    <string name="ti_preference_keyboard_type_common_last_message_txt">This function sets to display the last used keyboard in all input modes.\nAre you sure?</string>
+    <string name="ti_preference_keyboard_type_diff_title_txt">Setting for Each Input Mode</string>
+    <string name="ti_preference_keyboard_type_diff_summary_txt">Set keyboard type for each input mode</string>
+
+    <string name="ti_preference_keyboard_type_diff_full_hirakana_title_txt">Hiragana-Kanji</string>
+    <string name="ti_preference_keyboard_type_diff_full_katakana_title_txt">Full-width Katakana</string>
+    <string name="ti_preference_keyboard_type_diff_half_katakana_title_txt">Half-width Katakana</string>
+    <string name="ti_preference_keyboard_type_diff_full_alphabet_title_txt">Full-width Alphabet</string>
+    <string name="ti_preference_keyboard_type_diff_half_alphabet_title_txt">Half-width Alphabet</string>
+    <string name="ti_preference_keyboard_type_diff_full_number_title_txt">Full-width Numeric</string>
+    <string name="ti_preference_keyboard_type_diff_half_number_title_txt">Half-width Numeric</string>
+
+    <string name="ti_input_mode_type_entry_54_txt">10key keyboard</string>
+    <string name="ti_input_mode_type_entry_qwerty_txt">QWERTY Keyboard</string>
+    <string name="ti_input_mode_type_entry_previous_txt">Last Used Keyboard</string>
+
+    <string name="ti_preference_keyboard_android_default_txt">Default</string>
+
+    <!-- One touch emoji list -->
+    <string name="ti_preference_one_touch_emoji_list_menu_txt">Emoji Quick</string>
+    <string name="ti_preference_one_touch_emoji_list_summary_txt">Set display position of Emoji Quick</string>
+    <string name="ti_preference_one_touch_emoji_list_display_left_txt">Left</string>
+    <string name="ti_preference_one_touch_emoji_list_display_right_txt">Right</string>
+    <string name="ti_preference_one_touch_emoji_list_display_hidden_txt">Not display</string>
+    <string name="ti_preference_one_touch_emoji_list_display_message_txt">Emoji Quick is not displayed in the field which Emoji and Decome Emoji cannot input.</string>
+    <string name="ti_preference_one_touch_emoji_list_common_summary_txt">Change setting of Emoji Quick</string>
+
+    <string name="ti_preference_keyboard_skinadd_title_txt"> Keyboard theme </string>
+    <string name="ti_preference_keyboard_skinadd_summary_txt"> Set the keyboard theme </string>
+    <string name="ti_keyboardskinlauncher_activity_title_txt">Keyboard theme</string>
+
+    <string name="ti_preference_keyboard_add_default_txt">Optimus</string>
+
+    <string name="ti_preference_auto_cursor_movement_summary_on_txt">On toggle input, automatically move the cursor to the right %.1f seconds after a character was entered</string>
+    <string name="ti_preference_auto_cursor_movement_summary_off_txt">On toggle input, do not move the cursor automatically</string>
+
+    <string name="ti_preference_auto_cursor_movement_menu_txt"> Auto cursor movement </string>
+    <string name="ti_preference_auto_cursor_movement_summary_txt"> Set wait time of automatic cursor movement </string>
+    <string name="ti_preference_auto_cursor_movement_speed_fast_txt">Fast</string>
+    <string name="ti_preference_auto_cursor_movement_speed_normal_txt">Normal</string>
+    <string name="ti_preference_auto_cursor_movement_speed_slow_txt">Slow</string>
+    <string name="ti_preference_auto_cursor_movement_off">Off</string>
+
+    <string name="ti_preference_webapi_title_txt">Extra conversion engine</string>
+    <string name="ti_preference_webapi_summary_txt">Display conversion candidates by external conversion engine</string>
+    <string name="ti_preference_conversion_menu_txt">Conversion</string>
+    <string name="ti_preference_conversion_menu_ja_txt">Japanese Conversion</string>
+    <string name="ti_preference_conversion_menu_en_txt">English Conversion</string>
+
+    <string name="ti_preference_webapi_none_txt">none</string>
+
+    <string name="ti_preference_webapi_dialog_message_txt">This function allows you to perform Japanese conversion using external conversion engine such as a Web dictionary server on the Internet. When you tap the button \"Extra Conv\" in the prediction/conversion candidate area, inputting characters for conversion, including personal data like passwords and credit card numbers, might be sent to the external conversion engine through the Internet. Use this function?</string>
+    <string name="ti_preference_webapi_list_max_error_txt">Exceeded the number of extra conversion engines.</string>
+
+    <string name="ti_preference_prediction_title_txt">Word prediction</string>
+    <string name="ti_preference_prediction_title_ja_txt">Japanese Word Prediction</string>
+    <string name="ti_preference_prediction_title_en_txt">English Word Prediction</string>
+    <string name="ti_preference_prediction_summary_txt">Display predicted words for text input easily</string>
+
+    <string name="ti_preference_correct_spell_title_txt">Typing error correction</string>
+    <string name="ti_preference_correct_spell_summary_txt">Display predicted words for correcting typing error</string>
+
+    <string name="ti_preference_add_dictionary_title_txt">Download user dictionary</string>
+
+    <string name="ti_preference_candidate_lines_title_txt">Line of candidate area</string>
+    <string name="ti_preference_candidate_lines_summary_txt">Set number of lines of candidate area for portrait </string>
+    <string name="ti_preference_candidate_lines_portrait_title_txt">Portrait</string>
+    <string name="ti_preference_candidate_lines_portrait_summary_txt">Setting number of lines for portrait</string>
+    <string name="ti_preference_candidate_lines_landscape_title_txt">Landscape</string>
+    <string name="ti_preference_candidate_lines_landscape_summary_txt">Setting number of lines for landscape</string>
+
+    <string name="ti_preference_candidate_type_title_txt"> Candidate </string>
+    <string name="ti_preference_candidate_type_summary_txt"> Set Word learning, Word prediction and Line of candidate area </string>
+
+    <string name="ti_preference_funfun_title_txt">Wildcard Prediction</string>
+    <string name="ti_preference_funfun_title_ja_txt">Japanese Wildcard Prediction</string>
+    <string name="ti_preference_funfun_summary_ja_txt">Word prediction with specified reading string length</string>
+    <string name="ti_preference_funfun_summary_txt">Word prediction with specified string length</string>
+
+    <!-- [TODO Translation] -->
+    <string name="ti_preference_head_conversion_title_txt">逐次単文節変換</string>
+    <string name="ti_preference_head_conversion_summary_txt">長い文を一度に入力した場合に、文節の候補も表示する</string>
+
+    <string name="ti_preference_input_learning_title_txt">Input word learning</string>
+    <string name="ti_preference_input_learning_title_ja_txt">Japanese Input Word Learning</string>
+    <string name="ti_preference_input_learning_summary_txt">Learn input words</string>
+
+    <string name="ti_preference_external_apl_txt">External Application</string>
+    <string name="ti_preference_japanese_apl_txt">JAPANESE KEYBOARD</string>
+    <string name="ti_preference_korean_apl_txt">KOREAN KEYBOARD</string>
+    <string name="ti_preference_input_menu_txt">Input (Others)</string>
+    <string name="ti_preference_input_menu_ja_txt">Input (Japanese)</string>
+
+    <string name="ti_preference_attention_dialog_title_txt">Attention</string>
+
+    <string name="ti_preference_mushroom_title_txt">@string/ti_mushroom_launcher_title_txt</string>
+    <string name="ti_mushroom_launcher_activity_list_empty_txt">No matching activities found</string>
+    <string name="ti_preference_mushroom_summary_on_txt">@string/ti_preference_mushroom_use_txt</string>
+    <string name="ti_preference_mushroom_summary_off_txt">@string/ti_preference_mushroom_notuse_txt</string>
+
+    <string name="ti_preference_mushroom_use_txt">Use</string>
+    <string name="ti_preference_mushroom_notuse_txt">No Use</string>
+
+    <string name="ti_preference_mushroom_dialog_message_txt">The Mushroom is the general term for the mashup function of Simeji,and application programs using the function. This function allows you to input text by using the Mushroom application programs installed separately. Use this function?</string>
+
+    <string name="ti_preference_additional_symbol_list_title_txt">Additional Symbol List</string>
+    <string name="ti_preference_additional_symbol_list_summary_txt">Register additional symbol lists</string>
+
+    <string name="ti_preference_additional_symbol_list_max_error_txt">Exceeded the number of additional symbol lists.</string>
+
+    <string name="ti_preference_aboutime_menu_txt"> About IME </string>
+
+    <string name="ti_preference_dictionary_menu_txt">DICTIONARY</string>
+    <string name="ti_preference_dictionary_type_title_txt"> Dictionary </string>
+    <string name="ti_preference_dictionary_type_summary_txt"> Use user dictionary </string>
+
+    <string name="ti_preference_dictionary_menu_ja_txt">Japanese user dictionary</string>
+    <string name="ti_preference_dictionary_menu_en_txt">English user dictionary</string>
+    <string name="ti_preference_dictionary_menu_zhcn_txt">@string/ti_choose_language_entry_zh_cn_p_txt</string>
+    <string name="ti_preference_dictionary_menu_ko_txt">@string/ti_choose_language_entry_ko_txt</string>
+    <string name="ti_preference_dictionary_menu_zhtw_txt">@string/ti_choose_language_entry_zh_tw_z_txt</string>
+    <string name="ti_preference_dictionary_menu_de_txt">@string/ti_choose_language_entry_de_txt</string>
+    <string name="ti_preference_dictionary_menu_ru_txt">@string/ti_choose_language_entry_ru_txt</string>
+
+    <string name="ti_preference_dictionary_menu_standard_txt">User Dictionary</string>
+
+    <string name="ti_preference_user_dictionary_edit_words_summary_txt">Use user dictionary</string>
+    <string name="ti_preference_user_dictionary_edit_words_summary_ja_txt">List/add/edit/delete words in Japanese user dictionary</string>
+    <string name="ti_preference_user_dictionary_edit_words_summary_en_txt">List/add/edit/delete words in English user dictionary</string>
+    <string name="ti_preference_user_dictionary_edit_words_summary_zhcn_txt">List/add/edit/delete words in Chinese user dictionary</string>
+
+    <string name="ti_preference_user_dictionary_clear_learning_title_txt">Clear learning dictionary</string>
+    <string name="ti_preference_user_dictionary_clear_learning_summary_txt">Remove all words from learning dictionary</string>
+
+    <string name="ti_preference_user_dictionary_words_by_learning_title_txt">Words by learning</string>
+
+    <string name="ti_preference_additional_dic_title_txt">Additional dictionary</string>
+    <string name="ti_preference_additional_dic_summary_txt">Import from additional dictionaries</string>
+    <string name="ti_preference_additional_dic_list_title_txt">Additional dictionary</string>
+    <string name="ti_preference_additional_dic_list_none_txt">None</string>
+    <string name="ti_preference_additional_dic_clear_txt">(Clear)</string>
+    <string name="ti_preference_additional_dic_select_list_title_txt">Select dictionary</string>
+    <string name="ti_preference_additional_dic_load_comp_message_txt">words are imported. </string>
+    <string name="ti_preference_additional_dic_load_fail_message_txt">Fail to import. </string>
+    <string name="ti_preference_additional_dic_intialize_message_txt">Cleared. </string>
+
+    <string name="ti_preference_download_dic_title_txt">Download Dictionary</string>
+    <string name="ti_preference_download_dic_summary_txt">Enable download dictionaries</string>
+    <string name="ti_preference_download_dic_list_title_txt">Download Dictionary</string>
+    <string name="ti_preference_download_dic_enable_txt">Enable</string>
+    <string name="ti_preference_download_dic_disable_txt">Disable</string>
+    <string name="ti_preference_download_dic_delete_txt">Delete</string>
+    <string name="ti_preference_download_dic_select_list_title_txt">Dictionary settings</string>
+    <string name="ti_preference_download_dic_enable_message_txt">\u0020is Enabled. </string>
+    <string name="ti_preference_download_dic_disable_message_txt">\u0020is Disabled. </string>
+    <string name="ti_preference_download_dic_delete_message_txt">\u0020is Deleted. </string>
+    <string name="ti_preference_download_dic_comfirm_delete_txt">Delete the dictionary? </string>
+    <string name="ti_preference_download_dic_not_exist_txt">There are no available download dictionaries. </string>
+    <string name="ti_preference_download_dic_fail_enable_txt">Fail to enable the dictionary. </string>
+    <string name="ti_preference_download_dic_fail_disable_txt">Fail to disable the dictionary. </string>
+    <string name="ti_preference_download_dic_fail_delete_txt">Fail to delete the dictionary. </string>
+    <string name="ti_preference_download_dic_max_error_txt">Exceeded the number of download dictionaries. </string>
+
+    <string name="ti_preference_korean_keyboard_title_txt">Korean keyboard</string>
+    <string name="ti_preference_korean_keyboard_summary_txt">Enable Korean keyboard</string>
+
+    <!-- Handwriting -->
+    <string name="ti_preference_handwriting_title_txt">Handwriting</string>
+    <string name="ti_preference_handwriting_txt">Set handwriting style</string>
+
+    <!-- Dialog Messages -->
+    <string name="ti_dialog_button_ok_txt">OK</string>
+    <string name="ti_dialog_button_cancel_txt">Cancel</string>
+
+    <!-- Long Press Dialog -->
+    <string name="ti_long_press_dialog_setting_menu_txt">LG Keyboard Settings</string>
+    <string name="ti_long_press_dialog_input_method_txt">Input Method</string>
+    <string name="ti_long_press_dialog_keyboard_type_txt">Keyboard Type</string>
+    <string name="ti_long_press_dialog_input_mode_txt">Input Mode</string>
+    <string name="ti_long_press_dialog_user_dictionary_txt">User Dictionary</string>
+    <string name="ti_long_press_dialog_keyboard_theme_txt">Keyboard theme</string>
+
+    <string name="ti_long_press_dialog_title_txt">LG Keyboard</string>
+
+    <string name="ti_input_mode_full_hirakana_title_txt">Hiragana-Kanji</string>
+    <string name="ti_input_mode_full_katakana_title_txt">Full-width Katakana</string>
+    <string name="ti_input_mode_half_katakana_title_txt">Half-width Katakana</string>
+    <string name="ti_input_mode_full_alphabet_title_txt">Full-width Alphabet</string>
+    <string name="ti_input_mode_half_alphabet_title_txt">Half-width Alphabet</string>
+    <string name="ti_input_mode_full_number_title_txt">Full-width Numeric</string>
+    <string name="ti_input_mode_half_number_title_txt">Half-width Numeric</string>
+    <string name="ti_input_mode_voice_input_title_txt">Voice Input</string>
+
+    <string name="ti_dialog_flick_sensitivity_title_txt">Flick sensitivity(Low\u21D4High)</string>
+    <string name="ti_dialog_delete_user_dictionary_message_txt">Delete all the words in this list.</string>
+
+    <string name="ti_dialog_clear_learning_dictionary_message_txt">Clear learning dictionary?</string>
+    <string name="ti_dialog_clear_user_dictionary_done_txt">Cleared.</string>
+    <string name="ti_dialog_clear_learning_dictionary_done_txt">Cleared.</string>
+
+    <string name="ti_dialog_option_menu_item_settings_txt">Change Settings</string>
+
+    <string name="ti_dialog_option_menu_item_input_method_txt">Input Method</string>
+
+    <string name="ti_dialog_option_menu_item_mushroom_txt">Mushroom</string>
+    <string name="ti_preference_mushroom_summary_txt"> Use mushroom applications for text input </string>
+
+    <string name="ti_dialog_user_dictionary_unavailable_txt">User dictionary has already been opened.</string>
+    <string name="ti_dialog_user_dictionary_ja">Japanese User Dictionary</string>
+    <string name="ti_dialog_user_dictionary_en">English User Dictionary</string>
+
+    <string name="ti_keyboard_type_10key_title_txt">10key keyboard</string>
+    <string name="ti_keyboard_type_qwerty_title_txt">QWERTY keyboard</string>
+    <string name="ti_keyboard_type_Hand_Writing_title_txt">Handwriting</string>
+    <string name="ti_keyboard_type_voice_input_title_txt">Voice input</string>
+
+    <!-- user dictionary -->
+    <string name="ti_user_dictionary_list_words_en_txt">@string/ti_preference_dictionary_menu_en_txt</string>
+    <string name="ti_user_dictionary_list_words_ja_txt">@string/ti_preference_dictionary_menu_ja_txt</string>
+
+    <string name="ti_user_dictionary_edit_words_txt">Edit</string>
+    <string name="ti_user_dictionary_title_read_txt">Reading</string>
+    <string name="ti_user_dictionary_title_candidate_txt">Word</string>
+    <string name="ti_user_dictionary_add_txt">Add</string>
+    <string name="ti_user_dictionary_edit_txt">Edit</string>
+
+    <string name="ti_user_dictionary_save_txt">Save</string>
+
+    <string name="ti_user_dictionary_delete_txt">Delete</string>
+    <string name="ti_user_dictionary_delete_confirm_txt">Delete the selected word?</string>
+    <string name="ti_user_dictionary_delete_complete_txt">Deleted.</string>
+    <string name="ti_user_dictionary_all_delete_complete_txt">Cleared.</string>
+    <string name="ti_user_dictionary_delete_fail_txt">Fail to delete it.</string>
+    <string name="ti_user_dictionary_words_duplication_message_txt">Already registered.</string>
+    <string name="ti_user_dictionary_over_max_text_size_message_txt">Length of the string exceeds the limit.</string>
+    <string name="ti_user_dictionary_init_txt">Initialize</string>
+
+    <string name="ti_user_dictionary_list_words_standard_txt">Word List in User Dictionary</string>
+
+    <string name="ti_preference_choose_language_of_keyboard_title_txt">Select Language</string>
+
+    <string name="ti_preference_lang_setting_keyboard_title_txt">Input languages</string>
+    <string name="ti_preference_lang_setting_keyboard_setting_txt">Setting options by language</string>
+
+    <string name="ti_choose_language_entry_ja_txt">Japanese</string>
+    <string name="ti_choose_language_entry_ko_txt">Korean</string>
+    <string name="ti_choose_language_value_de_txt">de</string>
+    <string name="ti_choose_language_value_ru_txt">ru</string>
+    <string name="ti_choose_language_value_zh_cn_p_txt">zh_cn_p</string>
+    <string name="ti_choose_language_value_zh_tw_z_txt">zh_tw_z</string>
+
+    <string name="ti_select_language_en_us_txt">English (US)</string>
+    <string name="ti_select_language_en_uk_txt">English (UK)</string>
+    <string name="ti_select_language_de_txt">Deutsch</string>
+    <string name="ti_select_language_it_txt">Italiano</string>
+    <string name="ti_select_language_fr_txt">Français</string>
+    <string name="ti_select_language_es_txt">Español</string>
+    <string name="ti_select_language_nl_txt">Nederlands</string>
+    <string name="ti_select_language_pl_txt">polski</string>
+    <string name="ti_select_language_ru_txt">Русский</string>
+    <string name="ti_select_language_sv_txt">Svenska</string>
+    <string name="ti_select_language_nb_txt">Norsk</string>
+    <string name="ti_select_language_cs_txt">Čeština</string>
+    <string name="ti_select_language_zh_cn_p_txt">中文（简体）</string>
+    <string name="ti_select_language_zh_tw_z_txt">中文(繁體)</string>
+    <string name="ti_select_language_ja_txt">日本語</string>
+    <string name="ti_select_language_pt_txt">Português</string>
+    <string name="ti_select_language_fr_ca_txt">Français (Canada)</string>
+    <string name="ti_select_language_ko_txt">한국어</string>
+
+<!--
+============================
+EF  : Emoji Factory
+EPD : EmojiPkg (dcm)
+EPK : EmojiPkg (kddi)
+EPS : EmojiPkg (sbm)
+============================
+-->
+  <!-- IME dependency -->
+    <!-- iWnn IME -->
+    <string name="ti_iwnnime_setting_title_txt">iWnn IME setting</string>
+    <string name="ti_iwnnime_copyright_txt">Ver.2.3.2.jp-EPD-A1\nOMRON SOFTWARE Co.,Ltd.</string>
+    <string name="ti_iwnnime_copyright_EF_txt">Ver.2.2.4.jp-EF-01\nOMRON SOFTWARE Co.,Ltd.</string>
+    <string name="ti_iwnnime_copyright_EPD_txt">Ver.2.2.6.jp-EPD-04-GV-Alpha-01_121107\nOMRON SOFTWARE Co.,Ltd.</string>
+    <string name="ti_iwnnime_copyright_EPK_txt">Ver.2.2.4.jp-EPK-01\nOMRON SOFTWARE Co.,Ltd.</string>
+    <string name="ti_iwnnime_copyright_EPS_txt">Ver.2.2.4.jp-EPS-01\nOMRON SOFTWARE Co.,Ltd.</string>
+    <string name="ti_iwnnime_copyright_L1_txt">Ver.2.3.2.jp-EPD-A1\nOMRON SOFTWARE Co.,Ltd.</string>
+    <string name="ti_iwnnime_version_title_txt">LG keyboard version</string>
+    <string name="ti_iwnnime_txt">iWnn IME</string>
+
+    <!-- emoji category dummy -->
+    <string name="ti_emoji_category_nature_txt">[Nature]</string>
+    <string name="ti_emoji_category_human_txt">[Human/Living Things]</string>
+    <string name="ti_emoji_category_faces_txt">[Faces and Smiley\'s]</string>
+    <string name="ti_emoji_category_artifacts_txt">[Artifacts]</string>
+    <string name="ti_emoji_category_activities_txt">[Activities/Work/Entertainment]</string>
+    <string name="ti_emoji_category_foods_txt">[Foods]</string>
+    <string name="ti_emoji_category_symbols_txt">[Symbols]</string>
+
+
+    <!-- emoji category docomo -->
+    <string name="ti_emoji_docomo_category_nature_txt">[Nature]</string>
+    <string name="ti_emoji_docomo_category_human_txt">[Human/Living Things]</string>
+    <string name="ti_emoji_docomo_category_faces_txt">[Faces and Smiley\'s]</string>
+    <string name="ti_emoji_docomo_category_artifacts_txt">[Artifacts]</string>
+    <string name="ti_emoji_docomo_category_activities_txt">[Activities/Work/Entertainment]</string>
+    <string name="ti_emoji_docomo_category_foods_docomo_txt">[Foods]</string>
+    <string name="ti_emoji_docomo_category_symbols_txt">[Symbols]</string>
+
+    <!-- emoji category kddi -->
+    <string name="ti_emoji_kddi_category_nature_txt">[Nat./Season]</string>
+    <string name="ti_emoji_kddi_category_human_txt">[Mood/Body]</string>
+    <string name="ti_emoji_kddi_category_faces_txt">[Face]</string>
+    <string name="ti_emoji_kddi_category_artifacts_txt">[Ride/Bldg./Map]</string>
+    <string name="ti_emoji_kddi_category_activities_txt">[Fashion/Play]</string>
+    <string name="ti_emoji_kddi_category_foods_txt">[Food/Drink]</string>
+    <string name="ti_emoji_kddi_category_symbols_txt">[Symbol]</string>
+    <string name="ti_emoji_kddi_category_tools_txt">[Tool]</string>
+    <string name="ti_emoji_kddi_category_critter_txt">[Critter/Star]</string>
+
+    <!-- emoji category sbm -->
+    <string name="ti_emoji_sbm_category_facial_expression_txt">[Facial expression]</string>
+    <string name="ti_emoji_sbm_category_emotion_txt">[Emotion]</string>
+    <string name="ti_emoji_sbm_category_season_event_txt">[Season/Event]</string>
+    <string name="ti_emoji_sbm_category_character_txt">[Character]</string>
+    <string name="ti_emoji_sbm_category_food_txt">[Food]</string>
+    <string name="ti_emoji_sbm_category_daily_life_txt">[Daily life]</string>
+    <string name="ti_emoji_sbm_category_tools_txt">[Tools]</string>
+    <string name="ti_emoji_sbm_category_hobbies_txt">[Hobbies]</string>
+    <string name="ti_emoji_sbm_category_symbol_txt">[Symbol]</string>
+
+    <!-- kaomoji category -->
+    <string name="ti_kaomoji_category_happy_txt">[Happy]</string>
+    <string name="ti_kaomoji_category_sad_txt">[Sad]</string>
+    <string name="ti_kaomoji_category_surprise_txt">[Surprise]</string>
+    <string name="ti_kaomoji_category_trouble_txt">[Trouble]</string>
+    <string name="ti_kaomoji_category_angry_txt">[Angry]</string>
+    <string name="ti_kaomoji_category_salutation_txt">[Greeting]</string>
+    <string name="ti_kaomoji_category_action_txt">[Action]</string>
+    <string name="ti_kaomoji_category_friendships_txt">[Love/Friendship]</string>
+    <string name="ti_kaomoji_category_character_txt">[Animal/Character]</string>
+
+    <!-- Candidate Delete -->
+    <string name="ti_button_candidate_select_txt">Select</string>
+    <string name="ti_button_candidate_delete_txt">Delete learning</string>
+    <string name="ti_button_candidate_extend_txt">Extend</string>
+
+    <!-- Tutorial -->
+    <string name="ti_touch_to_continue_txt">Next »</string>
+    <string name="ti_touch_to_try_txt">Try it on the button below.</string>
+    <string name="ti_touch_to_finish_txt">Try typing and using the keyboard yourself!</string>
+    <string name="ti_tip_to_step1_txt"><b>Like a normal mobile keyboard, tapping ○ three times will result\nin *C*.</b></string>
+    <string name="ti_tip_to_step2_a_txt"><b>For example, let\'s type \"hi.\"\n- Tap ○ twice to get \"h\"</b></string>
+    <string name="ti_tip_to_step2_b_txt"><b>\n- Tap → to advance to the right</b></string>
+    <string name="ti_tip_to_step2_c_txt"><b>\n- Tap ○ three times to get \"i\"</b></string>
+    <string name="ti_tip_to_step2_d_txt"><b>\n- Use touch or ↓ to set the word.</b></string>
+    <string name="ti_tip_to_step3_a_txt"><b>The ■ key switches between Japanese, English, and number input.</b></string>
+    <string name="ti_tip_to_step3_b_txt"><b>We\'ve switched from English to numbers. Next is Japanese.</b></string>
+    <string name="ti_tip_to_step3_c_txt"><b>Let\'s return to English now.</b></string>
+    <string name="ti_tip_to_step4_txt"><b>For other input modes (like full width)\nor a PC style keyboard, hold ■\nfor 3 seconds to show the input menu.</b></string>
+    <string name="ti_tip_to_step5_txt"><b>When you\'re done typing, hit the \"back\" key (←) to close the keyboard.</b></string>
+    <string name="ti_tip_to_step6_txt"><b>This is the end of the tutorial.</b></string>
+
+    <!-- Option to mark/unmark the checkbox for flick input in the menu of Software keyboard setting -->
+    <string name="ti_preference_flick_title_txt">Flick input</string>
+
+    <!-- Informs the user of flick input as a subsidiary text in the word suggestion settings menu. -->
+    <string name="ti_preference_flick_summary_txt">Enable flick input</string>
+
+    <!-- Option to mark/unmark the checkbox for flick sensitivity in the menu of Software keyboard setting -->
+    <string name="ti_preference_flick_sensitivity_title_txt">Flick sensitivity</string>
+
+    <!-- default value of flick sensitivity -->
+    <string name="flick_sensitivity_default_value">30</string>
+
+    <!-- Informs the user of flick sensitivity as a subsidiary text in the word suggestion settings menu -->
+    <string name="ti_preference_flick_sensitivity_summary_txt">Set sensitivity of flick</string>
+
+    <!-- Title of Software keyboard settings. this setting includes flick input, flick sensitivity etc.. -->
+    <string name="ti_preference_12key_setting_menu_txt">10key keyboard</string>
+
+    <!-- Option to mark/unmark the checkbox for flick toggle in the menu of Software keyboard setting -->
+    <string name="ti_preference_flick_toggle_title_txt">Toggle input</string>
+
+    <!-- Informs the user of flick toggle as a subsidiary text in the word suggestion settings menu -->
+    <string name="ti_preference_flick_toggle_summary_txt">Enable toggle input</string>
+
+    <string name="ti_preference_phone_keyboard_type_title_txt"> 10key keyboard </string>
+    <string name="ti_preference_phone_keyboard_type_summary_txt"> Set Flick input, Auto cursor movement </string>
+
+
+    <!-- WebAPI -->
+    <string name="ti_webapi_button_txt">Extra Conv</string>
+    <string name="ti_webapi_no_candidate_txt">No Candidate</string>
+    <string name="ti_webapi_get_again_txt">Reacquisition</string>
+    <string name="ti_webapi_connect_txt">Connecting</string>
+    <string name="ti_webapi_timeout_error_txt">Connection timeout</string>
+    <string name="ti_webapi_timeout_error_received_display_txt">Connection timeout. Only received candidates are displayed.</string>
+
+    <!-- Mushroom -->
+    <string name="ti_mushroom_launcher_title_txt">Mushroom</string>
+    <string name="ti_mushroom_commonphrase_title_txt">Common Phrase</string>
+    <!-- category setting menu -->
+    <string name="ti_preference_category_setting_menu_txt">Common Phrase</string>
+    <!-- category names -->
+    <string name="ti_category_item1_name">Greetings</string>
+    <string name="ti_category_item2_name">Business</string>
+    <string name="ti_category_item3_name">Internet</string>
+    <string name="ti_category_item4_name">Private</string>
+    <string name="ti_category_item5_name">Reply</string>
+    <string name="ti_category_item6_name">User Original</string>
+    <!-- category summaries -->
+    <string name="ti_category_item1_summary"></string>
+    <string name="ti_category_item2_summary"></string>
+    <string name="ti_category_item3_summary"></string>
+    <string name="ti_category_item4_summary"></string>
+    <string name="ti_category_item5_summary"></string>
+    <string name="ti_category_item6_summary">Add/Edit/Delete original phrases</string>
+    <!-- phrase option menu item name -->
+    <string name="ti_category_option_menu_add_name">Add</string>
+    <string name="ti_category_option_menu_del_name">Delete</string>
+    <string name="ti_category_option_menu_edit_name">Edit</string>
+    <string name="ti_category_option_menu_clear_name">Delete all</string>
+    <!-- user edit dialog string -->
+    <string name="ti_user_phrase_save_txt">Save</string>
+    <!-- dialog messages -->
+    <string name="ti_delete_all_user_data_txt">Delete all the original phrases?</string>
+    <string name="ti_delete_user_data_txt">Delete the selected phrase?</string>
+    <!-- TextView Text -->
+    <string name="ti_textview_textview01_txt">TextView01</string>
+    <string name="ti_textview_textview02_txt">TextView02</string>
+    <string name="ti_textview_commonphrase_txt">Common Phrase</string>
+
+    <!-- Candidate -->
+    <string name="ti_cand_tab_pictgram_txt">Emoji</string>
+    <string name="ti_cand_tab_pictgram_docomo_txt">Pict</string>
+    <string name="ti_cand_tab_symbol_txt">Symbol</string>
+    <string name="ti_cand_tab_emoticon_txt">Emoticon</string>
+
+    <string name="ti_cand_tab_decoemojilist_txt">Deco</string>
+    <string name="ti_cand_tab_decoemojilist_docomo_txt">Pict-D</string>
+    <string name="ti_candidates_are_nothing_txt">Fail to make the list</string>
+    <string name="ti_symbol_prev_button_txt">Previous List</string>
+    <string name="ti_symbol_next_button_txt">Next List</string>
+
+    <!-- Symbol -->
+    <string name="ti_half_symbol_txt">[Symbol(Half)]</string>
+    <string name="ti_full_symbol_txt">[Symbol(Full)]</string>
+    <string name="ti_all_symbol_txt">[Symbol]</string>
+
+    <!-- Symbol keyboard -->
+    <string name="ti_key_symbol_mode">Cancel</string>
+
+    <!-- Enter key -->
+    <string name="ti_enterkey_return">Return</string>
+    <string name="ti_enterkey_done">Done</string>
+    <string name="ti_enterkey_go">Go</string>
+    <string name="ti_enterkey_next">Next</string>
+    <string name="ti_enterkey_ok">OK</string>
+    <string name="ti_enterkey_send">Send</string>
+    <string name="ti_enterkey_previous">Prev</string>
+
+    <!-- One touch emoji list -->
+    <string name="ti_one_touch_emoji_list_other_txt">Other</string>
+
+    <!-- One touch emoji list Dialog-->
+    <string name="ti_one_touch_emoji_list_dialog_title_txt">Guide</string>
+    <string name="ti_one_touch_emoji_list_dialog_subtitle_txt">Emoji Quick</string>
+    <string name="ti_one_touch_emoji_list_dialog_summary_txt">Drag to open the Emoji Quick</string>
+    <string name="ti_one_touch_emoji_list_dialog_not_show_txt">Do not show again</string>
+
+    <!-- #voice -->
+    <!-- Voice related labels -->
+
+    <!-- Title of the warning dialog that shows when a user initiates voice input for
+         the first time. -->
+    <string name="ti_voice_warning_title_txt">Voice typing key</string>
+
+    <!-- Message of the warning dialog that shows when a user initiates voice input for
+         the first time, or turns it on in settings. -->
+    <string name="ti_voice_warning_may_not_understand_docomo_txt">This function uses docomo voice input. The language which can be recognized depends on the settings of the speech recognition engine.</string>
+    <string name="ti_voice_warning_may_not_understand_txt">This function uses a speech recognition engine available in \"Language\" of \"Voice Search\" settings. The language which can be recognized depends on the settings of the speech recognition engine.</string>
+
+    <!-- An additional part of the warning dialog for voice input that only shows when the user
+         actually initiates voice input, rather than just turning it on in settings. -->
+    <string name="ti_voice_warning_how_to_turn_off_txt">To turn off voice input, go to \"LG Keyboard Settings\".</string>
+
+    <!-- Message to show when user clicks the swiping hint (which says
+        "Swipe across keyboard to speak"). Also shown when enabling settings. -->
+    <string name="ti_voice_hint_dialog_message_docomo_txt">To use voice input, press the Voice typing key to display docomo voice input.</string>
+    <string name="ti_voice_hint_dialog_message_txt">To use voice input, press the Voice typing key to display voice input keyboard, then press the [音声入力開始] button.</string>
+
+    <!-- Short message to tell the user the system is ready for them to speak. -->
+    <string name="ti_voice_listening_txt">Speak now</string>
+
+    <!-- Short message shown after the user finishes speaking. -->
+    <string name="ti_voice_working_txt">Working</string>
+
+    <!-- Short message shown before the user should speak. -->
+    <string name="ti_voice_initializing_txt"></string>
+
+    <!-- Short message shown when a generic error occurs. -->
+    <string name="ti_voice_error_txt">Error. Please try again.</string>
+
+    <!-- Short message shown for a network error. -->
+    <string name="ti_voice_network_error_txt">Couldn\'t connect</string>
+
+    <!-- Short message shown for a network error where the utterance was really long,
+         in which case we should suggest that the user speak less. -->
+    <string name="ti_voice_too_much_speech_txt">Error, too much speech.</string>
+
+    <!-- Short message shown for an audio error. -->
+    <string name="ti_voice_audio_error_txt">Audio problem</string>
+
+    <!-- Short message shown for an error with the voice server. -->
+    <string name="ti_voice_server_error_txt">Server error</string>
+
+    <!-- Short message shown when no speech is heard. -->
+    <string name="ti_voice_speech_timeout_txt">No speech heard</string>
+
+    <!-- Short message shown when the server couldn't parse any speech. -->
+    <string name="ti_voice_no_match_txt">No matches found</string>
+
+    <!-- Short message shown when the user initiates voice and voice search is not installed. -->
+    <string name="ti_voice_not_installed_txt">Voice search not installed</string>
+
+    <!-- Short message shown when the docomo voiceeditor is not be installed or Invalid. -->
+    <string name="ti_dcm_voiceeditor_Invalid_txt">ドコモ文字編集アプリが無効のため起動できません</string>
+
+    <!-- Press the "enter" key after the user speaks. Option on settings.-->
+    <string name="auto_submit">Auto submit after voice</string>
+
+    <!-- Press the "enter" key after the user speaks. Summary of option in settings.-->
+    <string name="auto_submit_summary">Automatically press enter when searching or going to the next field.</string>
+
+    <!-- subtype String -->
+    <string name="label_subtype_generic">%s</string>
+
+    <!-- SymKey -->
+    <string name="label_symkey_txt">SYM</string>
+    <string name="label_phone_symkey_txt">Sym</string>
+
+    <!-- Navigation keypad -->
+    <string name="label_keypad_select">Select</string>
+    <string name="label_keypad_deselect">Deselect</string>
+    <string name="label_keypad_copy">Copy</string>
+    <string name="label_keypad_cut">Cut</string>
+    <string name="label_keypad_paste">Paste</string>
+    <string name="label_keypad_close">Close</string>
+    <string name="label_keypad_all">All</string>
+
+    <!-- Reset settings -->
+    <string name="ti_preference_reset_setting_menu_txt">Reset</string>
+    <string name="ti_preference_reset_setting_title_txt">Reset Settings</string>
+    <string name="ti_preference_reset_setting_message_txt">Do you want to reset all settings?</string>
+    <string name="ti_dialog_reset_setting_done_txt">All settings were reset.</string>
+
+    <!-- Keyboard Layout -->
+    <string name="ti_keyboard_layout_japanese_txt">@string/ti_choose_language_entry_ja_txt</string>
+
+    <string name="ti_preference_multiple_selection_summary_txt">%1$d/%2$d enabled</string>
+    
+    <!-- Keyboard Theme -->
+    <string name="ti_download_theme_button_txt">Download theme</string>
+    
+</resources>
+

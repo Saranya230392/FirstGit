@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <!--  Do not Translate ! This is symbol of "previous". -->
+    <string name="ti_user_dictionary_prev_button_txt">　≪　</string>
+    <!--  Do not Translate ! This is symbol of "next". -->
+    <string name="ti_user_dictionary_next_button_txt">　≫　</string>
+
+    <!--  Do not Translate ! This is separating characters. -->
+    <string name="ti_en_word_separators_txt">.,;:!?</string>
+
+  <!-- Key top -->
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_A_txt">゛゜ 大⇔小</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_eisuu_kana_txt">英数カナ</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_1_txt">.＠ １</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_2_txt">ABC ２</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_3_txt">DEF ３</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_4_txt">GHI ４</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_5_txt">JKL ５</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_6_txt">MNO ６</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_7_txt">PQRS ７</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_8_txt">TUV ８</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_9_txt">WXYZ ９</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_alphabet_0_txt">- ０</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_1_txt">ア</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_2_txt">カ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_3_txt">サ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_4_txt">タ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_5_txt">ナ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_6_txt">ハ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_7_txt">マ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_8_txt">ヤ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_9_txt">ラ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_katakana_0_txt">ワ</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_1_txt">あ 1.＠</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_2_txt">か 2 ABC</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_3_txt">さ 3 DEF</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_4_txt">た 4 GHI</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_5_txt">な 5 JKL</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_6_txt">は 6 MNO</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_7_txt">ま 7 PQRS</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_8_txt">や 8 TUV</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_9_txt">ら 9 WXYZ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_0_txt">わ 0 -</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_tyouon_txt">ー</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_touten_txt">、</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_kuten_txt">。</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_question_txt">？</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_comma_txt">，</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_period_txt">．</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_at_sign_txt">＠</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_number_sign_txt">＃</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_percent_sign_txt">％</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_ampersand_txt">＆</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_asterrisk_txt">＊</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_plus_sign_txt">＋</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_minus_sign_txt">－</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_equal_sign_txt">＝</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_exclamation_mark_txt">！</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_left_parenthesis_txt">（</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_right_parenthesis_txt">）</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_colon_txt">：</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_semicolon_txt">；</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_middot_txt">・</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_thilde_txt">～</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_double_quotation_sign_txt">”</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_plus_minus_sign_txt">±</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_underscore_txt">＿</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_left_curly_blacket_txt">｛</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_right_curly_blacket_txt">｝</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_vertical_bar_txt">｜</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_less_than_sign_txt">＜</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_greater_than_sign_txt">＞</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_left_single_quote_txt">‘</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_right_single_quote_txt">’</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_back_slash_txt">＼</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_dollar_sign_txt">＄</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_yen_sign_txt">￥</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_hat_txt">＾</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_slash_txt">／</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_grave_accent_txt">"\uFF40"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_backslash_txt">"\uFF3C"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_left_bracket_txt">"［"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_right_bracket_txt">"］"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_full_pound_txt">￡</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <!-- There is no full width Euro mark. -->
+    <string name="ti_key_qwerty_euro_txt">€</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_full_hiragana_txt">あ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_full_katakana_txt">カ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_full_alphabet_txt">Ａ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_full_number_txt">１</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_half_katakana_txt">ｶﾅ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_half_alphabet_txt">AB</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_half_number_txt">12</string>
+    <string name="ti_key_12key_switch_full_txt">全</string>
+    <string name="ti_key_12key_switch_half_txt">半</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_switch_chinese_cn_txt">拼</string>
+    <string name="ti_key_12key_switch_chinese_tw_txt">注</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_touten_txt">､</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_comma_txt">,</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_period_txt">.</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_tyouon_txt">ｰ</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_grave_accent_txt">`</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_colon_txt">:</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_slash_txt">/</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_ampersand_txt">"\u0026"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_left_parenthesis_txt">(</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_right_parenthesis_txt">)</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_minus_sign_txt">-</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_plus_sign_txt">+</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_backslash_txt">"\u005C"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_semicolon_txt">;</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_at_sign_txt">\@</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_right_single_quote_txt">\'</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_double_quotation_sign_txt">"\u0022"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_question_txt">\?</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_exclamation_mark_txt">!</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_kuten_txt">"\uFF61"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_kakko_left_txt">"\uFF62"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_qwerty_half_kakko_right_txt">"\uFF63"</string>
+
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_key_12key_undo_txt">Undo</string>
+
+    <!--  Do not Translate ! This is indicated label of meta key state. -->
+    <string name="ti_indicator_caps_txt">CAPS</string>
+    <!--  Do not Translate ! This is indicated label of meta key state. -->
+    <string name="ti_indicator_alt_txt">ALT</string>
+
+    <!-- Alternates keys -->
+    <!-- Latin -->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_a_txt">"àáâãäåæą"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_c_txt">"çćč"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_C_txt">"ÇĆČ"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_d_txt">"ďđ"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_e_txt">"èéêëęě"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_g_txt">"ğ"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_i_txt">"ìíîïı"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_I_txt">"ÌÍÎÏİ"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_l_txt">"ĺľł"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_n_txt">"ñńň"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_o_txt">"òóôõöøőœ"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_r_txt">"ŕř"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_s_txt">"ßśşš"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_S_txt">"ŚŞŠ"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_t_txt">"ť"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_u_txt">"ùúûüůű"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_U_txt">"ÙÚÛŰÜŮ"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_y_txt">"ý"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_z_txt">"źżž"</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_alternates_for_question_txt">¿</string>
+    <!--  Do not Translate ! This is key top character. -->
+    <string name="ti_alternates_for_exclamation_mark_txt">¡</string>
+
+    <!--    Russian -->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_e_ru_txt">"ё"</string>
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_for_b_ru_txt">"ъ"</string>
+
+    <string name="ti_forbid_duplication_char_txt">、。？！・ー</string>
+
+    <!--    strings -->
+    <string name="ti_setting_lines_entry_1">1</string>
+    <string name="ti_setting_lines_entry_2">2</string>
+    <string name="ti_setting_lines_entry_3">3</string>
+    <string name="ti_setting_lines_entry_4">4</string>
+    <string name="ti_setting_lines_entry_5">5</string>
+
+    <!-- standard phrase filenames -->
+    <string name="ti_item1_filename">data_item1</string>
+    <string name="ti_item2_filename">data_item2</string>
+    <string name="ti_item3_filename">data_item3</string>
+    <string name="ti_item4_filename">data_item4</string>
+    <string name="ti_item5_filename">data_item5</string>
+    <string name="ti_item6_filename">data_item6</string>
+
+    <!-- Slide ChangeMode -->
+    <string name="ti_slidechangemode_hiragana_txt">あ</string>
+    <string name="ti_slidechangemode_half_alpha_txt">AB</string>
+    <string name="ti_slidechangemode_half_num_txt">12</string>
+    <string name="ti_slidechangemode_russian_txt">А</string>
+    <string name="ti_slidechangemode_bulgarian_txt">А</string>
+    <string name="ti_slidechangemode_ukrainian_txt">Є</string>
+    <string name="ti_slidechangemode_greek_txt">Α</string>
+    <string name="ti_slidechangemode_chinese_tw_txt">注</string>
+    <string name="ti_slidechangemode_alpha_txt">AB</string>
+    <string name="ti_slidechangemode_num_txt">12</string>
+
+  <!-- Key top -->
+    <string name="key_qwerty_euro">\u20AC</string>
+
+    <!-- Alternates keys -->
+    <!-- Jajp_en shit off-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_en_shift_off_txt">"1Q"</string>
+    <string name="ti_alternates_w_jajp_qwerty_en_shift_off_txt">"2W"</string>
+    <string name="ti_alternates_e_jajp_qwerty_en_shift_off_txt">"3Eèéêëē"</string>
+    <string name="ti_alternates_r_jajp_qwerty_en_shift_off_txt">"4R"</string>
+    <string name="ti_alternates_t_jajp_qwerty_en_shift_off_txt">"5T"</string>
+    <string name="ti_alternates_y_jajp_qwerty_en_shift_off_txt">"6Y"</string>
+    <string name="ti_alternates_u_jajp_qwerty_en_shift_off_txt">"7Uûüùúū"</string>
+    <string name="ti_alternates_i_jajp_qwerty_en_shift_off_txt">"8Iîïíīì"</string>
+    <string name="ti_alternates_o_jajp_qwerty_en_shift_off_txt">"9Oôöòóœøōõ"</string>
+    <string name="ti_alternates_p_jajp_qwerty_en_shift_off_txt">"0P"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_en_shift_off_txt">"Aàáâäæãåā"</string>
+    <string name="ti_alternates_s_jajp_qwerty_en_shift_off_txt">"Sß"</string>
+    <string name="ti_alternates_d_jajp_qwerty_en_shift_off_txt">"D"</string>
+    <string name="ti_alternates_f_jajp_qwerty_en_shift_off_txt">"F"</string>
+    <string name="ti_alternates_g_jajp_qwerty_en_shift_off_txt">"G"</string>
+    <string name="ti_alternates_h_jajp_qwerty_en_shift_off_txt">"H"</string>
+    <string name="ti_alternates_j_jajp_qwerty_en_shift_off_txt">"J"</string>
+    <string name="ti_alternates_k_jajp_qwerty_en_shift_off_txt">"K"</string>
+    <string name="ti_alternates_l_jajp_qwerty_en_shift_off_txt">"L"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_en_shift_off_txt">"Z"</string>
+    <string name="ti_alternates_x_jajp_qwerty_en_shift_off_txt">"X"</string>
+    <string name="ti_alternates_c_jajp_qwerty_en_shift_off_txt">"Cç"</string>
+    <string name="ti_alternates_v_jajp_qwerty_en_shift_off_txt">"V"</string>
+    <string name="ti_alternates_b_jajp_qwerty_en_shift_off_txt">"B"</string>
+    <string name="ti_alternates_n_jajp_qwerty_en_shift_off_txt">"Nñ"</string>
+    <string name="ti_alternates_m_jajp_qwerty_en_shift_off_txt">"M"</string>
+    <string name="ti_alternates_at_jajp_qwerty_en_shift_off_txt">"/&amp;+;\"\'-:()"</string>
+
+    <string name="ti_alternates_maru_jajp_qwerty_en_shift_off_txt">"\?!"</string>
+
+    <!-- One touch emoji list -->
+    <string name="ti_one_touch_emoji_list_up_txt">\u25b2</string>
+    <string name="ti_one_touch_emoji_list_down_txt">\u25bc</string>
+
+    <!-- Jajp_en shit on-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_en_shift_on_txt">"1q"</string>
+    <string name="ti_alternates_w_jajp_qwerty_en_shift_on_txt">"2w"</string>
+    <string name="ti_alternates_e_jajp_qwerty_en_shift_on_txt">"3eЀÉÊЁĒ"</string>
+    <string name="ti_alternates_r_jajp_qwerty_en_shift_on_txt">"4r"</string>
+    <string name="ti_alternates_t_jajp_qwerty_en_shift_on_txt">"5t"</string>
+    <string name="ti_alternates_y_jajp_qwerty_en_shift_on_txt">"6y"</string>
+    <string name="ti_alternates_u_jajp_qwerty_en_shift_on_txt">"7uÛÜÙÚŪ"</string>
+    <string name="ti_alternates_i_jajp_qwerty_en_shift_on_txt">"8iÎÏÍÌĪ"</string>
+    <string name="ti_alternates_o_jajp_qwerty_en_shift_on_txt">"9oÔÖÒÓŒØŌÕ"</string>
+    <string name="ti_alternates_p_jajp_qwerty_en_shift_on_txt">"0p"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_en_shift_on_txt">"aÀÁÂÄÆÃÅĀ"</string>
+    <string name="ti_alternates_s_jajp_qwerty_en_shift_on_txt">"sß"</string>
+    <string name="ti_alternates_d_jajp_qwerty_en_shift_on_txt">"d"</string>
+    <string name="ti_alternates_f_jajp_qwerty_en_shift_on_txt">"f"</string>
+    <string name="ti_alternates_g_jajp_qwerty_en_shift_on_txt">"g"</string>
+    <string name="ti_alternates_h_jajp_qwerty_en_shift_on_txt">"h"</string>
+    <string name="ti_alternates_j_jajp_qwerty_en_shift_on_txt">"j"</string>
+    <string name="ti_alternates_k_jajp_qwerty_en_shift_on_txt">"k"</string>
+    <string name="ti_alternates_l_jajp_qwerty_en_shift_on_txt">"l"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_en_shift_on_txt">"z"</string>
+    <string name="ti_alternates_x_jajp_qwerty_en_shift_on_txt">"x"</string>
+    <string name="ti_alternates_c_jajp_qwerty_en_shift_on_txt">"cÇ"</string>
+    <string name="ti_alternates_v_jajp_qwerty_en_shift_on_txt">"v"</string>
+    <string name="ti_alternates_b_jajp_qwerty_en_shift_on_txt">"b"</string>
+    <string name="ti_alternates_n_jajp_qwerty_en_shift_on_txt">"nÑ"</string>
+    <string name="ti_alternates_m_jajp_qwerty_en_shift_on_txt">"m"</string>
+    <string name="ti_alternates_at_jajp_qwerty_en_shift_on_txt">"\@&amp;+;\"\'-:()"</string>
+
+    <string name="ti_alternates_maru_jajp_qwerty_en_shift_on_txt">"!.,"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_en_shift_on_voicedisable_txt">".,"</string>
+
+    <!-- Jajp_jp half -->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_ja_half_txt">"1"</string>
+    <string name="ti_alternates_w_jajp_qwerty_ja_half_txt">"2"</string>
+    <string name="ti_alternates_e_jajp_qwerty_ja_half_txt">"3"</string>
+    <string name="ti_alternates_r_jajp_qwerty_ja_half_txt">"4"</string>
+    <string name="ti_alternates_t_jajp_qwerty_ja_half_txt">"5"</string>
+    <string name="ti_alternates_y_jajp_qwerty_ja_half_txt">"6"</string>
+    <string name="ti_alternates_u_jajp_qwerty_ja_half_txt">"7"</string>
+    <string name="ti_alternates_i_jajp_qwerty_ja_half_txt">"8"</string>
+    <string name="ti_alternates_o_jajp_qwerty_ja_half_txt">"9"</string>
+    <string name="ti_alternates_p_jajp_qwerty_ja_half_txt">"0"</string>
+
+    <!-- Jajp_jp full -->
+    <string name="ti_alternates_q_jajp_qwerty_ja_full_txt">"１"</string>
+    <string name="ti_alternates_w_jajp_qwerty_ja_full_txt">"２"</string>
+    <string name="ti_alternates_e_jajp_qwerty_ja_full_txt">"３"</string>
+    <string name="ti_alternates_r_jajp_qwerty_ja_full_txt">"４"</string>
+    <string name="ti_alternates_t_jajp_qwerty_ja_full_txt">"５"</string>
+    <string name="ti_alternates_y_jajp_qwerty_ja_full_txt">"６"</string>
+    <string name="ti_alternates_u_jajp_qwerty_ja_full_txt">"７"</string>
+    <string name="ti_alternates_i_jajp_qwerty_ja_full_txt">"８"</string>
+    <string name="ti_alternates_o_jajp_qwerty_ja_full_txt">"９"</string>
+    <string name="ti_alternates_p_jajp_qwerty_ja_full_txt">"０"</string>
+
+    <!-- Jajp_jp Hiragana shit off-->
+    <string name="ti_alternates_at_jajp_qwerty_ja_shift_off_txt">"／＆＋；”’−：（）＠"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_shift_off_txt">"\?．!，"</string>
+
+    <!-- Jajp_jp Hiragana shit on-->
+    <string name="ti_alternates_at_jajp_qwerty_ja_shift_on_txt">"／＆＋；”’−：（）＠"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_shift_on_txt">"！。．、，"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_shift_on_voicedisable_txt">"。．、，"</string>
+
+    <!-- Jajp_jp HalfWide-Katakana shit off-->
+    <string name="ti_alternates_at_jajp_qwerty_ja_half_katakana_shift_off_txt">"/&amp;+;\"\'-:()\@"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_half_katakana_shift_off_txt">"\?.!,"</string>
+
+    <!-- Jajp_jp HalfWide-Katakana shit on-->
+    <string name="ti_alternates_at_jajp_qwerty_ja_half_katakana_shift_on_txt">"/&amp;+;\"\'-:()\@"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_half_katakana_shift_on_txt">"!｡.､,"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_half_katakana_shift_on_voicedisable_txt">"｡.､,"</string>
+
+    <!-- Jajp_jp FullWide-Katakana shit off-->
+    <string name="ti_alternates_at_jajp_qwerty_ja_full_katakana_shift_off_txt">"／＆＋；”’−：（）＠"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_full_katakana_shift_off_txt">"？．！，"</string>
+
+    <!-- Jajp_jp FullWide-Katakana shit on-->
+    <string name="ti_alternates_at_jajp_qwerty_ja_full_katakana_shift_on_txt">"／＆＋；”’−：（）＠"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_full_katakana_shift_on_txt">"！。．、，"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_ja_full_katakana_shift_on_voicedisable_txt">"。．、，"</string>
+
+    <!-- Jajp_en FullWide-Alphabet shift on-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_en_full_alphabet_shift_on_txt">"１Ｑ"</string>
+    <string name="ti_alternates_w_jajp_qwerty_en_full_alphabet_shift_on_txt">"２Ｗ"</string>
+    <string name="ti_alternates_e_jajp_qwerty_en_full_alphabet_shift_on_txt">"３Ｅ"</string>
+    <string name="ti_alternates_r_jajp_qwerty_en_full_alphabet_shift_on_txt">"４Ｒ"</string>
+    <string name="ti_alternates_t_jajp_qwerty_en_full_alphabet_shift_on_txt">"５Ｔ"</string>
+    <string name="ti_alternates_y_jajp_qwerty_en_full_alphabet_shift_on_txt">"６Ｙ"</string>
+    <string name="ti_alternates_u_jajp_qwerty_en_full_alphabet_shift_on_txt">"７Ｕ"</string>
+    <string name="ti_alternates_i_jajp_qwerty_en_full_alphabet_shift_on_txt">"８Ｉ"</string>
+    <string name="ti_alternates_o_jajp_qwerty_en_full_alphabet_shift_on_txt">"９Ｏ"</string>
+    <string name="ti_alternates_p_jajp_qwerty_en_full_alphabet_shift_on_txt">"０Ｐ"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_en_full_alphabet_shift_on_txt">"\uFF40Ａ"</string>
+    <string name="ti_alternates_s_jajp_qwerty_en_full_alphabet_shift_on_txt">"＠Ｓ"</string>
+    <string name="ti_alternates_d_jajp_qwerty_en_full_alphabet_shift_on_txt">"＃Ｄ"</string>
+    <string name="ti_alternates_f_jajp_qwerty_en_full_alphabet_shift_on_txt">"％Ｆ"</string>
+    <string name="ti_alternates_g_jajp_qwerty_en_full_alphabet_shift_on_txt">"（Ｇ"</string>
+    <string name="ti_alternates_h_jajp_qwerty_en_full_alphabet_shift_on_txt">"）Ｈ"</string>
+    <string name="ti_alternates_j_jajp_qwerty_en_full_alphabet_shift_on_txt">"ーＪ"</string>
+    <string name="ti_alternates_k_jajp_qwerty_en_full_alphabet_shift_on_txt">"＿Ｋ"</string>
+    <string name="ti_alternates_l_jajp_qwerty_en_full_alphabet_shift_on_txt">"：Ｌ"</string>
+    <string name="ti_alternates_slash_jajp_qwerty_en_full_alphabet_shift_on_txt">"；／"</string>
+    <string name="ti_alternates_at_jajp_qwerty_en_full_alphabet_shift_on_txt">"；＠"</string>
+    <string name="ti_alternates_tyouon_jajp_qwerty_en_full_alphabet_shift_on_txt">"；ー"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_en_full_alphabet_shift_on_txt">"”Ｚ"</string>
+    <string name="ti_alternates_x_jajp_qwerty_en_full_alphabet_shift_on_txt">"’Ｘ"</string>
+    <string name="ti_alternates_c_jajp_qwerty_en_full_alphabet_shift_on_txt">"！Ｃ"</string>
+    <string name="ti_alternates_v_jajp_qwerty_en_full_alphabet_shift_on_txt">"？Ｖ"</string>
+    <string name="ti_alternates_b_jajp_qwerty_en_full_alphabet_shift_on_txt">"／Ｂ"</string>
+    <string name="ti_alternates_n_jajp_qwerty_en_full_alphabet_shift_on_txt">"\uFF3CＮ"</string>
+    <string name="ti_alternates_m_jajp_qwerty_en_full_alphabet_shift_on_txt">"～Ｍ"</string>
+
+    <string name="ti_alternates_maru_jajp_qwerty_en_full_alphabet_shift_on_txt">"！．，"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_en_full_alphabet_shift_on_voicedisable_txt">"．，"</string>
+
+    <!-- Jajp_en HalfWide-Alphabet shift on-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_en_half_alphabet_shift_on_txt">"1Q"</string>
+    <string name="ti_alternates_w_jajp_qwerty_en_half_alphabet_shift_on_txt">"2W"</string>
+    <string name="ti_alternates_e_jajp_qwerty_en_half_alphabet_shift_on_txt">"3E"</string>
+    <string name="ti_alternates_r_jajp_qwerty_en_half_alphabet_shift_on_txt">"4R"</string>
+    <string name="ti_alternates_t_jajp_qwerty_en_half_alphabet_shift_on_txt">"5T"</string>
+    <string name="ti_alternates_y_jajp_qwerty_en_half_alphabet_shift_on_txt">"6Y"</string>
+    <string name="ti_alternates_u_jajp_qwerty_en_half_alphabet_shift_on_txt">"7U"</string>
+    <string name="ti_alternates_i_jajp_qwerty_en_half_alphabet_shift_on_txt">"8I"</string>
+    <string name="ti_alternates_o_jajp_qwerty_en_half_alphabet_shift_on_txt">"9O"</string>
+    <string name="ti_alternates_p_jajp_qwerty_en_half_alphabet_shift_on_txt">"0P"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_en_half_alphabet_shift_on_txt">"`A"</string>
+    <string name="ti_alternates_s_jajp_qwerty_en_half_alphabet_shift_on_txt">"@S"</string>
+    <string name="ti_alternates_d_jajp_qwerty_en_half_alphabet_shift_on_txt">"#D"</string>
+    <string name="ti_alternates_f_jajp_qwerty_en_half_alphabet_shift_on_txt">"%F"</string>
+    <string name="ti_alternates_g_jajp_qwerty_en_half_alphabet_shift_on_txt">"(G"</string>
+    <string name="ti_alternates_h_jajp_qwerty_en_half_alphabet_shift_on_txt">")H"</string>
+    <string name="ti_alternates_j_jajp_qwerty_en_half_alphabet_shift_on_txt">"-J"</string>
+    <string name="ti_alternates_k_jajp_qwerty_en_half_alphabet_shift_on_txt">"_K"</string>
+    <string name="ti_alternates_l_jajp_qwerty_en_half_alphabet_shift_on_txt">":L"</string>
+    <string name="ti_alternates_slash_jajp_qwerty_en_half_alphabet_shift_on_txt">";/"</string>
+    <string name="ti_alternates_at_jajp_qwerty_en_half_alphabet_shift_on_txt">";@"</string>
+    <string name="ti_alternates_tyouon_jajp_qwerty_en_half_alphabet_shift_on_txt">";\uFF70"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_en_half_alphabet_shift_on_txt">"\u0022Z"</string>
+    <string name="ti_alternates_x_jajp_qwerty_en_half_alphabet_shift_on_txt">"'X"</string>
+    <string name="ti_alternates_c_jajp_qwerty_en_half_alphabet_shift_on_txt">"!C"</string>
+    <string name="ti_alternates_v_jajp_qwerty_en_half_alphabet_shift_on_txt">"?V"</string>
+    <string name="ti_alternates_b_jajp_qwerty_en_half_alphabet_shift_on_txt">"/B"</string>
+    <string name="ti_alternates_n_jajp_qwerty_en_half_alphabet_shift_on_txt">"\u005CN"</string>
+    <string name="ti_alternates_m_jajp_qwerty_en_half_alphabet_shift_on_txt">"~M"</string>
+
+    <!-- Jajp_en FullWide-Alphabet shift off-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_en_full_alphabet_shift_off_txt">"１ｑ"</string>
+    <string name="ti_alternates_w_jajp_qwerty_en_full_alphabet_shift_off_txt">"２ｗ"</string>
+    <string name="ti_alternates_e_jajp_qwerty_en_full_alphabet_shift_off_txt">"３ｅ"</string>
+    <string name="ti_alternates_r_jajp_qwerty_en_full_alphabet_shift_off_txt">"４ｒ"</string>
+    <string name="ti_alternates_t_jajp_qwerty_en_full_alphabet_shift_off_txt">"５ｔ"</string>
+    <string name="ti_alternates_y_jajp_qwerty_en_full_alphabet_shift_off_txt">"６ｙ"</string>
+    <string name="ti_alternates_u_jajp_qwerty_en_full_alphabet_shift_off_txt">"７ｕ"</string>
+    <string name="ti_alternates_i_jajp_qwerty_en_full_alphabet_shift_off_txt">"８ｉ"</string>
+    <string name="ti_alternates_o_jajp_qwerty_en_full_alphabet_shift_off_txt">"９ｏ"</string>
+    <string name="ti_alternates_p_jajp_qwerty_en_full_alphabet_shift_off_txt">"０ｐ"</string>
+    <string name="ti_alternates_maru_jajp_qwerty_en_full_alphabet_shift_off_txt">"？！"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_en_full_alphabet_shift_off_txt">"\uFF40ａ"</string>
+    <string name="ti_alternates_s_jajp_qwerty_en_full_alphabet_shift_off_txt">"＠ｓ"</string>
+    <string name="ti_alternates_d_jajp_qwerty_en_full_alphabet_shift_off_txt">"＃ｄ"</string>
+    <string name="ti_alternates_f_jajp_qwerty_en_full_alphabet_shift_off_txt">"％ｆ"</string>
+    <string name="ti_alternates_g_jajp_qwerty_en_full_alphabet_shift_off_txt">"（ｇ"</string>
+    <string name="ti_alternates_h_jajp_qwerty_en_full_alphabet_shift_off_txt">"）ｈ"</string>
+    <string name="ti_alternates_j_jajp_qwerty_en_full_alphabet_shift_off_txt">"ーｊ"</string>
+    <string name="ti_alternates_k_jajp_qwerty_en_full_alphabet_shift_off_txt">"＿ｋ"</string>
+    <string name="ti_alternates_l_jajp_qwerty_en_full_alphabet_shift_off_txt">"：ｌ"</string>
+    <string name="ti_alternates_slash_jajp_qwerty_en_full_alphabet_shift_off_txt">"；／"</string>
+    <string name="ti_alternates_at_jajp_qwerty_en_full_alphabet_shift_off_txt">"；＠"</string>
+    <string name="ti_alternates_tyouon_jajp_qwerty_en_full_alphabet_shift_off_txt">"；ー"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_en_full_alphabet_shift_off_txt">"”ｚ"</string>
+    <string name="ti_alternates_x_jajp_qwerty_en_full_alphabet_shift_off_txt">"’ｘ"</string>
+    <string name="ti_alternates_c_jajp_qwerty_en_full_alphabet_shift_off_txt">"！ｃ"</string>
+    <string name="ti_alternates_v_jajp_qwerty_en_full_alphabet_shift_off_txt">"？ｖ"</string>
+    <string name="ti_alternates_b_jajp_qwerty_en_full_alphabet_shift_off_txt">"／ｂ"</string>
+    <string name="ti_alternates_n_jajp_qwerty_en_full_alphabet_shift_off_txt">"\uFF3Cｎ"</string>
+    <string name="ti_alternates_m_jajp_qwerty_en_full_alphabet_shift_off_txt">"～ｍ"</string>
+
+    <!-- Jajp_en HalfWide-Alphabet shift off-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_en_half_alphabet_shift_off_txt">"1q"</string>
+    <string name="ti_alternates_w_jajp_qwerty_en_half_alphabet_shift_off_txt">"2w"</string>
+    <string name="ti_alternates_e_jajp_qwerty_en_half_alphabet_shift_off_txt">"3e"</string>
+    <string name="ti_alternates_r_jajp_qwerty_en_half_alphabet_shift_off_txt">"4r"</string>
+    <string name="ti_alternates_t_jajp_qwerty_en_half_alphabet_shift_off_txt">"5t"</string>
+    <string name="ti_alternates_y_jajp_qwerty_en_half_alphabet_shift_off_txt">"6y"</string>
+    <string name="ti_alternates_u_jajp_qwerty_en_half_alphabet_shift_off_txt">"7u"</string>
+    <string name="ti_alternates_i_jajp_qwerty_en_half_alphabet_shift_off_txt">"8i"</string>
+    <string name="ti_alternates_o_jajp_qwerty_en_half_alphabet_shift_off_txt">"9o"</string>
+    <string name="ti_alternates_p_jajp_qwerty_en_half_alphabet_shift_off_txt">"0p"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_en_half_alphabet_shift_off_txt">"`a"</string>
+    <string name="ti_alternates_s_jajp_qwerty_en_half_alphabet_shift_off_txt">"@s"</string>
+    <string name="ti_alternates_d_jajp_qwerty_en_half_alphabet_shift_off_txt">"#d"</string>
+    <string name="ti_alternates_f_jajp_qwerty_en_half_alphabet_shift_off_txt">"%f"</string>
+    <string name="ti_alternates_g_jajp_qwerty_en_half_alphabet_shift_off_txt">"(g"</string>
+    <string name="ti_alternates_h_jajp_qwerty_en_half_alphabet_shift_off_txt">")h"</string>
+    <string name="ti_alternates_j_jajp_qwerty_en_half_alphabet_shift_off_txt">"-j"</string>
+    <string name="ti_alternates_k_jajp_qwerty_en_half_alphabet_shift_off_txt">"_k"</string>
+    <string name="ti_alternates_l_jajp_qwerty_en_half_alphabet_shift_off_txt">":l"</string>
+    <string name="ti_alternates_slash_jajp_qwerty_en_half_alphabet_shift_off_txt">";/"</string>
+    <string name="ti_alternates_at_jajp_qwerty_en_half_alphabet_shift_off_txt">";@"</string>
+    <string name="ti_alternates_tyouon_jajp_qwerty_en_half_alphabet_shift_off_txt">";\uFF70"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_en_half_alphabet_shift_off_txt">"\u0022z"</string>
+    <string name="ti_alternates_x_jajp_qwerty_en_half_alphabet_shift_off_txt">"'x"</string>
+    <string name="ti_alternates_c_jajp_qwerty_en_half_alphabet_shift_off_txt">"!c"</string>
+    <string name="ti_alternates_v_jajp_qwerty_en_half_alphabet_shift_off_txt">"?v"</string>
+    <string name="ti_alternates_b_jajp_qwerty_en_half_alphabet_shift_off_txt">"/b"</string>
+    <string name="ti_alternates_n_jajp_qwerty_en_half_alphabet_shift_off_txt">"\u005Cn"</string>
+    <string name="ti_alternates_m_jajp_qwerty_en_half_alphabet_shift_off_txt">"~m"</string>
+
+    <!-- Jajp_hiragana shift on-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_hiragana_shift_on_txt">"１Q"</string>
+    <string name="ti_alternates_w_jajp_qwerty_hiragana_shift_on_txt">"２W"</string>
+    <string name="ti_alternates_e_jajp_qwerty_hiragana_shift_on_txt">"３E"</string>
+    <string name="ti_alternates_r_jajp_qwerty_hiragana_shift_on_txt">"４R"</string>
+    <string name="ti_alternates_t_jajp_qwerty_hiragana_shift_on_txt">"５T"</string>
+    <string name="ti_alternates_y_jajp_qwerty_hiragana_shift_on_txt">"６Y"</string>
+    <string name="ti_alternates_u_jajp_qwerty_hiragana_shift_on_txt">"７U"</string>
+    <string name="ti_alternates_i_jajp_qwerty_hiragana_shift_on_txt">"８I"</string>
+    <string name="ti_alternates_o_jajp_qwerty_hiragana_shift_on_txt">"９O"</string>
+    <string name="ti_alternates_p_jajp_qwerty_hiragana_shift_on_txt">"０P"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_hiragana_shift_on_txt">"\uFF40A"</string>
+    <string name="ti_alternates_s_jajp_qwerty_hiragana_shift_on_txt">"＠S"</string>
+    <string name="ti_alternates_d_jajp_qwerty_hiragana_shift_on_txt">"＃D"</string>
+    <string name="ti_alternates_f_jajp_qwerty_hiragana_shift_on_txt">"％F"</string>
+    <string name="ti_alternates_g_jajp_qwerty_hiragana_shift_on_txt">"（G"</string>
+    <string name="ti_alternates_h_jajp_qwerty_hiragana_shift_on_txt">"）H"</string>
+    <string name="ti_alternates_j_jajp_qwerty_hiragana_shift_on_txt">"ーJ"</string>
+    <string name="ti_alternates_k_jajp_qwerty_hiragana_shift_on_txt">"＿K"</string>
+    <string name="ti_alternates_l_jajp_qwerty_hiragana_shift_on_txt">"：L"</string>
+    <string name="ti_alternates_tyouon_jajp_qwerty_hiragana_shift_on_txt">"；ー"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_hiragana_shift_on_txt">"”Z"</string>
+    <string name="ti_alternates_x_jajp_qwerty_hiragana_shift_on_txt">"’X"</string>
+    <string name="ti_alternates_c_jajp_qwerty_hiragana_shift_on_txt">"！C"</string>
+    <string name="ti_alternates_v_jajp_qwerty_hiragana_shift_on_txt">"？V"</string>
+    <string name="ti_alternates_b_jajp_qwerty_hiragana_shift_on_txt">"／B"</string>
+    <string name="ti_alternates_n_jajp_qwerty_hiragana_shift_on_txt">"\uFF3CN"</string>
+    <string name="ti_alternates_m_jajp_qwerty_hiragana_shift_on_txt">"～M"</string>
+
+    <!-- Jajp_hiragana shift off-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_jajp_qwerty_hiragana_shift_off_txt">"１q"</string>
+    <string name="ti_alternates_w_jajp_qwerty_hiragana_shift_off_txt">"２w"</string>
+    <string name="ti_alternates_e_jajp_qwerty_hiragana_shift_off_txt">"３e"</string>
+    <string name="ti_alternates_r_jajp_qwerty_hiragana_shift_off_txt">"４r"</string>
+    <string name="ti_alternates_t_jajp_qwerty_hiragana_shift_off_txt">"５t"</string>
+    <string name="ti_alternates_y_jajp_qwerty_hiragana_shift_off_txt">"６y"</string>
+    <string name="ti_alternates_u_jajp_qwerty_hiragana_shift_off_txt">"７u"</string>
+    <string name="ti_alternates_i_jajp_qwerty_hiragana_shift_off_txt">"８i"</string>
+    <string name="ti_alternates_o_jajp_qwerty_hiragana_shift_off_txt">"９o"</string>
+    <string name="ti_alternates_p_jajp_qwerty_hiragana_shift_off_txt">"０p"</string>
+
+    <string name="ti_alternates_a_jajp_qwerty_hiragana_shift_off_txt">"\uFF40a"</string>
+    <string name="ti_alternates_s_jajp_qwerty_hiragana_shift_off_txt">"＠s"</string>
+    <string name="ti_alternates_d_jajp_qwerty_hiragana_shift_off_txt">"＃d"</string>
+    <string name="ti_alternates_f_jajp_qwerty_hiragana_shift_off_txt">"％f"</string>
+    <string name="ti_alternates_g_jajp_qwerty_hiragana_shift_off_txt">"（g"</string>
+    <string name="ti_alternates_h_jajp_qwerty_hiragana_shift_off_txt">"）h"</string>
+    <string name="ti_alternates_j_jajp_qwerty_hiragana_shift_off_txt">"ーj"</string>
+    <string name="ti_alternates_k_jajp_qwerty_hiragana_shift_off_txt">"＿k"</string>
+    <string name="ti_alternates_l_jajp_qwerty_hiragana_shift_off_txt">"：l"</string>
+    <string name="ti_alternates_tyouon_jajp_qwerty_hiragana_shift_off_txt">"；ー"</string>
+
+    <string name="ti_alternates_z_jajp_qwerty_hiragana_shift_off_txt">"”z"</string>
+    <string name="ti_alternates_x_jajp_qwerty_hiragana_shift_off_txt">"’x"</string>
+    <string name="ti_alternates_c_jajp_qwerty_hiragana_shift_off_txt">"！c"</string>
+    <string name="ti_alternates_v_jajp_qwerty_hiragana_shift_off_txt">"？v"</string>
+    <string name="ti_alternates_b_jajp_qwerty_hiragana_shift_off_txt">"／b"</string>
+    <string name="ti_alternates_n_jajp_qwerty_hiragana_shift_off_txt">"\uFF3Cn"</string>
+    <string name="ti_alternates_m_jajp_qwerty_hiragana_shift_off_txt">"～m"</string>
+
+    <!-- Hagl shift on-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_ko_qwerty_shift_on_txt">"1\u3143"</string>
+    <string name="ti_alternates_w_ko_qwerty_shift_on_txt">"2\u3149"</string>
+    <string name="ti_alternates_e_ko_qwerty_shift_on_txt">"3\u3138"</string>
+    <string name="ti_alternates_r_ko_qwerty_shift_on_txt">"4\u3132"</string>
+    <string name="ti_alternates_t_ko_qwerty_shift_on_txt">"5\u3146"</string>
+    <string name="ti_alternates_y_ko_qwerty_shift_on_txt">"6\u315B"</string>
+    <string name="ti_alternates_u_ko_qwerty_shift_on_txt">"7\u3155"</string>
+    <string name="ti_alternates_i_ko_qwerty_shift_on_txt">"8\u3151"</string>
+    <string name="ti_alternates_o_ko_qwerty_shift_on_txt">"9\u3152"</string>
+    <string name="ti_alternates_p_ko_qwerty_shift_on_txt">"0\u3156"</string>
+
+    <string name="ti_alternates_a_ko_qwerty_shift_on_txt">"`\u3141"</string>
+    <string name="ti_alternates_s_ko_qwerty_shift_on_txt">"@\u3134"</string>
+    <string name="ti_alternates_d_ko_qwerty_shift_on_txt">"#\u3147"</string>
+    <string name="ti_alternates_f_ko_qwerty_shift_on_txt">"%\u3139"</string>
+    <string name="ti_alternates_g_ko_qwerty_shift_on_txt">"(\u314E"</string>
+    <string name="ti_alternates_h_ko_qwerty_shift_on_txt">")\u3157"</string>
+    <string name="ti_alternates_j_ko_qwerty_shift_on_txt">"-\u3153"</string>
+    <string name="ti_alternates_k_ko_qwerty_shift_on_txt">"_\u314F"</string>
+    <string name="ti_alternates_l_ko_qwerty_shift_on_txt">":\u3163"</string>
+
+    <string name="ti_alternates_z_ko_qwerty_shift_on_txt">"\u0022\u314B"</string>
+    <string name="ti_alternates_x_ko_qwerty_shift_on_txt">"'\u314C"</string>
+    <string name="ti_alternates_c_ko_qwerty_shift_on_txt">"!\u314A"</string>
+    <string name="ti_alternates_v_ko_qwerty_shift_on_txt">"?\u314D"</string>
+    <string name="ti_alternates_b_ko_qwerty_shift_on_txt">"/\u3160"</string>
+    <string name="ti_alternates_n_ko_qwerty_shift_on_txt">"\u005C\u315C"</string>
+    <string name="ti_alternates_m_ko_qwerty_shift_on_txt">";\u3161"</string>
+
+    <!-- Hagl shift off-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_alternates_q_ko_qwerty_shift_off_txt">"1\u3142"</string>
+    <string name="ti_alternates_w_ko_qwerty_shift_off_txt">"2\u3148"</string>
+    <string name="ti_alternates_e_ko_qwerty_shift_off_txt">"3\u3137"</string>
+    <string name="ti_alternates_r_ko_qwerty_shift_off_txt">"4\u3131"</string>
+    <string name="ti_alternates_t_ko_qwerty_shift_off_txt">"5\u3145"</string>
+    <string name="ti_alternates_y_ko_qwerty_shift_off_txt">"6\u315B"</string>
+    <string name="ti_alternates_u_ko_qwerty_shift_off_txt">"7\u3155"</string>
+    <string name="ti_alternates_i_ko_qwerty_shift_off_txt">"8\u3151"</string>
+    <string name="ti_alternates_o_ko_qwerty_shift_off_txt">"9\u3150"</string>
+    <string name="ti_alternates_p_ko_qwerty_shift_off_txt">"0\u3154"</string>
+
+    <string name="ti_alternates_a_ko_qwerty_shift_off_txt">"`\u3141"</string>
+    <string name="ti_alternates_s_ko_qwerty_shift_off_txt">"@\u3134"</string>
+    <string name="ti_alternates_d_ko_qwerty_shift_off_txt">"#\u3147"</string>
+    <string name="ti_alternates_f_ko_qwerty_shift_off_txt">"%\u3139"</string>
+    <string name="ti_alternates_g_ko_qwerty_shift_off_txt">"(\u314E"</string>
+    <string name="ti_alternates_h_ko_qwerty_shift_off_txt">")\u3157"</string>
+    <string name="ti_alternates_j_ko_qwerty_shift_off_txt">"-\u3153"</string>
+    <string name="ti_alternates_k_ko_qwerty_shift_off_txt">"_\u314F"</string>
+    <string name="ti_alternates_l_ko_qwerty_shift_off_txt">":\u3163"</string>
+
+    <string name="ti_alternates_z_ko_qwerty_shift_off_txt">"\u0022\u314B"</string>
+    <string name="ti_alternates_x_ko_qwerty_shift_off_txt">"'\u314C"</string>
+    <string name="ti_alternates_c_ko_qwerty_shift_off_txt">"!\u314A"</string>
+    <string name="ti_alternates_v_ko_qwerty_shift_off_txt">"?\u314D"</string>
+    <string name="ti_alternates_b_ko_qwerty_shift_off_txt">"/\u3160"</string>
+    <string name="ti_alternates_n_ko_qwerty_shift_off_txt">"\u005C\u315C"</string>
+    <string name="ti_alternates_m_ko_qwerty_shift_off_txt">";\u3161"</string>
+
+    <!-- QWERTY sub characters - full-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_sub_characters_q_full_txt">"１"</string>
+    <string name="ti_sub_characters_w_full_txt">"２"</string>
+    <string name="ti_sub_characters_e_full_txt">"３"</string>
+    <string name="ti_sub_characters_r_full_txt">"４"</string>
+    <string name="ti_sub_characters_t_full_txt">"５"</string>
+    <string name="ti_sub_characters_y_full_txt">"６"</string>
+    <string name="ti_sub_characters_u_full_txt">"７"</string>
+    <string name="ti_sub_characters_i_full_txt">"８"</string>
+    <string name="ti_sub_characters_o_full_txt">"９"</string>
+    <string name="ti_sub_characters_p_full_txt">"０"</string>
+
+    <string name="ti_sub_characters_a_full_txt">"＠"</string>
+    <string name="ti_sub_characters_s_full_txt">"＃"</string>
+    <string name="ti_sub_characters_d_full_txt">"％"</string>
+    <string name="ti_sub_characters_f_full_txt">"＆"</string>
+    <string name="ti_sub_characters_g_full_txt">"＊"</string>
+    <string name="ti_sub_characters_h_full_txt">"（"</string>
+    <string name="ti_sub_characters_j_full_txt">"）"</string>
+    <string name="ti_sub_characters_k_full_txt">"："</string>
+    <string name="ti_sub_characters_l_full_txt">"；"</string>
+
+    <string name="ti_sub_characters_z_full_txt">"”"</string>
+    <string name="ti_sub_characters_x_full_txt">"’"</string>
+    <string name="ti_sub_characters_c_full_txt">"！"</string>
+    <string name="ti_sub_characters_v_full_txt">"？"</string>
+    <string name="ti_sub_characters_b_full_txt">"／"</string>
+    <string name="ti_sub_characters_n_full_txt">"\uFF3C"</string>
+    <string name="ti_sub_characters_m_full_txt">"～"</string>
+
+    <!-- QWERTY sub characters - half-->
+    <!--  Do not Translate ! This is alternate keys. -->
+    <string name="ti_sub_characters_q_half_txt">"1"</string>
+    <string name="ti_sub_characters_w_half_txt">"2"</string>
+    <string name="ti_sub_characters_e_half_txt">"3"</string>
+    <string name="ti_sub_characters_r_half_txt">"4"</string>
+    <string name="ti_sub_characters_t_half_txt">"5"</string>
+    <string name="ti_sub_characters_y_half_txt">"6"</string>
+    <string name="ti_sub_characters_u_half_txt">"7"</string>
+    <string name="ti_sub_characters_i_half_txt">"8"</string>
+    <string name="ti_sub_characters_o_half_txt">"9"</string>
+    <string name="ti_sub_characters_p_half_txt">"0"</string>
+
+    <string name="ti_sub_characters_a_half_txt">"@"</string>
+    <string name="ti_sub_characters_s_half_txt">"#"</string>
+    <string name="ti_sub_characters_d_half_txt">"%"</string>
+    <string name="ti_sub_characters_f_half_txt">"\u0026"</string>
+    <string name="ti_sub_characters_g_half_txt">"*"</string>
+    <string name="ti_sub_characters_h_half_txt">"("</string>
+    <string name="ti_sub_characters_j_half_txt">")"</string>
+    <string name="ti_sub_characters_k_half_txt">":"</string>
+    <string name="ti_sub_characters_l_half_txt">";"</string>
+
+    <string name="ti_sub_characters_z_half_txt">"\u0022"</string>
+    <string name="ti_sub_characters_x_half_txt">"'"</string>
+    <string name="ti_sub_characters_c_half_txt">"!"</string>
+    <string name="ti_sub_characters_v_half_txt">"?"</string>
+    <string name="ti_sub_characters_b_half_txt">"/"</string>
+    <string name="ti_sub_characters_n_half_txt">"\u005C"</string>
+    <string name="ti_sub_characters_m_half_txt">"~"</string>
+</resources>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@fraction/key_width_12key"
+    iwnn:horizontalGap="@fraction/keyboard_12key_common_horizontal_gap"
+    iwnn:verticalGap="@dimen/keyboard_12key_common_vertical_gap"
+    iwnn:keyHeight="@dimen/keyboard_12key_common_keyheight"
+    >
+
+    <Row>
+        <Key iwnn:codes="-219" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_reverse" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_reverse"
+             iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-201" iwnn:keyIconId="1" iwnn:keyIconPreviewId="401" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-202" iwnn:keyIconId="2" iwnn:keyIconPreviewId="402"/>
+        <Key iwnn:codes="-203" iwnn:keyIconId="3" iwnn:keyIconPreviewId="403"/>
+        <Key iwnn:codes="-214" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_delete" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_delete"
+             iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-218" iwnn:keyIconId="145" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_arrow_l" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_arrow_l" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-204" iwnn:keyIconId="4" iwnn:keyIconPreviewId="404" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-205" iwnn:keyIconId="5" iwnn:keyIconPreviewId="405"/>
+        <Key iwnn:codes="-206" iwnn:keyIconId="6" iwnn:keyIconPreviewId="406"/>
+        <Key iwnn:codes="-217" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_arrow_r" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_arrow_r" iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-305" iwnn:keyIconId="78" iwnn:keyIconPreviewId="478" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-207" iwnn:keyIconId="7" iwnn:keyIconPreviewId="407" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-208" iwnn:keyIconId="8" iwnn:keyIconPreviewId="408"/>
+        <Key iwnn:codes="-209" iwnn:keyIconId="9" iwnn:keyIconPreviewId="409"/>
+        <Key iwnn:codes="-215" iwnn:keyIconId="79" iwnn:keyIconPreviewId="479" iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true" />
+    </Row>
+
+    <Row iwnn:rowEdgeFlags="bottom">
+        <Key iwnn:codes="-230" iwnn:keyIconId="66" iwnn:keyIconPreviewId="466"
+             iwnn:popupKeyboard="@xml/popup_changelanguage"
+             iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true" />
+        <Key iwnn:codes="-213" iwnn:keyIconId="76" iwnn:keyIconPreviewId="476" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-210" iwnn:keyIconId="10" iwnn:keyIconPreviewId="410"/>
+        <Key iwnn:codes="-211" iwnn:keyIconId="88" iwnn:keyIconPreviewId="488"/>
+        <Key iwnn:codes="-216" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_enter" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_enter"
+             iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true"/>
+    </Row>
+</Keyboard>

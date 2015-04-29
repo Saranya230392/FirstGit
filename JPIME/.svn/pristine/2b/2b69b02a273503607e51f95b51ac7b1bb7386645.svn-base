@@ -1,0 +1,168 @@
+/*
+ * Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+ */
+/*
+ * Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+ */
+package jp.co.omronsoft.iwnnime.ml;
+
+import jp.co.omronsoft.iwnnime.ml.OpenWnn;
+import android.R.bool;
+import android.content.Intent;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.widget.Toast;
+
+/**
+ * The Mushroom Control class.
+ * 
+ * @author OMRON SOFTWARE Co., Ltd.
+ */
+public class MushroomControl {
+
+    /** The instance of Mushroom class */
+    private static MushroomControl mMushroomControl;
+
+    /** The Mushroom apk result string */
+    private CharSequence mMushroomResult;
+    
+    /** The Mushroom result type */
+    private boolean mResultType;
+
+    /** Constructor */
+    public MushroomControl() {
+        mMushroomControl = null;
+        mMushroomResult = null;
+    }
+
+    /**
+     * Get the instance of MushroomControl.
+     * 
+     * @return the instance of MushroomControl,
+     */
+    synchronized public static MushroomControl getInstance() {
+        if (mMushroomControl == null) {
+            mMushroomControl = new MushroomControl();
+        }
+        return mMushroomControl;
+    }
+
+    /**
+     * Start Mushroom Luncher.
+     *
+     * @param  oldString  Old String
+     */
+    public void startMushroomLauncher(CharSequence oldString, Boolean type) {
+        mMushroomResult = null;
+
+        OpenWnn wnn = OpenWnn.getCurrentIme();
+        Intent intent = new Intent();
+        intent.setClass(OpenWnn.superGetContext(), MushroomPlus.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+        intent.putExtra(MushroomPlus.MUSHROOM_REPLACE_KEY, oldString);
+        intent.putExtra(MushroomPlus.GET_STRING_TYPE, type);
+        wnn.startActivity(intent);
+    }
+
+    /**
+     * Get the Result String.
+     * 
+     * @return the Result String,
+     */
+    public CharSequence getResultString() {
+        CharSequence result = mMushroomResult;
+        if (mMushroomResult != null) {
+            mMushroomResult = null;
+        }
+        return result;
+    }
+    /**
+     * check Unicode 6.0 [start]
+     * minho.choo@lge.com 
+     */
+    public CharSequence filter(CharSequence source, int start, int end,
+            Spanned dest, int dstart, int dend) {
+        boolean hasUnicodeEmoji= false;
+        // Unicode character
+        if (source.toString().matches("^[\u0000-\uFFFF]*$")) {
+            return source;
+        }
+
+        SpannableStringBuilder ssb = new SpannableStringBuilder();
+
+        int done = start;
+        for (int i = start; i + 1 < end; i++) {
+            char high = source.charAt(i);
+            char low = source.charAt(i + 1);
+            if (Character.isSurrogatePair(high, low)) {
+                int codePoint = Character.toCodePoint(high, low);
+
+                /** Unicode 6.0 Emoji
+                * 1) Miscellaneous Symbols And Pictographs : U+1F300~U+1F5FF
+                * 2) Emoticons : U+1F600~U+1F64F
+                * 3) Transport and Map Symbols : U+1F680~U+1F6FF
+                */
+                
+                if ((codePoint >= 0x1F300 && codePoint <= 0x1F5FF)
+                        || (codePoint >= 0x1F600 && codePoint <= 0x1F64F)
+                        || (codePoint >= 0x1F680 && codePoint <= 0x1F6FF)) {
+                    ssb.append(source.subSequence(done, i));
+                    done = Math.min(i + 2, end);
+                    hasUnicodeEmoji = true;
+                }
+            }
+        }
+        ssb.append(source.subSequence(done, end));
+        
+        if(hasUnicodeEmoji)
+        {
+            OpenWnn wnn = OpenWnn.getCurrentIme();
+            Toast.makeText(InputMethodBase.getBaseContext(), 
+                    wnn.getContext().getResources().getString(R.string.ti_mushroom_control_has_unicode_txt), 
+                    Toast.LENGTH_SHORT).show();
+        }
+        
+        return ssb;
+    }
+
+    /**
+     * Set the Result String.
+     * 
+     * @param result  the Result String
+     */
+    public void setResultString(CharSequence result) {
+        if (result != null) {
+        
+        /**
+         * check the Result String whether Unicode 6.0 emoji or not.[Start]
+         * minho.choo@lge.com 
+         */
+            result = filter(result, 0, result.length(), null, 0, 0);
+        /**
+         * check the Result String whether Unicode 6.0 emoji or not.[END]
+         * minho.choo@lge.com 
+         */
+        }
+        mMushroomResult = result;
+    }
+    
+    /**
+     * Get the Result Type.
+     * 
+     * @return the Result Type,
+     */
+    public Boolean getResultType() {
+        boolean type = mResultType;
+        mResultType = false;
+        return type;
+    }
+
+    /**
+     * Set the Result Type.
+     * 
+     * @param result  the Result Type
+     */
+    public void setResultType(Boolean type) {
+        mResultType = type;
+    }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@fraction/key_width_12key_numeric"
+    iwnn:horizontalGap="@dimen/keyboard_12key_numberic_horizontal_gap"
+    iwnn:verticalGap="@dimen/keyboard_12key_numberic_vertical_gap"
+    iwnn:keyHeight="@dimen/keyboard_12key_numeric_keyheight"
+    >
+
+    <Row>
+        <Key iwnn:codes="49" iwnn:keyLabel="1" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left"/>
+        <Key iwnn:codes="50" iwnn:keyLabel="2"/>
+        <Key iwnn:codes="51" iwnn:keyLabel="3"/>
+        <Key iwnn:codes="-214" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_delete" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_delete"
+             iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="52" iwnn:keyLabel="4" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left"/>
+        <Key iwnn:codes="53" iwnn:keyLabel="5"/>
+        <Key iwnn:codes="54" iwnn:keyLabel="6"/>
+        <Key iwnn:codes="-310" iwnn:keyLabel=" " iwnn:showPreview="false" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="55" iwnn:keyLabel="7" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left"/>
+        <Key iwnn:codes="56" iwnn:keyLabel="8"/>
+        <Key iwnn:codes="57" iwnn:keyLabel="9"/>
+        <Key iwnn:codes="-310" iwnn:keyLabel=" " iwnn:showPreview="false" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row iwnn:rowEdgeFlags="bottom">
+        <Key iwnn:codes="-310" iwnn:keyLabel=" " iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:showPreview="false"/>
+        <Key iwnn:codes="48" iwnn:keyLabel="0" />
+        <Key iwnn:codes="46" iwnn:keyLabel="." />
+        <Key iwnn:codes="-216" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_enter"
+             iwnn:iconPreview="@drawable/ime_keypad_icon_jp_enter"
+             iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+    </Row>
+</Keyboard>

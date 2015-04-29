@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+
+<!-- Show Flag of Keyboard Setting -->
+  <!-- Show of the list items can be switched, and hide.
+       true  : show the item.
+       false : hide the item.
+  -->
+  <!-- Common Keyboard Settings -->
+    <string name="category_assist_show_flag">true</string>
+    <string name="category_design_show_flag">true</string>
+    <string name="category_key_show_flag">true</string>
+    <string name="category_screen_show_flag">true</string>
+    <string name="opt_display_language_switch_key_show_flag">true</string>
+    <string name="opt_change_otherime_show_flag">true</string>
+    <string name="key_sound_show_flag">true</string>
+    <string name="key_vibration_show_flag">true</string>
+    <string name="popup_preview_show_flag">true</string>
+    <string name="keyboard_mode_type_setting_show_flag">true</string>
+    <string name="key_size_show_flag">true</string>
+    <string name="keyboard_skin_add_show_flag">true</string>
+    <string name="voice_input_show_flag">true</string>
+    <string name="fullscreen_mode_show_flag">true</string>
+    <string name="split_mode_show_flag">true</string>
+    <string name="one_handed_show_flag">true</string>
+    <string name="opt_candidate_lines_show_flag">true</string>
+    <string name="opt_display_left_right_key_show_flag">true</string>
+
+  <!-- 10-key Keyboard -->
+    <string name="category_12key_show_flag">true</string>
+    <string name="flick_input_show_flag">true</string>
+    <string name="flick_sensitivity_show_flag">true</string>
+    <string name="flick_toggle_input_show_flag">true</string>
+    <string name="opt_auto_cursor_movement_show_flag">true</string>
+
+  <!-- Japanese/English Input -->
+    <string name="category_input_show_flag">true</string>
+    <string name="opt_enable_learning_show_flag">true</string>
+    <string name="opt_prediction_show_flag">true</string>
+    <string name="opt_spell_correction_show_flag">true</string>
+    <string name="opt_funfun_show_flag">true</string>
+    <string name="opt_head_conversion_show_flag">false</string>
+    <string name="kana_roman_input_show_flag">true</string>
+    <string name="auto_caps_show_flag">true</string>
+    <string name="opt_auto_space_show_flag">true</string>
+
+  <!-- External Application -->
+    <string name="category_external_apl_show_flag">true</string>
+    <string name="opt_mushroom_show_flag">true</string>
+    <string name="opt_multiwebapi_show_flag">true</string>
+    <string name="opt_add_symbol_list_show_flag">true</string>
+
+  <!-- UserDictionary -->
+    <string name="category_user_dictionary_show_flag">true</string>
+    <string name="user_dictionary_edit_words_ja_show_flag">true</string>
+    <string name="user_dictionary_edit_words_en_show_flag">true</string>
+    <string name="user_dictionary_edit_words_ko_show_flag">true</string>
+    <string name="user_dictionary_edit_words_de_show_flag">true</string>
+    <string name="user_dictionary_edit_words_ru_show_flag">true</string>
+    <string name="user_dictionary_edit_words_zhcn_show_flag">true</string>
+    <string name="user_dictionary_edit_words_zhtw_show_flag">true</string>
+
+  <!-- Dictionary -->
+    <string name="category_dictionary_show_flag">true</string>
+    <string name="additional_dictionary_show_flag">true</string>
+    <string name="download_dictionary_show_flag">true</string>
+
+  <!-- Reset -->
+    <string name="category_reset_show_flag">true</string>
+    <string name="clear_learn_dictionary_show_flag">true</string>
+    <string name="reset_settings_show_flag">true</string>
+
+<!-- Default Value of Keyboard Setting -->
+  <!-- Common Keyboard Settings -->
+    <!-- Default value of display language switch key -->
+    <bool name="opt_display_language_switch_key_default_value">true</bool>
+    <!-- Default value of switch to other input methods -->
+    <bool name="opt_change_otherime_default_value">false</bool>
+    <!-- Default value of sound on key press -->
+    <bool name="key_sound_default_value">true</bool>
+    <!-- Default value of vibrate on key press -->
+    <bool name="key_vibration_default_value">false</bool>
+    <!-- Default value of key preview -->
+    <bool name="popup_preview_default_value">true</bool>
+    <!-- Default value of voice input -->
+    <bool name="voice_input_default_value">true</bool>
+    <!-- Default value of fullscreen mode -->
+    <bool name="fullscreen_mode_default_value">true</bool>
+    <!-- Default value of split mode -->
+    <bool name="split_mode_default_value">false</bool>
+    <!-- Default value of one-handed -->
+    <bool name="one_handed_default_value">false</bool>
+    <!-- Default value of lines of portrait candidate area -->
+    <string name="setting_portrait_default_value">2</string>
+    <!-- Default value of lines of landscape candidate area -->
+    <string name="setting_landscape_default_value">1</string>
+    <!-- Default value of korean keyboard mode -->
+    <bool name="korean_mode_default_value">true</bool>
+
+  <!-- Key Size -->
+    <!-- Default value of key size -->
+      <!-- Refer to the following name in the file are provided for each screen size
+           file : /sources/res/values/dimens.xml
+           name : key_height
+       -->
+
+  <!-- Portrait Keyboard Type Setting -->
+    <!-- Default value of Hiragana-Kanji input mode type -->
+    <string name="portrait_input_mode_type_hiragana_kanji_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Full-width Alphabet input mode type -->
+    <string name="portrait_input_mode_type_full_alphabet_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Full-width Numeric input mode type -->
+    <string name="portrait_input_mode_type_full_numeric_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Full-width Katakana input mode type -->
+    <string name="portrait_input_mode_type_full_katakana_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Half-width Alphabet input mode type -->
+    <string name="portrait_input_mode_type_half_alphabet_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Half-width Numeric input mode type -->
+    <string name="portrait_input_mode_type_half_numeric_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Half-width Katakana input mode type -->
+    <string name="portrait_input_mode_type_half_katakana_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of all input mode type -->
+    <string name="portrait_input_mode_type_all_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of phone input mode type -->
+    <string name="portrait_input_mode_type_phone_default_value">@string/input_mode_type_list_item_qwerty_keyboard</string>
+
+  <!-- Landscape Keyboard Type Setting -->
+    <!-- Default value of Hiragana-Kanji input mode type -->
+    <string name="land_input_mode_type_hiragana_kanji_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Full-width Alphabet input mode type -->
+    <string name="land_input_mode_type_full_alphabet_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Full-width Numeric input mode type -->
+    <string name="land_input_mode_type_full_numeric_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Full-width Katakana input mode type -->
+    <string name="land_input_mode_type_full_katakana_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Half-width Alphabet input mode type -->
+    <string name="land_input_mode_type_half_alphabet_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Half-width Numeric input mode type -->
+    <string name="land_input_mode_type_half_numeric_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of Half-width Katakana input mode type -->
+    <string name="land_input_mode_type_half_katakana_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of all input mode type -->
+    <string name="land_input_mode_type_all_default_value">@string/input_mode_type_list_item_10key_keyboard</string>
+    <!-- Default value of phone input mode type -->
+    <string name="land_input_mode_type_phone_default_value">@string/input_mode_type_list_item_qwerty_keyboard</string>
+    <!-- Default value of display left/right key -->
+    <bool name="opt_display_left_right_key_default_value">true</bool>
+
+  <!-- 10-key Keyboard -->
+    <!-- Default value of flick input -->
+    <bool name="flick_input_default_value">true</bool>
+    <!-- Default value of flick sensitivity (%) -->
+    <integer name="flick_sensitivity_preference_default">50</integer>
+    <!-- Default value of toggle input -->
+    <bool name="flick_toggle_input_default_value">true</bool>
+    <!-- Default value of auto cursor movement -->
+    <string name="auto_cursor_movement_id_default">1200</string>
+
+  <!-- Japanese/English Input -->
+    <!-- Default value of japanese input word learning -->
+    <bool name="opt_enable_learning_default_value">true</bool>
+    <!-- Default value of japanese word prediction -->
+    <bool name="opt_prediction_default_value">true</bool>
+    <!-- Default value of japanese typing error correction -->
+    <bool name="opt_spell_correction_default_value">true</bool>
+    <!-- Default value of japanese wildcard prediction -->
+    <bool name="opt_funfun_default_value">false</bool>
+    <!-- Default value of head conversion -->
+    <bool name="opt_head_conversion_default_value">true</bool>
+    <!-- Default value of roman letter/kana letter -->
+    <string name="kana_roman_input_default_value">Roman</string>
+    <!-- Default value of auto punctuation -->
+    <bool name="opt_auto_punctuation_default_value">false</bool>
+    <!-- Default value of typing error correction -->
+    <bool name="opt_spell_correction_default_value">true</bool>
+    <!-- Default value of auto capitalization -->
+    <bool name="auto_caps_default_value">true</bool>
+    <!-- Default value of auto space -->
+    <bool name="opt_auto_space_default_value">true</bool>
+
+  <!-- External Application -->
+    <!-- Default value of Mushroom -->
+    <string name="mushroom_id_default">use</string>
+
+
+<!-- Value of Terminal-Specific -->
+  <!-- Vibrate on Key Press -->
+    <!-- Fix value of vibrate time -->
+    <integer name="vibrate_time">10</integer>
+
+  <!-- Flick Sensitivity -->
+    <!-- Min value of flick sensitivity (%) -->
+    <integer name="flick_sensitivity_preference_min">1</integer>
+    <!-- Max value of flick sensitivity (%) -->
+    <integer name="flick_sensitivity_preference_max">100</integer>
+
+
+<!-- List Item of Keyboard Setting-->
+  <!-- Roman letter/Kana letter -->
+    <!-- List item of roman letter/kana letter -->
+    <string name="kana_roman_input_mode_list_item_roman">Roman</string>
+    <string name="kana_roman_input_mode_list_item_kana">Kana</string>
+
+  <!-- Keyboard Type -->
+    <!-- List item of keyboard Type -->
+    <string name="input_mode_type_list_item_qwerty_keyboard">0</string>
+    <string name="input_mode_type_list_item_10key_keyboard">1</string>
+
+  <!-- Portrait Candidate Area -->
+    <!-- List item of lines of portrait candidate area -->
+    <string name="setting_portrait_list_item_1">1</string>
+    <string name="setting_portrait_list_item_2">2</string>
+    <string name="setting_portrait_list_item_3">3</string>
+    <string name="setting_portrait_list_item_4">4</string>
+    <string name="setting_portrait_list_item_5">5</string>
+
+  <!-- Landscape Candidate Area -->
+    <!-- List item of lines of landscape candidate area -->
+    <string name="setting_landscape_list_item_1">1</string>
+    <string name="setting_landscape_list_item_2">2</string>
+
+  <!-- Auto Cursor Movement -->
+    <!-- List item of auto cursor movement -->
+    <string name="auto_cursor_movement_list_item_off">0</string>
+    <string name="auto_cursor_movement_list_item_fast">700</string>
+    <string name="auto_cursor_movement_list_item_normal">1200</string>
+    <string name="auto_cursor_movement_list_item_slow">1700</string>
+
+  <!-- Mushroom -->
+    <!-- List item of Mushroom -->
+    <string name="mushroom_list_item_use">use</string>
+    <string name="mushroom_list_item_notuse">notuse</string>
+
+  <!-- MushroomPlus -->
+    <bool name="mushroomplus_get_text_value">false</bool>
+    
+  <!-- One Handed -->
+    <string name="one_handed_position_default_value">"top_right"</string>
+
+  <!-- One Handed show flag -->
+    <bool name="one_handed_show_default_value">false</bool>
+
+  <!-- Split mode show flag -->
+    <bool name="split_mode_show_default_value">false</bool>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- total height : 210.62 + 0.33 (OMRON) Button height : 41.33 -->
+    <dimen name="stroke_layout_height">163dp</dimen>
+    <dimen name="stroke_layout_padding_top">6.5dp</dimen>
+    <dimen name="stroke_layout_padding_bottom">7dp</dimen>
+    <dimen name="stroke_layout_padding_left_right">2.5dp</dimen>
+    <!-- stroke_view_char_size = stroke_layout_height - top/bottom margin = 157.62(+0.33)-5.33-10.66 -->
+    <dimen name="stroke_view_height">149.5dp</dimen>
+    <dimen name="stroke_view_width">142dp</dimen>
+    <dimen name="stroke_view_char_margin">3dp</dimen>
+    <dimen name="screen_button_margin_edge">7dp</dimen>
+    
+    <!-- button_layout_height = button_height + bottom margin -->
+    <dimen name="button_layout_height">48.5dp</dimen>
+    <dimen name="button_layout_padding_bottom">5.5dp</dimen>
+    <dimen name="button_layout_padding_left_right">2.5dp</dimen>
+    
+    <dimen name="char_button_margin_bottom">3dp</dimen>
+    <dimen name="select_candidate_popup_height">240dp</dimen>
+    <dimen name="popup_btn_width">40dp</dimen>
+    <dimen name="popup_btn_height">40dp</dimen>
+    <dimen name="keyboard_popup_width">20dp</dimen>
+    <dimen name="keyboard_popup_height">40dp</dimen>
+    
+    <dimen name="keyboard_sym_num_left">4dp</dimen>
+    <dimen name="keyboard_sym_smile_left"> 15dp</dimen>
+    
+    
+    <!-- dimen for button text -->
+    <dimen name="hw_ime_keypad_wht_btn_func_text_normal">14.67dp</dimen>
+    <dimen name="hw_ime_keypad_wht_btn_gap_bottom">1.33dp</dimen>
+    
+    <dimen name="candidate_blank_height">500px</dimen>
+    
+    <dimen name="color_picker_padding_left">12.0dip</dimen>
+    <dimen name="color_picker_padding_right">7.3399963dip</dimen>
+    <dimen name="color_picker_padding_up_down">3.3299866dip</dimen>
+    <dimen name="color_picker_margin_button">4.659973dip</dimen>
+    <dimen name="color_picker_white_border">0.6600001dip</dimen>
+    <dimen name="color_picker_row_max_height">70.0dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="ime_guide_page_mark_top">18.33dp</dimen>    
+	<dimen name="ime_guide_page_mark_left">9.33dp</dimen>
+    <dimen name="ime_guide_page_mark_right">9.33dp</dimen>	
+	<dimen name="ime_guide_page_mark_bottom">18.33dp</dimen>
+    <dimen name="ime_guide_text_margin_top">38.50dp</dimen>
+    <dimen name="ime_guide_layout_padding_top">9.33dp</dimen>
+    <dimen name="ime_guide_layout_padding_bottom">0dp</dimen>
+    <dimen name="ime_guide_layout_padding_left">10.0dp</dimen>
+    <dimen name="ime_guide_layout_padding_right">10.0dp</dimen>
+    <dimen name="ime_guide_title_text">20.5sp</dimen>
+    <dimen name="ime_guide_title_view_padding_top">10.0dp</dimen>
+    <dimen name="ime_guide_title_view_padding_bottom">3.50dp</dimen>
+	<dimen name="ime_guide_list_text">17sp</dimen>
+	
+	
+</resources>

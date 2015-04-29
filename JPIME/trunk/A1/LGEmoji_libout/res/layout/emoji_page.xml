@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:layout_margin="@dimen/zero_dip"
+    android:orientation="vertical"
+    android:padding="@dimen/zero_dip" >
+
+    <LinearLayout
+        android:id="@+id/list_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/zero_dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/zero_dip" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/zero_dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/zero_dip" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/zero_dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/zero_dip" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/list_item4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/zero_dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/zero_dip" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/list_item5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/zero_dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/zero_dip" >
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@fraction/key_width_12key"
+    iwnn:horizontalGap="@fraction/keyboard_12key_common_horizontal_gap"
+    iwnn:verticalGap="@dimen/keyboard_12key_common_vertical_gap"
+    iwnn:keyHeight="@dimen/keyboard_12key_common_keyheight"
+    >
+
+    <Row>
+        <Key iwnn:codes="-426" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_kbd" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_kbd" iwnn:voiceIcon="@drawable/ime_keypad_icon_jp_mic" iwnn:voiceIconPreview="@drawable/ime_keypad_input_icon_mic_normal"
+             iwnn:popupKeyboard="@xml/keyboard_functionkey_preview" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-201" iwnn:keyLabel="@string/ti_key_12key_katakana_1_txt"  iwnn:keyIconPreviewId="431" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-202" iwnn:keyLabel="@string/ti_key_12key_katakana_2_txt"  iwnn:keyIconPreviewId="432"/>
+        <Key iwnn:codes="-203" iwnn:keyLabel="@string/ti_key_12key_katakana_3_txt"  iwnn:keyIconPreviewId="433"/>
+        <Key iwnn:codes="-214" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_delete" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_delete"
+             iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-218" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_arrow_l" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_arrow_l" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-204" iwnn:keyLabel="@string/ti_key_12key_katakana_4_txt" iwnn:keyIconPreviewId="434" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-205" iwnn:keyLabel="@string/ti_key_12key_katakana_5_txt" iwnn:keyIconPreviewId="435"/>
+        <Key iwnn:codes="-206" iwnn:keyLabel="@string/ti_key_12key_katakana_6_txt" iwnn:keyIconPreviewId="436"/>
+        <Key iwnn:codes="-217" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_arrow_r" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_arrow_r" iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-222" iwnn:keyIconId="65" iwnn:keyIconPreviewId="465" iwnn:isPressHoldKey="true"
+         iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-207" iwnn:keyLabel="@string/ti_key_12key_katakana_7_txt" iwnn:keyIconPreviewId="437" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-208" iwnn:keyLabel="@string/ti_key_12key_katakana_8_txt" iwnn:keyIconPreviewId="438"/>
+        <Key iwnn:codes="-209" iwnn:keyLabel="@string/ti_key_12key_katakana_9_txt" iwnn:keyIconPreviewId="439"/>
+        <Key iwnn:codes="-215" iwnn:isRepeatable="true"  iwnn:keyIcon="@drawable/ime_keypad_icon_jp_space" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_space" iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true"/>
+    </Row>
+
+    <Row iwnn:rowEdgeFlags="bottom">
+        <Key iwnn:codes="-230" iwnn:keyIconId="70" iwnn:keyIconPreviewId="466"
+         iwnn:popupKeyboard="@xml/popup_changelanguage" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-213" iwnn:keyIconId="76" iwnn:keyIconPreviewId="476" iwnn:horizontalGap="0%"/>
+        <Key iwnn:codes="-210" iwnn:keyLabel="@string/ti_key_12key_katakana_0_txt" iwnn:keyIconPreviewId="440"/>
+        <Key iwnn:codes="-211" iwnn:keyIconId="88" iwnn:keyIconPreviewId="488"/>
+        <Key iwnn:codes="-216" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_enter" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_enter"
+             iwnn:keyEdgeFlags="right" iwnn:horizontalGap="0%" iwnn:isSecondKey="true"/>
+    </Row>
+</Keyboard>

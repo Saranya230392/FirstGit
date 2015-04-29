@@ -1,0 +1,20 @@
+[DIC_CONF]
+/data/data/jp.co.omronsoft.iwnnime.ml/lib/libkoKRnjcon.so 0 0 0 0 0 0 0 0 1
+/data/data/jp.co.omronsoft.iwnnime.ml/dicset/master/koKRnjuserw.a 0 0 250 250 0 10 1 0 3
+/data/data/jp.co.omronsoft.iwnnime.ml/dicset/master/koKRnjuserl.a 0 0 1000 501 0 10 1 0 2
+/data/data/jp.co.omronsoft.iwnnime.ml/lib/libkoKRnjubase1.so 550 400 560 100 0 10 1 0 0
+/data/data/jp.co.omronsoft.iwnnime.ml/lib/libkoKRnjubase2.so 550 400 560 100 0 10 1 0 0
+/data/data/jp.co.omronsoft.iwnnime.ml/lib/libkoKRnjexyomi.so 0 10 100 5 0 10 1 0 0
+/data/data/jp.co.omronsoft.iwnnime.ml/lib/libstandardnjemailuri.so 650 550 650 560 0 10 1 0 0
+ex_predg 0 10 1000 950 0 10 0 0 7
+;
+[DIC_MODE]
+;  1 2 3 4 5 6 7 8 91011121314151617181920212223242526272829303132333435
+0  1 1 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+5  1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+10 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+11 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[DIC_CHARSET_SIZE]
+0 0
+[DIC_CHARSET_FROM]
+[DIC_CHARSET_TO]

@@ -1,0 +1,158 @@
+Language-Version: 1.0
+Language-Name: ja-JP
+Configuration-Script:
+ AddResDir ../resources
+
+Name: text
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ SetSpeedQualityCompromise 50
+ AddResource ja_JP/ja_JP_jisx0208-ak-cur.lite.res
+ AddResource ja_JP/ja_JP_jisx0208-lk-text.lite.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+ 
+Name: text_kanji
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-cur.lite.res
+ AddResource ja_JP/ja_JP_kanji-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+ 
+Name: text_hiragana
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-cur.lite.res
+ AddResource ja_JP/ja_JP_hiragana-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+ 
+Name: text_katakana
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-cur.lite.res
+ AddResource ja_JP/ja_JP_katakana-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+ 
+Name: text_english
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-cur.lite.res
+ AddResource ja_JP/ja_JP_latin-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+ 
+Name: text_symbol
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-cur.lite.res
+ AddResource ja_JP/ja_JP_symbol-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-cur.lite.res
+ AddResource mul/mul-lk-number.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-iso.lite.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char_kanji
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-iso.lite.res
+ AddResource ja_JP/ja_JP_kanji-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char_hiragana
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-iso.lite.res
+ AddResource ja_JP/ja_JP_hiragana-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char_katakana
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-iso.lite.res
+ AddResource ja_JP/ja_JP_katakana-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char_english
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-iso.lite.res
+ AddResource ja_JP/ja_JP_latin-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+ 
+Name: char_symbol
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-iso.lite.res
+ AddResource ja_JP/ja_JP_symbol-sk.res
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: digit
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ja_JP/ja_JP_jisx0208-ak-iso.lite.res
+ SetCharacters 0123456789
+ SetCharListSize 10
+ SetWordListSize 1
+ SetTextListSize 1

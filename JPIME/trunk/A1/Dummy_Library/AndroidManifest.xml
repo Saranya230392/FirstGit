@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.co.omronsoft.iwnnime.ml"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+    <application android:label="lib_dummy"
+        android:icon="@android:drawable/btn_default"
+        android:allowBackup="false" >
+<!-- 
+        <service android:name=".BaseHandwritingKeyboard"
+                android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        <activity android:name=".preference.HandwritingPreferenceActivity"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data android:name="android.preference" android:resource="@xml/settings" />
+        </activity>
+ -->
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2012 OMRON SOFTWARE Co., Ltd. All rights reserved
+-->
+<resources>
+    <string-array name="other_kaomoji3">
+        <item>@string/ti_kaomoji_category_action_txt</item>
+        <item>"m(__)m"</item>
+        <item>"(..)"</item>
+        <item>"(^^)d"</item>
+        <item>"(^q^)"</item>
+        <item>"(__)"</item>
+        <item>":-p"</item>
+        <item>";-)"</item>
+        <item>"f(^_^)"</item>
+        <item>"(((^^;)"</item>
+        <item>"(((^_^;)"</item>
+        <item>"(-.-)y-~"</item>
+        <item>"(/_;)/~~"</item>
+        <item>"(;_;)/~~~"</item>
+        <item>"(^^;)))"</item>
+        <item>"(^_^)/~~"</item>
+        <item>"(^_^;)))"</item>
+        <item>"(^3^)/"</item>
+        <item>"(-_-)/~~~"</item>
+        <item>"p(^^)q"</item>
+        <item>"p(^-^)q"</item>
+        <item>"q(^-^q)"</item>
+        <item>"(/--)/"</item>
+        <item>"(>.&lt;)y-~"</item>
+        <item>"(--)//~"</item>
+        <item>"(*^3(*^o^*)"</item>
+        <item>"(*ov.v)o"</item>
+        <item>"(..)(__)"</item>
+        <item>"(._.)"</item>
+        <item>"(;-_-)vo(^-^)"</item>
+        <item>"(@^^)/~~~"</item>
+        <item>"(^.^)/~~~"</item>
+        <item>"(^^)/~~~"</item>
+        <item>"(^^)b"</item>
+        <item>"(^^)v"</item>
+        <item>"(^^;)(;^^)"</item>
+        <item>"(^_^)-c&lt;^_^;)"</item>
+        <item>"(^|0|^)"</item>
+        <item>"(-_-)zzz"</item>
+        <item>"(__,)/~~"</item>
+        <item>"(+.+)(-.-)(__)..zzZZ"</item>
+        <item>"(=_=)"</item>
+        <item>"(>_&lt;)/~~"</item>
+        <item>"(o^-')b !"</item>
+        <item>"(p^-^)p"</item>
+        <item>"_(..)_"</item>
+        <item>"_(._.)_"</item>
+        <item>"_-)))"</item>
+        <item>"|(-_-)|"</item>
+        <item>"|_-))))"</item>
+        <item>"&lt;(_ _*)>"</item>
+        <item>"d(^-^)"</item>
+        <item>"m(._.)m"</item>
+        <item>"o(^-^o)(o^-^)o"</item>
+        <item>"o(>&lt;;)(;>&lt;)o"</item>
+        <item>"v(^o^)"</item>
+        <item>@string/ti_kaomoji_category_friendships_txt</item>
+        <item>"(^3^)/"</item>
+        <item>"(*^3(*^o^*)"</item>
+        <item>@string/ti_kaomoji_category_character_txt</item>
+        <item>"(-)_(-)"</item>
+        <item>"&lt;*))>=&lt;"</item>
+        <item>"&lt;+))))>&lt;&lt;"</item>
+        <item>"&lt;+)))>&lt;&lt;"</item>
+        <item>"&lt;+))>&lt;&lt;"</item>
+    </string-array>
+</resources>
+

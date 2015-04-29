@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+      iwnn:keyWidth="@fraction/key_width_qwerty_1st"
+      iwnn:horizontalGap="0%p"
+      iwnn:verticalGap="@dimen/keyboard_qwerty_common_vertical_gap"
+      iwnn:keyHeight="@dimen/key_height_qwerty"
+    >
+
+    <Row>
+        <Key iwnn:codes="65297" iwnn:keyLabel="1" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left"/>
+        <Key iwnn:codes="65298" iwnn:keyLabel="2"/>
+        <Key iwnn:codes="65299" iwnn:keyLabel="3"/>
+        <Key iwnn:codes="65300" iwnn:keyLabel="4"/>
+        <Key iwnn:codes="65301" iwnn:keyLabel="5"/>
+        <Key iwnn:codes="65302" iwnn:keyLabel="6"/>
+        <Key iwnn:codes="65303" iwnn:keyLabel="7"/>
+        <Key iwnn:codes="65304" iwnn:keyLabel="8"/>
+        <Key iwnn:codes="65305" iwnn:keyLabel="9"/>
+        <Key iwnn:codes="65296" iwnn:keyLabel="0" iwnn:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="65312" iwnn:keyLabel="@string/ti_key_qwerty_full_at_sign_txt" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left"/>
+        <Key iwnn:codes="65283" iwnn:keyLabel="@string/ti_key_qwerty_full_number_sign_txt" />
+        <Key iwnn:codes="65285" iwnn:keyLabel="@string/ti_key_qwerty_full_percent_sign_txt" />
+        <Key iwnn:codes="65286" iwnn:keyLabel="@string/ti_key_qwerty_full_ampersand_txt" />
+        <Key iwnn:codes="65290" iwnn:keyLabel="@string/ti_key_qwerty_full_asterrisk_txt" />
+        <Key iwnn:codes="65291" iwnn:keyLabel="@string/ti_key_qwerty_full_plus_sign_txt" />
+        <Key iwnn:codes="65293" iwnn:keyLabel="@string/ti_key_qwerty_full_minus_sign_txt" />
+        <Key iwnn:codes="65309" iwnn:keyLabel="@string/ti_key_qwerty_full_equal_sign_txt" />
+        <Key iwnn:codes="65281" iwnn:keyLabel="@string/ti_key_qwerty_full_exclamation_mark_txt" />
+        <Key iwnn:codes="65311" iwnn:keyLabel="@string/ti_key_qwerty_full_question_txt"  iwnn:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-1" iwnn:keyIconId="80" iwnn:keyIconPreviewId="480"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd_3rd_line"
+             iwnn:isModifier="true" iwnn:isSticky="false" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="65295" iwnn:keyLabel="@string/ti_key_qwerty_full_slash_txt" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_1st_2nd_gap"/>
+        <Key iwnn:codes="65288" iwnn:keyLabel="@string/ti_key_qwerty_full_left_parenthesis_txt" />
+        <Key iwnn:codes="65289" iwnn:keyLabel="@string/ti_key_qwerty_full_right_parenthesis_txt" />
+        <Key iwnn:codes="65306" iwnn:keyLabel="@string/ti_key_qwerty_full_colon_txt" />
+        <Key iwnn:codes="65307" iwnn:keyLabel="@string/ti_key_qwerty_full_semicolon_txt" />
+        <Key iwnn:codes="65374" iwnn:keyLabel="@string/ti_key_qwerty_full_thilde_txt" />
+        <Key iwnn:codes="65342" iwnn:keyLabel="@string/ti_key_qwerty_full_hat_txt" />
+        <Key iwnn:codes="-100" iwnn:keyIcon="@drawable/ime_keypad_icon_del" iwnn:iconPreview="@drawable/ime_keypad_icon_del"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd_3rd_line"
+             iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_1st_2nd_gap"
+             iwnn:keyEdgeFlags="right" iwnn:isRepeatable="true" iwnn:isSecondKey="true"
+             iwnn:keyboardImageKeyTop="key_del" iwnn:keyboardImageKeyPreview="key_del_b"/>
+    </Row>
+
+    <Row  iwnn:rowEdgeFlags="bottom" iwnn:horizontalGap="0%p">
+        <Key iwnn:codes="-230" iwnn:keyIconId="72" iwnn:keyIconPreviewId="466"
+             iwnn:popupKeyboard="@xml/popup_changelanguage"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd_4th_line" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left" iwnn:isSecondKey="true" />
+        <Key iwnn:codes="-106" iwnn:keyIconId="65" iwnn:keyIconPreviewId="465" iwnn:isPressHoldKey="true"
+             iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-426" iwnn:keyIconId="144" iwnn:keyIcon="@drawable/ime_keypad_icon_kbd_small" iwnn:iconPreview="@drawable/ime_keypad_icon_kbd" iwnn:voiceIcon="@drawable/ime_keypad_icon_mic" iwnn:voiceIconPreview="@drawable/ime_keypad_input_icon_mic_normal"
+             iwnn:popupKeyboard="@xml/keyboard_functionkey_preview" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="32" iwnn:keyWidth="@fraction/key_width_qwerty_space" iwnn:isRepeatable="true" iwnn:keyIcon="@drawable/ime_keypad_icon_space_large" iwnn:iconPreview="@drawable/ime_keypad_icon_space_large" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_space_gap"/>
+        <Key iwnn:codes="-432"  iwnn:keyIconId="115" iwnn:keyIconPreviewId="515" iwnn:isSecondKey="true" iwnn:popupKeyboard="@xml/popup_period_en_full" iwnn:isPressHoldKey="true" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_space_gap"/>
+        <Key iwnn:codes="-218" iwnn:keyIconId="145" iwnn:keyIcon="@drawable/ime_keypad_icon_left" iwnn:iconPreview="@drawable/ime_keypad_icon_left"
+             iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-217" iwnn:keyIcon="@drawable/ime_keypad_icon_right" iwnn:iconPreview="@drawable/ime_keypad_icon_right"
+             iwnn:isRepeatable="true" iwnn:isSecondKey="true"
+             iwnn:keyboardImageKeyTop="key_qwerty_right" iwnn:keyboardImageKeyPreview="key_qwerty_right_b"/>
+        <Key iwnn:codes="-101" iwnn:keyIcon="@drawable/ime_keypad_icon_enter_small" iwnn:iconPreview="@drawable/ime_keypad_icon_enter"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd_4th_line" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+    </Row>
+</Keyboard>

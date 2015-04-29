@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<jp.co.omronsoft.iwnnime.ml.MultiTouchKeyboardView
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+   android:id="@+id/keyboard"
+   android:layout_alignParentBottom="true"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:background="@drawable/keyboard_background"
+   iwnn:labelTextSize="@dimen/key_label_text_size"
+   iwnn:keyPreviewOffset="@dimen/preview_ime_btn_offset_bottom"
+   iwnn:keyPreviewHeight="@dimen/key_preview_height_default"
+   iwnn:keyTextSize="@dimen/key_text_size_default"
+   iwnn:keyBackground="@drawable/btn_keyboard_key"
+   iwnn:keyPreviewLayout="@layout/keyboard_key_preview"
+   iwnn:popupLayout="@layout/keyboard_popup_keyboard"
+   iwnn:shadowRadius="0.5"
+   iwnn:keyTextColor="@color/key_text_color"
+   iwnn:keyBackground2nd="@drawable/btn_keyboard_key_2nd"
+   iwnn:keyTextColor2nd="@color/key_text_color_2nd"
+   iwnn:keyHintLetterPadding="@dimen/key_hint_letter_padding"
+   iwnn:keyHintLetterColor="@color/key_hint_letter"
+   iwnn:keyHintLetterRatio="@fraction/key_hint_letter_ratio"
+   />
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="17.66dp"
+    android:paddingLeft="27dp"
+    android:paddingRight="27dp"
+    android:paddingTop="17.33dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/penTypeSampleBackground"
+            android:contentDescription="@string/handwriting_pref_title_pen_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/hw_popup_pen_type_bg" />
+        <ImageView
+            android:id="@+id/penTypeSample"
+            android:contentDescription="@string/handwriting_pref_title_pen_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp" >
+
+        <ImageButton
+            android:id="@+id/buttonBallpen"
+            android:contentDescription="@string/HW_PEN_TYPE_BALLPEN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8.66dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_pen_type_ballpen" />
+
+        <ImageButton
+            android:id="@+id/buttonInkpen"
+            android:contentDescription="@string/HW_PEN_TYPE_INKPEN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8.66dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_pen_type_inkpen" />
+
+        <ImageButton
+            android:id="@+id/buttonBrush"
+            android:contentDescription="@string/HW_PEN_TYPE_BRUSH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8.66dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_pen_type_brush" />
+
+        <ImageButton
+            android:id="@+id/buttonPencil"
+            android:contentDescription="@string/HW_PEN_TYPE_PENCIL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_pen_type_pencil" />
+    </LinearLayout>
+
+</LinearLayout>

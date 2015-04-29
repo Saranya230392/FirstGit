@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@dimen/popup_change_language_width"
+    iwnn:keyHeight="@dimen/popup_change_language_key_height"
+    iwnn:verticalGap="@dimen/popup_change_language_vertical_gap"
+    iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap"
+>
+  <Row iwnn:keyboardMode="@+id/keyboard_style_fl"
+       iwnn:verticalGap="@dimen/popup_change_style_row_top_title_vertical_gap" >
+    <Key iwnn:codes="-615"
+         iwnn:keyIconId="152"
+         iwnn:keyHeight="@dimen/popup_change_language_key_height_title_top"
+         iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_title"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title" />
+  </Row>
+  <Row iwnn:keyboardMode="@+id/keyboard_style_oh"
+       iwnn:verticalGap="@dimen/popup_change_style_row_top_title_vertical_gap" >
+    <Key iwnn:codes="-615"
+         iwnn:keyIconId="152"
+         iwnn:keyHeight="@dimen/popup_change_language_key_height_title_top"
+         iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_title"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title" />
+  </Row>
+  <Row iwnn:keyboardMode="@+id/keyboard_style_oh_fl"
+       iwnn:verticalGap="@dimen/popup_change_style_row_top_title_vertical_gap" >
+    <Key iwnn:codes="-615"
+         iwnn:keyIconId="152"
+         iwnn:keyHeight="@dimen/popup_change_language_key_height_title_top"
+         iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_title"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title" />
+  </Row>
+  <Row iwnn:keyboardMode="@+id/keyboard_style_sp"
+       iwnn:verticalGap="@dimen/popup_change_style_row_top_title_vertical_gap" >
+    <Key iwnn:codes="-615"
+         iwnn:keyIconId="152"
+         iwnn:keyHeight="@dimen/popup_change_language_key_height_title_top"
+         iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_title"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title" />
+  </Row>
+  <Row iwnn:keyboardMode="@+id/keyboard_style_sp_fl"
+       iwnn:verticalGap="@dimen/popup_change_style_row_top_title_vertical_gap" >
+    <Key iwnn:codes="-615"
+         iwnn:keyIconId="152"
+         iwnn:keyHeight="@dimen/popup_change_language_key_height_title_top"
+         iwnn:verticalGap="@dimen/popup_change_language_vertical_gap_title"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title" />
+  </Row>
+
+  <Row iwnn:verticalGap="@dimen/popup_change_style_row_icon_vertical_gap" 
+       iwnn:keyboardMode="@+id/keyboard_style_fl" >
+    <Key
+         iwnn:codes="-616"
+         iwnn:keyIconId="154"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+    <Key
+         iwnn:codes="-620"
+         iwnn:keyIconId="153"
+         iwnn:keyWidth="@dimen/popup_change_style_line_width"
+         iwnn:keyHeight="@dimen/popup_change_style_line_height"
+         iwnn:verticalGap="@dimen/popup_change_style_line_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+    <Key
+         iwnn:codes="-619"
+         iwnn:keyIconId="157"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+  </Row>
+  <Row iwnn:verticalGap="@dimen/popup_change_style_row_icon_vertical_gap" 
+       iwnn:keyboardMode="@+id/keyboard_style_oh" >
+    <Key
+         iwnn:codes="-616"
+         iwnn:keyIconId="154"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+    <Key
+         iwnn:codes="-620"
+         iwnn:keyIconId="153"
+         iwnn:keyWidth="@dimen/popup_change_style_line_width"
+         iwnn:keyHeight="@dimen/popup_change_style_line_height"
+         iwnn:verticalGap="@dimen/popup_change_style_line_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+    <Key
+         iwnn:codes="-617"
+         iwnn:keyIconId="155"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+  </Row>
+  <Row iwnn:verticalGap="@dimen/popup_change_style_row_icon_vertical_gap" 
+       iwnn:keyboardMode="@+id/keyboard_style_oh_fl" >
+    <Key
+         iwnn:codes="-616"
+         iwnn:keyIconId="154"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-620"
+         iwnn:keyIconId="153"
+         iwnn:keyWidth="@dimen/popup_change_style_line_width"
+         iwnn:keyHeight="@dimen/popup_change_style_line_height"
+         iwnn:verticalGap="@dimen/popup_change_style_line_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-617"
+         iwnn:keyIconId="155"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-620"
+         iwnn:keyIconId="153"
+         iwnn:keyWidth="@dimen/popup_change_style_line_width"
+         iwnn:keyHeight="@dimen/popup_change_style_line_height"
+         iwnn:verticalGap="@dimen/popup_change_style_line_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-619"
+         iwnn:keyIconId="157"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+  </Row>
+  <Row iwnn:verticalGap="@dimen/popup_change_style_row_icon_vertical_gap" 
+       iwnn:keyboardMode="@+id/keyboard_style_sp" >
+    <Key
+         iwnn:codes="-616"
+         iwnn:keyIconId="154"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+    <Key
+         iwnn:codes="-620"
+         iwnn:keyIconId="153"
+         iwnn:keyWidth="@dimen/popup_change_style_line_width"
+         iwnn:keyHeight="@dimen/popup_change_style_line_height"
+         iwnn:verticalGap="@dimen/popup_change_style_line_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+    <Key
+         iwnn:codes="-618"
+         iwnn:keyIconId="156"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_2_horizontal_gap" />
+  </Row>
+  <Row iwnn:verticalGap="@dimen/popup_change_style_row_icon_vertical_gap" 
+       iwnn:keyboardMode="@+id/keyboard_style_sp_fl" >
+    <Key
+         iwnn:codes="-616"
+         iwnn:keyIconId="154"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-620"
+         iwnn:keyIconId="153"
+         iwnn:keyWidth="@dimen/popup_change_style_line_width"
+         iwnn:keyHeight="@dimen/popup_change_style_line_height"
+         iwnn:verticalGap="@dimen/popup_change_style_line_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-618"
+         iwnn:keyIconId="156"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-620"
+         iwnn:keyIconId="153"
+         iwnn:keyWidth="@dimen/popup_change_style_line_width"
+         iwnn:keyHeight="@dimen/popup_change_style_line_height"
+         iwnn:verticalGap="@dimen/popup_change_style_line_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+    <Key
+         iwnn:codes="-619"
+         iwnn:keyIconId="157"
+         iwnn:keyWidth="@dimen/popup_change_style_key_width"
+         iwnn:keyHeight="@dimen/popup_change_style_key_height"
+         iwnn:verticalGap="@dimen/popup_change_style_key_vertical_gap"
+         iwnn:horizontalGap="@dimen/popup_change_style_key_3_horizontal_gap" />
+  </Row>
+  <Row iwnn:verticalGap="@dimen/popup_change_style_row_mid_title_vertical_gap" >
+    <Key iwnn:codes="-611"
+         iwnn:keyIconId="148"
+         iwnn:keyHeight="@dimen/popup_change_language_key_height_title_mid"
+         iwnn:horizontalGap="@dimen/popup_change_language_horizontal_gap_title" />
+  </Row>
+  <Row>
+    <Key iwnn:codes="-612"
+         iwnn:keyIconId="149"
+         iwnn:keyWidth="@dimen/popup_change_language_key_width" />
+  </Row>
+  <Row>
+    <Key iwnn:codes="-613"
+         iwnn:keyIconId="150"
+         iwnn:keyWidth="@dimen/popup_change_language_key_width" />
+  </Row>
+</Keyboard>

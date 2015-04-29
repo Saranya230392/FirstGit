@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+     >
+
+  <switch>
+    <!-- Hiragana, Katakana -->
+    <case iwnn:keyboardCondition="modeHiragana">
+    <case iwnn:keyboardCondition="modeFullKatakana">
+    <case iwnn:keyboardCondition="modeHalfKatakana">
+    <Row-Key>
+        <Key iwnn:codes="97"  iwnn:keyIcon="@drawable/key_qwerty_a" iwnn:keyEdgeFlags="left"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row2_horizontal_gap"
+             iwnn:keyPreviewLabel="a" />
+        <Key iwnn:codes="115" iwnn:keyIcon="@drawable/key_qwerty_s"
+             iwnn:keyPreviewLabel="s" />
+        <Key iwnn:codes="100" iwnn:keyIcon="@drawable/key_qwerty_d"
+             iwnn:keyPreviewLabel="d" />
+        <Key iwnn:codes="102" iwnn:keyIcon="@drawable/key_qwerty_f"
+             iwnn:keyPreviewLabel="f" />
+        <Key iwnn:codes="103" iwnn:keyIcon="@drawable/key_qwerty_g"
+             iwnn:keyPreviewLabel="g" />
+        <Key iwnn:codes="104" iwnn:keyIcon="@drawable/key_qwerty_h"
+             iwnn:keyPreviewLabel="h" />
+        <Key iwnn:codes="106" iwnn:keyIcon="@drawable/key_qwerty_j"
+             iwnn:keyPreviewLabel="j" />
+        <Key iwnn:codes="107" iwnn:keyIcon="@drawable/key_qwerty_k"
+             iwnn:keyPreviewLabel="k" />
+        <Key iwnn:codes="108" iwnn:keyIcon="@drawable/key_qwerty_l"
+             iwnn:keyEdgeFlags="@integer/keyboard_qwerty_l_keyEdgeflags"
+             iwnn:keyPreviewLabel="l" />
+    </Row-Key>
+    </case>
+    </case>
+    </case>
+
+    <!-- Full Alpha -->
+    <case iwnn:keyboardCondition="modeFullAlpha">
+        <Key iwnn:codes="65345" iwnn:keyIcon="@drawable/key_qwerty_a" iwnn:keyEdgeFlags="left"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row2_horizontal_gap"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_a_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="a" />
+        <Key iwnn:codes="65363" iwnn:keyIcon="@drawable/key_qwerty_s"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_s_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="s" />
+        <Key iwnn:codes="65348" iwnn:keyIcon="@drawable/key_qwerty_d"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_d_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="d" />
+        <Key iwnn:codes="65350" iwnn:keyIcon="@drawable/key_qwerty_f"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_f_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="f" />
+        <Key iwnn:codes="65351" iwnn:keyIcon="@drawable/key_qwerty_g"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_g_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="g" />
+        <Key iwnn:codes="65352" iwnn:keyIcon="@drawable/key_qwerty_h"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_h_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="h" />
+        <Key iwnn:codes="65354" iwnn:keyIcon="@drawable/key_qwerty_j"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_j_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="j" />
+        <Key iwnn:codes="65355" iwnn:keyIcon="@drawable/key_qwerty_k"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_k_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyPreviewLabel="k" />
+        <Key iwnn:codes="65356" iwnn:keyIcon="@drawable/key_qwerty_l"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_l_jajp_qwerty_en_full_alphabet_shift_off_txt"
+             iwnn:keyEdgeFlags="@integer/keyboard_qwerty_l_keyEdgeflags"
+             iwnn:keyPreviewLabel="l" />
+    </case>
+
+    <!-- Half Alpha -->
+<case iwnn:keyboardCondition="modeHalfAlpha">
+        <Key iwnn:codes="97"  iwnn:keyIcon="@drawable/key_qwerty_a" iwnn:keyEdgeFlags="left"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row2_horizontal_gap"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_a_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="a" />
+        <Key iwnn:codes="115" iwnn:keyIcon="@drawable/key_qwerty_s"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_s_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="s" />
+        <Key iwnn:codes="100" iwnn:keyIcon="@drawable/key_qwerty_d"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_d_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="d" />
+        <Key iwnn:codes="102" iwnn:keyIcon="@drawable/key_qwerty_f"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_f_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="f" />
+        <Key iwnn:codes="103" iwnn:keyIcon="@drawable/key_qwerty_g"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_g_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="g" />
+        <Key iwnn:codes="104" iwnn:keyIcon="@drawable/key_qwerty_h"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_h_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="h" />
+        <Key iwnn:codes="106" iwnn:keyIcon="@drawable/key_qwerty_j"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_j_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="j" />
+        <Key iwnn:codes="107" iwnn:keyIcon="@drawable/key_qwerty_k"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_k_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyPreviewLabel="k" />
+        <Key iwnn:codes="108" iwnn:keyIcon="@drawable/key_qwerty_l"
+             iwnn:popupKeyboard="@xml/keyboard_popup_template"
+             iwnn:popupCharacters="@string/ti_alternates_l_jajp_qwerty_en_shift_off_txt"
+             iwnn:keyEdgeFlags="@integer/keyboard_qwerty_l_keyEdgeflags"
+             iwnn:keyPreviewLabel="l" />
+    </case>
+
+  </switch>
+  
+</Keyboard>

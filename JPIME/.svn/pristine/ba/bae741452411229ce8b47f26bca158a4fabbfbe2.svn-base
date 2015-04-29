@@ -1,0 +1,9 @@
+HOW TO BUILD
+
+1. Run Eclipse
+2. [File - import]
+3. select SVN directories and select all projects.
+4. Please check belows.
+  > if iWnnIME project is encoded in EUC-KR, change it to UTF-8
+  > if iWnnIME cannot find libraries, change the directories
+5. Press "Run" button.

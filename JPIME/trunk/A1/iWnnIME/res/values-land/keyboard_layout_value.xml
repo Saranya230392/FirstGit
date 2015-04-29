@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<resources>
+
+<!-- Qwerty -->
+    <!-- Common -->
+    <dimen name="keyboard_qwerty_common_vertical_gap">4.66dip</dimen>
+    <dimen name="keyboard_qwerty_common_5line_vertical_gap">7.33dip</dimen>
+    <dimen name="keyboard_qwerty_common_keyheight">@dimen/key_height_qwerty</dimen>
+
+    <fraction name="keyboard_qwerty_space_keywidth">21.52%p</fraction>
+    <fraction name="keyboard_qwerty_space_cursordisable_keywidth">39.86%p</fraction>
+    <fraction name="keyboard_qwerty_space_switchime_keywidth">12.32%p</fraction>
+    <fraction name="keyboard_qwerty_space_switchime_cursordisable_keywidth">30.70%p</fraction>
+
+<!-- 12key -->
+</resources>

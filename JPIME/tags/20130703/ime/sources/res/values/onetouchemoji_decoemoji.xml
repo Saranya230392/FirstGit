@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <string-array name="onetouchemoji_decoemoji_item">
+      <item>"/system/docomo/decome/emotion/de_01_1002.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1040.gif"</item>
+      <item>"/system/docomo/decome/text/de_08_1001.gif"</item>
+      <item>"/system/docomo/decome/text/de_08_1022_p.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1016.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1012_p.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1044.gif"</item>
+      <item>"/system/docomo/decome/text/de_08_1026_p.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1002.gif"</item>
+      <item>"/system/docomo/decome/text/de_08_1030_p.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1058.gif"</item>
+      <item>"/system/docomo/decome/heart_sparkle/de_03_1022.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1105.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1101.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1068.gif"</item>
+      <item>"/system/docomo/decome/text/de_08_1010_p.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1061.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1068.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1069.gif"</item>
+      <item>"/system/docomo/decome/food/de_06_1042.gif"</item>
+      <item>"/system/docomo/decome/food/de_06_1004.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1013_p.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1091.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1084.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1032.gif"</item>
+      <item>"/system/docomo/decome/weather_seasons/de_04_1001.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1049.gif"</item>
+      <item>"/system/docomo/decome/weather_seasons/de_04_1007_p.gif"</item>
+      <item>"/system/docomo/decome/weather_seasons/de_04_1015.gif"</item>
+      <item>"/system/docomo/decome/food/de_06_1011_p.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1069.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1075_p.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1003.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1011.gif"</item>
+      <item>"/system/docomo/decome/travel_life/de_05_1018.gif"</item>
+      <item>"/system/docomo/decome/travel_life/de_05_1054.gif"</item>
+      <item>"/system/docomo/decome/travel_life/de_05_1089.gif"</item>
+      <item>"/system/docomo/decome/heart_sparkle/de_03_1013.gif"</item>
+      <item>"/system/docomo/decome/heart_sparkle/de_03_1031.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1056_p.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1054.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1033.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1030.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1032.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1090.gif"</item>
+      <item>"/system/docomo/decome/character/de_07_1097_p.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1096.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1093.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1075.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1071.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1022_p.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1027.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1018.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1020.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1001_p.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1010.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1034.gif"</item>
+      <item>"/system/docomo/decome/travel_life/de_05_1028_p.gif"</item>
+      <item>"/system/docomo/decome/travel_life/de_05_1108_p.gif"</item>
+      <item>"/system/docomo/decome/weather_seasons/de_04_1027.gif"</item>
+      <item>"/system/docomo/decome/weather_seasons/de_04_1020.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1082.gif"</item>
+      <item>"/system/docomo/decome/emotion/de_01_1084.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1047_p.gif"</item>
+      <item>"/system/docomo/decome/decoration/de_02_1037_p.gif"</item>
+    </string-array>
+</resources>
+

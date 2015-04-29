@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/HeaderBG"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/dark_header_title"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="48.67dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src="@drawable/emojidownloader" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/hig_title_bar_1line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="27.33dp" >
+
+            <LinearLayout
+                android:id="@+id/app_introTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center" >
+
+                <ViewFlipper
+                    android:id="@+id/intro_flipper1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:autoStart="true"
+                    android:flipInterval="500"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_title_01_f1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_title_01_f2" />
+                </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/textView_introTitle_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_introTitle1"
+                    android:textColor="@color/deco_pink"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ViewFlipper
+                    android:id="@+id/intro_flipper2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:autoStart="true"
+                    android:flipInterval="500"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_title_02_f1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_title_02_f2" />
+                </ViewFlipper>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_introTitle4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/main_visual_back"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/app_introTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp" >
+
+                    <ViewFlipper
+                        android:id="@+id/deco_leadFlipper1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="2dp"
+                        android:autoStart="true"
+                        android:flipInterval="500" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/deco_lead_01_f1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/deco_lead_01_f2" />
+                    </ViewFlipper>
+
+                    <TextView
+                        android:id="@+id/tv_appIntrotitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/deco_leadFlipper2"
+                        android:layout_toRightOf="@+id/deco_leadFlipper1"
+                        android:gravity="center"
+                        android:text="@string/app_introTitle2"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <ViewFlipper
+                        android:id="@+id/deco_leadFlipper2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="2dp"
+                        android:autoStart="true"
+                        android:flipInterval="500" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/deco_lead_02_f1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/deco_lead_02_f2" />
+                    </ViewFlipper>
+                </RelativeLayout>
+
+                <ViewFlipper
+                    android:id="@+id/app_titleFlipper1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:autoStart="true"
+                    android:flipInterval="500" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_main_01_f1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_main_01_f2" />
+                </ViewFlipper>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_Topic_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_section_divider_holo_light" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:paddingBottom="6.66dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/app_Topic_title"
+                    android:textColor="@color/hig_list"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Topic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_w"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="14dp" >
+
+                <ViewFlipper
+                    android:id="@+id/topic_flipper1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:autoStart="true"
+                    android:flipInterval="500"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_icon_01_f1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_icon_01_f2" />
+                </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:paddingTop="3dp"
+                    android:text="@string/app_Topic1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Topic2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_w"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <ViewFlipper
+                    android:id="@+id/topic_flipper2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:autoStart="true"
+                    android:flipInterval="500"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_title_01_f1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_title_01_f2" />
+                </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="@string/app_Topic2"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Topic3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_w"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <ViewFlipper
+                    android:id="@+id/topic_flipper3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:autoStart="true"
+                    android:flipInterval="500"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_icon_03_f1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/deco_icon_03_f2" />
+                </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:paddingTop="3dp"
+                    android:text="@string/app_Topic3"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_attentionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_section_divider_holo_light" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="0.66dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/app_attention"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/CommandBarBG"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/ab_command_holo_light"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/btn_marketupdate"
+            style="@style/hig_command_bar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/image_stateful"
+            android:text="@string/btn_marketupdate" />
+    </LinearLayout>
+
+</LinearLayout>

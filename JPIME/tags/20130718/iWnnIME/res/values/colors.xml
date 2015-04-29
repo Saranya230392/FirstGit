@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<resources>
+    <!-- keyboard -->
+    <color name="key_text_color">#FF303030</color>
+    <color name="key_text_color_2nd">#FFFFFFFF</color>
+    <color name="key_text_color_std">#FF000000</color>
+    <color name="key_text_color_pressed">#FFFFFFFF</color>
+    <color name="key_text_shadow_color">#000000</color>
+    <color name="key_hint_letter">#80000000</color>
+    <color name="key_preview_text_color">#FF000000</color>
+
+    <!-- candidates (mobile/symbol list) -->
+    <color name="candidate_text">#FF000000</color>
+    <color name="candidate_dialog_text_color">#000000</color>
+    <color name="candidate_text_cate">#FFFFFFFF</color>
+    <color name="candidate_back">#FFE1E1E1</color>
+
+    <!-- webAPI -->
+    <color name="webapi_text_key">#FF0052b7</color>
+    <color name="webapi_text_candidate">@color/webapi_text_key</color>
+    <color name="webapi_text_nocandidate">#400000FF</color>
+
+    <!-- symbol list -->
+    <color name="candidate_tab_back">#FF000000</color>
+    <color name="tab_textcolor_select">#FFFFFFFF</color>
+    <color name="tab_textcolor_no_select">#FFFFFFFF</color>
+    <color name="tab_textcolor_disable">#66FFFFFF</color>
+    <color name="category_textcolor">#FFFFFFFF</color>
+
+    <!-- indicator -->
+    <color name="indicator_textbackground_default">#FFF0F0F0</color>
+    <color name="key_10key_text_color_top">#303030</color>
+    <color name="key_10key_text_color_left_right">#525252</color>
+    <color name="key_10key_text_color_mode">#5ce7fc</color>
+    <color name="key_symkey_text_color">#ffffff</color>
+    <color name="key_period_text_color">#303030</color>
+    <color name="key_period_preview_text_color">#303030</color>
+    <color name="key_comkey_text_color">#FFFFFF</color>
+    <color name="key_comkey_preview_text_color">#FFFFFF</color>
+    <color name="key_eisukana_text_color">#FFFFFF</color>
+    <color name="key_preview_center_text_color">#000000</color>
+    <color name="key_preview_side_text_color">#37000000</color>
+    <color name="key_12key_space_jp_text_color">#FFFFFF</color>
+    <color name="key_qwerty_shift_text_color">#FFFFFF</color>
+    <color name="key_qwerty_shift_preview_text_color">#FFFFFF</color>
+    <color name="key_preview_text_center_color">#303030</color>
+    <color name="key_navi_off_color">#7d838c</color>
+    <color name="key_caps_select_text_color">#303030</color>
+    <color name="key_caps_unselect_text_color">#919191</color>
+    <color name="key_10key_text_size_large_top">#303030</color>
+    <color name="key_10key_text_size_left_right">#525252</color>
+    <color name="key_eisukana_preview_text_color">#FFFFFF</color>
+    <color name="key_12key_space_jp_preview_text_color">#FFFFFF</color>
+    <color name="key_caps_text_color">#303030</color>
+    <color name="key_caps_preview_text_color">#303030</color>
+    <color name="key_12key_ten_text_color">#303030</color>
+    <color name="key_12key_ten_preview_text_color">#FFFFFF</color>
+    <color name="key_mode_change_text_color">#000000</color>
+    <color name="key_mode_change_text_pushed_color">#FFFFFF</color>
+    <color name="key_mode_change_text_define_color">#999999</color>
+    <color name="key_mode_change_text_non_color">#5ce7fc</color>
+    <color name="key_mode_change_bg_color">#008080</color>
+    <color name="key_qwerty_text_color">#303030</color>
+    <color name="key_qwerty_num_symbol_text_color">#8c8c8c</color>
+    <color name="popup_text_color">#000000</color>
+    <color name="popup_text_color_press">#FFFFFF</color>
+
+    <!-- Composing Extra View Text Color -->
+    <color name="composing_extra_view_text_color">#FF000000</color>
+
+    <!-- Handwriting -->
+    <color name="handwriting_dialog_title">#000000</color>
+    <color name="handwriting_popup_text">#434343</color>
+
+</resources>

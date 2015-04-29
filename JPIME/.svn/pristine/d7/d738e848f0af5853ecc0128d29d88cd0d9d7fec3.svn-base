@@ -1,0 +1,186 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jp.co.omronsoft.iwnnime.ml"
+      coreApp="true"
+      android:versionCode="2320"
+      android:versionName="#2.3.2-Alpha-130801">
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+  <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+  <application android:icon="@drawable/iwnnime_icon" android:label="iWnn IME"
+           android:hardwareAccelerated="true">
+
+        <!-- Standard Keyboard -->
+        <service android:name="jp.co.omronsoft.iwnnime.ml.InputMethodSwitcher"
+                 android:label="@string/ti_ime_name_standard_txt"
+                 android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method_standard" />
+        </service>
+
+        <activity android:name="ControlPanelStandard"
+                  android:launchMode="singleTask"
+                  android:label="@string/ti_ime_name_setting_title_standard_txt"
+                  android:configChanges="orientation|screenSize"
+                  android:theme="@android:style/Theme.Holo.Light">
+          <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+          </intent-filter>
+        </activity>
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.standardcommon.UserDictionaryToolsListStandard"/>
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.standardcommon.UserDictionaryToolsEditStandard"
+                  android:configChanges="orientation|screenSize"
+                  android:label="@string/ti_user_dictionary_edit_words_txt"/>
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.KeyboardThemeActivity"
+                  android:label="@string/ti_preference_keyboard_skinadd_title_txt"
+                  android:theme="@android:style/Theme.Holo.Light" android:launchMode="singleTask" />
+
+        <!-- Japanese -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsListJa"
+                  android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsEditJa"
+                  android:configChanges="orientation|screenSize"
+                  android:label="@string/ti_user_dictionary_edit_words_txt"
+                  android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsListEn"
+                  android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.jajp.UserDictionaryToolsEditEn"
+                  android:configChanges="orientation|screenSize"
+                  android:label="@string/ti_user_dictionary_edit_words_txt"
+                  android:theme="@android:style/Theme.Holo.Light" />
+        <!-- Hangul -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.hangul.UserDictionaryToolsListKo"
+                  android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.hangul.UserDictionaryToolsEditKo"
+                  android:configChanges="orientation|screenSize"
+                  android:label="@string/ti_user_dictionary_edit_words_txt"
+                  android:theme="@android:style/Theme.Holo.Light" />
+
+
+        <!-- Mushroom -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.Mushroom" android:label="@string/ti_mushroom_launcher_title_txt"
+                  android:excludeFromRecents="true" android:theme="@style/MushroomDialog" android:launchMode="singleTask"/>
+        <!-- MushroomPlus -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.MushroomPlus" android:label="@string/ti_mushroom_launcher_title_txt"
+                  android:excludeFromRecents="true" android:theme="@style/MushroomDialog" android:launchMode="singleTask"/>
+
+        <!-- Morphological Analyze Service -->
+        <service android:name="jp.co.omronsoft.iwnnime.ml.IWnnMorphemeService">
+            <intent-filter>
+                <action android:name="jp.co.omronsoft.iwnnime.ml.IMorphemeService" />
+            </intent-filter>
+        </service>
+
+        <!-- Engine Analyze Service -->
+        <service android:name="jp.co.omronsoft.iwnnime.ml.IWnnEngineService">
+            <intent-filter>
+                <action android:name="jp.co.omronsoft.iwnnime.ml.IEngineService" />
+            </intent-filter>
+        </service>
+
+        <!-- Voice Editor Service -->
+        <service android:name="com.nttdocomo.android.voiceeditorif.VoiceEditorService"
+            android:permission="com.nttdocomo.android.permission.voiceeditor.USE_VOICE_EDITOR_SERVICE">
+        <intent-filter>
+              <action android:name="com.nttdocomo.android.voiceeditorif.IVoiceEditorService" />
+        </intent-filter>
+        </service>
+
+        <!-- Voice Engine Analyze Service -->
+        <service android:name="jp.co.omronsoft.iwnnime.ml.IWnnVoiceEngineService">
+            <intent-filter>
+                <action android:name="jp.co.omronsoft.iwnnime.ml.IVoiceEngineService" />
+            </intent-filter>
+        </service>
+
+        <!-- Keyboard Type -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.KeyboardTypePreferenceActivity"
+                  android:label="@string/ti_preference_keyboard_type_diff_title_txt"
+                  android:configChanges="orientation|screenSize"
+                  android:theme="@android:style/Theme.Holo.Light"/>
+
+        <!-- Candidate Lines -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.CandidateLinesPreferenceActivity"
+                  android:label="@string/ti_preference_candidate_lines_title_txt"
+                  android:theme="@android:style/Theme.Holo.Light"/>
+
+        <!-- Additional Dictionary -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.AdditionalDictionaryPreferenceActivity"
+                  android:theme="@android:style/Theme.Holo.Light"/>
+
+        <!-- Download Dictionary -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.DownloadDictionaryPreferenceActivity"
+                  android:theme="@android:style/Theme.Holo.Light"/>
+
+        <!-- WebAPI -->
+        <receiver android:name="jp.co.omronsoft.iwnnime.ml.WebApiReceiver">
+            <intent-filter>
+                <action android:name="jp.co.omronsoft.iwnnime.ml.RETURN_CANDIDATES" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Auto Learning for ReplyMail -->
+        <receiver android:name="jp.co.omronsoft.iwnnime.ml.AutoLearningReceiver">
+            <intent-filter>
+                <action android:name="jp.co.omronsoft.iwnnime.ml.AUTO_LEARNING" />
+                <action android:name="jp.co.omronsoft.iwnnime.ml.CLEAR_LEARNING" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Uninstall Receiver -->
+        <receiver android:name="jp.co.omronsoft.iwnnime.ml.UninstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- DecoEmojiInformation Receiver -->
+        <receiver android:name="DecoEmojiListener">
+          <intent-filter>
+            <action android:name="jp.co.omronsoft.iwnnime.ml" />
+            <action android:name="jp.co.omronsoft.android.decoemojimanager" />
+            <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+        </receiver>
+
+        <!-- Language Setting -->
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.LanguageSettingPreferenceActivity"
+                  android:label="@string/ti_preference_choose_language_of_keyboard_title_txt"/>
+
+        <!-- Japanese Keyboard Layout -->
+        <receiver android:name=".InputDeviceReceiver"
+                  android:label="iWnn IME">
+            <intent-filter>
+                <action android:name="android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.input.metadata.KEYBOARD_LAYOUTS"
+                       android:resource="@xml/keyboard_layouts" />
+        </receiver>
+
+        <!-- Handwrite Setting -->
+        <activity android:name="com.lge.handwritingime.preference.HandwritingPreferenceActivity"
+            android:label="@string/ti_preference_handwriting_title_txt"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data android:name="android.preference" android:resource="@xml/settings" />
+        </activity>
+
+        <!-- Help -->
+        <activity android:name="com.lge.ime_help.HelpActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data android:name="com.lge.theme" android:value="Theme_LGE_White" />
+            <meta-data android:name="android.preference" android:resource="@xml/settings" />
+        </activity>
+        <activity android:name="jp.co.omronsoft.iwnnime.ml.StartApps" />
+
+        <uses-library android:name="com.lge.systemservice.core"/>
+
+    </application>
+</manifest>

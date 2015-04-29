@@ -1,0 +1,252 @@
+com.lge.handwritingime.BuildConfig
+com.lge.handwritingime.CandidateView:
+    private static final java.lang.String TAG
+    private static final int OUT_OF_BOUNDS
+    private static final int MAX_SUGGESTIONS
+    public static final float CANDIDATE_FOLDER_WIDTH
+    public static final float CANDIDATE_TOP_MARGIN
+    public static final float CANDIDATE_MIDDLE_MARGIN
+    public static final float CANDIDATE_BOTTOM_MARGIN
+    public static final float CANDIDATE_TEXT_HEIGHT
+    public static final float CANDIDATE_HEIGHT_1LINE
+    public static final float CANDIDATE_HEIGHT_2LINE
+    private static final int X_GAP
+com.lge.handwritingime.HandwritingKeyboard:
+    public static final boolean DEBUG
+    private static final java.lang.String TAG
+    private static final float POSITION_BASELINE
+    private static final float POSITION_XHEIGHT
+    private static final float POSITION_LINESPACING
+    public static final int MSG_UPDATE_CANDIDATES
+    private static final int MSG_SUBMIT_STROKES
+    public static final int MSG_DELETE_TEXT
+    615:623:public void clearStrokeViewData()
+    53:53:static synthetic com.lge.voassist.Core access$0(com.lge.handwritingime.HandwritingKeyboard)
+com.lge.handwritingime.HandwritingKeyboard$1:
+    83:96:public void onRecognitionEnd()
+    100:109:public void onCancel()
+    113:116:public void onCancelFailed(java.lang.RuntimeException)
+    120:123:public void onCommit()
+    127:130:public void onCommitFailed(java.lang.RuntimeException)
+    134:137:public void onRecognitionFailed(java.lang.RuntimeException)
+com.lge.handwritingime.R
+com.lge.handwritingime.R$array
+com.lge.handwritingime.R$attr
+com.lge.handwritingime.R$color
+com.lge.handwritingime.R$dimen
+com.lge.handwritingime.R$drawable
+com.lge.handwritingime.R$id
+com.lge.handwritingime.R$integer
+com.lge.handwritingime.R$layout
+com.lge.handwritingime.R$string
+com.lge.handwritingime.R$style
+com.lge.handwritingime.R$xml
+com.lge.handwritingime.StrokeView:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final float TOUCH_TOLERANCE
+    private static final float POINT_CORRECTION
+    123:123:public boolean isAutoScroll()
+    238:243:public void clearView()
+com.lge.handwritingime.data.Stroke:
+    private static final long serialVersionUID
+com.lge.handwritingime.data.StrokeChar:
+    42:57:public StrokeChar(java.util.List,java.util.ArrayList,java.util.ArrayList)
+    60:70:public void setResult(java.util.ArrayList,java.util.ArrayList)
+com.lge.handwritingime.data.StrokeChar$StrokeResult:
+    final synthetic com.lge.handwritingime.data.StrokeChar this$0
+    12:15:public StrokeChar$StrokeResult(com.lge.handwritingime.data.StrokeChar,float,java.lang.String)
+com.lge.handwritingime.data.StrokePoint:
+    62:63:public StrokePoint(android.graphics.Point)
+com.lge.handwritingime.manager.ButtonLayoutManager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+com.lge.handwritingime.manager.CharModeManager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final int DELAY_CLEAR
+    private static final int MSG_CLEAR_STROKE_VIEW
+    private static final int MSG_COMPOSING_TEXT
+    87:114:public void setResult(com.visionobjects.im.Result)
+com.lge.handwritingime.manager.IModeManager:
+    public abstract void setResult(com.visionobjects.im.Result)
+com.lge.handwritingime.manager.ScreenManager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final int PORTRAIT
+    private static final int LANDSCAPE
+    private static final float BASERATIO
+    private static final float MAXWIDTH
+    private static final int ANIMATION_DURATION
+com.lge.handwritingime.manager.StrokeManager:
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+    36:36:public boolean remove(com.lge.handwritingime.data.Stroke)
+com.lge.handwritingime.manager.StrokeManager$OnStrokeChangeListener
+com.lge.handwritingime.manager.TextModeManager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final int DELAY_CHAR_BUTTON
+    private static final int MSG_UPDATE_CHAR_BUTTON
+    private static final int MSG_SCROLL_RIGHT_SCREEN
+    private static final int MSG_GO_SCREEN
+    127:177:public void setResult(com.visionobjects.im.Result)
+com.lge.handwritingime.popup.BasePopup:
+    public static final int MSG__POPUP_DISAPPER
+    public abstract void show(int,int)
+com.lge.handwritingime.popup.SelectCandidatePopup:
+    private static final int BUTTON_ID
+com.lge.handwritingime.popup.SelectKeyboardPopup:
+    public android.widget.ImageButton mBtnClip
+com.lge.handwritingime.preference.ScrollDelaySeekBarPreference:
+    private static final java.lang.String ANDROID_NS
+    private static final java.lang.String ATTR_DEFAULT_VALUE
+    private static final java.lang.String ATTR_MIN_VALUE
+    private static final java.lang.String ATTR_MAX_VALUE
+    private static final int DEFAULT_CURRENT_VALUE
+    private static final int DEFAULT_MIN_VALUE
+    private static final int DEFAULT_MAX_VALUE
+com.lge.voassist.Core:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    77:77:public com.visionobjects.im.Result getResult(boolean,boolean)
+    95:96:public void flowSync(int)
+com.lge.voassist.MyCertificate:
+    13:13:public MyCertificate()
+com.lge.voassist.Utils:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final int NUMBER_MIN_VALUE
+    private static final int NUMBER_MAX_VALUE
+    private static final int ENGLISH_UPPER_MIN_VALUE
+    private static final int ENGLISH_UPPER_MAX_VALUE
+    private static final int ENGLISH_LOWER_MIN_VALUE
+    private static final int ENGLISH_LOWER_MAX_VALUE
+    private static final int HIRAGANA_MIN_VALUE
+    private static final int HIRAGANA_MAX_VALUE
+    private static final int KATAKANA_MIN_VALUE
+    private static final int KATAKANA_MAX_VALUE
+    private static final int RARE_KANJI_MIN_VALUE
+    private static final int RARE_KANJI_MAX_VALUE
+    private static final int COMMON_KANJI_MIN_VALUE
+    private static final int COMMON_KANJI_MAX_VALUE
+    private static final int KOREAN_SYLLABLES_MIN_VALUE
+    private static final int KOREAN_SYLLABLES_MAX_VALUE
+    private static final int KOREAN_JAMO_MIN_VALUE
+    private static final int KOREAN_JAMO_MAX_VALUE
+    private static final int KOREAN_WANSUNG_JAMO_MIN_VALUE
+    private static final int KOREAN_WANSUNG_JAMO_MAX_VALUE
+    private static final int KOREAN_JAMO_EXPAND_A_MIN_VALUE
+    private static final int KOREAN_JAMO_EXPAND_A_MAX_VALUE
+    private static final int KOREAN_JAMO_EXPAND_B_MIN_VALUE
+    private static final int KOREAN_JAMO_EXPAND_B_MAX_VALUE
+    13:13:public Utils()
+com.visionobjects.im.Dictionary
+com.visionobjects.im.Engine:
+    public static com.visionobjects.im.Engine create(byte[],java.io.File)
+    public final boolean isDestroyed()
+    public final com.visionobjects.im.Dictionary createDictionary()
+    public final com.visionobjects.im.Recognizer createRecognizer(com.visionobjects.im.LanguageManager,java.util.Properties)
+    public final com.visionobjects.im.Recognizer createRecognizer(com.visionobjects.im.LanguageManager)
+com.visionobjects.im.EventListener:
+    public void onSetMode(com.visionobjects.im.Language,java.lang.String)
+    public void onSetModeFailed(com.visionobjects.im.Language,java.lang.String,java.lang.RuntimeException)
+    public void onSetPositionAndScaleIndicator(float,float,float)
+    public void onSetPositionAndScaleIndicatorFailed(float,float,float,java.lang.RuntimeException)
+    public void onSetUserDictionary(com.visionobjects.im.Dictionary)
+    public void onSetUserDictionaryFailed(com.visionobjects.im.Dictionary,java.lang.RuntimeException)
+    public void onAddStroke(int,int)
+    public void onAddStrokeFailed(int,int,java.lang.RuntimeException)
+    public void onRecognitionStart(int,int,int)
+    public void onRecognitionProgress(int,int)
+    public void onRecognitionEnd()
+    public void onRecognitionFailed(java.lang.RuntimeException)
+    public void onCommit()
+    public void onCommitFailed(java.lang.RuntimeException)
+    public void onCancel()
+    public void onCancelFailed(java.lang.RuntimeException)
+    public void onNewInputItem()
+    public void onNewInputItemFailed(java.lang.RuntimeException)
+    public void onFlowSync(int)
+com.visionobjects.im.IOFailureException:
+    static final long serialVersionUID
+    public IOFailureException(java.lang.String,java.lang.Throwable)
+com.visionobjects.im.InputType
+com.visionobjects.im.InternalErrorException:
+    static final long serialVersionUID
+    public InternalErrorException(java.lang.String,java.lang.Throwable)
+com.visionobjects.im.Language
+com.visionobjects.im.Language$1
+com.visionobjects.im.LanguageManager:
+    public com.visionobjects.im.Engine getEngine()
+    public final boolean isDestroyed()
+    public void refreshLanguageList()
+    public java.util.List getLanguageNames()
+    public com.visionobjects.im.Language getLanguage(java.lang.String)
+com.visionobjects.im.NativeConstants
+com.visionobjects.im.NativeConstants$voInputType
+com.visionobjects.im.NativeConstants$voResultItemType
+com.visionobjects.im.NativeConstants$voYesNo
+com.visionobjects.im.NativeConstants$voimErrorCode
+com.visionobjects.im.NativeEventListenerStub:
+    synchronized com.visionobjects.im.EventListener getEventListener()
+    final void onSetMode(long,int,boolean)
+    final void onSetPositionAndScaleIndicator(float,float,float,boolean)
+    final void onSetUserDictionary(long,boolean)
+    final void onAddStroke(int,int,boolean)
+    final void onRecognitionStart(int,int,int)
+    final void onRecognitionProgress(int,int)
+    final void onRecognitionEnd(boolean)
+    final void onCommit(boolean)
+    final void onCancel(boolean)
+    final void onNewInputItem(boolean)
+    final void onFlowSync(int)
+com.visionobjects.im.NativeException:
+    static final long serialVersionUID
+    public NativeException(java.lang.String,java.lang.Throwable)
+com.visionobjects.im.NativeLibrary:
+    static final native boolean refreshLanguageList(long,long)
+    static final native long getLanguage(long,long,java.lang.String)
+    static final native boolean destroyLanguage(long,long)
+    static final native java.lang.String getLanguageFileName(long,long)
+    static final native java.lang.String getLanguageAttribute(long,long,java.lang.String)
+    static final native java.lang.String getLanguageName(long,long)
+    static final native int getLanguageModeCount(long,long)
+    static final native java.lang.String getLanguageModeNameAt(long,long,int)
+    static final native int getLanguageModeInputType(long,long,int)
+    static final native int getLanguageModeResultItemType(long,long,int)
+    static final native int isLanguageModeUsingUserDictionary(long,long,int)
+    static final native java.lang.String getLanguageModeAttribute(long,long,int,java.lang.String)
+    static final native long createDictionary(long)
+    static final native boolean destroyDictionary(long,long)
+    static final native boolean addWordsToDictionary(long,long,char[],int)
+    static final native boolean setUserDictionary(long,long,long)
+    static final native boolean newInputItem(long,long)
+    static final native boolean flowSync(long,long,int)
+    static final native long getResult(long,long,boolean,boolean)
+    static final native boolean destroyResult(long,long)
+    static final native int isResultIntermediate(long,long)
+    static final native int getItemCount(long,long)
+    static final native int getItemInkElementCount(long,long,int)
+    static final native int getItemInkElementFirstStroke(long,long,int,int)
+    static final native int getItemInkElementFirstPoint(long,long,int,int)
+    static final native int getItemInkElementLastStroke(long,long,int,int)
+    static final native int getItemInkElementLastPoint(long,long,int,int)
+    static final native int getItemCandidateCount(long,long,int)
+    static final native java.lang.String getItemCandidateLabel(long,long,int,int)
+    static final native float getItemCandidateScore(long,long,int,int)
+    private NativeLibrary()
+com.visionobjects.im.OutOfMemoryException:
+    static final long serialVersionUID
+    public OutOfMemoryException(java.lang.String,java.lang.Throwable)
+com.visionobjects.im.PropertyUtils:
+    PropertyUtils()
+com.visionobjects.im.Recognizer:
+    public com.visionobjects.im.Engine getEngine()
+    public final boolean isDestroyed()
+    public final void setUserDictionary(com.visionobjects.im.Dictionary)
+    public final void newInputItem()
+    public final void flowSync(int)
+    public final com.visionobjects.im.Result getResult(boolean,boolean)
+com.visionobjects.im.Result
+com.visionobjects.im.ResultItemType

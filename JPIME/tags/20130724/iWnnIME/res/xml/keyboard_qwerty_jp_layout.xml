@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+      iwnn:keyWidth="@fraction/keyboard_qwerty_common_keywidth"
+      iwnn:horizontalGap="@fraction/keyboard_qwerty_common_horizontal_gap"
+      iwnn:verticalGap="@dimen/keyboard_qwerty_common_vertical_gap"
+      iwnn:keyHeight="@dimen/keyboard_qwerty_common_keyheight"
+      >
+  
+  <Row>
+    <include iwnn:keyboardLayout="@xml/key_qwerty_jp_row1_q_to_p"/>
+  </Row>
+  
+  <Row>
+    <include iwnn:keyboardLayout="@xml/key_qwerty_jp_row2_a_to_l"/>
+    <include iwnn:keyboardLayout="@xml/key_qwerty_jp_tyouon"/>
+  </Row>
+  
+  <Row>
+    <Key iwnn:codes="-1" iwnn:keyIcon="@drawable/key_qwerty_shift" iwnn:iconPreview="@drawable/key_qwerty_shift_b"
+         iwnn:keyWidth="@fraction/keyboard_qwerty_shift_keywidth"  iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+         iwnn:isModifier="true" iwnn:isSticky="false" iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+    <include iwnn:keyboardLayout="@xml/key_qwerty_jp_row3_z_to_m"/>
+    <Key iwnn:codes="-100" iwnn:keyIcon="@drawable/key_del" iwnn:iconPreview="@drawable/key_del_b"
+         iwnn:keyWidth="@fraction/keyboard_qwerty_del_keywidth"
+         iwnn:keyEdgeFlags="right" iwnn:isRepeatable="true" iwnn:isSecondKey="true"/>
+  </Row>
+  
+  <Row iwnn:rowEdgeFlags="bottom" iwnn:horizontalGap="@fraction/keyboard_qwerty_row4_horizontal_gap">
+    <include iwnn:keyboardLayout="@xml/row_qwerty_jp_4"/>
+  </Row>
+</Keyboard>

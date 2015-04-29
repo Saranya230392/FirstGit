@@ -1,0 +1,10 @@
+#
+# MyScript Text Input Method Extension
+# Recognizer configuration
+#
+# Copyright (c) Vision Objects
+#
+
+# Length of the recognizer command queue
+#com.visionobjects.im.commandQueueLength=1024
+com.visionobjects.im.commandQueueLength=128

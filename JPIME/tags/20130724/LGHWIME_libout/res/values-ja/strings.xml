@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">LG Handwriting Keyboard</string>
+    
+    <!-- Token for preference  -->
+    
+    <string name="auto_scroll_setting_category_title">自動スクロールの設定</string>
+    <string name="auto_scroll_title">自動スクロール</string>
+    <string name="auto_scroll_input_delay_title">自動スクロール待ち時間</string>
+    <string name="auto_scroll_input_delay_popup_text">待ち時間</string>
+    <string name="auto_scroll_input_delay_popup_text_sec">秒</string>
+    <string name="auto_scroll_area_width_title">自動スクロール領域</string>
+    <string name="area_width_type_wide">大</string>
+    <string name="area_width_type_normal">中</string>
+    <string name="area_width_type_thin">小</string>
+    
+    <string name="language_setting_popup_title_language">入力モード</string>
+    <string name="language_setting_popup_title_active_mode">実行モード</string>    
+    <string name="candidate_popup_button_cancel">キャンセル</string>
+    <string name="candidate_popup_button_clear">クリア</string>
+
+    <string name="handwriting_pref_category_title">ペンの設定</string>
+    <string name="handwriting_pref_title_pen_type">ペンタイプ</string>
+    <string name="handwriting_pref_title_pen_color">ペンの色</string>
+
+    <string name="title_help_activity">ヘルプ</string>
+    <string name="ime_guide_previous_NOMAL">戻る</string>
+    <string name="ime_guide_next_NOMAL">次へ</string>
+    <string name="sp_done_NORMAL">完了</string>
+
+	<string name="ime_guide_description_use_function_key">&lt;img src=hw_ime_keypad_help_btn_image_03.png&gt;を長押しすると以下の機能を選択可能です。&lt;br&gt;
+		&#160;1.音声入力&lt;br&gt;
+		&#160;2.キーボードレイアウト(QWERTY/10キー)&lt;br&gt;
+		&#160;3.手書き入力&lt;br&gt;
+		&#160;4.キーボード切り替え&lt;br&gt;
+		&#160;5.クリップトレー&lt;br&gt;
+		&#160;6.設定
+	</string>
+    <string name="ime_guide_description_split_keypad">横画面状態でスプリットキーボードを使用する際は、機能ポップアップの&lt;img src=hw_ime_keypad_help_btn_image_05.png&gt;をタップしてください。キーボードを分割して画面の左右に配置します。通常のキーボードに戻す際は、機能ポップアップの&lt;img src=hw_ime_keypad_help_btn_image_04.png&gt;をタップしてください。</string>
+    <string name="ime_guide_description_onehand_operation">縦画面状態で片手操作キーボードを使用する際は、機能ポップアップの&lt;img src=hw_ime_keypad_help_btn_image_06.png&gt;をタップしてください。片手操作キーボードを移動させる際は、矢印をタップしてください。</string>
+    
+    <string name="ime_guide_title_input_language">入力言語</string>
+    <string name="ime_guide_title_numeric_and_symbol">数字と記号</string>
+    <string name="ime_guide_title_use_function_key">機能ボタンの使用</string>    
+    <string name="ime_guide_title_split_keypad">スプリットキーボード</string>
+    <string name="ime_guide_title_onehand_operation">片手操作キーボード</string>
+</resources>

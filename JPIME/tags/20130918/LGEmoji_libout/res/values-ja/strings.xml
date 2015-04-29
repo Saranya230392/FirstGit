@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LG絵文字キーボード</string>
+    <string name="ddl_name">デコメダウンローダー</string>
+    <string name="history">履歴</string>
+    <string name="emoji_category_name_nature">自然·星座</string>
+    <string name="emoji_category_name_human_living_things">人·生き物</string>
+    <string name="emoji_category_name_faces_and_smilely">顔·表情</string>
+    <string name="emoji_category_name_artifacts">建物·モ丿</string>
+    <string name="emoji_category_name_activities_work_entertainment">スポーツ·乗り物·趣味</string>
+    <string name="emoji_category_name_foods">食べ物</string>
+    <string name="emoji_category_name_symbols">マーク·シンボル</string>
+    <string name="symbol_category_name_half">記号(半角)</string>
+    <string name="symbol_category_name_full">記号(全角)</string>
+    <string name="emoticon_category_name_happy">ハッピー</string>
+    <string name="emoticon_category_name_sad">悲しい</string>
+    <string name="emoticon_category_name_surprise">びっくり</string>
+    <string name="emoticon_category_name_trouble">困る</string>
+    <string name="emoticon_category_name_angry">怒る</string>
+    <string name="emoticon_category_name_greeting">あいさつ</string>
+    <string name="emoticon_category_name_action">アクション</string>
+    <string name="emoticon_category_name_love_friendship">ラブ·友情</string>
+    <string name="emoticon_category_name_animal_character">動物·キャラクタ</string>
+    <string name="emoji_pref_title_bg_color">背景色を選択</string>
+
+    <!-- Decome Down Loader -->
+    <string name="btn_marketupdate">無料会員登録/更新確認</string>
+    <string name="app_introTitle1">デコメダウンローダーへようこそ</string>
+    <string name="app_introTitle2">あなたのスマートフォンに&lt;br&gt;素敵な&lt;font color=\"#DE4C92\"&gt;デコメ絵文字&lt;/font&gt;をお届けします</string>
+    <string name="app_Topic_title">おトクなポイント!</string>
+    <string name="app_Topic1">無料でもらえちゃう！\n(※パケット通信料はかかります)</string>
+    <string name="app_Topic2">自動配信だから面倒な操作不要!</string>
+    <string name="app_Topic3">2014年5月までたっぷり使える!</string>
+    <string name="app_attention">※配信されたデコメ絵文字がSPモードメールで表示されない場合は一旦アプリを終了させてください\n\n※配信日は不特定となります</string>
+    <string name="error_message_cannot_connect_lgsw">パッケージ名が不一致のためLG SmartWorldに接続できません。</string>
+</resources>

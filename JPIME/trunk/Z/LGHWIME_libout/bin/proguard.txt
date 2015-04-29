@@ -1,0 +1,26 @@
+# view res/layout/ime_help_main.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/handwriting_ime.xml #generated:32
+# view res/layout/handwriting_ime.xml #generated:56
+# view res/layout/handwriting_ime.xml #generated:72
+-keep class com.lge.handwritingime.StrokeView { <init>(...); }
+
+# view res/xml/settings.xml #generated:41
+-keep class com.lge.handwritingime.preference.ColorPickerDialogPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.lge.handwritingime.preference.HandwritingPreferenceActivity { <init>(...); }
+
+# view res/xml/settings.xml #generated:26
+-keep class com.lge.handwritingime.preference.PenTypePreference { <init>(...); }
+
+# view res/xml/settings.xml #generated:62
+-keep class com.lge.handwritingime.preference.ScrollDelaySeekBarPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.lge.ime_help.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class jp.co.omronsoft.iwnnime.ml.InputMethodSwitcher { <init>(...); }
+

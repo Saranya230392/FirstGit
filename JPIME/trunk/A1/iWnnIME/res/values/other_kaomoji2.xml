@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2012 OMRON SOFTWARE Co., Ltd. All rights reserved
+-->
+<resources>
+    <string-array name="other_kaomoji2">
+        <item>@string/ti_kaomoji_category_trouble_txt</item>
+        <item>"(*_*)"</item>
+        <item>"(-.-)"</item>
+        <item>"(--;)"</item>
+        <item>"(^^;"</item>
+        <item>"(^-^;"</item>
+        <item>"(^_^;)"</item>
+        <item>"(^o^;)"</item>
+        <item>"(-_-;)"</item>
+        <item>"(>_&lt;)"</item>
+        <item>"f(^^;"</item>
+        <item>"f(^_^;"</item>
+        <item>"f(^_^)"</item>
+        <item>"X-&lt;"</item>
+        <item>"(((^^;)"</item>
+        <item>"(((^_^;)"</item>
+        <item>"(^^;)))"</item>
+        <item>"(^_^;)))"</item>
+        <item>"(-\u0022\u0022-;)"</item>
+        <item>"(*_*;"</item>
+        <item>"('';)"</item>
+        <item>"(;^_^A"</item>
+        <item>"(?_?)"</item>
+        <item>"(@_@;)"</item>
+        <item>"(^^;)"</item>
+        <item>"(^-^;)"</item>
+        <item>"(^^;)(;^^)"</item>
+        <item>"(^^;;"</item>
+        <item>"(^_^;"</item>
+        <item>"(^o^;"</item>
+        <item>"('_'?)"</item>
+        <item>"(~_~;)"</item>
+        <item>"(~O~;)"</item>
+        <item>"(~Q~;)"</item>
+        <item>"(>.&lt;)"</item>
+        <item>"(>_&lt;\u0022)"</item>
+        <item>"(>&lt;)"</item>
+        <item>"(>o&lt;\u0022)"</item>
+        <item>"(-o-)"</item>
+        <item>"(-o-;)"</item>
+        <item>"^^;"</item>
+        <item>"^-^;"</item>
+        <item>"^_^;"</item>
+        <item>"f(^^;)"</item>
+        <item>"f(^_^;)"</item>
+        <item>"orz"</item>
+        <item>@string/ti_kaomoji_category_angry_txt</item>
+        <item>"(-.-)"</item>
+        <item>"(-_-)"</item>
+        <item>":-("</item>
+        <item>":-&lt;"</item>
+        <item>"(-\u0022\u0022-;)"</item>
+        <item>"(-_-#)"</item>
+        <item>@string/ti_kaomoji_category_salutation_txt</item>
+        <item>"(^^)/"</item>
+        <item>"(^-^)/"</item>
+        <item>"(^_^)/"</item>
+        <item>"(^o^)/"</item>
+        <item>"m(__)m"</item>
+        <item>"(/_;)/~~"</item>
+        <item>"(;_;)/~~~"</item>
+        <item>"(^_^)/~~"</item>
+        <item>"(^3^)/"</item>
+        <item>"(-_-)/~~~"</item>
+        <item>"(--)//~"</item>
+        <item>"(@^^)/~~~"</item>
+        <item>"(^.^)/~~~"</item>
+        <item>"(^^)/~~~"</item>
+        <item>"(-_-)zzz"</item>
+        <item>"(+.+)(-.-)(__)..zzZZ"</item>
+        <item>"(>_&lt;)/~~"</item>
+        <item>"(-o-)/"</item>
+        <item>"_(..)_"</item>
+        <item>"_(._.)_"</item>
+        <item>"&lt;(_ _*)&gt;"</item>
+        <item>"m(._.)m"</item>
+    </string-array>
+</resources>
+

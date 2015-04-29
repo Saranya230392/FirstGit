@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<resources>
+    <string-array name="setting_portrait_entry">
+      <item>@string/ti_setting_lines_entry_1</item>
+      <item>@string/ti_setting_lines_entry_2</item>
+    </string-array>
+
+    <string-array name="setting_portrait_value">
+      <item>@string/setting_portrait_list_item_1</item>
+      <item>@string/setting_portrait_list_item_2</item>
+    </string-array>
+
+</resources>

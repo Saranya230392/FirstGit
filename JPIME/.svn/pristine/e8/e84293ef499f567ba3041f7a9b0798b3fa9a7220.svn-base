@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+      iwnn:keyWidth="@fraction/key_width_qwerty_1st"
+      iwnn:horizontalGap="0%p"
+      iwnn:verticalGap="0dip"
+      iwnn:keyHeight="@dimen/key_height_qwerty"
+    >
+
+    <Row>
+        <Key iwnn:codes="49" iwnn:keyLabel="1" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left"/>
+        <Key iwnn:codes="50" iwnn:keyLabel="2"/>
+        <Key iwnn:codes="51" iwnn:keyLabel="3"/>
+        <Key iwnn:codes="52" iwnn:keyLabel="4"/>
+        <Key iwnn:codes="53" iwnn:keyLabel="5"/>
+        <Key iwnn:codes="54" iwnn:keyLabel="6"/>
+        <Key iwnn:codes="55" iwnn:keyLabel="7"/>
+        <Key iwnn:codes="56" iwnn:keyLabel="8"/>
+        <Key iwnn:codes="57" iwnn:keyLabel="9"/>
+        <Key iwnn:codes="48" iwnn:keyLabel="0" iwnn:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="64" iwnn:keyLabel="\@" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left"/>
+        <Key iwnn:codes="35" iwnn:keyLabel="\#"/>
+        <Key iwnn:codes="37" iwnn:keyLabel="%"/>
+        <Key iwnn:codes="38" iwnn:keyLabel="&amp;"/>
+        <Key iwnn:codes="42" iwnn:keyLabel="*"/>
+        <Key iwnn:codes="43" iwnn:keyLabel="+"/>
+        <Key iwnn:codes="45" iwnn:keyLabel="-"/>
+        <Key iwnn:codes="61" iwnn:keyLabel="="/>
+        <Key iwnn:codes="33" iwnn:keyLabel="!" />
+        <Key iwnn:codes="63" iwnn:keyLabel="\?" iwnn:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row iwnn:horizontalGap="0%p">
+        <Key iwnn:codes="-1" iwnn:keyIconId="80" iwnn:keyIconPreviewId="480" iwnn:iconPreview="@drawable/key_qwerty_num_shift_1st_b"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd"
+             iwnn:isModifier="true" iwnn:isSticky="false" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="47" iwnn:keyLabel="/" />
+        <Key iwnn:codes="40" iwnn:keyLabel="("/>
+        <Key iwnn:codes="41" iwnn:keyLabel=")"/>
+        <Key iwnn:codes="58" iwnn:keyLabel=":"/>
+        <Key iwnn:codes="59" iwnn:keyLabel=";"/>
+        <Key iwnn:codes="126" iwnn:keyLabel="~" />
+        <Key iwnn:codes="94" iwnn:keyLabel="^" />
+        <Key iwnn:codes="-100" iwnn:keyIcon="@drawable/ime_keypad_icon_del" iwnn:iconPreview="@drawable/ime_keypad_icon_del"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd"
+             iwnn:keyEdgeFlags="right" iwnn:isRepeatable="true" iwnn:isSecondKey="true"
+             iwnn:keyboardImageKeyTop="key_del" iwnn:keyboardImageKeyPreview="key_del_b"/>
+    </Row>
+
+    <Row  iwnn:rowEdgeFlags="bottom" iwnn:horizontalGap="0%p">
+        <Key iwnn:codes="-230" iwnn:keyIconId="71" iwnn:keyIconPreviewId="466"
+             iwnn:popupKeyboard="@xml/popup_changelanguage"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_qwerty_keyboard_left" iwnn:isSecondKey="true"  />
+        <Key iwnn:codes="-106" iwnn:keyIconId="65" iwnn:keyIconPreviewId="465" iwnn:isPressHoldKey="true"
+             iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-426" iwnn:keyIcon="@drawable/ime_keypad_icon_kbd_small" iwnn:iconPreview="@drawable/ime_keypad_icon_kbd" iwnn:voiceIcon="@drawable/ime_keypad_icon_mic" iwnn:voiceIconPreview="@drawable/ime_keypad_input_icon_mic_normal"
+             iwnn:popupKeyboard="@xml/keyboard_functionkey_preview" iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="32" iwnn:keyWidth="@fraction/key_width_qwerty_space" iwnn:isRepeatable="true" iwnn:keyIcon="@drawable/ime_keypad_icon_space_large" iwnn:iconPreview="@drawable/ime_keypad_icon_space_large" />
+        <Key iwnn:codes="46,44" iwnn:keyIconId="115" iwnn:keyIconPreviewId="515" iwnn:popupKeyboard="@xml/popup_period_en" iwnn:isPressHoldKey="true"/>
+        <Key iwnn:codes="-218" iwnn:keyIcon="@drawable/ime_keypad_icon_left" iwnn:iconPreview="@drawable/ime_keypad_icon_left"
+             iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-217" iwnn:keyIcon="@drawable/ime_keypad_icon_right" iwnn:iconPreview="@drawable/ime_keypad_icon_right"
+             iwnn:isRepeatable="true" iwnn:isSecondKey="true"
+             iwnn:keyboardImageKeyTop="key_qwerty_right" iwnn:keyboardImageKeyPreview="key_qwerty_right_b"/>
+        <Key iwnn:codes="-101" iwnn:keyIcon="@drawable/ime_keypad_icon_enter_small" iwnn:iconPreview="@drawable/ime_keypad_icon_enter"
+             iwnn:keyWidth="@fraction/key_width_qwerty_2nd" iwnn:keyEdgeFlags="right" iwnn:isSecondKey="true"/>
+    </Row>
+</Keyboard>

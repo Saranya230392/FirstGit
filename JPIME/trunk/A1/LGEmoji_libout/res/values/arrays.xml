@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entryValues_bg_color">
+        <item>@string/emoji_pref_bg_color_white</item>
+        <item>@string/emoji_pref_bg_color_light_gray</item>
+        <item>@string/emoji_pref_bg_color_gray</item>
+        <item>@string/emoji_pref_bg_color_dark_gray</item>
+    </string-array>
+    <string-array name="entryValues_bg_color_value">
+        <item>@string/EMOJI_BG_COLOR_WHITE</item>
+        <item>@string/EMOJI_BG_COLOR_LIGHT_GRAY</item>
+        <item>@string/EMOJI_BG_COLOR_GRAY</item>
+        <item>@string/EMOJI_BG_COLOR_DARK_GRAY</item>
+    </string-array>
+    <string-array name="entryValues_convert_level">
+        <item>@string/emoji_pref_convert_level_common_noun</item>
+        <item>@string/emoji_pref_convert_level_noun</item>
+        <item>@string/emoji_pref_convert_level_noun_and_verb</item>
+        <item>@string/emoji_pref_convert_level_all</item>
+    </string-array>
+    <string-array name="entryValues_convert_level_value">
+        <item>@string/EMOJI_CONVERT_LEVEL_COMMON_NOUN</item>
+        <item>@string/EMOJI_CONVERT_LEVEL_NOUN</item>
+        <item>@string/EMOJI_CONVERT_LEVEL_NOUN_AND_VERB</item>
+        <item>@string/EMOJI_CONVERT_LEVEL_ALL</item>
+    </string-array>
+    <string-array name="entries_user_emoji_size">
+        <item>@string/EMOJI_PREF_USER_EMOJI_SIZE_SMALL</item>
+        <item>@string/EMOJI_PREF_USER_EMOJI_SIZE_MEDIUM</item>
+        <item>@string/EMOJI_PREF_USER_EMOJI_SIZE_LARGE</item>
+    </string-array>
+    <string-array name="entryValues_user_emoji_size_value">
+        <item>@string/EMOJI_PREF_USER_EMOJI_SIZE_VALUE_SMALL</item>
+        <item>@string/EMOJI_PREF_USER_EMOJI_SIZE_VALUE_MEDIUM</item>
+        <item>@string/EMOJI_PREF_USER_EMOJI_SIZE_VALUE_LARGE</item>
+    </string-array>
+
+</resources>

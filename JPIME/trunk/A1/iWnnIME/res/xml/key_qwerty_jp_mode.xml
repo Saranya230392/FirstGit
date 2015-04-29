@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<!--
+ Copyright (c) 2009 Sony Ericsson Mobile Communications AB. All rights reserved
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+     >
+  <switch>
+    <!-- Hiragana -->
+    <case iwnn:keyboardCondition="modeHiragana">
+      <Row-Key>
+        <Key iwnn:codes="-230"
+             iwnn:keyIcon="@drawable/key_mode_hira" iwnn:iconPreview="@drawable/key_mode_change_b"
+             iwnn:popupKeyboard="@xml/keyboard_switch_key_jp"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_qwerty_mode_change_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+
+    <!-- Full Alphabet -->
+    <case iwnn:keyboardCondition="modeFullAlpha">
+      <Row-Key>
+        <Key iwnn:codes="-230"
+             iwnn:keyIcon="@drawable/key_mode_full_alpha" iwnn:iconPreview="@drawable/key_mode_change_b"
+             iwnn:popupKeyboard="@xml/keyboard_switch_key_jp"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_qwerty_mode_change_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+
+    <!-- Full Number -->
+    <case iwnn:keyboardCondition="modeFullNum">
+      <Row-Key>
+        <Key iwnn:codes="-230"
+             iwnn:keyIcon="@drawable/key_mode_full_num" iwnn:iconPreview="@drawable/key_mode_change_b"
+             iwnn:popupKeyboard="@xml/keyboard_switch_key_jp"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_qwerty_mode_change_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true" />
+      </Row-Key>
+    </case>
+
+    <!-- Full Katakana -->
+    <case iwnn:keyboardCondition="modeFullKatakana">
+      <Row-Key>
+        <Key iwnn:codes="-230"
+             iwnn:keyIcon="@drawable/key_mode_full_kata" iwnn:iconPreview="@drawable/key_mode_change_b"
+             iwnn:popupKeyboard="@xml/keyboard_switch_key_jp"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_qwerty_mode_change_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+
+    <!-- Half Alphabet -->
+    <case iwnn:keyboardCondition="modeHalfAlpha">
+      <Row-Key>
+        <Key iwnn:codes="-230"
+             iwnn:keyIcon="@drawable/key_mode_half_alpha" iwnn:iconPreview="@drawable/key_mode_change_b"
+             iwnn:popupKeyboard="@xml/keyboard_switch_key_jp"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_qwerty_mode_change_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+
+    <!-- Half Number -->
+    <case iwnn:keyboardCondition="modeHalfNum">
+      <Row-Key>
+        <Key iwnn:codes="-230"
+             iwnn:keyIcon="@drawable/key_mode_half_num" iwnn:iconPreview="@drawable/key_mode_change_b"
+             iwnn:popupKeyboard="@xml/keyboard_switch_key_jp"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_qwerty_mode_change_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+
+    <!-- Half Katakana  -->
+    <case iwnn:keyboardCondition="modeHalfKatakana">
+      <Row-Key>
+        <Key iwnn:codes="-230"
+             iwnn:keyIcon="@drawable/key_mode_half_kata" iwnn:iconPreview="@drawable/key_mode_change_b"
+             iwnn:popupKeyboard="@xml/keyboard_switch_key_jp"
+             iwnn:horizontalGap="@fraction/keyboard_qwerty_row_horizontal_gap"
+             iwnn:keyWidth="@fraction/keyboard_qwerty_mode_change_keywidth"
+             iwnn:keyEdgeFlags="left" iwnn:isSecondKey="true"/>
+      </Row-Key>
+    </case>
+  </switch>
+</Keyboard>

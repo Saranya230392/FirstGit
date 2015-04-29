@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="hw_name">LG Handwriting Keyboard</string>
+    
+    <!-- Token for preference  -->
+    
+    <string name="auto_scroll_setting_category_title">AUTO-SCROLL SETTING</string>
+    <string name="auto_scroll_title">Auto-scroll</string>
+    <string name="auto_scroll_input_delay_title">Auto-scroll input delay</string>
+    <string name="auto_scroll_input_delay_popup_text">Input delay</string>
+    <string name="auto_scroll_input_delay_popup_text_sec">sec</string>
+    <string name="auto_scroll_area_width_title">Auto-scroll area width</string>
+    <string name="area_width_type_wide">Wide</string>
+    <string name="area_width_type_normal">Normal</string>
+    <string name="area_width_type_thin">Narrow</string>
+
+    <string name="language_setting_popup_title_language">Input mode</string>
+    <string name="language_setting_popup_title_active_mode">Handwriting input field</string>
+    <string name="candidate_popup_button_cancel">Cancel</string>
+    <string name="candidate_popup_button_clear">Clear</string>
+
+    <string name="handwriting_pref_category_title">PEN SETTINGS</string>
+    <string name="handwriting_pref_title_pen_type">Pen type</string>
+    <string name="handwriting_pref_title_pen_color">Pen color</string>
+    <string name="button_enter_ok">OK</string>    
+    
+	<!-- Help menu -->
+    <string name="title_help_activity">Help</string>
+    <string name="ime_guide_previous_NOMAL">Previous</string>
+    <string name="ime_guide_next_NOMAL">Next</string>
+    <string name="sp_done_NORMAL">Done</string>
+
+    <string name="ime_guide_description_input_language">Tap &lt;img src=help_ime_keypad_help_btn_image_01.png&gt; to enter text in English. Touch and hold &lt;img src=help_ime_keypad_help_btn_image_01.png&gt; to select other languages.</string>
+    <string name="ime_guide_description_numeric_and_symbol">Tap &lt;img src=help_ime_keypad_help_btn_image_02.png&gt; to go to numeric keyboard. Double tap &lt;img src=help_ime_keypad_help_btn_image_02.png&gt; to go to symbol table. Swipe right to go directly to symbol table.</string>
+	<string name="ime_guide_description_use_function_key">Touch and hold &lt;img src=help_ime_keypad_help_btn_image_03.png&gt; to use various functions.&lt;br&gt;
+		&#160;1. Voice input&lt;br&gt;
+		&#160;2. Keyboard type (QWERTY / 10-key)&lt;br&gt;
+		&#160;3. Handwriting&lt;br&gt;
+		&#160;4. Split keyboard, One-handed operation&lt;br&gt;
+		&#160;5. Clip tray&lt;br&gt;
+		&#160;6. Settings
+	    </string>    
+    <string name="ime_guide_description_split_keypad">Tap &lt;img src=help_ime_keypad_help_btn_image_05.png&gt; in the function pop-up to use the split keyboard in landscape mode. Each half of the keyboard withdraws to the left and right of the screen. To go back to the normal keyboard, tap &lt;img src=help_ime_keypad_help_btn_image_04.png&gt; in the function pop-up.</string>
+    <string name="ime_guide_description_onehand_operation">Tap &lt;img src=help_ime_keypad_help_btn_image_06.png&gt; in the function pop-up to use the One-handed operation in portrait mode. Tap ARROW to move the keyboard to the left or right.</string>
+    
+    <string name="ime_guide_title_input_language">Input language</string>
+    <string name="ime_guide_title_numeric_and_symbol">Numeric and symbol</string>
+    <string name="ime_guide_title_use_function_key">Function key</string>    
+    <string name="ime_guide_title_split_keypad">Split keyboard</string>
+    <string name="ime_guide_title_onehand_operation">One-handed operation</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008-2013  OMRON SOFTWARE Co., Ltd.  All Rights Reserved.
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwnn="http://schemas.android.com/apk/res/jp.co.omronsoft.iwnnime.ml"
+    iwnn:keyWidth="@fraction/key_width_12key_1st_split"
+    iwnn:horizontalGap="@dimen/keyboard_12key_horizontal_split_gap"
+    iwnn:verticalGap="@dimen/keyboard_12key_vertical_split_gap"
+    iwnn:keyHeight="@dimen/key_height_12key_split"
+    >
+
+    <Row>
+        <Key iwnn:codes="-412" iwnn:keyLabel=" " iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_split_left" iwnn:isSecondKey="true" iwnn:showPreview="false" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+        <Key iwnn:codes="-310" iwnn:keyLabel=" "   iwnn:isSecondKey="true" iwnn:showPreview="false"/>
+        <Key iwnn:codes="-417" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_up" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_up" iwnn:isRepeatable="true"/>
+        <Key iwnn:codes="-417" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_up" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_up" iwnn:isRepeatable="true"
+             iwnn:horizontalGap="@fraction/key_width_split_gap" iwnn:isSplitKey="true"/>
+        <Key iwnn:codes="-310" iwnn:keyLabel=" "   iwnn:isSecondKey="true" iwnn:showPreview="false"/>
+        <Key iwnn:codes="-214" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_delete" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_delete"
+             iwnn:isRepeatable="true" iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-422" iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_split_left" iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+        <Key iwnn:codes="-419" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_left" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_left" iwnn:isRepeatable="true" />
+        <Key iwnn:codes="-421"   iwnn:isSecondKey="true"/>
+        <Key iwnn:codes="-421" iwnn:horizontalGap="@fraction/key_width_split_gap"  iwnn:isSecondKey="true" iwnn:isSplitKey="true"/>
+        <Key iwnn:codes="-420" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_right" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_right" iwnn:isRepeatable="true"/>
+        <Key iwnn:codes="-310" iwnn:keyLabel=" "   iwnn:isSecondKey="true" iwnn:showPreview="false" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+    </Row>
+
+    <Row>
+        <Key iwnn:codes="-310" iwnn:keyLabel=" " iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_split_left" iwnn:isSecondKey="true" iwnn:showPreview="false" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+        <Key iwnn:codes="-427" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_home" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_home" iwnn:isSecondKey="true" iwnn:isRepeatable="true" />
+        <Key iwnn:codes="-418" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_down" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_down" iwnn:isRepeatable="true"/>
+        <Key iwnn:codes="-418" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_down" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_down" iwnn:isRepeatable="true"
+             iwnn:horizontalGap="@fraction/key_width_split_gap" iwnn:isSplitKey="true"/>
+        <Key iwnn:codes="-428" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_4way_end" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_4way_end" iwnn:isSecondKey="true" iwnn:isRepeatable="true" />
+        <Key iwnn:codes="-215" iwnn:isRepeatable="true"  iwnn:keyIcon="@drawable/ime_keypad_icon_jp_space" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_space" iwnn:keyEdgeFlags="right"
+              iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+    </Row>
+
+    <Row iwnn:rowEdgeFlags="bottom">
+        <Key iwnn:codes="-429"
+             iwnn:keyEdgeFlags="left" iwnn:horizontalGap="@dimen/padding_keyboard_split_left" iwnn:isSecondKey="true" iwnn:showPreview="true" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+        <Key iwnn:codes="-423" iwnn:keyIcon="@drawable/key_copy" iwnn:iconPreview="@drawable/key_copy_b"/>
+        <Key iwnn:codes="-424" iwnn:keyIcon="@drawable/key_paste" iwnn:iconPreview="@drawable/key_paste_b"/>
+        <Key iwnn:codes="-424" iwnn:keyIcon="@drawable/key_paste" iwnn:iconPreview="@drawable/key_paste_b" iwnn:horizontalGap="@fraction/key_width_split_gap" iwnn:isSplitKey="true"/>
+        <Key iwnn:codes="-425" iwnn:keyIcon="@drawable/key_cut" iwnn:iconPreview="@drawable/key_cut_b"/>
+        <Key iwnn:codes="-216" iwnn:keyIcon="@drawable/ime_keypad_icon_jp_enter" iwnn:iconPreview="@drawable/ime_keypad_icon_jp_enter"
+             iwnn:keyEdgeFlags="right"  iwnn:isSecondKey="true" iwnn:keyWidth="@fraction/key_width_12key_2nd_split"/>
+    </Row>
+</Keyboard>
