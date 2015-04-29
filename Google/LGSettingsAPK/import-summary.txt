@@ -1,0 +1,95 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* Android.mk
+* MODULE_LICENSE_APACHE2
+* NOTICE
+* README
+* TMSPackageName.txt
+* ant.properties
+* build.xml
+* config\
+* config\Android.mk
+* config\setting_features.xml
+* custom_rules.xml
+* eclipse\
+* eclipse\.classpath
+* eclipse\.project
+* eclipse\project.properties
+* external-libs\
+* external-libs\android.policy_intermediates.jar
+* external-libs\bouncycastle_intermediates.jar
+* external-libs\com.lge.frameworks_intermediates.jar
+* external-libs\com.lge.mdm_intermediates.jar
+* external-libs\com.lge.policy_intermediates.jar
+* external-libs\com.lge.services_intermediates.jar
+* external-libs\com.lge.sui.widget.apk
+* external-libs\com.lge.sui_intermediates.jar
+* external-libs\conscrypt_intermediates.jar
+* external-libs\core-libart_intermediates.jar
+* external-libs\framework_intermediates.jar
+* external-libs\guava_intermediates.jar
+* external-libs\lge-res.apk
+* external-libs\telephony-common_intermediates.jar
+* overlay\
+* overlay\mr1\
+* overlay\mr1\external-libs\
+* overlay\mr1\external-libs\framework_intermediates.jar
+* overlay\mr1\external-libs\telephony-common_intermediates.jar
+* proguard-project.txt
+* proguard.flags
+* security.properties
+* version.properties
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\android-support-v13.jar => app\libs\android-support-v13.jar
+* libs\maps.jar => app\libs\maps.jar
+* libs\zxing-2.1-core.jar => app\libs\zxing-2.1-core.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\android\location\XT\IXTSrv.aidl => app\src\main\aidl\com\android\location\XT\IXTSrv.aidl
+* src\com\android\location\XT\IXTSrvCb.aidl => app\src\main\aidl\com\android\location\XT\IXTSrvCb.aidl
+* src\com\hy\system\fontserver\IFontServerRemoteService.aidl => app\src\main\aidl\com\hy\system\fontserver\IFontServerRemoteService.aidl
+* src\com\lge\nfclock\service\common\LockResultType.aidl => app\src\main\aidl\com\lge\nfclock\service\common\LockResultType.aidl
+* src\com\lge\nfclock\service\common\RemoteLockStatusType.aidl => app\src\main\aidl\com\lge\nfclock\service\common\RemoteLockStatusType.aidl
+* src\com\lge\nfclock\service\common\UserLockStatusType.aidl => app\src\main\aidl\com\lge\nfclock\service\common\UserLockStatusType.aidl
+* src\com\lge\nfclock\service\INfcSettingRemoteIF.aidl => app\src\main\aidl\com\lge\nfclock\service\INfcSettingRemoteIF.aidl
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

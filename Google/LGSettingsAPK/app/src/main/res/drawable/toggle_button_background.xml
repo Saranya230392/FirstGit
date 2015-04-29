@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- checked state -->
+    <!-- [S][12.05.24][yj1.cho] Add toggle button focus -->
+    <item    android:state_focused="true"
+            android:state_checked="true"
+             android:state_enabled="false"
+             android:drawable="@drawable/common_btn_default_ex"/>
+
+    <item    android:state_focused="true"
+            android:state_checked="false"
+             android:state_enabled="false"
+             android:drawable="@drawable/common_btn_default_ex"/>
+
+    <item    android:state_focused="true"
+            android:state_checked="true"
+            android:drawable="@drawable/common_btn_selected_ex"/>
+
+    <item     android:state_focused="true"
+            android:drawable="@drawable/common_btn_selected_ex"/>
+    <!-- [E][12.05.24][yj1.cho] Add toggle button focus -->
+    <item    android:state_checked="true"
+             android:state_enabled="false"
+             android:drawable="@drawable/common_btn_focus_enabled"/>
+    <item    android:state_checked="false"
+             android:state_enabled="false"
+             android:drawable="@drawable/common_btn_unfocus_disabled"/>
+
+    <item    android:state_checked="true"
+            android:drawable="@drawable/common_btn_selected_ex"/>
+    <item android:drawable="@drawable/common_btn_default_ex"/>
+</selector>

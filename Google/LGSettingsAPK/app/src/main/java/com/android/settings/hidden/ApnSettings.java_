@@ -1,0 +1,670 @@
+/*
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.android.settings.hidden;
+
+import android.app.Dialog;
+import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
+import android.content.ContentResolver;
+import android.content.ContentUris;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
+// LGE_CHANGE_S, [LGE_DATA_US_010] d3sw1-data@lge.com, 2012-02-07 <Hide Entitlement Type FOR ATT>
+import android.os.SystemProperties;
+// LGE_CHANGE_E, [LGE_DATA_US_010] d3sw1-data@lge.com, 2012-02-07 <Hide Entitlement Type FOR ATT>
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceGroup;
+import android.preference.PreferenceScreen;
+import android.provider.Telephony;
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.android.internal.telephony.Phone;
+import com.android.internal.telephony.PhoneConstants; // Modified JB 4.2 MobileNetwork System -> Global
+import com.android.internal.telephony.TelephonyIntents;
+import com.android.internal.telephony.TelephonyProperties;
+import com.android.settings.lgesetting.Config.Config;
+
+import java.util.ArrayList;
+
+/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+import android.text.TextUtils;
+import com.android.internal.telephony.PhoneFactory;
+import android.net.ConnectivityManager;
+/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+import com.android.settings.R;
+
+import com.lge.provider.TelephonyProxy;
+ 
+public class ApnSettings extends PreferenceActivity implements
+        Preference.OnPreferenceChangeListener {
+    static final String TAG = "ApnSettings";
+
+    public static final String EXTRA_POSITION = "position";
+    public static final String RESTORE_CARRIERS_URI =
+        "content://telephony/carriers/restore";
+    public static final String PREFERRED_APN_URI =
+        "content://telephony/carriers/preferapn";
+
+    public static final String APN_ID = "apn_id";
+
+    private static final int ID_INDEX = 0;
+    private static final int NAME_INDEX = 1;
+    private static final int APN_INDEX = 2;
+    private static final int TYPES_INDEX = 3;
+// LGE_CHANGE_S, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+	private static final int PROTOCOL_INDEX = 4;
+// LGE_CHANGE_E, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+
+    private static final int MENU_NEW = Menu.FIRST;
+    private static final int MENU_RESTORE = Menu.FIRST + 1;
+
+    private static final int EVENT_RESTORE_DEFAULTAPN_START = 1;
+    private static final int EVENT_RESTORE_DEFAULTAPN_COMPLETE = 2;
+
+    private static final int DIALOG_RESTORE_DEFAULTAPN = 1001;
+
+    private static final Uri DEFAULTAPN_URI = Uri.parse(RESTORE_CARRIERS_URI);
+    private static final Uri PREFERAPN_URI = Uri.parse(PREFERRED_APN_URI);
+
+    private static boolean mRestoreDefaultApnMode;
+
+    private RestoreApnUiHandler mRestoreApnUiHandler;
+    private RestoreApnProcessHandler mRestoreApnProcessHandler;
+
+    private String mSelectedKey;
+
+    private IntentFilter mMobileStateFilter;
+	public static final String SKT_MCCMNC      = "45005";
+	public static final String KT_MCCMNC      = "45008";
+  
+    /* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+    private int mTetheredSate = 1;
+    /* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */    
+    
+    protected TelephonyManager mPhone;
+    protected PhoneStateListener mPhoneStateListener; // kerry - for dcm req
+    boolean csActive = false;
+
+    private final BroadcastReceiver mMobileStateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals(
+                    TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED)) {
+				// Modified JB 4.2 MobileNetwork System -> Global
+				//Phone.DataState state = getMobileDataState(intent);
+				PhoneConstants.DataState state = getMobileDataState(intent);
+                switch (state) {
+                case CONNECTED:
+                    if (!mRestoreDefaultApnMode) {
+                        fillList();
+                    } else {
+                        showDialog(DIALOG_RESTORE_DEFAULTAPN);
+                    }
+                    break;
+				default:
+					break;
+                }
+            }
+            /* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+            else if (intent.getAction().equals(ConnectivityManager.ACTION_TETHER_STATE_CHANGED)) {
+    	    	//int State = intent.getIntExtra (ConnectivityManager.TETHERED_STATE, 0);
+	            ArrayList<String> availableList = intent.getStringArrayListExtra(
+	                    ConnectivityManager.EXTRA_AVAILABLE_TETHER);
+	            ArrayList<String> activeList = intent.getStringArrayListExtra(
+	                    ConnectivityManager.EXTRA_ACTIVE_TETHER);
+	            ArrayList<String> erroredList = intent.getStringArrayListExtra(
+	                    ConnectivityManager.EXTRA_ERRORED_TETHER);
+				//if( State == 0 || State == 1 ){
+	      if (null != activeList) {     
+					if (activeList.size() > 0) {		
+						if ( "DCM".equals(Config.getOperator()) )
+	    			    {
+	    			    	mTetheredSate = 0; // kerry - DCM requirements block apn change while tethering
+						}
+					} else {
+								mTetheredSate = 1;
+					}
+				}
+				fillList();
+			}
+			/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+		}
+	};
+	
+	// Modified JB 4.2 MobileNetwork System -> Global +
+	/*
+	private static Phone.DataState getMobileDataState(Intent intent) {
+		String str = intent.getStringExtra(Phone.STATE_KEY);
+		if (str != null) {
+			return Enum.valueOf(Phone.DataState.class, str);
+		} else {
+			return Phone.DataState.DISCONNECTED;
+		}
+	} */
+    private static PhoneConstants.DataState getMobileDataState(Intent intent) {
+        String str = intent.getStringExtra(PhoneConstants.STATE_KEY);
+        if (str != null) {
+            return Enum.valueOf(PhoneConstants.DataState.class, str);
+        } else {
+            return PhoneConstants.DataState.DISCONNECTED;
+        }
+    }
+	// Modified JB 4.2 MobileNetwork System -> Global -
+
+    @Override
+    protected void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+
+        addPreferencesFromResource(R.xml.apn_settings);
+        getListView().setItemsCanFocus(true);
+
+        mMobileStateFilter = new IntentFilter(
+                TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED);
+        mMobileStateFilter.addAction(ConnectivityManager.ACTION_TETHER_STATE_CHANGED);
+        
+        // kerry - for dcm req start
+        mPhoneStateListener = new PhoneStateListener() {
+            @Override
+            public void onCallStateChanged(int state, String incomingNumber) {
+                if ( "DCM".equals(Config.getOperator()) ) {
+                    if (state != TelephonyManager.CALL_STATE_IDLE) {
+                    	csActive = true;
+                    } else {
+                    	csActive = false;
+                    }
+                    fillList();
+                }
+            }
+
+            @Override
+            public void onDataActivity(int direction) {
+            }
+        };
+        
+        mPhone = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+        mPhone.listen(mPhoneStateListener, PhoneStateListener.LISTEN_SERVICE_STATE
+                | PhoneStateListener.LISTEN_DATA_CONNECTION_STATE
+                | PhoneStateListener.LISTEN_CALL_STATE);
+        // kerry - for dcm req end
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        registerReceiver(mMobileStateReceiver, mMobileStateFilter);
+        
+        if ("DCM".equals(Config.getOperator())
+                && mPhone.getCallState() != TelephonyManager.CALL_STATE_IDLE) {
+        	csActive = true;
+        } else {
+        	csActive = false;    	
+        }        
+    
+        if (!mRestoreDefaultApnMode) {
+            fillList();
+        } else {
+            showDialog(DIALOG_RESTORE_DEFAULTAPN);
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        
+        unregisterReceiver(mMobileStateReceiver);
+    }
+
+    private void fillList() {
+
+// LGE_CHANGE_S, [Data_Patch_019] [data-lab2@lge.com], 2011-04-26 <Enhanced AutoProfile>
+
+		String where = null;
+
+		String operator = android.os.SystemProperties.get(TelephonyProperties.PROPERTY_ICC_OPERATOR_NUMERIC, "");
+		String autoprofileKey = TelephonyProxy.Carriers.getAutoProfileKey(operator);
+			
+		if (TelephonyProxy.Carriers.isAutoProfileNeeded())
+		{
+			Log.d(TAG, "Searching profiles which numeric is " + operator + " and extraid is " + autoprofileKey);
+			where = "numeric = '" + operator + "' and " + "extraid = '" + autoprofileKey + "'";
+		}		
+		else
+		{
+			// For Multiple Numeric and UseCreated Profiles including OTA updates.
+			if (TelephonyProxy.Carriers.isMultipleNumericOperator() && TelephonyProxy.Carriers.isAcceptableSIM(operator, autoprofileKey))
+			{
+				Log.d(TAG, "Searching profiles which numeric is " + operator + " and extraid is " + autoprofileKey);
+				where = "(numeric = '" + operator + "' and " + "extraid = '" + autoprofileKey + "')" + " or " + TelephonyProxy.Carriers.USERCREATESETTING + " >= '1'";
+			}			
+			else
+			{	
+				Log.d(TAG, "Searching profiles which numeric is " + TelephonyProxy.Carriers.getNumeric() + " and extraid is " + TelephonyProxy.Carriers.getOpVersionExtraID());
+				where = "(numeric = '" + TelephonyProxy.Carriers.getNumeric() + "' and " + "extraid = '" + TelephonyProxy.Carriers.getOpVersionExtraID() + "')" + " or " + TelephonyProxy.Carriers.USERCREATESETTING + " >= '1'";
+			}
+		}		
+		if ( "SKT".equals(Config.getOperator())) {
+			String strAttach = setSKTSBSMAPNSkipDisplayFilter(SKT_MCCMNC);
+			if (strAttach != null) {
+				where = where + strAttach;
+			}
+		}
+	
+
+// LGE_CHANGE_S, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+        Cursor cursor = getContentResolver().query(Telephony.Carriers.CONTENT_URI, new String[] {
+                "_id", "name", "apn", "type", "protocol"}, where, null,
+                null);
+// LGE_CHANGE_E, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+
+// LGE_CHANGE_E, [Data_Patch_019] [data-lab2@lge.com], 2011-04-26 <Enhanced AutoProfile>
+
+        PreferenceGroup apnList = (PreferenceGroup)findPreference("apn_list");
+        apnList.removeAll();
+
+        ArrayList<Preference> mmsApnList = new ArrayList<Preference>();
+    	/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+    	if (mTetheredSate == 0) {
+    		mSelectedKey = null;
+    	} else { mSelectedKey = getSelectedApnKey(); }
+    	
+    	/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+        
+        mSelectedKey = getSelectedApnKey();
+		if (null != cursor) {
+		try {
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            String name = cursor.getString(NAME_INDEX);
+            String apn = cursor.getString(APN_INDEX);
+            String key = cursor.getString(ID_INDEX);
+            String type = cursor.getString(TYPES_INDEX);
+
+// LGE_CHANGE_S, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+			String protocol = cursor.getString(PROTOCOL_INDEX);
+// LGE_CHANGE_E, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+
+            ApnPreference pref = new ApnPreference(this);
+
+            pref.setKey(key);
+			if ("VZW".equals(Config.getOperator())) {
+			pref.setTitle(apn);
+			
+			if (mTetheredSate == 0) {
+    	    	pref.setUnChecked();
+    	    }
+			if ("VZWADMIN".equalsIgnoreCase(apn)) {
+				pref.setSummary("ADMINISTRATIVE PDN APN");
+			} else if ("VZWAPP".equalsIgnoreCase(apn)) {
+				pref.setSummary("APPLICATION PDN APN");
+			} else if ("VZWIMS".equalsIgnoreCase(apn)) {
+				pref.setSummary("IMS PDN APN");
+			} else if ("VZWINTERNET".equalsIgnoreCase(apn)) {
+				pref.setSummary("INTERNET PDN APN");
+			} else {
+				pref.setSummary(apn);
+			}
+			} else {
+            pref.setTitle(name);
+            pref.setSummary(apn);
+			}
+            pref.setPersistent(false);
+            pref.setOnPreferenceChangeListener(this);
+// LGE_CHANGE_S, [Data_Patch_019] [data-lab2@lge.com], 2011-04-26 <Enhanced AutoProfile>
+			//boolean selectable = ((type == null) || !type.equals("mms"));
+			
+			boolean selectable = ( (type == null) || (type.equals("")) || type.contains("default") );
+//LGE_CHANGE_E, [Data_Patch_019] [data-lab2@lge.com], 2011-04-26 <Enhanced AutoProfile>
+
+// LGE_CHANGE_S, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+			if (selectable && SystemProperties.getBoolean("net.telephony.dualstack", false))
+			{
+				if ("IPV6".equals(protocol)) { selectable = false; }
+			}
+// LGE_CHANGE_E, [Data_Patch_102] [data-lab2@lge.com], 2011-04-26 <ApnSetting UI Limitation for DualStack with 2 PDPs>
+			
+		
+            pref.setSelectable(selectable);
+			           String strSimOperator = SystemProperties.get(TelephonyProperties.PROPERTY_ICC_OPERATOR_NUMERIC);
+            boolean isRoaming = "true".equals(SystemProperties.get(TelephonyProperties.PROPERTY_OPERATOR_ISROAMING));
+			boolean lockable = false;
+				if ("SKT".equals(Config.getOperator()) && SKT_MCCMNC.equals(strSimOperator)) {
+					if (!isRoaming && ("lte.sktelecom.com".equals(apn))) {
+						lockable = true;
+					} else if (!isRoaming && ("web.sktelecom.com".equals(apn))) {
+						lockable = true;
+					} else if (isRoaming && ("roaming.sktelecom.com".equals(apn))) {
+						lockable = true;
+					}
+				} else if ("KT".equals(Config.getOperator()) && KT_MCCMNC.equals(strSimOperator)) {
+					if (("lte.ktfwing.com".equals(apn)) || ("alwayson-r6.ktfwing.com".equals(apn))) {
+						lockable = true;
+					}
+				} else if ("LGU".equals(Config.getOperator())) {
+					Log.d(TAG, "apn" + apn);
+					if (isRoaming) {
+						if (("wroaming.lguplus.co.kr".equals(apn))) {
+							lockable = true;
+						} else if ("internet.lguplus.co.kr".equals(apn)) {
+							lockable = true;
+							selectable = false;
+							pref.setSelectable(selectable);
+						}
+					} else {
+						if (("internet.lguplus.co.kr".equals(apn))) {
+							lockable = true;
+						} else if ("wroaming.lguplus.co.kr".equals(apn)) {
+							lockable = true;
+							selectable = false;
+							pref.setSelectable(selectable);
+						}
+					}
+				}
+            	pref.setLockable(lockable);
+/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+    	    if (mTetheredSate == 0) {
+    	    	pref.setUnChecked();
+    	    }
+/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+            Log.d(TAG, "mSelectedKey = " + mSelectedKey + "selectable = " + selectable + "type = " + type + "key = " + key);
+            if (selectable) {
+                if ((mSelectedKey != null) && mSelectedKey.equals(key)) {
+                    pref.setChecked();
+                }
+/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+                if (mTetheredSate == 0 || true == csActive) { pref.setEnabled(false); }
+/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+                
+                apnList.addPreference(pref);
+            } else {
+/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+                if (mTetheredSate == 0 || true == csActive) { pref.setEnabled(false); }
+/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+// LGE_CHANGE_S, [LGE_DATA_US_010] d3sw1-data@lge.com, 2012-02-07 <Hide Entitlement Type FOR ATT>
+        if ("ATT".equals(Config.getOperator())) {
+                    if ((type != null) && (!type.equals("entitlement")))
+                        { mmsApnList.add(pref); }
+		}
+		else
+// LGE_CHANGE_E, [LGE_DATA_US_010] d3sw1-data@lge.com, 2012-02-07 <Hide Entitlement Type FOR ATT>
+               {  mmsApnList.add(pref); }
+            }
+            cursor.moveToNext();
+        }
+		} catch (Exception e) {
+			// TODO: handle exception
+			Log.e("ApnSettings",
+						" An error occurred  on fillList : "
+								+ e.getMessage());
+		} finally {
+        	cursor.close();
+		}
+      }
+        for (Preference preference : mmsApnList) {
+            apnList.addPreference(preference);
+        }
+    }
+
+/*    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        menu.add(0, MENU_NEW, 0,
+                getResources().getString(R.string.menu_new))
+                .setIcon(android.R.drawable.ic_menu_add);
+        menu.add(0, MENU_RESTORE, 0,
+                getResources().getString(R.string.menu_restore))
+                .setIcon(android.R.drawable.ic_menu_upload);
+        return true;
+    }
+*/
+
+/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+    //public boolean onCreateOptionsMenu(Menu menu) {
+        //super.onCreateOptionsMenu(menu);
+        super.onPrepareOptionsMenu(menu);
+        
+        menu.clear();
+        if (mTetheredSate == 1) {
+/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+	        menu.add(0, MENU_NEW, 0,
+	                getResources().getString(R.string.menu_new))
+	                .setIcon(android.R.drawable.ic_menu_add);
+	        menu.add(0, MENU_RESTORE, 0,
+	                getResources().getString(R.string.menu_restore))
+	                .setIcon(android.R.drawable.ic_menu_upload);
+/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+	}
+/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+        return true;
+    }    
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+    	if (mTetheredSate == 1) {
+    		/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */    	
+    		switch (item.getItemId()) {
+    		case MENU_NEW:
+    			addNewApn();
+    			return true;
+
+    		case MENU_RESTORE:
+    			restoreDefaultApn();
+    			return true;
+			default:
+				break;
+    		}
+    		/* LGE_CHANGE_S, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */
+    	}
+    	/* LGE_CHANGE_E, donguk.ki@lge.com, 2011-04-11,<disable apn menu during tethering> */               
+    	return super.onOptionsItemSelected(item);
+    }
+
+    private void addNewApn() {
+    	Log.d(TAG, "newapn");
+        startActivity(new Intent(/*Intent.ACTION_INSERT*/"com.android.hidden.ACTION_INSERT", Telephony.Carriers.CONTENT_URI));
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        int pos = Integer.parseInt(preference.getKey());
+        Uri url = ContentUris.withAppendedId(Telephony.Carriers.CONTENT_URI, pos);
+        if ("KR".equals(Config.getCountry()))
+        {
+			if (!((ApnPreference)preference).getLockable())
+        	{ startActivity(new Intent(Intent.ACTION_EDIT, url)); }
+        } else {
+        	Log.d(TAG, "onPreferenceTreeClick");
+            startActivity(new Intent(/*Intent.ACTION_EDIT*/"com.android.hidden.ACTION_EDIT", url));
+        }
+        return true;
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        Log.d(TAG, "onPreferenceChange(): Preference - " + preference
+                + ", newValue - " + newValue + ", newValue type - "
+                + newValue.getClass());
+        if (newValue instanceof String) {
+            setSelectedApnKey((String)newValue);
+        }
+
+        return true;
+    }
+
+    private void setSelectedApnKey(String key) {
+        mSelectedKey = key;
+        ContentResolver resolver = getContentResolver();
+
+        ContentValues values = new ContentValues();
+        values.put(APN_ID, mSelectedKey);
+        resolver.update(PREFERAPN_URI, values, null, null);
+    }
+
+    private String getSelectedApnKey() {
+        String key = null;
+
+        Cursor cursor = getContentResolver().query(PREFERAPN_URI, new String[] {"_id"},
+                null, null, Telephony.Carriers.DEFAULT_SORT_ORDER);
+        
+        if (cursor != null) { // 120103 WBT
+		  try {
+        	if (cursor.getCount() > 0) {
+                cursor.moveToFirst();
+                key = cursor.getString(ID_INDEX);
+            }
+		  } catch (Exception e) {
+			// TODO: handle exception
+			Log.e("ApnSettings",
+						" An error occurred  on getSelectedApnKey : "
+								+ e.getMessage());
+		  } finally {
+            cursor.close();
+		  }	
+        }
+        
+        return key;
+    }
+
+    private boolean restoreDefaultApn() {
+        showDialog(DIALOG_RESTORE_DEFAULTAPN);
+        mRestoreDefaultApnMode = true;
+
+        if (mRestoreApnUiHandler == null) {
+            mRestoreApnUiHandler = new RestoreApnUiHandler();
+        }
+
+        if (mRestoreApnProcessHandler == null) {
+            HandlerThread restoreDefaultApnThread = new HandlerThread(
+                    "Restore default APN Handler: Process Thread");
+            restoreDefaultApnThread.start();
+            
+            if (null != restoreDefaultApnThread.getLooper()) {
+                mRestoreApnProcessHandler = new RestoreApnProcessHandler(
+                    restoreDefaultApnThread.getLooper(), mRestoreApnUiHandler);
+            } // 120103 WBT
+        }
+			if (mRestoreApnProcessHandler != null)
+        	{ mRestoreApnProcessHandler.sendEmptyMessage(EVENT_RESTORE_DEFAULTAPN_START); }
+        return true;
+    }
+
+    private class RestoreApnUiHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case EVENT_RESTORE_DEFAULTAPN_COMPLETE:
+                    fillList();
+                    if (getPreferenceScreen() != null)
+                        { getPreferenceScreen().setEnabled(true); }
+                    mRestoreDefaultApnMode = false;
+                    dismissDialog(DIALOG_RESTORE_DEFAULTAPN);
+                    Toast.makeText(
+                        ApnSettings.this,
+                        getResources().getString(
+                                R.string.restore_default_apn_completed),
+                        Toast.LENGTH_LONG).show();
+                    break;
+				default:
+					break;
+            }
+        }
+    }
+
+    private class RestoreApnProcessHandler extends Handler {
+        private Handler mRestoreApnUiHandler;
+
+        public RestoreApnProcessHandler(Looper looper, Handler restoreApnUiHandler) {
+            super(looper);
+            this.mRestoreApnUiHandler = restoreApnUiHandler;
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case EVENT_RESTORE_DEFAULTAPN_START:
+                    ContentResolver resolver = getContentResolver();
+                    resolver.delete(DEFAULTAPN_URI, null, null);                    
+                    mRestoreApnUiHandler
+                        .sendEmptyMessage(EVENT_RESTORE_DEFAULTAPN_COMPLETE);
+                    break;
+				default:
+					break;
+            }
+        }
+    }
+
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        if (id == DIALOG_RESTORE_DEFAULTAPN) {
+            ProgressDialog dialog = new ProgressDialog(this);
+            dialog.setMessage(getResources().getString(R.string.restore_default_apn));
+            dialog.setCancelable(false);
+            return dialog;
+        }
+        return null;
+    }
+
+    @Override
+    protected void onPrepareDialog(int id, Dialog dialog) {
+        if (id == DIALOG_RESTORE_DEFAULTAPN) {
+            if (getPreferenceScreen() != null)
+                { getPreferenceScreen().setEnabled(false); }
+        }
+    }
+    private String setSKTSBSMAPNSkipDisplayFilter(String strOperator) {
+		String strAttach = null;
+
+		String strSimOperator = SystemProperties.get(TelephonyProperties.PROPERTY_ICC_OPERATOR_NUMERIC);
+		Log.d(TAG, "[ApnSettings] fillList strSimOperator :" + strSimOperator);
+
+		if (strSimOperator.equals(strOperator)) {
+			boolean isRoaming = "true".equals(SystemProperties.get(TelephonyProperties.PROPERTY_OPERATOR_ISROAMING));
+			Log.d(TAG, "[ApnSettings] fillList isRoaming :" + isRoaming);
+
+
+
+			if (isRoaming) {
+				strAttach = " AND " + "apn !=\"" + "lte.sktelecom.com" + "\"";
+				strAttach += " AND " + "apn !=\"" + "web.sktelecom.com" + "\"";
+			}
+			else {
+				strAttach = " AND " + "apn !=\"" + "roaming.sktelecom.com" + "\"";
+			}
+
+		}
+
+		return strAttach;
+	}
+}

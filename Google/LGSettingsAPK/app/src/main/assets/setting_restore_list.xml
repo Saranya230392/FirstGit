@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <category id="202"> <!-- Sound -->
+    <!-- ex <key storage="global">auto_time</key> -->
+        <key storage="global">mode_ringer</key>
+        <key storage="system">volume_ring</key>
+        <key storage="system">volume_ring_speaker</key>
+        <key storage="system">volume_ring_last_audible_speaker</key>
+        <key storage="system">volume_system</key>
+        <key storage="system">volume_system_speaker</key>
+        <key storage="system">volume_system_last_audible</key>
+        <key storage="system">volume_system_last_audible_speaker</key>
+        <key storage="system">volume_music</key>
+        <key storage="system">volume_music_speaker</key>
+        <key storage="system">volume_music_speaker_last_audible_speaker</key>
+        <key storage="system">volume_voice</key>
+        <key storage="system">volume_alarm</key>
+        <key storage="system">volume_notification</key>
+        <key storage="system">volume_notification_speaker</key>
+        <key storage="system">volume_notification_last_audible_speaker</key>
+        <key storage="system">volume_bluetooth_sco</key>
+        <key storage="system">ringtone</key>
+        <key storage="system">notification_sound</key>
+        <key storage="system">ringtone_sim2</key>
+        <key storage="system">notification_sound_sim2</key>
+        <key storage="system">ringtone_sim3</key>
+        <key storage="system">notification_sound_sim3</key>
+        <key storage="system">ringtone_videocall</key>
+        <key storage="system">vibrate_when_ringing</key>
+        <key storage="system">dtmf_tone</key>
+        <key storage="system">sound_effects_enabled</key>
+        <key storage="system">lockscreen_sounds_enabled</key>
+        <key storage="system">haptic_feedback_enabled</key>
+        <key storage="global">zen_mode</key>
+    </category>
+    <category id="203"><!-- Display -->
+        <key storage="system">screen_brightness_mode</key>
+        <key storage="system">screen_brightness</key>
+        <key storage="system">accelerometer_rotation</key>
+        <key storage="system">screen_off_timeout</key>
+        <key storage="system">button_combination</key>
+        <key storage="system">font_scale</key>
+        <key storage="system">sync_large_text</key>
+        <key storage="global">sync_large_text</key>
+    </category>
+    <category id="204"> <!-- Accessibility -->
+        <key storage="secure">long_press_timeout</key>
+        <key storage="secure">speak_password</key>
+        <key storage="secure">incall_power_button_behavior</key>
+        <key storage="secure">accessibility_display_magnification_enabled</key>
+        <key storage="secure">accessibility_captioning_enabled</key>
+        <key storage="secure">accessibility_captioning_locale</key>
+        <key storage="secure">accessibility_captioning_preset</key>
+        <key storage="secure">accessibility_captioning_background_color</key>
+        <key storage="secure">accessibility_captioning_foreground_color</key>
+        <key storage="secure">accessibility_captioning_edge_type</key>
+        <key storage="secure">accessibility_captioning_edge_color</key>
+        <key storage="secure">accessibility_captioning_typeface</key>
+        <key storage="secure">accessibility_captioning_font_scale</key>
+        <!-- services -->
+        <key storage="secure">enabled_accessibility_services</key>
+        <key storage="secure">accessibility_enabled</key>
+    </category>
+</settings>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/anim_button_combination_13" android:duration="1000" />
+    <item android:drawable="@drawable/anim_button_combination_14" android:duration="1000" />
+    <item android:drawable="@drawable/anim_button_combination_15" android:duration="1000" />
+    <item android:drawable="@drawable/anim_button_combination_16" android:duration="1000" />
+    <item android:drawable="@drawable/anim_button_combination_17" android:duration="1000" />
+    <item android:drawable="@drawable/anim_button_combination_18" android:duration="1000" />
+</animation-list>

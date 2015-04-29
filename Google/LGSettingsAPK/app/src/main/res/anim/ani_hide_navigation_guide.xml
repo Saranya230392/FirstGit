@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/anim_hide_front_touch_button_01" android:duration="1000" />
+    <item android:drawable="@drawable/anim_hide_front_touch_button_02" android:duration="1000" />
+    <item android:drawable="@drawable/anim_hide_front_touch_button_03" android:duration="1000" />
+</animation-list>

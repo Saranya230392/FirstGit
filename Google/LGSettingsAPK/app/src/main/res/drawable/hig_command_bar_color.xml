@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- [START_LGE_VOICECALL], MOD, thnk.kim, 2012-04-12, modify color of text for command bar - update GUI -->
+    <item android:state_enabled="false" android:color="#28000000"/>
+    <item android:color="#000000"/>
+<!-- [END_LGE_VOICECALL], MOD, thnk.kim, 2012-04-12, modify color of text for command bar - update GUI -->
+</selector>
